@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KGCF System</title>
+  <link href="https://unpkg.com/vis-network/styles/vis-network.min.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/prototype.css') }}" />
+  <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-symbol">➤</span><strong>KGCF System</strong><em>V2.4</em></div>
+      <nav class="menu">
+        <div class="menu-title">WORKBENCH</div>
+        <button class="nav-item active" data-page="dashboard">◉ Dashboard</button>
+        <button class="nav-item" data-page="history">↻ Planning History</button>
+
+        <div class="menu-title">DATA ASSETS</div>
+        <button class="nav-item" data-page="dataset">✥ Aero-Instruct-5K</button>
+        <button class="nav-item" data-page="prototypes">▣ 2D Visual Prototypes</button>
+
+        <div class="menu-title">COGNITIVE MODULES</div>
+        <button class="nav-item parent expanded" data-group="kg-group" type="button"><span>⌁ Knowledge Grounding</span><span class="chevron">▾</span></button>
+        <div class="nav-group expanded" id="kg-group">
+          <button class="nav-item child" data-page="visual">Aero-MMKG Visualization</button>
+          <button class="nav-item child" data-page="physics">Physics Models Archive</button>
+        </div>
+        <button class="nav-item parent expanded" data-group="mllm-group" type="button"><span>◐ MLLM Orchestration</span><span class="chevron">▾</span></button>
+        <div class="nav-group expanded" id="mllm-group">
+          <button class="nav-item child" data-page="engine">Aero-LMM Engine (LoRA)</button>
+          <button class="nav-item child" data-page="prompts">Multi-modal Prompts</button>
+          <button class="nav-item child" data-page="reasoning">Run Inference (CoT)</button>
+        </div>
+        <button class="nav-item" data-page="report">▤ Process Generation</button>
+
+        <div class="menu-title">SYSTEM MONITOR</div>
+        <button class="nav-item" data-page="neo4j">◫ Neo4j Vector DB</button>
+        <button class="nav-item" data-page="qwen">⚙ Qwen2.5-VL-72B Runtime</button>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <section id="page-dashboard" class="page active">
+        <header class="page-head"><h1>KGCF Prototype Workbench</h1><span id="healthBadge" class="status">Initializing</span></header>
+        <div class="metrics" id="dashboardMetrics"></div>
+        <div class="grid two">
+          <article class="panel"><h2>Prototype workflow</h2><div id="workflowSteps" class="workflow"></div></article>
+          <article class="panel"><h2>Representative feature access</h2><div id="featureTiles" class="feature-tiles"></div></article>
+        </div>
+      </section>
+
+      <section id="page-dataset" class="page">
+        <header class="page-head"><h1>Aero-Instruct-5K Dataset Management</h1><button id="datasetExportBtn" class="small-btn">▣ Export JSONL</button></header>
+        <article class="toolbar panel">
+          <select id="datasetFeatureSelect"></select>
+          <input id="datasetSearch" type="search" placeholder="Search instruction or CoT..." />
+          <button id="datasetSearchBtn" class="accent-btn">Search</button>
+          <button id="datasetImportBtn" class="accent-btn ghost">Import Seeds</button>
+        </article>
+        <article class="panel table-wrap">
+          <table class="data-table">
+            <thead><tr><th><input type="checkbox"></th><th>Sample ID</th><th>Visual Input</th><th>Feature Category</th><th>Physics-aware CoT Response</th><th>Data Split</th><th>Actions</th></tr></thead>
+            <tbody id="datasetBody"></tbody>
+          </table>
+          <div class="pager"><span id="datasetTotal">Total 0 instruction pairs</span><button id="prevPage">‹</button><span id="pageInfo">1 / 1</span><button id="nextPage">›</button></div>
+        </article>
+      </section>
+
+      <section id="page-prototypes" class="page">
+        <header class="page-head"><h1>2D Visual Prototypes</h1><select id="prototypeFeatureSelect"></select></header>
+        <article class="panel"><div id="prototypeGallery" class="prototype-gallery"></div></article>
+      </section>
+
+      <section id="page-visual" class="page">
+        <header class="page-head">
+          <h1>Aero-MMKG Visualization & Visual anchoring</h1>
+          <div class="head-actions"><button id="refreshVisualBtn" class="small-btn">Refresh Graph</button><button id="fitGraphBtn" class="small-btn">Fit</button><button id="zoomInBtn" class="small-btn">＋</button><button id="zoomOutBtn" class="small-btn">－</button><span class="green-badge">Visual Index: Active</span></div>
+        </header>
+        <div class="mmkg-layout">
+          <aside class="schema panel">
+            <h3>▼ ONTOLOGY SCHEMA</h3>
+            <div class="legend"><i class="c-feature"></i>Feature (几何特征)</div>
+            <div class="legend"><i class="c-constraint"></i>Constraint (硬性约束)</div>
+            <div class="legend"><i class="c-strategy"></i>Strategy (工艺策略)</div>
+            <div class="legend"><i class="c-resource"></i>Resource (刀具/机床)</div>
+            <div class="legend"><i class="c-physics"></i>Physics Model (力学沙盒)</div>
+            <div class="legend"><i class="c-image"></i>Image (视觉原型)</div>
+            <div class="neo4j-connect-mini">
+              <b>Neo4j knowledge graph connection</b>
+              <input id="neo4jUri" value="bolt://localhost:7687" placeholder="bolt://localhost:7687" />
+              <input id="neo4jUser" placeholder="Neo4j username" autocomplete="username" />
+              <input id="neo4jPassword" type="password" placeholder="Neo4j password" autocomplete="current-password" />
+              <button id="connectNeo4jBtn" class="green-btn full">Connect Neo4j Graph</button>
+              <small id="neo4jConnectStatus">Enter valid credentials to load the Neo4j Aero-MMKG.</small>
+            </div>
+            <div class="graph-note">The graph canvas is loaded from Neo4j using node.identity and relationship endpoints. Image nodes use their filename property to render engineering drawing thumbnails.</div>
+            <div class="schema-actions">
+              <button id="visualOverviewBtn" class="small-btn full">Load Neo4j Graph</button>
+              <button id="visualAnchorBtn" class="small-btn full">Retrieve Top-k / Anchor</button>
+            </div>
+          </aside>
+          <article class="graph-panel panel"><div id="mynetwork" class="vis-network-canvas"><div class="graph-empty-box">Please connect Neo4j and load graph data.</div></div></article>
+          <aside class="reason-panel panel">
+            <h3>⌘ Grounded Reasoning</h3>
+            <div id="visualReasoning" class="structured"></div>
+            <h3 class="qa-title">回答:</h3>
+            <div id="answer-box" class="answer-box">Connect Neo4j and load the graph to start querying.</div>
+            <div id="nodeInspector" class="node-inspector"></div>
+            <div class="current-feature-card"><b>Current anchored feature</b><span id="currentFeatureBadge">pending</span></div>
+            <div class="input-stack">
+              <label>Engineering Drawing Input</label><input id="image-upload" type="file" accept=".png,.jpg,.jpeg,.webp">
+              <label>Text Query (Optional)</label><div class="inline"><input id="text-query" placeholder="输入问题，如：某零件的工艺路线"><button id="text-submit">➤</button></div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="page-physics" class="page">
+        <header class="page-head"><h1>Physics Models Archive</h1><div class="head-actions"><span class="feature-sync" id="physicsFeatureBadge">Current anchored feature: pending</span><button id="syncPhysicsBtn" class="small-btn">Use latest anchored feature</button></div></header>
+        <div class="grid two physics-grid">
+          <article class="panel"><h2>Physics verification workflow</h2><div id="physicsStages" class="timeline"></div></article>
+          <article class="panel"><h2>Bound rules and control targets</h2><div id="physicsRules" class="rule-list"></div></article>
+        </div>
+        <article class="panel"><h2>Selected-feature verification record</h2><div id="physicsArchive" class="structured"></div></article>
+      </section>
+
+      <section id="page-engine" class="page">
+        <header class="page-head"><h1>Aero-LMM Engine (LoRA Fine-tuned)</h1><span>Base: Qwen2.5-VL-72B | PEFT: LoRA</span></header>
+        <article class="panel runtime-panel">
+          <h2>Qwen2.5-VL-72B Runtime & Local Deployment</h2>
+          <div class="runtime-grid">
+            <label>Endpoint URL<input id="modelEndpoint" placeholder="http://127.0.0.1:8000/v1/chat/completions"></label>
+            <label>API key / token<input id="modelApiKey" type="password" placeholder="optional"></label>
+            <label>Model root<input id="modelRoot" placeholder="models/Qwen2.5-VL-72B-Instruct"></label>
+            <label>LoRA adapter<input id="adapterRoot" placeholder="adapters/aero_lora"></label>
+          </div>
+          <label class="checkline"><input id="remoteCallEnabled" type="checkbox"> Enable remote Qwen2.5-VL API call</label>
+          <div class="head-actions"><button id="saveRuntimeBtn" class="small-btn">Save Runtime</button><button id="testRuntimeBtn" class="small-btn">Test Connection</button></div>
+          <div id="runtimeStatus" class="runtime-status"></div>
+        </article>
+        <article class="panel">
+          <h2>Fine-tuning Config</h2>
+          <div class="lora-form">
+            <label>Training dataset<input id="loraDataset" value="data/processed/aero_instruct_5k.jsonl"></label>
+            <label>LoRA rank<input id="loraRank" type="number" value="64"></label>
+            <label>Learning rate<input id="loraLr" value="2e-5"></label>
+            <label>Max steps<input id="loraMaxSteps" type="number" value="3900"></label>
+            <label>Checkpoint directory<input id="loraCheckpoint" value="adapters/aero_lora/checkpoints"></label>
+            <label>Merged model directory<input id="loraMerged" value="models/Qwen2.5-VL-72B-Instruct-aero-merged"></label>
+          </div>
+          <div class="head-actions"><button id="saveEngineConfigBtn" class="small-btn">Save Fine-tuning Config</button><button id="buildTrainingJobBtn" class="green-btn">Build Training Command</button><button id="loadTraceBtn" class="small-btn">Load Training Trace</button></div>
+          <pre id="trainingCommandBox" class="code-box light compact">Configure model paths and dataset, then build the fine-tuning command.</pre>
+        </article>
+        <article class="panel training-panel"><h2>Training Evolution (Loss & Accuracy)</h2><svg id="trainingChart" class="training-chart" viewBox="0 0 1100 310" preserveAspectRatio="none"></svg></article>
+      </section>
+
+      <section id="page-prompts" class="page">
+        <header class="page-head"><h1>Multimodal Prompt Engineering Studio</h1><div><button id="savePromptBtn" class="small-btn">▣ Save Template</button><button id="testFusionBtn" class="small-btn">↯ Test Context Fusion</button></div></header>
+        <article class="prompt-tabs panel">
+          <button class="prompt-tab active" data-tab="system">System Prompt</button>
+          <button class="prompt-tab" data-tab="kg">KG Constraints (T_kg)</button>
+          <button class="prompt-tab" data-tab="visual">Visual Input (T_vis)</button>
+          <button class="prompt-tab" data-tab="traceback">Semantic Traceback</button>
+          <span id="promptActiveStatus" class="prompt-status">Editable template section</span>
+        </article>
+        <article class="panel"><textarea id="promptEditor" class="prompt-editor" rows="10"></textarea></article>
+        <div class="grid two">
+          <article class="panel"><h2>Dynamic Variables</h2><p class="hint">Variables are filled from the latest visual anchoring / KGMCF inference result. No manual feature selection is used here.</p><div id="promptVariables" class="variable-list"></div></article>
+          <article class="panel"><h2>Fused Prompt Preview</h2><pre id="fusedPromptPreview" class="code-box light"></pre></article>
+        </div>
+      </section>
+
+      <section id="page-reasoning" class="page">
+        <header class="page-head"><h1>MLLM Cognitive Reasoning Cockpit</h1><span>Status: Neural-Symbolic Mode Active</span></header>
+        <article class="panel cockpit">
+          <h2>↪ Multimodal Input & Intent</h2>
+          <div class="inference-layout">
+            <div class="inference-source">
+              <label>Planning Method</label><select id="reasonMethodSelect"></select>
+              <label>Engineering Drawing Upload</label><input id="reasonUpload" type="file" accept=".png,.jpg,.jpeg,.webp">
+              <button id="anchorReasonBtn" class="small-btn full">Run visual anchoring</button>
+              <div id="detectedFeatureBox" class="detected-box">Detected feature: waiting for input</div>
+            </div>
+            <div><label>Engineering Drawing (2D View)</label><div id="reasonDrawingBox" class="drawing-box"><span>Upload a 2D engineering view or open a sample from Dataset Management.</span></div></div>
+          </div>
+          <label>Natural Language Process Intent</label>
+          <textarea id="reasonIntent" rows="4">Generate a physics-safe and knowledge-grounded process plan for the uploaded aerospace special-shaped feature.</textarea>
+          <div class="head-actions"><button id="runQwenBtn" class="green-btn">Run Qwen2.5-VL / LoRA Inference</button><button id="executeReasoningBtn" class="execute-btn">Execute KGMCF Cognitive Orchestration</button></div>
+        </article>
+        <article class="panel"><h2>Runtime response and reasoning log</h2><div id="runtimeSummary" class="runtime-status compact"></div><div id="reasoningLog" class="terminal"></div></article>
+      </section>
+
+      <section id="page-report" class="page">
+        <header class="page-head"><h1>Aerospace Process Report Center</h1><div class="head-actions"><span id="reportSourceBadge" class="feature-sync">Generated from latest KGMCF workflow</span><span class="green-badge">Physics-verified process card</span></div></header>
+        <article class="report" id="processReport"></article>
+        <div class="report-actions"><button id="downloadReportBtn" class="small-btn">Export JSON</button><button id="downloadPdfBtn" class="small-btn primary">Download Process Card PDF</button></div>
+      </section>
+
+      <section id="page-history" class="page"><header class="page-head"><h1>Planning History</h1></header><article class="panel"><div id="historyList" class="history-list"></div></article></section>
+      <section id="page-neo4j" class="page">
+        <header class="page-head"><h1>Neo4j Vector DB</h1><span class="status">User-authenticated graph backend</span></header>
+        <article class="panel runtime-panel">
+          <h2>Neo4j connection</h2>
+          <div class="runtime-grid">
+            <label>Bolt URI<input id="neo4jUriMonitor" value="bolt://localhost:7687" placeholder="bolt://localhost:7687"></label>
+            <label>Username<input id="neo4jUserMonitor" placeholder="neo4j"></label>
+            <label>Password<input id="neo4jPasswordMonitor" type="password" placeholder="password"></label>
+          </div>
+          <div class="head-actions"><button id="connectNeo4jMonitorBtn" class="green-btn">Connect Neo4j</button><button id="reloadNeo4jStatusBtn" class="small-btn">Refresh Status</button></div>
+        </article>
+        <article class="panel"><div id="neo4jStatus" class="structured"></div></article>
+      </section>
+      <section id="page-qwen" class="page"><header class="page-head"><h1>Qwen2.5-VL-72B Runtime</h1><span class="status">Endpoint configurable</span></header><article class="panel"><div id="qwenStatus" class="structured"></div></article></section>
+    </main>
+  </div>
+  <script src="{{ url_for('static', filename='js/prototype.js') }}"></script>
+</body>
+</html>
