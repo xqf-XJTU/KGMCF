@@ -1,0 +1,527 @@
+[
+  {
+    "feature_id": "F00",
+    "feature_name": "F00 大角度斜面槽",
+    "raw_desc": "25°, R2, R1",
+    "constraints": [
+      "侧壁斜度: 25.0°",
+      "底部圆角: R2.0mm",
+      "上口过渡圆角: R1.0mm",
+      "槽深: 25mm",
+      "槽宽: >3.7mm"
+    ],
+    "tools": [
+      "刀片: QC04-3.7R2"
+    ],
+    "equipment": [
+      "刀杆: CFGL2525"
+    ],
+    "processes": [
+      "粗加工工序: 扩槽铣/车",
+      "半精加工工序: 斜面轨迹加工",
+      "精加工工序: 全轮廓成型"
+    ],
+    "steps": [
+      "1. 直落刀开中心槽",
+      "2. 分层横向扩槽",
+      "3. 阶梯状余量去除",
+      "4. 一次性切出R2及斜面"
+    ]
+  },
+  {
+    "feature_id": "F01",
+    "feature_name": "F01 外圆斜面轮廓",
+    "raw_desc": "20° 斜面仿形",
+    "constraints": [
+      "斜面角度: 20°",
+      "过渡圆角: R>=0.8mm",
+      "粗糙度: Ra<=1.6μm",
+      "特征可达性: 外部开放"
+    ],
+    "tools": [
+      "刀片: VNMG160408"
+    ],
+    "equipment": [
+      "仿形刀杆: DVXNN2525"
+    ],
+    "processes": [
+      "粗加工工序: 斜向进刀车削",
+      "半精加工工序: 轮廓描绘",
+      "精加工工序: 高速仿形"
+    ],
+    "steps": [
+      "1. 沿斜面分层去余量",
+      "2. 统一余量/消除台阶痕",
+      "3. 20°斜面一刀走完"
+    ]
+  },
+  {
+    "feature_id": "F02",
+    "feature_name": "F02 大圆角斜面过渡",
+    "raw_desc": "",
+    "constraints": [
+      "侧壁斜度: 20°",
+      "强约束圆角: R4.0mm",
+      "辅助圆角: R1.0mm",
+      "加工轴线: 立式 (Vertical Axis)"
+    ],
+    "tools": [
+      "刀片: U6RR1R4 (定制成型刀片)"
+    ],
+    "equipment": [
+      "数控立车 (CNC Vertical Lathe)",
+      "刀杆: CER2525 (杠杆式压紧)"
+    ],
+    "processes": [
+      "粗加工阶段: 立式轮廓粗车",
+      "半精加工阶段: 台阶平滑",
+      "精加工阶段: 成型仿形加工"
+    ],
+    "steps": [
+      "1. 立式轮廓去除 (RCMT刀具参考)",
+      "2. 去除扇形高度",
+      "3. 吻合切削 (Match-Fit)"
+    ]
+  },
+  {
+    "feature_id": "F03",
+    "feature_name": "F03 非标角度轮廓槽",
+    "raw_desc": "",
+    "constraints": [
+      "非标斜度: 19.5°",
+      "特征圆角: R4.0mm",
+      "过渡圆角: R1.0mm",
+      "进入空间: 受限 (Restricted)"
+    ],
+    "tools": [
+      "刀片: QC04MO-F (R2圆头)"
+    ],
+    "equipment": [
+      "数控卧车 (CNC Horizontal Lathe)",
+      "切槽刀杆: CFGL2525"
+    ],
+    "processes": [
+      "粗加工阶段: 多刀切槽",
+      "半精加工阶段: 斜坡插补",
+      "精加工阶段: 动态展成仿形"
+    ],
+    "steps": [
+      "1. 直进直出多刀排槽",
+      "2. 沿19.5°轨迹初步修整",
+      "3. X-Z联动动态展成R4圆角"
+    ]
+  },
+  {
+    "feature_id": "F04",
+    "feature_name": "F04 小圆角斜面槽",
+    "raw_desc": "",
+    "constraints": [
+      "非标斜度: 19.5°",
+      "强约束底角: R1.2mm",
+      "精密公差: IT6-IT7"
+    ],
+    "tools": [
+      "精密刀片: QC04MO-F (R1.0)"
+    ],
+    "equipment": [
+      "左手刀杆: CFEL2525"
+    ],
+    "processes": [
+      "粗加工阶段: 啄式切槽",
+      "半精加工阶段: 等距轮廓加工",
+      "精加工阶段: 精密仿形"
+    ],
+    "steps": [
+      "1. 啄钻式切入断屑",
+      "2. 沿轮廓法向偏移0.15mm",
+      "3. 二轴插补精密扫掠"
+    ]
+  },
+  {
+    "feature_id": "F05",
+    "feature_name": "F05 深异形凹槽",
+    "raw_desc": "",
+    "constraints": [
+      "侧壁斜度",
+      "底部圆角",
+      "过渡圆角",
+      "特征深度",
+      "槽口宽度",
+      "长径比"
+    ],
+    "tools": [
+      "QC04-R1.6R0.9-WK014"
+    ],
+    "equipment": [
+      "CGGL2525P1604-WK014"
+    ],
+    "processes": [
+      "粗加工阶段",
+      "半精加工阶段",
+      "精加工阶段"
+    ],
+    "steps": [
+      "摆线车削",
+      "插铣加工",
+      "变切深切削",
+      "仿形精车"
+    ]
+  },
+  {
+    "feature_id": "F06",
+    "feature_name": "F06 深部内孔异形区",
+    "raw_desc": "",
+    "constraints": [
+      "内孔斜度: 20°",
+      "双圆角约束: R2 / R1",
+      "悬伸深度: >150mm",
+      "最小孔径: >60mm"
+    ],
+    "tools": [
+      "定制刀片: U6R348 (R2+R1成型)"
+    ],
+    "equipment": [
+      "减振刀杆: CER050 (内径车削)"
+    ],
+    "processes": [
+      "重型内镗阶段 (Roughing)",
+      "振动抑制加工 (Semi-Finish)",
+      "精密成型切削 (Finishing)"
+    ],
+    "steps": [
+      "1. 50mm刀杆大余量去除",
+      "2. 变速切削 (Variable Speed)",
+      "3. R2/R1双圆角一次性成型"
+    ]
+  },
+  {
+    "feature_id": "F07",
+    "feature_name": "F07 深孔大圆角过渡",
+    "raw_desc": "",
+    "constraints": [
+      "内孔斜度: 20°",
+      "核心圆角: R4.0mm",
+      "辅助圆角: R1.0mm",
+      "长悬伸访问: >200mm",
+      "内容空间: φ>60mm"
+    ],
+    "tools": [
+      "加厚型刀片: U6R558 (5.5mm厚)"
+    ],
+    "equipment": [
+      "强力压紧刀杆: CER050-TN"
+    ],
+    "processes": [
+      "重载斜向镗削阶段",
+      "弹性变形补偿阶段",
+      "低速成型精加工阶段"
+    ],
+    "steps": [
+      "1. 20°斜向分层镗削",
+      "2. 去应力切削 (Stress Relief)",
+      "3. 低速一次成型"
+    ]
+  },
+  {
+    "feature_id": "F08",
+    "feature_name": "F05 双圆角过渡槽",
+    "raw_desc": "",
+    "constraints": [
+      "侧壁斜度: 20°",
+      "底部最小圆角: R2.0mm",
+      "顶部过渡圆角: R3.0mm",
+      "槽宽约束: >4.0mm",
+      "混合策略: 成型+展成 (Hybrid)"
+    ],
+    "tools": [
+      "宽刃仿形刀片: QC04MO-10 (R2.0)"
+    ],
+    "equipment": [
+      "外圆切槽刀杆: CFGL2525"
+    ],
+    "processes": [
+      "扩槽切削阶段 (Roughing)",
+      "轮廓描绘阶段 (Semi-Finish)",
+      "混合仿形精加工阶段 (Finishing)"
+    ],
+    "steps": [
+      "1. 4mm宽刃扩槽",
+      "2. 沿20°斜面及R3区描绘",
+      "3. 混合仿形 (R2成型+R3展成)"
+    ]
+  },
+  {
+    "feature_id": "F09",
+    "feature_name": "F09 多曲率异形槽",
+    "raw_desc": "",
+    "constraints": [
+      "侧壁斜度: 20°",
+      "硬约束最小半径: R1.0mm",
+      "大圆角区域: R4.0mm",
+      "刀具切深极限: 11.5mm",
+      "槽宽约束: >3.75mm"
+    ],
+    "tools": [
+      "不对称双圆角刀片: QC0404"
+    ],
+    "equipment": [
+      "杠杆压紧刀杆: CFGL2525"
+    ],
+    "processes": [
+      "F09 复合加工阶段"
+    ],
+    "steps": [
+      "1. 变圆角切槽 (R3端大余量去除)",
+      "2. R1端清角 (Corner Clearing)",
+      "3. 复合仿形 (R1成型 + R4插补)"
+    ]
+  },
+  {
+    "feature_id": "F10",
+    "feature_name": "F10 精密微型槽",
+    "raw_desc": "",
+    "constraints": [
+      "槽宽约束: 1.6mm",
+      "底角约束: R0.4mm",
+      "槽深约束: <3mm",
+      "公差等级: H7/h6"
+    ],
+    "tools": [
+      "精密定宽刀片: U2R-1.6"
+    ],
+    "equipment": [
+      "微型切槽刀杆: CFGL-PU2"
+    ],
+    "processes": [
+      "精密微型切槽阶段"
+    ],
+    "steps": [
+      "1. 啄式切槽 (Peck Cycle)",
+      "2. 光整驻留 (Dwell)"
+    ]
+  },
+  {
+    "feature_id": "F11",
+    "feature_name": "F11 非对称窄型面",
+    "raw_desc": "",
+    "constraints": [
+      "左侧(主侧)圆角: R1.0mm",
+      "右侧(副侧)圆角: R0.4mm",
+      "通道宽度: 2.0mm",
+      "型面轮廓度: ±0.02mm"
+    ],
+    "tools": [
+      "非对称定制刀片: QC04MO-2R1"
+    ],
+    "equipment": [
+      "侧车专用刀杆: CFGL2525"
+    ],
+    "processes": [
+      "F11 非对称型面加工阶段"
+    ],
+    "steps": [
+      "1. 通道开槽 (直进直出)",
+      "2. 左侧仿形 (R1.0侧半精加工)",
+      "3. 右侧仿形 (R0.4侧精加工)"
+    ]
+  },
+  {
+    "feature_id": "F12",
+    "feature_name": "F12 内孔特定圆角过渡",
+    "raw_desc": "",
+    "constraints": [
+      "内壁斜度: 20°",
+      "目标半径: R2.25mm",
+      "加工空间: 内孔盲区 (Blind Zone)",
+      "刀具半径限制: < 2.25mm"
+    ],
+    "tools": [
+      "内孔仿形刀片: U5R-R1.5"
+    ],
+    "equipment": [
+      "内孔仿形刀杆: CER2525"
+    ],
+    "processes": [
+      "F12 内孔型面精加工阶段"
+    ],
+    "steps": [
+      "1. 内孔阶梯镗削 (Roughing)",
+      "2. 圆弧插补展成 (Finishing)",
+      "3. 断屑控制加工"
+    ]
+  },
+  {
+    "feature_id": "F13",
+    "feature_name": "F13 内孔小圆角过渡",
+    "raw_desc": "",
+    "constraints": [
+      "内壁斜度: 20°",
+      "目标半径: R0.8mm",
+      "加工盲区: Blind Internal"
+    ],
+    "tools": [
+      "非对称刀片: U5R-R0.4"
+    ],
+    "equipment": [
+      "内孔仿形刀杆: CER2525-PU5"
+    ],
+    "processes": [
+      "F13 密封圆角精加工阶段"
+    ],
+    "steps": [
+      "1. 等距轮廓车削",
+      "2. R0.8圆角展成",
+      "3. 45°矢量退刀"
+    ]
+  },
+  {
+    "feature_id": "F14",
+    "feature_name": "F14 混合半径内孔型面",
+    "raw_desc": "",
+    "constraints": [
+      "内壁斜度: 20.0°",
+      "主约束圆角: R2.5mm",
+      "次约束圆角: R1.0mm",
+      "空间限制: 2.5mm 宽度",
+      "轮廓度公差: ±0.03mm"
+    ],
+    "tools": [
+      "三维复合仿形刀片: U5R-2.5"
+    ],
+    "equipment": [
+      "标准内孔长刀杆: CER2525"
+    ],
+    "processes": [
+      "F14 混合半径型面精加工阶段"
+    ],
+    "steps": [
+      "1. 轮廓阶梯车削",
+      "2. 双点跟踪加工 (Dual-Point Tracing)",
+      "3. 连续插补精加工"
+    ]
+  },
+  {
+    "feature_id": "F15",
+    "feature_name": "F15 窄间隙精密型面槽",
+    "raw_desc": "",
+    "constraints": [
+      "侧壁斜度: 20.0°",
+      "底角目标: R2.0mm",
+      "入口宽度: 3.0mm"
+    ],
+    "tools": [
+      "精密仿形窄刀片: QC03MO-F"
+    ],
+    "equipment": [
+      "3.0mm系统切槽刀杆: CFGL2525P03"
+    ],
+    "processes": [
+      "F15 极窄间隙仿形加工阶段"
+    ],
+    "steps": [
+      "1. 中心切入 (Centerline Plunge)",
+      "2. 阶梯扩槽 (Expansion)",
+      "3. 圆弧生成 (Circular Generation)"
+    ]
+  },
+  {
+    "feature_id": "F16",
+    "feature_name": "F16 3.8mm 精密宽槽",
+    "raw_desc": "",
+    "constraints": [
+      "目标宽度: 3.8mm",
+      "底角约束: R0.4mm",
+      "刀具宽度约束: 3.0mm"
+    ],
+    "tools": [
+      "精密宽刃刀片: QC03MO-F"
+    ],
+    "equipment": [
+      "3.0mm系统刀杆: CFGL2525"
+    ],
+    "processes": [
+      "F16 小刀扩槽加工阶段"
+    ],
+    "steps": [
+      "1. 中心直切 (Establish Reference)",
+      "2. 左侧偏移 0.4mm (Lateral Expansion)",
+      "3. 右侧偏移 0.4mm (Lateral Expansion)"
+    ]
+  },
+  {
+    "feature_id": "F17",
+    "feature_name": "F17 大半径过渡型面槽",
+    "raw_desc": "",
+    "constraints": [
+      "侧壁斜度: 19.5°",
+      "底部最小半径: R2.0mm",
+      "型面最大半径: R7.0mm",
+      "入口宽度限制: 3.0mm"
+    ],
+    "tools": [
+      "窄刃长悬伸仿形刀片: QC03MO-F"
+    ],
+    "equipment": [
+      "3.0mm系统刀杆: CFGL-WK082"
+    ],
+    "processes": [
+      "F17 大曲率展成加工阶段"
+    ],
+    "steps": [
+      "1. 直插开槽 (Groove Opening)",
+      "2. 残留高度控制仿形 (Scallop-Controlled)",
+      "3. 连续路径平滑加工 (Continuous Smoothing)"
+    ]
+  },
+  {
+    "feature_id": "F18",
+    "feature_name": "F18 定宽斜度精密槽",
+    "raw_desc": "",
+    "constraints": [
+      "侧壁斜度: 19.5°",
+      "底角约束: R1.0mm",
+      "定宽尺寸: 3.15mm",
+      "精度等级: IT7"
+    ],
+    "tools": [
+      "定宽成型刀片: QC04-3.15R1"
+    ],
+    "equipment": [
+      "精密切槽刀杆: CFGL2525"
+    ],
+    "processes": [
+      "F18 定宽一次成型阶段"
+    ],
+    "steps": [
+      "1. 径向单次切入",
+      "2. 微量退刀 (0.1mm)",
+      "3. 侧壁清根修正"
+    ]
+  },
+  {
+    "feature_id": "F19",
+    "feature_name": "F19 铸件异形过渡槽",
+    "raw_desc": "",
+    "constraints": [
+      "非标拔模角: 19.5°",
+      "强约束底角: R2.5mm",
+      "目标槽宽: 3.7mm",
+      "铸造毛坯硬皮 (Cast Skin)",
+      "涂层剥落/刃口磨损风险"
+    ],
+    "tools": [
+      "精密成型仿形刀片: QC04-3.7R2.5"
+    ],
+    "equipment": [
+      "外圆切槽刀杆: CFGL2525"
+    ],
+    "processes": [
+      "F19 铸件毛坯开槽加工阶段"
+    ],
+    "steps": [
+      "1. 破皮切入 (Surface Skin Removal)",
+      "2. 径向直切 (Centerline Plunging)",
+      "3. 轮廓平滑扫描 (Profiling Scan)"
+    ]
+  }
+]

@@ -1,0 +1,361 @@
+{
+  "status": "PASS",
+  "totals": {
+    "feature_count": 20,
+    "total_png_images": 1400,
+    "total_xt_models": 20,
+    "total_kg_json": 20,
+    "features_with_70_images": 20,
+    "aero_instruct_samples": 5000,
+    "dataset_split_records": 5000,
+    "duplicate_image_groups": 10
+  },
+  "features": [
+    {
+      "feature_id": "F00",
+      "image_count": 70,
+      "has_cad_xt": true,
+      "has_kg_json": true,
+      "kg_nodes": 49,
+      "kg_edges": 45,
+      "image_examples": [
+        "data/raw/cv20/images/0/classes/0/0000 (2).png",
+        "data/raw/cv20/images/0/classes/0/0000.png",
+        "data/raw/cv20/images/0/classes/0/0001 (2).png"
+      ]
+    },
+    {
+      "feature_id": "F01",
+      "image_count": 70,
+      "has_cad_xt": true,
+      "has_kg_json": true,
+      "kg_nodes": 46,
+      "kg_edges": 46,
+      "image_examples": [
+        "data/raw/cv20/images/1/classes/0/0000 (2).png",
+        "data/raw/cv20/images/1/classes/0/0000.png",
+        "data/raw/cv20/images/1/classes/0/0001 (2).png"
+      ]
+    },
+    {
+      "feature_id": "F02",
+      "image_count": 70,
+      "has_cad_xt": true,
+      "has_kg_json": true,
+      "kg_nodes": 47,
+      "kg_edges": 44,
+      "image_examples": [
+        "data/raw/cv20/images/2/classes/0/0000 (2).png",
+        "data/raw/cv20/images/2/classes/0/0000.png",
+        "data/raw/cv20/images/2/classes/0/0001 (2).png"
+      ]
+    },
+    {
+      "feature_id": "F03",
+      "image_count": 70,
+      "has_cad_xt": true,
+      "has_kg_json": true,
+      "kg_nodes": 46,
+      "kg_edges": 45,
+      "image_examples": [
+        "data/raw/cv20/images/3/classes/0/0000 (2).png",
+        "data/raw/cv20/images/3/classes/0/0000.png",
+        "data/raw/cv20/images/3/classes/0/0001 (2).png"
+      ]
+    },
+    {
+      "feature_id": "F04",
+      "image_count": 70,
+      "has_cad_xt": true,
+      "has_kg_json": true,
+      "kg_nodes": 45,
+      "kg_edges": 46,
+      "image_examples": [
+        "data/raw/cv20/images/4/classes/0/0000 (2).png",
+        "data/raw/cv20/images/4/classes/0/0000.png",
+        "data/raw/cv20/images/4/classes/0/0001 (2).png"
+      ]
+    },
+    {
+      "feature_id": "F05",
+      "image_count": 70,
+      "has_cad_xt": true,
+      "has_kg_json": true,
+      "kg_nodes": 49,
+      "kg_edges": 49,
+      "image_examples": [
+        "data/raw/cv20/images/5/classes/0/0000 (2).png",
+        "data/raw/cv20/images/5/classes/0/0000.png",
+        "data/raw/cv20/images/5/classes/0/0001 (2).png"
+      ]
+    },
+    {
+      "feature_id": "F06",
+      "image_count": 70,
+      "has_cad_xt": true,
+      "has_kg_json": true,
+      "kg_nodes": 46,
+      "kg_edges": 47,
+      "image_examples": [
+        "data/raw/cv20/images/6/classes/0/0000 (2).png",
+        "data/raw/cv20/images/6/classes/0/0000.png",
+        "data/raw/cv20/images/6/classes/0/0001 (2).png"
+      ]
+    },
+    {
+      "feature_id": "F07",
+      "image_count": 70,
+      "has_cad_xt": true,
+      "has_kg_json": true,
+      "kg_nodes": 46,
+      "kg_edges": 46,
+      "image_examples": [
+        "data/raw/cv20/images/7/classes/0/0000 (2).png",
+        "data/raw/cv20/images/7/classes/0/0000.png",
+        "data/raw/cv20/images/7/classes/0/0001 (2).png"
+      ]
+    },
+    {
+      "feature_id": "F08",
+      "image_count": 70,
+      "has_cad_xt": true,
+      "has_kg_json": true,
+      "kg_nodes": 48,
+      "kg_edges": 48,
+      "image_examples": [
+        "data/raw/cv20/images/8/classes/0/0000 (2).png",
+        "data/raw/cv20/images/8/classes/0/0000.png",
+        "data/raw/cv20/images/8/classes/0/0001 (2).png"
+      ]
+    },
+    {
+      "feature_id": "F09",
+      "image_count": 70,
+      "has_cad_xt": true,
+      "has_kg_json": true,
+      "kg_nodes": 44,
+      "kg_edges": 45,
+      "image_examples": [
+        "data/raw/cv20/images/9/classes/0/0000 (2).png",
+        "data/raw/cv20/images/9/classes/0/0000.png",
+        "data/raw/cv20/images/9/classes/0/0001 (2).png"
+      ]
+    },
+    {
+      "feature_id": "F10",
+      "image_count": 70,
+      "has_cad_xt": true,
+      "has_kg_json": true,
+      "kg_nodes": 43,
+      "kg_edges": 43,
+      "image_examples": [
+        "data/raw/cv20/images/10/classes/0/0000 (2).png",
+        "data/raw/cv20/images/10/classes/0/0000.png",
+        "data/raw/cv20/images/10/classes/0/0001 (2).png"
+      ]
+    },
+    {
+      "feature_id": "F11",
+      "image_count": 70,
+      "has_cad_xt": true,
+      "has_kg_json": true,
+      "kg_nodes": 44,
+      "kg_edges": 46,
+      "image_examples": [
+        "data/raw/cv20/images/11/classes/0/0000 (2).png",
+        "data/raw/cv20/images/11/classes/0/0000.png",
+        "data/raw/cv20/images/11/classes/0/0001 (2).png"
+      ]
+    },
+    {
+      "feature_id": "F12",
+      "image_count": 70,
+      "has_cad_xt": true,
+      "has_kg_json": true,
+      "kg_nodes": 45,
+      "kg_edges": 45,
+      "image_examples": [
+        "data/raw/cv20/images/12/classes/0/0000 (2).png",
+        "data/raw/cv20/images/12/classes/0/0000.png",
+        "data/raw/cv20/images/12/classes/0/0001 (2).png"
+      ]
+    },
+    {
+      "feature_id": "F13",
+      "image_count": 70,
+      "has_cad_xt": true,
+      "has_kg_json": true,
+      "kg_nodes": 44,
+      "kg_edges": 44,
+      "image_examples": [
+        "data/raw/cv20/images/13/classes/0/0000 (2).png",
+        "data/raw/cv20/images/13/classes/0/0000.png",
+        "data/raw/cv20/images/13/classes/0/0001 (2).png"
+      ]
+    },
+    {
+      "feature_id": "F14",
+      "image_count": 70,
+      "has_cad_xt": true,
+      "has_kg_json": true,
+      "kg_nodes": 45,
+      "kg_edges": 46,
+      "image_examples": [
+        "data/raw/cv20/images/14/classes/0/0000 (2).png",
+        "data/raw/cv20/images/14/classes/0/0000.png",
+        "data/raw/cv20/images/14/classes/0/0001 (2).png"
+      ]
+    },
+    {
+      "feature_id": "F15",
+      "image_count": 70,
+      "has_cad_xt": true,
+      "has_kg_json": true,
+      "kg_nodes": 44,
+      "kg_edges": 44,
+      "image_examples": [
+        "data/raw/cv20/images/15/classes/0/0000 (2).png",
+        "data/raw/cv20/images/15/classes/0/0000.png",
+        "data/raw/cv20/images/15/classes/0/0001 (2).png"
+      ]
+    },
+    {
+      "feature_id": "F16",
+      "image_count": 70,
+      "has_cad_xt": true,
+      "has_kg_json": true,
+      "kg_nodes": 46,
+      "kg_edges": 46,
+      "image_examples": [
+        "data/raw/cv20/images/16/classes/0/0000 (2).png",
+        "data/raw/cv20/images/16/classes/0/0000.png",
+        "data/raw/cv20/images/16/classes/0/0001 (2).png"
+      ]
+    },
+    {
+      "feature_id": "F17",
+      "image_count": 70,
+      "has_cad_xt": true,
+      "has_kg_json": true,
+      "kg_nodes": 46,
+      "kg_edges": 45,
+      "image_examples": [
+        "data/raw/cv20/images/17/classes/0/0000 (2).png",
+        "data/raw/cv20/images/17/classes/0/0000.png",
+        "data/raw/cv20/images/17/classes/0/0001 (2).png"
+      ]
+    },
+    {
+      "feature_id": "F18",
+      "image_count": 70,
+      "has_cad_xt": true,
+      "has_kg_json": true,
+      "kg_nodes": 44,
+      "kg_edges": 46,
+      "image_examples": [
+        "data/raw/cv20/images/18/classes/0/0000.png",
+        "data/raw/cv20/images/18/classes/0/0001.png",
+        "data/raw/cv20/images/18/classes/0/0002.png"
+      ]
+    },
+    {
+      "feature_id": "F19",
+      "image_count": 70,
+      "has_cad_xt": true,
+      "has_kg_json": true,
+      "kg_nodes": 45,
+      "kg_edges": 44,
+      "image_examples": [
+        "data/raw/cv20/images/19/classes/0/0000 (2).png",
+        "data/raw/cv20/images/19/classes/0/0000.png",
+        "data/raw/cv20/images/19/classes/0/0001 (2).png"
+      ]
+    }
+  ],
+  "duplicate_image_audit": {
+    "duplicate_group_count": 10,
+    "duplicate_file_count": 20,
+    "groups": [
+      {
+        "hash": "a87afa6b70f8ee6099e4e95334cd90cccc52d9cb578ad7c77b21919cbdb24584",
+        "count": 2,
+        "files": [
+          "2/classes/0/0025 (2).png",
+          "2/classes/0/0025 (2)_1.png"
+        ]
+      },
+      {
+        "hash": "2a8ae0bd751d9dca56f9197e5c07c2368b55a6a874814926bf6d5e06f19d4867",
+        "count": 2,
+        "files": [
+          "2/classes/0/0025.png",
+          "2/classes/0/67.png"
+        ]
+      },
+      {
+        "hash": "a7baeadefd37881451af67d5464edf8f4e678f969cb9aca313359d1fb053f569",
+        "count": 2,
+        "files": [
+          "2/classes/0/0026 (2).png",
+          "2/classes/0/0026 (3).png"
+        ]
+      },
+      {
+        "hash": "e602c43a93f43bab503f54b2f56a0036827d1baeb8eea498c1d75ffa1edc3586",
+        "count": 2,
+        "files": [
+          "2/classes/0/0026.png",
+          "2/classes/0/68.png"
+        ]
+      },
+      {
+        "hash": "8af6b97d52d3294dc8e6f1d8b801cfc70c8236d2a88d8ca2438798c212deeae3",
+        "count": 2,
+        "files": [
+          "2/classes/0/0027 (2).png",
+          "2/classes/0/65.png"
+        ]
+      },
+      {
+        "hash": "1697e4dfde52859c96bb76b2892d0081165c9e805d47c00b9cc08e569bde471e",
+        "count": 2,
+        "files": [
+          "2/classes/0/0027.png",
+          "2/classes/0/94.png"
+        ]
+      },
+      {
+        "hash": "9720e9b67de624d25abc92b437abf9e5ce126577358f35b07503b8ea70988a0a",
+        "count": 2,
+        "files": [
+          "2/classes/0/0028 (2).png",
+          "2/classes/0/54.png"
+        ]
+      },
+      {
+        "hash": "c45d1efac9723eecee4f682d35055c5f340745afd4cc39cdff6da9e8e961675c",
+        "count": 2,
+        "files": [
+          "2/classes/0/0028.png",
+          "2/classes/0/5u.png"
+        ]
+      },
+      {
+        "hash": "8ea07434b42312be754be20cec21a1adce8f2eefe368dd1578ed68cc4919d206",
+        "count": 2,
+        "files": [
+          "2/classes/0/0029 (2).png",
+          "2/classes/0/89.png"
+        ]
+      },
+      {
+        "hash": "54bbfe8f7f00e77245233546736fea31832b20bdbd48d9a6d712d63edb04f750",
+        "count": 2,
+        "files": [
+          "2/classes/0/0029.png",
+          "2/classes/0/90.png"
+        ]
+      }
+    ]
+  }
+}

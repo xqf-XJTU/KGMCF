@@ -1,0 +1,10 @@
+{
+  "backend": "numpy",
+  "encoder": {
+    "requested_backend": "auto",
+    "actual_backend": "fallback",
+    "model_name": null,
+    "dimension": 4240
+  },
+  "record_count": 1400
+}

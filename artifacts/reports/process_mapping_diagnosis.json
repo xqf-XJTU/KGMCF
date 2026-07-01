@@ -1,0 +1,284 @@
+[
+  {
+    "feature_id": "F00",
+    "feature_name": "F00 大角度斜面槽",
+    "part_level_process": "MILLING_PART_OR_RING_SEGMENT",
+    "feature_level_strategy": "FORM_GROOVE_OR_FORM_PROFILE_MACHINING",
+    "recommended_operation": "FORM_TOOL_CONTOUR / FIXED_CONTOUR_FINISHING; avoid generic cavity-style mapping as final strategy",
+    "is_generic_cavity": false,
+    "confidence": 0.95,
+    "rationale": [
+      "检测到车削/槽刀资源关键词 2 个。",
+      "检测到成型/仿形刀具或R角匹配关键词 4 个。",
+      "检测到铣削关键词 1 个。",
+      "该特征更适合成型刀具/轮廓精加工，不宜仅映射为普通Cavity Mill。"
+    ]
+  },
+  {
+    "feature_id": "F01",
+    "feature_name": "F01 外圆斜面轮廓",
+    "part_level_process": "MILLING_PART_OR_RING_SEGMENT",
+    "feature_level_strategy": "FORM_GROOVE_OR_FORM_PROFILE_MACHINING",
+    "recommended_operation": "FORM_TOOL_CONTOUR / FIXED_CONTOUR_FINISHING; avoid generic cavity-style mapping as final strategy",
+    "is_generic_cavity": false,
+    "confidence": 0.79,
+    "rationale": [
+      "检测到车削/槽刀资源关键词 2 个。",
+      "检测到成型/仿形刀具或R角匹配关键词 2 个。",
+      "该特征更适合成型刀具/轮廓精加工，不宜仅映射为普通Cavity Mill。"
+    ]
+  },
+  {
+    "feature_id": "F02",
+    "feature_name": "F02 大圆角斜面过渡",
+    "part_level_process": "MILLING_PART_OR_RING_SEGMENT",
+    "feature_level_strategy": "FORM_GROOVE_OR_FORM_PROFILE_MACHINING",
+    "recommended_operation": "FORM_TOOL_CONTOUR / FIXED_CONTOUR_FINISHING; avoid generic cavity-style mapping as final strategy",
+    "is_generic_cavity": false,
+    "confidence": 0.95,
+    "rationale": [
+      "检测到车削/槽刀资源关键词 4 个。",
+      "检测到成型/仿形刀具或R角匹配关键词 5 个。",
+      "该特征更适合成型刀具/轮廓精加工，不宜仅映射为普通Cavity Mill。"
+    ]
+  },
+  {
+    "feature_id": "F03",
+    "feature_name": "F03 非标角度轮廓槽",
+    "part_level_process": "MILLING_PART_OR_RING_SEGMENT",
+    "feature_level_strategy": "FORM_GROOVE_OR_FORM_PROFILE_MACHINING",
+    "recommended_operation": "FORM_TOOL_CONTOUR / FIXED_CONTOUR_FINISHING; avoid generic cavity-style mapping as final strategy",
+    "is_generic_cavity": false,
+    "confidence": 0.95,
+    "rationale": [
+      "检测到车削/槽刀资源关键词 5 个。",
+      "检测到成型/仿形刀具或R角匹配关键词 5 个。",
+      "该特征更适合成型刀具/轮廓精加工，不宜仅映射为普通Cavity Mill。"
+    ]
+  },
+  {
+    "feature_id": "F04",
+    "feature_name": "F04 小圆角斜面槽",
+    "part_level_process": "MILLING_PART_OR_RING_SEGMENT",
+    "feature_level_strategy": "FORM_GROOVE_OR_FORM_PROFILE_MACHINING",
+    "recommended_operation": "FORM_TOOL_CONTOUR / FIXED_CONTOUR_FINISHING; avoid generic cavity-style mapping as final strategy",
+    "is_generic_cavity": false,
+    "confidence": 0.8300000000000001,
+    "rationale": [
+      "检测到车削/槽刀资源关键词 1 个。",
+      "检测到成型/仿形刀具或R角匹配关键词 3 个。",
+      "该特征更适合成型刀具/轮廓精加工，不宜仅映射为普通Cavity Mill。"
+    ]
+  },
+  {
+    "feature_id": "F05",
+    "feature_name": "F05 深异形凹槽",
+    "part_level_process": "MILLING_PART_OR_RING_SEGMENT",
+    "feature_level_strategy": "FORM_GROOVE_OR_FORM_PROFILE_MACHINING",
+    "recommended_operation": "FORM_TOOL_CONTOUR / FIXED_CONTOUR_FINISHING; avoid generic cavity-style mapping as final strategy",
+    "is_generic_cavity": false,
+    "confidence": 0.7500000000000001,
+    "rationale": [
+      "检测到车削/槽刀资源关键词 1 个。",
+      "检测到成型/仿形刀具或R角匹配关键词 2 个。",
+      "检测到铣削关键词 1 个。",
+      "该特征更适合成型刀具/轮廓精加工，不宜仅映射为普通Cavity Mill。"
+    ]
+  },
+  {
+    "feature_id": "F06",
+    "feature_name": "F06 深部内孔异形区",
+    "part_level_process": "MILLING_PART_OR_RING_SEGMENT",
+    "feature_level_strategy": "FORM_GROOVE_OR_FORM_PROFILE_MACHINING",
+    "recommended_operation": "FORM_TOOL_CONTOUR / FIXED_CONTOUR_FINISHING; avoid generic cavity-style mapping as final strategy",
+    "is_generic_cavity": false,
+    "confidence": 0.87,
+    "rationale": [
+      "检测到车削/槽刀资源关键词 2 个。",
+      "检测到成型/仿形刀具或R角匹配关键词 3 个。",
+      "该特征更适合成型刀具/轮廓精加工，不宜仅映射为普通Cavity Mill。"
+    ]
+  },
+  {
+    "feature_id": "F07",
+    "feature_name": "F07 深孔大圆角过渡",
+    "part_level_process": "MILLING_PART_OR_RING_SEGMENT",
+    "feature_level_strategy": "FORM_GROOVE_OR_FORM_PROFILE_MACHINING",
+    "recommended_operation": "FORM_TOOL_CONTOUR / FIXED_CONTOUR_FINISHING; avoid generic cavity-style mapping as final strategy",
+    "is_generic_cavity": false,
+    "confidence": 0.8300000000000001,
+    "rationale": [
+      "检测到车削/槽刀资源关键词 1 个。",
+      "检测到成型/仿形刀具或R角匹配关键词 3 个。",
+      "该特征更适合成型刀具/轮廓精加工，不宜仅映射为普通Cavity Mill。"
+    ]
+  },
+  {
+    "feature_id": "F08",
+    "feature_name": "F05 双圆角过渡槽",
+    "part_level_process": "MILLING_PART_OR_RING_SEGMENT",
+    "feature_level_strategy": "FORM_GROOVE_OR_FORM_PROFILE_MACHINING",
+    "recommended_operation": "FORM_TOOL_CONTOUR / FIXED_CONTOUR_FINISHING; avoid generic cavity-style mapping as final strategy",
+    "is_generic_cavity": false,
+    "confidence": 0.95,
+    "rationale": [
+      "检测到车削/槽刀资源关键词 2 个。",
+      "检测到成型/仿形刀具或R角匹配关键词 5 个。",
+      "该特征更适合成型刀具/轮廓精加工，不宜仅映射为普通Cavity Mill。"
+    ]
+  },
+  {
+    "feature_id": "F09",
+    "feature_name": "F09 多曲率异形槽",
+    "part_level_process": "MILLING_PART_OR_RING_SEGMENT",
+    "feature_level_strategy": "FORM_GROOVE_OR_FORM_PROFILE_MACHINING",
+    "recommended_operation": "FORM_TOOL_CONTOUR / FIXED_CONTOUR_FINISHING; avoid generic cavity-style mapping as final strategy",
+    "is_generic_cavity": false,
+    "confidence": 0.95,
+    "rationale": [
+      "检测到车削/槽刀资源关键词 1 个。",
+      "检测到成型/仿形刀具或R角匹配关键词 5 个。",
+      "该特征更适合成型刀具/轮廓精加工，不宜仅映射为普通Cavity Mill。"
+    ]
+  },
+  {
+    "feature_id": "F10",
+    "feature_name": "F10 精密微型槽",
+    "part_level_process": "MILLING_PART_OR_RING_SEGMENT",
+    "feature_level_strategy": "TURNING_OR_GROOVING_RESOURCE_REQUIRED",
+    "recommended_operation": "TURNING_GROOVE / PROFILE_TURNING if full rotational geometry is available",
+    "is_generic_cavity": false,
+    "confidence": 0.7,
+    "rationale": [
+      "检测到车削/槽刀资源关键词 2 个。",
+      "检测到成型/仿形刀具或R角匹配关键词 1 个。",
+      "刀具资源显示为车削槽刀；若几何为完整回转体，应使用车削模块。"
+    ]
+  },
+  {
+    "feature_id": "F11",
+    "feature_name": "F11 非对称窄型面",
+    "part_level_process": "MILLING_PART_OR_RING_SEGMENT",
+    "feature_level_strategy": "FORM_GROOVE_OR_FORM_PROFILE_MACHINING",
+    "recommended_operation": "FORM_TOOL_CONTOUR / FIXED_CONTOUR_FINISHING; avoid generic cavity-style mapping as final strategy",
+    "is_generic_cavity": false,
+    "confidence": 0.87,
+    "rationale": [
+      "检测到车削/槽刀资源关键词 2 个。",
+      "检测到成型/仿形刀具或R角匹配关键词 3 个。",
+      "该特征更适合成型刀具/轮廓精加工，不宜仅映射为普通Cavity Mill。"
+    ]
+  },
+  {
+    "feature_id": "F12",
+    "feature_name": "F12 内孔特定圆角过渡",
+    "part_level_process": "MILLING_PART_OR_RING_SEGMENT",
+    "feature_level_strategy": "FORM_GROOVE_OR_FORM_PROFILE_MACHINING",
+    "recommended_operation": "FORM_TOOL_CONTOUR / FIXED_CONTOUR_FINISHING; avoid generic cavity-style mapping as final strategy",
+    "is_generic_cavity": false,
+    "confidence": 0.8300000000000001,
+    "rationale": [
+      "检测到车削/槽刀资源关键词 1 个。",
+      "检测到成型/仿形刀具或R角匹配关键词 3 个。",
+      "该特征更适合成型刀具/轮廓精加工，不宜仅映射为普通Cavity Mill。"
+    ]
+  },
+  {
+    "feature_id": "F13",
+    "feature_name": "F13 内孔小圆角过渡",
+    "part_level_process": "MILLING_PART_OR_RING_SEGMENT",
+    "feature_level_strategy": "FORM_GROOVE_OR_FORM_PROFILE_MACHINING",
+    "recommended_operation": "FORM_TOOL_CONTOUR / FIXED_CONTOUR_FINISHING; avoid generic cavity-style mapping as final strategy",
+    "is_generic_cavity": false,
+    "confidence": 0.87,
+    "rationale": [
+      "检测到车削/槽刀资源关键词 2 个。",
+      "检测到成型/仿形刀具或R角匹配关键词 3 个。",
+      "该特征更适合成型刀具/轮廓精加工，不宜仅映射为普通Cavity Mill。"
+    ]
+  },
+  {
+    "feature_id": "F14",
+    "feature_name": "F14 混合半径内孔型面",
+    "part_level_process": "MILLING_PART_OR_RING_SEGMENT",
+    "feature_level_strategy": "FORM_GROOVE_OR_FORM_PROFILE_MACHINING",
+    "recommended_operation": "FORM_TOOL_CONTOUR / FIXED_CONTOUR_FINISHING; avoid generic cavity-style mapping as final strategy",
+    "is_generic_cavity": false,
+    "confidence": 0.87,
+    "rationale": [
+      "检测到车削/槽刀资源关键词 2 个。",
+      "检测到成型/仿形刀具或R角匹配关键词 3 个。",
+      "该特征更适合成型刀具/轮廓精加工，不宜仅映射为普通Cavity Mill。"
+    ]
+  },
+  {
+    "feature_id": "F15",
+    "feature_name": "F15 窄间隙精密型面槽",
+    "part_level_process": "MILLING_PART_OR_RING_SEGMENT",
+    "feature_level_strategy": "FORM_GROOVE_OR_FORM_PROFILE_MACHINING",
+    "recommended_operation": "FORM_TOOL_CONTOUR / FIXED_CONTOUR_FINISHING; avoid generic cavity-style mapping as final strategy",
+    "is_generic_cavity": false,
+    "confidence": 0.95,
+    "rationale": [
+      "检测到车削/槽刀资源关键词 2 个。",
+      "检测到成型/仿形刀具或R角匹配关键词 4 个。",
+      "该特征更适合成型刀具/轮廓精加工，不宜仅映射为普通Cavity Mill。"
+    ]
+  },
+  {
+    "feature_id": "F16",
+    "feature_name": "F16 3.8mm 精密宽槽",
+    "part_level_process": "MILLING_PART_OR_RING_SEGMENT",
+    "feature_level_strategy": "FORM_GROOVE_OR_FORM_PROFILE_MACHINING",
+    "recommended_operation": "FORM_TOOL_CONTOUR / FIXED_CONTOUR_FINISHING; avoid generic cavity-style mapping as final strategy",
+    "is_generic_cavity": false,
+    "confidence": 0.7500000000000001,
+    "rationale": [
+      "检测到车削/槽刀资源关键词 1 个。",
+      "检测到成型/仿形刀具或R角匹配关键词 2 个。",
+      "该特征更适合成型刀具/轮廓精加工，不宜仅映射为普通Cavity Mill。"
+    ]
+  },
+  {
+    "feature_id": "F17",
+    "feature_name": "F17 大半径过渡型面槽",
+    "part_level_process": "MILLING_PART_OR_RING_SEGMENT",
+    "feature_level_strategy": "FORM_GROOVE_OR_FORM_PROFILE_MACHINING",
+    "recommended_operation": "FORM_TOOL_CONTOUR / FIXED_CONTOUR_FINISHING; avoid generic cavity-style mapping as final strategy",
+    "is_generic_cavity": false,
+    "confidence": 0.9100000000000001,
+    "rationale": [
+      "检测到车削/槽刀资源关键词 1 个。",
+      "检测到成型/仿形刀具或R角匹配关键词 4 个。",
+      "该特征更适合成型刀具/轮廓精加工，不宜仅映射为普通Cavity Mill。"
+    ]
+  },
+  {
+    "feature_id": "F18",
+    "feature_name": "F18 定宽斜度精密槽",
+    "part_level_process": "MILLING_PART_OR_RING_SEGMENT",
+    "feature_level_strategy": "FORM_GROOVE_OR_FORM_PROFILE_MACHINING",
+    "recommended_operation": "FORM_TOOL_CONTOUR / FIXED_CONTOUR_FINISHING; avoid generic cavity-style mapping as final strategy",
+    "is_generic_cavity": false,
+    "confidence": 0.87,
+    "rationale": [
+      "检测到车削/槽刀资源关键词 2 个。",
+      "检测到成型/仿形刀具或R角匹配关键词 3 个。",
+      "该特征更适合成型刀具/轮廓精加工，不宜仅映射为普通Cavity Mill。"
+    ]
+  },
+  {
+    "feature_id": "F19",
+    "feature_name": "F19 铸件异形过渡槽",
+    "part_level_process": "MILLING_PART_OR_RING_SEGMENT",
+    "feature_level_strategy": "FORM_GROOVE_OR_FORM_PROFILE_MACHINING",
+    "recommended_operation": "FORM_TOOL_CONTOUR / FIXED_CONTOUR_FINISHING; avoid generic cavity-style mapping as final strategy",
+    "is_generic_cavity": false,
+    "confidence": 0.95,
+    "rationale": [
+      "检测到车削/槽刀资源关键词 2 个。",
+      "检测到成型/仿形刀具或R角匹配关键词 5 个。",
+      "该特征更适合成型刀具/轮廓精加工，不宜仅映射为普通Cavity Mill。"
+    ]
+  }
+]

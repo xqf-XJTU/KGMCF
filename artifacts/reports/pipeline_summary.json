@@ -1,0 +1,108 @@
+{
+  "dataset_audit_status": "PASS",
+  "dataset_totals": {
+    "feature_count": 20,
+    "total_png_images": 1400,
+    "total_xt_models": 20,
+    "total_kg_json": 20,
+    "features_with_70_images": 20,
+    "aero_instruct_samples": 5000,
+    "dataset_split_records": 5000,
+    "duplicate_image_groups": 10
+  },
+  "instruction_corpus": {
+    "records": 5000,
+    "feature_count": 20,
+    "missing_required_field_rows": 0,
+    "status": "PASS"
+  },
+  "dataset_split_index": {
+    "records": 5000,
+    "fields": 17,
+    "required_fields_present": true,
+    "split_counts": {
+      "train": 3500,
+      "validation": 750,
+      "test": 750
+    },
+    "source_instance_count": 1000,
+    "split_leakage_source_count": 0,
+    "validation_case_count": 100,
+    "validation_representative_sample_count": 100,
+    "status": "PASS"
+  },
+  "kg_validation": {
+    "node_count": 878,
+    "edge_count": 910,
+    "feature_count": 20,
+    "missing_source_count": 0,
+    "missing_target_count": 0
+  },
+  "visual_anchor": {
+    "prototype_count": 20,
+    "encoder": {
+      "requested_backend": "auto",
+      "actual_backend": "fallback",
+      "model_name": null,
+      "dimension": 4240
+    },
+    "output": "/mnt/data/kgmcf_project_p15_ubuntu22_lts/data/processed/visual_anchor_prototypes.json"
+  },
+  "visual_index": {
+    "record_count": 1400,
+    "backend": "numpy",
+    "encoder": {
+      "requested_backend": "auto",
+      "actual_backend": "fallback",
+      "model_name": null,
+      "dimension": 4240
+    },
+    "output_dir": "/mnt/data/kgmcf_project_p15_ubuntu22_lts/artifacts/visual_index"
+  },
+  "lgse_feature_count": 20,
+  "process_planning_example_count": 80,
+  "symbolic_traceback_example_count": 4,
+  "generation_metric_methods": [
+    "Vanilla MLLM",
+    "RAG-based Planner",
+    "Standard ReAct Agent",
+    "KGMCF"
+  ],
+  "process_generation_metrics": {
+    "methods": {
+      "Vanilla MLLM": {
+        "MPSA": 0.0,
+        "MSRV": 0.3333,
+        "TSA": 0.0,
+        "G-PvR": 0.6667,
+        "ROUGE-L": 0.1768,
+        "records": 100
+      },
+      "RAG-based Planner": {
+        "MPSA": 0.0,
+        "MSRV": 1.0,
+        "TSA": 0.5801,
+        "G-PvR": 0.0,
+        "ROUGE-L": 0.3373,
+        "records": 100
+      },
+      "Standard ReAct Agent": {
+        "MPSA": 0.8429,
+        "MSRV": 1.0,
+        "TSA": 0.5591,
+        "G-PvR": 0.0,
+        "ROUGE-L": 0.6326,
+        "records": 100
+      },
+      "KGMCF": {
+        "MPSA": 1.0,
+        "MSRV": 1.0,
+        "TSA": 0.5591,
+        "G-PvR": 0.0,
+        "ROUGE-L": 0.7493,
+        "records": 100
+      }
+    }
+  },
+  "external_validation_records": "not_included"
+}

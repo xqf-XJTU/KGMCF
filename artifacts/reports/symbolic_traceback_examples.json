@@ -1,0 +1,331 @@
+[
+  {
+    "feature_id": "F00",
+    "result": {
+      "passed": true,
+      "final_status": "verified",
+      "retry_count": 1,
+      "final_unresolved_failure": false,
+      "steps": [
+        {
+          "retry": 0,
+          "passed": false,
+          "issues": [
+            "tooling is not feature-specific"
+          ],
+          "feedback": [
+            "Replace generic tooling with feature-specific holder and insert resources from the Aero-MPKG context."
+          ]
+        },
+        {
+          "retry": 1,
+          "passed": true,
+          "issues": [],
+          "feedback": []
+        }
+      ],
+      "final_plan": {
+        "feature_id": "F00",
+        "feature_name": "F00 大角度斜面槽",
+        "method": "Vanilla MLLM",
+        "recognized_feature": "F00 大角度斜面槽",
+        "key_constraints": [
+          "侧壁斜度: 25.0°",
+          "底部圆角: R2.0mm",
+          "上口过渡圆角: R1.0mm",
+          "槽深: 25mm",
+          "槽宽: >3.7mm"
+        ],
+        "manufacturing_risks": [
+          "tool access",
+          "holder clearance",
+          "overcut/interference",
+          "parameter safety"
+        ],
+        "process_route": "generic roughing -> generic finishing",
+        "tooling": "CFGL2525 holder; QC04-3.7R2 insert",
+        "recommended_operation": "FORM_TOOL_CONTOUR / FIXED_CONTOUR_FINISHING; avoid generic cavity-style mapping as final strategy",
+        "cutting_parameters": {
+          "Vc_m_min": 55,
+          "feed_mm_rev": 0.1,
+          "ap_mm": 1.5,
+          "coolant": "high-pressure coolant"
+        },
+        "reasoning_notes": "Direct multimodal generation; local clearance, coolant, and graph constraints are not explicitly checked.",
+        "process_diagnosis": {
+          "feature_id": "F00",
+          "feature_name": "F00 大角度斜面槽",
+          "part_level_process": "MILLING_PART_OR_RING_SEGMENT",
+          "feature_level_strategy": "FORM_GROOVE_OR_FORM_PROFILE_MACHINING",
+          "recommended_operation": "FORM_TOOL_CONTOUR / FIXED_CONTOUR_FINISHING; avoid generic cavity-style mapping as final strategy",
+          "is_generic_cavity": false,
+          "confidence": 0.95,
+          "rationale": [
+            "检测到车削/槽刀资源关键词 2 个。",
+            "检测到成型/仿形刀具或R角匹配关键词 4 个。",
+            "检测到铣削关键词 1 个。",
+            "该特征更适合成型刀具/轮廓精加工，不宜仅映射为普通Cavity Mill。"
+          ]
+        },
+        "method_settings": {
+          "uses_retrieval": false,
+          "uses_symbolic_verification": false,
+          "uses_semantic_traceback": false
+        },
+        "retrieved_evidence": {
+          "nodes": 0,
+          "edges": 0,
+          "evidence_paths": []
+        },
+        "semantic_correction_applied": true
+      }
+    }
+  },
+  {
+    "feature_id": "F05",
+    "result": {
+      "passed": true,
+      "final_status": "verified",
+      "retry_count": 1,
+      "final_unresolved_failure": false,
+      "steps": [
+        {
+          "retry": 0,
+          "passed": false,
+          "issues": [
+            "tooling is not feature-specific",
+            "route does not address narrow-access or chatter-sensitive geometry"
+          ],
+          "feedback": [
+            "Replace generic tooling with feature-specific holder and insert resources from the Aero-MPKG context.",
+            "Replace the generic route with feature-level roughing, semi-finishing, and profile finishing steps."
+          ]
+        },
+        {
+          "retry": 1,
+          "passed": true,
+          "issues": [],
+          "feedback": []
+        }
+      ],
+      "final_plan": {
+        "feature_id": "F05",
+        "feature_name": "F05 深异形凹槽",
+        "method": "Vanilla MLLM",
+        "recognized_feature": "F05 深异形凹槽",
+        "key_constraints": [
+          "侧壁斜度",
+          "底部圆角",
+          "过渡圆角",
+          "特征深度",
+          "槽口宽度",
+          "长径比"
+        ],
+        "manufacturing_risks": [
+          "tool access",
+          "holder clearance",
+          "overcut/interference",
+          "parameter safety"
+        ],
+        "process_route": "feature roughing -> allowance-controlled semi-finishing -> profile finishing -> clearance verification",
+        "tooling": "CGGL2525P1604-WK014 holder; QC04-R1.6R0.9-WK014 insert",
+        "recommended_operation": "FORM_TOOL_CONTOUR / FIXED_CONTOUR_FINISHING; avoid generic cavity-style mapping as final strategy",
+        "cutting_parameters": {
+          "Vc_m_min": 55,
+          "feed_mm_rev": 0.1,
+          "ap_mm": 1.5,
+          "coolant": "high-pressure coolant"
+        },
+        "reasoning_notes": "Direct multimodal generation; local clearance, coolant, and graph constraints are not explicitly checked.",
+        "process_diagnosis": {
+          "feature_id": "F05",
+          "feature_name": "F05 深异形凹槽",
+          "part_level_process": "MILLING_PART_OR_RING_SEGMENT",
+          "feature_level_strategy": "FORM_GROOVE_OR_FORM_PROFILE_MACHINING",
+          "recommended_operation": "FORM_TOOL_CONTOUR / FIXED_CONTOUR_FINISHING; avoid generic cavity-style mapping as final strategy",
+          "is_generic_cavity": false,
+          "confidence": 0.7500000000000001,
+          "rationale": [
+            "检测到车削/槽刀资源关键词 1 个。",
+            "检测到成型/仿形刀具或R角匹配关键词 2 个。",
+            "检测到铣削关键词 1 个。",
+            "该特征更适合成型刀具/轮廓精加工，不宜仅映射为普通Cavity Mill。"
+          ]
+        },
+        "method_settings": {
+          "uses_retrieval": false,
+          "uses_symbolic_verification": false,
+          "uses_semantic_traceback": false
+        },
+        "retrieved_evidence": {
+          "nodes": 0,
+          "edges": 0,
+          "evidence_paths": []
+        },
+        "semantic_correction_applied": true
+      }
+    }
+  },
+  {
+    "feature_id": "F11",
+    "result": {
+      "passed": true,
+      "final_status": "verified",
+      "retry_count": 1,
+      "final_unresolved_failure": false,
+      "steps": [
+        {
+          "retry": 0,
+          "passed": false,
+          "issues": [
+            "tooling is not feature-specific",
+            "route does not address narrow-access or chatter-sensitive geometry"
+          ],
+          "feedback": [
+            "Replace generic tooling with feature-specific holder and insert resources from the Aero-MPKG context.",
+            "Replace the generic route with feature-level roughing, semi-finishing, and profile finishing steps."
+          ]
+        },
+        {
+          "retry": 1,
+          "passed": true,
+          "issues": [],
+          "feedback": []
+        }
+      ],
+      "final_plan": {
+        "feature_id": "F11",
+        "feature_name": "F11 非对称窄型面",
+        "method": "Vanilla MLLM",
+        "recognized_feature": "F11 非对称窄型面",
+        "key_constraints": [
+          "左侧(主侧)圆角: R1.0mm",
+          "右侧(副侧)圆角: R0.4mm",
+          "通道宽度: 2.0mm",
+          "型面轮廓度: ±0.02mm"
+        ],
+        "manufacturing_risks": [
+          "tool access",
+          "holder clearance",
+          "overcut/interference",
+          "parameter safety"
+        ],
+        "process_route": "feature roughing -> allowance-controlled semi-finishing -> profile finishing -> clearance verification",
+        "tooling": "feature-specific form tool",
+        "recommended_operation": "FORM_TOOL_CONTOUR / FIXED_CONTOUR_FINISHING; avoid generic cavity-style mapping as final strategy",
+        "cutting_parameters": {
+          "Vc_m_min": 55,
+          "feed_mm_rev": 0.1,
+          "ap_mm": 1.5,
+          "coolant": "high-pressure coolant"
+        },
+        "reasoning_notes": "Direct multimodal generation; local clearance, coolant, and graph constraints are not explicitly checked.",
+        "process_diagnosis": {
+          "feature_id": "F11",
+          "feature_name": "F11 非对称窄型面",
+          "part_level_process": "MILLING_PART_OR_RING_SEGMENT",
+          "feature_level_strategy": "FORM_GROOVE_OR_FORM_PROFILE_MACHINING",
+          "recommended_operation": "FORM_TOOL_CONTOUR / FIXED_CONTOUR_FINISHING; avoid generic cavity-style mapping as final strategy",
+          "is_generic_cavity": false,
+          "confidence": 0.87,
+          "rationale": [
+            "检测到车削/槽刀资源关键词 2 个。",
+            "检测到成型/仿形刀具或R角匹配关键词 3 个。",
+            "该特征更适合成型刀具/轮廓精加工，不宜仅映射为普通Cavity Mill。"
+          ]
+        },
+        "method_settings": {
+          "uses_retrieval": false,
+          "uses_symbolic_verification": false,
+          "uses_semantic_traceback": false
+        },
+        "retrieved_evidence": {
+          "nodes": 0,
+          "edges": 0,
+          "evidence_paths": []
+        },
+        "semantic_correction_applied": true
+      }
+    }
+  },
+  {
+    "feature_id": "F12",
+    "result": {
+      "passed": true,
+      "final_status": "verified",
+      "retry_count": 1,
+      "final_unresolved_failure": false,
+      "steps": [
+        {
+          "retry": 0,
+          "passed": false,
+          "issues": [
+            "tooling is not feature-specific"
+          ],
+          "feedback": [
+            "Replace generic tooling with feature-specific holder and insert resources from the Aero-MPKG context."
+          ]
+        },
+        {
+          "retry": 1,
+          "passed": true,
+          "issues": [],
+          "feedback": []
+        }
+      ],
+      "final_plan": {
+        "feature_id": "F12",
+        "feature_name": "F12 内孔特定圆角过渡",
+        "method": "Vanilla MLLM",
+        "recognized_feature": "F12 内孔特定圆角过渡",
+        "key_constraints": [
+          "内壁斜度: 20°",
+          "目标半径: R2.25mm",
+          "加工空间: 内孔盲区 (Blind Zone)",
+          "刀具半径限制: < 2.25mm"
+        ],
+        "manufacturing_risks": [
+          "tool access",
+          "holder clearance",
+          "overcut/interference",
+          "parameter safety"
+        ],
+        "process_route": "generic roughing -> generic finishing",
+        "tooling": "CER2525 holder; U5R-R1.5 insert",
+        "recommended_operation": "FORM_TOOL_CONTOUR / FIXED_CONTOUR_FINISHING; avoid generic cavity-style mapping as final strategy",
+        "cutting_parameters": {
+          "Vc_m_min": 70,
+          "feed_mm_rev": 0.08,
+          "ap_mm": 0.1,
+          "coolant": "through-tool high-pressure coolant"
+        },
+        "reasoning_notes": "Direct multimodal generation; local clearance, coolant, and graph constraints are not explicitly checked.",
+        "process_diagnosis": {
+          "feature_id": "F12",
+          "feature_name": "F12 内孔特定圆角过渡",
+          "part_level_process": "MILLING_PART_OR_RING_SEGMENT",
+          "feature_level_strategy": "FORM_GROOVE_OR_FORM_PROFILE_MACHINING",
+          "recommended_operation": "FORM_TOOL_CONTOUR / FIXED_CONTOUR_FINISHING; avoid generic cavity-style mapping as final strategy",
+          "is_generic_cavity": false,
+          "confidence": 0.8300000000000001,
+          "rationale": [
+            "检测到车削/槽刀资源关键词 1 个。",
+            "检测到成型/仿形刀具或R角匹配关键词 3 个。",
+            "该特征更适合成型刀具/轮廓精加工，不宜仅映射为普通Cavity Mill。"
+          ]
+        },
+        "method_settings": {
+          "uses_retrieval": false,
+          "uses_symbolic_verification": false,
+          "uses_semantic_traceback": false
+        },
+        "retrieved_evidence": {
+          "nodes": 0,
+          "edges": 0,
+          "evidence_paths": []
+        },
+        "semantic_correction_applied": true
+      }
+    }
+  }
+]

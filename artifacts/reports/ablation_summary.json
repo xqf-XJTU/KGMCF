@@ -1,0 +1,42 @@
+[
+  {
+    "method": "Vanilla MLLM",
+    "MPSA": 0.0,
+    "MSRV": 0.3333,
+    "TSA": 0.0,
+    "G-PvR": 0.6667,
+    "ROUGE-L": 0.1768,
+    "MPSA_gain_vs_vanilla": 0.0,
+    "MSRV_gain_vs_vanilla": 0.0
+  },
+  {
+    "method": "RAG-based Planner",
+    "MPSA": 0.0,
+    "MSRV": 1.0,
+    "TSA": 0.5801,
+    "G-PvR": 0.0,
+    "ROUGE-L": 0.3373,
+    "MPSA_gain_vs_vanilla": 0.0,
+    "MSRV_gain_vs_vanilla": 0.6667
+  },
+  {
+    "method": "Standard ReAct Agent",
+    "MPSA": 0.8429,
+    "MSRV": 1.0,
+    "TSA": 0.5591,
+    "G-PvR": 0.0,
+    "ROUGE-L": 0.6326,
+    "MPSA_gain_vs_vanilla": 0.8429,
+    "MSRV_gain_vs_vanilla": 0.6667
+  },
+  {
+    "method": "KGMCF",
+    "MPSA": 1.0,
+    "MSRV": 1.0,
+    "TSA": 0.5591,
+    "G-PvR": 0.0,
+    "ROUGE-L": 0.7493,
+    "MPSA_gain_vs_vanilla": 1.0,
+    "MSRV_gain_vs_vanilla": 0.6667
+  }
+]

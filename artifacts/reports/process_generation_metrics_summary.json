@@ -1,0 +1,36 @@
+{
+  "methods": {
+    "Vanilla MLLM": {
+      "MPSA": 0.0,
+      "MSRV": 0.3333,
+      "TSA": 0.0,
+      "G-PvR": 0.6667,
+      "ROUGE-L": 0.1768,
+      "records": 100
+    },
+    "RAG-based Planner": {
+      "MPSA": 0.0,
+      "MSRV": 1.0,
+      "TSA": 0.5801,
+      "G-PvR": 0.0,
+      "ROUGE-L": 0.3373,
+      "records": 100
+    },
+    "Standard ReAct Agent": {
+      "MPSA": 0.8429,
+      "MSRV": 1.0,
+      "TSA": 0.5591,
+      "G-PvR": 0.0,
+      "ROUGE-L": 0.6326,
+      "records": 100
+    },
+    "KGMCF": {
+      "MPSA": 1.0,
+      "MSRV": 1.0,
+      "TSA": 0.5591,
+      "G-PvR": 0.0,
+      "ROUGE-L": 0.7493,
+      "records": 100
+    }
+  }
+}

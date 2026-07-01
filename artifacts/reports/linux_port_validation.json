@@ -1,0 +1,34 @@
+{
+  "target_os": "Ubuntu 22.04 LTS",
+  "validated_on": "Linux-4.4.0-x86_64-with-glibc2.41",
+  "python": "3.13.5 (main, May  5 2026, 21:05:52) [GCC 14.2.0]",
+  "checks": [
+    {
+      "command": "python scripts/run_pipeline.py",
+      "status": "PASS"
+    },
+    {
+      "command": "python scripts/run_all_experiments.py",
+      "status": "PASS"
+    },
+    {
+      "command": "python -m pytest -q",
+      "status": "PASS",
+      "summary": "29 passed, 7 skipped"
+    },
+    {
+      "command": "python -m compileall -q src scripts apps experiments tests",
+      "status": "PASS"
+    },
+    {
+      "command": "node --check apps/prototype/static/js/prototype.js",
+      "status": "PASS"
+    },
+    {
+      "command": "PDF endpoint Flask test client",
+      "status": "PASS",
+      "expected_signature": "%PDF"
+    }
+  ],
+  "overall_status": "PASS"
+}
