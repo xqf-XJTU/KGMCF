@@ -1,0 +1,120 @@
+{
+  "nodes": [
+
+    { "id": "Part_CasingInternal", "label": "零件", "properties": { "name": "航空发动机深部内孔组件" }},
+    { "id": "Mat_Ti6Al4V_F06", "label": "材料", "properties": { "name": "钛合金 Ti-6AI-4V", "note": "深孔加工热扩散差" }},
+    { "id": "Global_AeroEngine_Category", "label": "零件类型", "properties": { "name": "航空发动机关键组件" }},
+
+
+    { "id": "Feat_F06", "label": "特征", "properties": { "name": "F06 深部内孔异形区", "class": "深孔特征 (L/D > 4)" }},
+
+    { "id": "Const_Draft_F06", "label": "几何约束", "properties": { "name": "内孔斜度: 20°" }},
+    { "id": "Const_Radii_F06", "label": "几何约束", "properties": { "name": "双圆角约束: R2 / R1" }},
+    { "id": "Const_AccessDepth_F06", "label": "几何约束", "properties": { "name": "悬伸深度: >150mm", "logic": "要求200mm长刀杆" }},
+    { "id": "Const_MinBore_F06", "label": "几何约束", "properties": { "name": "最小孔径: >60mm", "clearance": "留10mm避让空间" }},
+
+    { "id": "Holder_CER050", "label": "Equipment", "properties": { "name": "减振刀杆: CER050 (内径车削)", "damping": "内置调谐质量阻尼器(TMD)" }},
+    { "id": "Insert_U6R348", "label": "Tool", "properties": { "name": "定制刀片: U6R348 (R2+R1成型)", "logic": "双圆角一次成型/避免接刀误差" }},
+
+
+    { "id": "Proc_Rough_F06", "label": "工序", "properties": { "name": "重型内镗阶段 (Roughing)" }},
+    { "id": "Step_HeavyBoring_F06", "label": "工步", "properties": { "name": "1. 50mm刀杆大余量去除", "ap": "3.0mm" }},
+
+    { "id": "Proc_Semi_F06", "label": "工序", "properties": { "name": "振动抑制加工 (Semi-Finish)" }},
+    { "id": "Step_SSV_F06", "label": "工步", "properties": { "name": "2. 变速切削 (Variable Speed)", "goal": "抑制再生颤振" }},
+
+    { "id": "Proc_Finish_F06", "label": "工序", "properties": { "name": "精密成型切削 (Finishing)" }},
+    { "id": "Step_FormCutting_F06", "label": "工步", "properties": { "name": "3. R2/R1双圆角一次性成型" }},
+
+
+    { "id": "Param_LD_Ratio_F06", "label": "物理校验", "properties": { "name": "悬伸比校验: 4:1 (安全)", "threshold": "钢制刀杆极限" }},
+    { "id": "Logic_Rigidity_L3D4", "label": "力学模型", "properties": { "name": "挠度公式: y ∝ L³/D⁴", "meaning": "直径增加1倍，刚性提高16倍" }},
+    { "id": "Param_Vc_Low_F06", "label": "切削参数", "properties": { "name": "限制线速度 Vc: 50-80 m/min", "reason": "长悬伸散热受限" }},
+    { "id": "Param_f_Stable_F06", "label": "切削参数", "properties": { "name": "稳定进给 f: 0.2 mm/rev", "support": "由50mm直径保证" }},
+
+
+    { "id": "CoT_F06_1", "label": "分析", "properties": { "name": "Visual: 识别深部内腔20°斜面" }},
+    { "id": "CoT_F06_2", "label": "分析", "properties": { "name": "Physics: 评估L/D=8时的颤振风险" }},
+    { "id": "CoT_F06_3", "label": "分析", "properties": { "name": "Logic: 决策大幅增加刀杆直径D至50mm" }},
+    { "id": "CoT_F06_4", "label": "分析", "properties": { "name": "Selection: 选用带减振机构的重型刀杆" }},
+    { "id": "CoT_F06_5", "label": "分析", "properties": { "name": "Strategy: 基于高刚性选用定制成型刀片" }},
+    { "id": "CoT_F06_6", "label": "分析", "properties": { "name": "Optimization: 设定SSV参数抑制动态不稳定" }},
+
+    { "id": "Img_F06_01", "label": "Image", "properties": { "name": "F06深孔特征定义图", "filename": "F06_1.png" }},
+    { "id": "Img_F06_02", "label": "Image", "properties": { "name": "L/D悬伸比力学模型", "filename": "F06_2.png" }},
+    { "id": "Img_F06_03", "label": "Image", "properties": { "name": "TMD减振机构剖视图", "filename": "F06_3.png" }},
+    { "id": "Img_F06_04", "label": "Image", "properties": { "name": "SSV变速切削波形图", "filename": "F06_4.png" }},
+    { "id": "Img_F06_05", "label": "Image", "properties": { "name": "R2/R1成型刀片实拍", "filename": "F06_5.png" }},
+    { "id": "Img_F06_06", "label": "Image", "properties": { "name": "深孔镗削切屑排出形态", "filename": "F06_6.png" }},
+    { "id": "Img_F06_07", "label": "Image", "properties": { "name": "50mm刀杆刚性对比实验", "filename": "F06_7.png" }},
+    { "id": "Img_F06_08", "label": "Image", "properties": { "name": "内孔20°斜面干涉分析", "filename": "F06_8.png" }},
+    { "id": "Img_F06_09", "label": "Image", "properties": { "name": "精加工残留高度实测", "filename": "F06_9.png" }},
+    { "id": "Img_F06_10", "label": "Image", "properties": { "name": "悬臂梁挠度变形模拟", "filename": "F06_10.png" }},
+    { "id": "Img_F06_11", "label": "Image", "properties": { "name": "深腔加工热平衡分布图", "filename": "F06_11.png" }},
+    { "id": "Img_F06_12", "label": "Image", "properties": { "name": "调谐阻尼器频率响应曲线", "filename": "F06_12.png" }},
+    { "id": "Img_F06_13", "label": "Image", "properties": { "name": "再生颤振(Chatter)失效案例", "filename": "F06_13.png" }},
+    { "id": "Img_F06_14", "label": "Image", "properties": { "name": "刀片中心高对振动的影响", "filename": "F06_14.png" }},
+    { "id": "Img_F06_15", "label": "Image", "properties": { "name": "CoT深孔决策逻辑流图", "filename": "F06_15.png" }},
+    { "id": "Img_F06_16", "label": "Image", "properties": { "name": "定制成型切削受力矢量图", "filename": "F06_16.png" }},
+    { "id": "Img_F06_17", "label": "Image", "properties": { "name": "内孔三维扫描尺寸报告", "filename": "F06_17.png" }},
+    { "id": "Img_F06_18", "label": "Image", "properties": { "name": "200mm悬伸视觉辅助测量", "filename": "F06_18.png" }},
+    { "id": "Img_F06_19", "label": "Image", "properties": { "name": "不同刀杆材料刚度对比", "filename": "F06_19.png" }},
+    { "id": "Img_F06_20", "label": "Image", "properties": { "name": "F06最终内表面全息图", "filename": "F06_20.png" }}
+  ],
+  "relationships": [
+
+    { "id": "rF06_1", "type": "HAS_PART_TYPE", "startNode": "Global_AeroEngine_Category", "endNode": "Part_CasingInternal" },
+    { "id": "rF06_2", "type": "HAS_FEATURE", "startNode": "Part_CasingInternal", "endNode": "Feat_F06" },
+    { "id": "rF06_3", "type": "USES_MATERIAL", "startNode": "Feat_F06", "endNode": "Mat_Ti6Al4V_F06" },
+
+    { "id": "rF06_4", "type": "HAS_CONSTRAINT", "startNode": "Feat_F06", "endNode": "Const_Draft_F06" },
+    { "id": "rF06_5", "type": "HAS_CONSTRAINT", "startNode": "Feat_F06", "endNode": "Const_Radii_F06" },
+    { "id": "rF06_6", "type": "HAS_CONSTRAINT", "startNode": "Feat_F06", "endNode": "Const_AccessDepth_F06" },
+    { "id": "rF06_7", "type": "HAS_CONSTRAINT", "startNode": "Feat_F06", "endNode": "Const_MinBore_F06" },
+
+    { "id": "rF06_8", "type": "HAS_PROCESS", "startNode": "Feat_F06", "endNode": "Proc_Rough_F06" },
+    { "id": "rF06_9", "type": "INCLUDES_STEP", "startNode": "Proc_Rough_F06", "endNode": "Step_HeavyBoring_F06" },
+    { "id": "rF06_10", "type": "PRECEDES", "startNode": "Proc_Rough_F06", "endNode": "Proc_Semi_F06" },
+    { "id": "rF06_11", "type": "HAS_PROCESS", "startNode": "Feat_F06", "endNode": "Proc_Semi_F06" },
+    { "id": "rF06_12", "type": "INCLUDES_STEP", "startNode": "Proc_Semi_F06", "endNode": "Step_SSV_F06" },
+    { "id": "rF06_13", "type": "PRECEDES", "startNode": "Proc_Semi_F06", "endNode": "Proc_Finish_F06" },
+    { "id": "rF06_14", "type": "HAS_PROCESS", "startNode": "Feat_F06", "endNode": "Proc_Finish_F06" },
+    { "id": "rF06_15", "type": "INCLUDES_STEP", "startNode": "Proc_Finish_F06", "endNode": "Step_FormCutting_F06" },
+
+    { "id": "rF06_16", "type": "USES_TOOL", "startNode": "Step_FormCutting_F06", "endNode": "Insert_U6R348" },
+    { "id": "rF06_17", "type": "HAS_HOLDER", "startNode": "Insert_U6R348", "endNode": "Holder_CER050" },
+    { "id": "rF06_18", "type": "APPLY_LOGIC", "startNode": "Holder_CER050", "endNode": "Logic_Rigidity_L3D4" },
+    { "id": "rF06_19", "type": "SET_PARAM", "startNode": "Step_HeavyBoring_F06", "endNode": "Param_Vc_Low_F06" },
+    { "id": "rF06_20", "type": "SET_PARAM", "startNode": "Step_HeavyBoring_F06", "endNode": "Param_f_Stable_F06" },
+    { "id": "rF06_21", "type": "VALIDATE", "startNode": "Holder_CER050", "endNode": "Param_LD_Ratio_F06" },
+
+    { "id": "rF06_22", "type": "PRECEDES", "startNode": "CoT_F06_1", "endNode": "CoT_F06_2" },
+    { "id": "rF06_23", "type": "PRECEDES", "startNode": "CoT_F06_2", "endNode": "CoT_F06_3" },
+    { "id": "rF06_24", "type": "PRECEDES", "startNode": "CoT_F06_3", "endNode": "CoT_F06_4" },
+    { "id": "rF06_25", "type": "PRECEDES", "startNode": "CoT_F06_4", "endNode": "CoT_F06_5" },
+    { "id": "rF06_26", "type": "PRECEDES", "startNode": "CoT_F06_5", "endNode": "CoT_F06_6" },
+    { "id": "rF06_27", "type": "HAS_ANALYSIS", "startNode": "Feat_F06", "endNode": "CoT_F06_1" },
+
+
+    { "id": "mF06_1", "type": "DESCRIBED_BY_IMAGE", "startNode": "Feat_F06", "endNode": "Img_F06_01" },
+    { "id": "mF06_2", "type": "DESCRIBED_BY_IMAGE", "startNode": "Logic_Rigidity_L3D4", "endNode": "Img_F06_02" },
+    { "id": "mF06_3", "type": "DESCRIBED_BY_IMAGE", "startNode": "Holder_CER050", "endNode": "Img_F06_03" },
+    { "id": "mF06_4", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_SSV_F06", "endNode": "Img_F06_04" },
+    { "id": "mF06_5", "type": "DESCRIBED_BY_IMAGE", "startNode": "Insert_U6R348", "endNode": "Img_F06_05" },
+    { "id": "mF06_6", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_HeavyBoring_F06", "endNode": "Img_F06_06" },
+    { "id": "mF06_7", "type": "DESCRIBED_BY_IMAGE", "startNode": "Param_LD_Ratio_F06", "endNode": "Img_F06_07" },
+    { "id": "mF06_8", "type": "DESCRIBED_BY_IMAGE", "startNode": "Const_Draft_F06", "endNode": "Img_F06_08" },
+    { "id": "mF06_9", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_FormCutting_F06", "endNode": "Img_F06_09" },
+    { "id": "mF06_10", "type": "DESCRIBED_BY_IMAGE", "startNode": "Logic_Rigidity_L3D4", "endNode": "Img_F06_10" },
+    { "id": "mF06_11", "type": "DESCRIBED_BY_IMAGE", "startNode": "Param_Vc_Low_F06", "endNode": "Img_F06_11" },
+    { "id": "mF06_12", "type": "DESCRIBED_BY_IMAGE", "startNode": "Holder_CER050", "endNode": "Img_F06_12" },
+    { "id": "mF06_13", "type": "DESCRIBED_BY_IMAGE", "startNode": "CoT_F06_2", "endNode": "Img_F06_13" },
+    { "id": "mF06_14", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_SSV_F06", "endNode": "Img_F06_14" },
+    { "id": "mF06_15", "type": "DESCRIBED_BY_IMAGE", "startNode": "CoT_F06_1", "endNode": "Img_F06_15" },
+    { "id": "mF06_16", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_FormCutting_F06", "endNode": "Img_F06_16" },
+    { "id": "mF06_17", "type": "DESCRIBED_BY_IMAGE", "startNode": "Feat_F06", "endNode": "Img_F06_17" },
+    { "id": "mF06_18", "type": "DESCRIBED_BY_IMAGE", "startNode": "Const_AccessDepth_F06", "endNode": "Img_F06_18" },
+    { "id": "mF06_19", "type": "DESCRIBED_BY_IMAGE", "startNode": "Logic_Rigidity_L3D4", "endNode": "Img_F06_19" },
+    { "id": "mF06_20", "type": "DESCRIBED_BY_IMAGE", "startNode": "Part_CasingInternal", "endNode": "Img_F06_20" }
+  ]
+}

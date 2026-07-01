@@ -1,0 +1,126 @@
+{
+  "nodes": [
+
+    { "id": "Part_CasingRing", "label": "零件", "properties": { "name": "航空发动机机匣环件" }},
+    { "id": "Mat_Shared_Ti6Al4V", "label": "材料", "properties": { "name": "钛合金 Ti-6AI-4V", "challenge": "热量堆积/加工硬化" }},
+    { "id": "Global_AeroEngine_Category", "label": "零件类型", "properties": { "name": "航空发动机关键组件" }},
+
+
+    { "id": "Feat_F04", "label": "特征", "properties": { "name": "F04 小圆角斜面槽", "class": "精密倒扣/凹槽类" }},
+
+
+    { "id": "Const_Draft_F04", "label": "几何约束", "properties": { "name": "非标斜度: 19.5°", "impact": "需避让后刀面干涉" }},
+    { "id": "Const_BottomR_F04", "label": "几何约束", "properties": { "name": "强约束底角: R1.2mm", "logic": "限制刀尖半径Rtool <= 1.2" }},
+    { "id": "Const_Precision_F04", "label": "几何约束", "properties": { "name": "精密公差: IT6-IT7", "requirement": "极高尺寸一致性" }},
+
+
+    { "id": "Holder_CFEL_WK089", "label": "Equipment", "properties": { "name": "左手刀杆: CFEL2525", "size_adapter": "适配 QC02 接口" }},
+    { "id": "Insert_QC02MO", "label": "Tool", "properties": { "name": "精密刀片: QC04MO-F (R1.0)", "logic": "精密仿形/R1.0修R1.2" }},
+
+    { "id": "Proc_Rough_F04", "label": "工序", "properties": { "name": "粗加工阶段: 啄式切槽" }},
+    { "id": "Step_PeckGrooving_F04", "label": "工步", "properties": { "name": "1. 啄钻式切入断屑", "goal": "防止切屑划伤表面" }},
+    
+    { "id": "Proc_Semi_F04", "label": "工序", "properties": { "name": "半精加工阶段: 等距轮廓加工" }},
+    { "id": "Step_OffsetContour_F04", "label": "工步", "properties": { "name": "2. 沿轮廓法向偏移0.15mm" }},
+    
+    { "id": "Proc_Finish_F04", "label": "工序", "properties": { "name": "精加工阶段: 精密仿形" }},
+    { "id": "Step_PrecProfiling_F04", "label": "工步", "properties": { "name": "3. 二轴插补精密扫掠", "precision": "Ra 0.8级控制" }},
+
+
+    { "id": "Param_Vc_Rough_F04", "label": "切削参数", "properties": { "name": "粗加工 Vc: 50 m/min", "limit": "热容量小/需限速" }},
+    { "id": "Param_f_Rough_F04", "label": "切削参数", "properties": { "name": "粗加工 f: 0.08 mm/rev", "limit": "防止让刀/折断" }},
+    { "id": "Param_ap_Finish_F04", "label": "切削参数", "properties": { "name": "精加工 ap: 0.1 mm", "goal": "微量切深保证精度" }},
+    { "id": "Param_Cool_UltraHigh", "label": "冷却策略", "properties": { "name": "超高压强制排屑: >80 bar" }},
+
+
+    { "id": "CoT_F04_1", "label": "分析", "properties": { "name": "Visual: 识别19.5°侧壁与R1.2底角" }},
+    { "id": "CoT_F04_2", "label": "分析", "properties": { "name": "Match: F03规格过大/决策选用QC02系统" }},
+    { "id": "CoT_F04_3", "label": "分析", "properties": { "name": "Logic: 选用R1.0以实现圆弧插补补功" }},
+    { "id": "CoT_F04_4", "label": "分析", "properties": { "name": "Physics: 刀头截面小/抗弯能力弱校验" }},
+    { "id": "CoT_F04_5", "label": "分析", "properties": { "name": "Strategy: 相比F03进给减少30%/多刀快走" }},
+    { "id": "CoT_F04_6", "label": "分析", "properties": { "name": "Heat: 狭窄空间极度散热风险预警" }},
+
+
+    { "id": "Img_F04_01", "label": "Image", "properties": { "name": "F04特征细节剖面图", "filename": "F04_1.png" }},
+    { "id": "Img_F04_02", "label": "Image", "properties": { "name": "R1.2圆角精密公差带图", "filename": "F04_2.png" }},
+    { "id": "Img_F04_03", "label": "Image", "properties": { "name": "QC02与QC04尺寸对比图", "filename": "F04_3.png" }},
+    { "id": "Img_F04_04", "label": "Image", "properties": { "name": "啄式切槽动态轨迹图", "filename": "F04_4.png" }},
+    { "id": "Img_F04_05", "label": "Image", "properties": { "name": "80bar高压冷却喷射效果", "filename": "F04_5.png" }},
+    { "id": "Img_F04_06", "label": "Image", "properties": { "name": "狭窄深腔热浓度色图", "filename": "F04_6.png" }},
+    { "id": "Img_F04_07", "label": "Image", "properties": { "name": "QC02MO刀片显微结构", "filename": "F04_7.png" }},
+    { "id": "Img_F04_08", "label": "Image", "properties": { "name": "切屑划伤表面失效案例", "filename": "F04_8.png" }},
+    { "id": "Img_F04_09", "label": "Image", "properties": { "name": "等距轮廓加工余量图", "filename": "F04_9.png" }},
+    { "id": "Img_F04_10", "label": "Image", "properties": { "name": "二轴插补G02/G03仿真", "filename": "F04_10.png" }},
+    { "id": "Img_F04_11", "label": "Image", "properties": { "name": "细颗粒硬质合金抗崩刃图", "filename": "F04_11.png" }},
+    { "id": "Img_F04_12", "label": "Image", "properties": { "name": "精密倒扣干涉避让极限", "filename": "F04_12.png" }},
+    { "id": "Img_F04_13", "label": "Image", "properties": { "name": "F04特征三维扫描比对图", "filename": "F04_13.png" }},
+    { "id": "Img_F04_14", "label": "Image", "properties": { "name": "进给量对刀尖负荷影响曲线", "filename": "F04_14.png" }},
+    { "id": "Img_F04_15", "label": "Image", "properties": { "name": "CoT小尺寸特征推理流", "filename": "F04_15.png" }},
+    { "id": "Img_F04_16", "label": "Image", "properties": { "name": "刀杆InsertSeat刚性测试", "filename": "F04_16.png" }},
+    { "id": "Img_F04_17", "label": "Image", "properties": { "name": "19.5°侧壁粗糙度测量图", "filename": "F04_17.png" }},
+    { "id": "Img_F04_18", "label": "Image", "properties": { "name": "QC02系列非标优化代号表", "filename": "F04_18.png" }},
+    { "id": "Img_F04_19", "label": "Image", "properties": { "name": "多刀快走策略效率表", "filename": "F04_19.png" }},
+    { "id": "Img_F04_20", "label": "Image", "properties": { "name": "F04成品金相检验报告", "filename": "F04_20.png" }}
+  ],
+  "relationships": [
+
+    { "id": "rF04_1", "type": "HAS_PART_TYPE", "startNode": "Global_AeroEngine_Category", "endNode": "Part_CasingRing" },
+    { "id": "rF04_2", "type": "HAS_FEATURE", "startNode": "Part_CasingRing", "endNode": "Feat_F04" },
+    { "id": "rF04_3", "type": "USES_MATERIAL", "startNode": "Feat_F04", "endNode": "Mat_Shared_Ti6Al4V" },
+
+
+    { "id": "rF04_4", "type": "HAS_CONSTRAINT", "startNode": "Feat_F04", "endNode": "Const_Draft_F04" },
+    { "id": "rF04_5", "type": "HAS_CONSTRAINT", "startNode": "Feat_F04", "endNode": "Const_BottomR_F04" },
+    { "id": "rF04_6", "type": "HAS_CONSTRAINT", "startNode": "Feat_F04", "endNode": "Const_Precision_F04" },
+
+
+    { "id": "rF04_7", "type": "HAS_PROCESS", "startNode": "Feat_F04", "endNode": "Proc_Rough_F04" },
+    { "id": "rF04_8", "type": "INCLUDES_STEP", "startNode": "Proc_Rough_F04", "endNode": "Step_PeckGrooving_F04" },
+    { "id": "rF04_9", "type": "PRECEDES", "startNode": "Proc_Rough_F04", "endNode": "Proc_Semi_F04" },
+    { "id": "rF04_10", "type": "HAS_PROCESS", "startNode": "Feat_F04", "endNode": "Proc_Semi_F04" },
+    { "id": "rF04_11", "type": "INCLUDES_STEP", "startNode": "Proc_Semi_F04", "endNode": "Step_OffsetContour_F04" },
+    { "id": "rF04_12", "type": "PRECEDES", "startNode": "Proc_Semi_F04", "endNode": "Proc_Finish_F04" },
+    { "id": "rF04_13", "type": "HAS_PROCESS", "startNode": "Feat_F04", "endNode": "Proc_Finish_F04" },
+    { "id": "rF04_14", "type": "INCLUDES_STEP", "startNode": "Proc_Finish_F04", "endNode": "Step_PrecProfiling_F04" },
+
+
+    { "id": "rF04_15", "type": "USES_TOOL", "startNode": "Step_PrecProfiling_F04", "endNode": "Insert_QC02MO" },
+    { "id": "rF04_16", "type": "HAS_HOLDER", "startNode": "Insert_QC04MO", "endNode": "Holder_CFEL_WK089" },
+    { "id": "rF04_17", "type": "SET_PARAM", "startNode": "Step_PeckGrooving_F04", "endNode": "Param_Vc_Rough_F04" },
+    { "id": "rF04_18", "type": "SET_PARAM", "startNode": "Step_PeckGrooving_F04", "endNode": "Param_f_Rough_F04" },
+    { "id": "rF04_19", "type": "SET_PARAM", "startNode": "Step_PrecProfiling_F04", "endNode": "Param_ap_Finish_F04" },
+    { "id": "rF04_20", "type": "HAS_COOLANT", "startNode": "Feat_F04", "endNode": "Param_Cool_UltraHigh" },
+
+
+    { "id": "rF04_21", "type": "PRECEDES", "startNode": "CoT_F04_1", "endNode": "CoT_F04_2" },
+    { "id": "rF04_22", "type": "PRECEDES", "startNode": "CoT_F04_2", "endNode": "CoT_F04_3" },
+    { "id": "rF04_23", "type": "PRECEDES", "startNode": "CoT_F04_3", "endNode": "CoT_F04_4" },
+    { "id": "rF04_24", "type": "PRECEDES", "startNode": "CoT_F04_4", "endNode": "CoT_F04_5" },
+    { "id": "rF04_25", "type": "HAS_ANALYSIS", "startNode": "Feat_F04", "endNode": "CoT_F04_1" },
+
+
+    { "id": "mF04_1", "type": "DESCRIBED_BY_IMAGE", "startNode": "Feat_F04", "endNode": "Img_F04_01" },
+    { "id": "mF04_2", "type": "DESCRIBED_BY_IMAGE", "startNode": "Const_BottomR_F04", "endNode": "Img_F04_02" },
+    { "id": "mF04_3", "type": "DESCRIBED_BY_IMAGE", "startNode": "CoT_F04_2", "endNode": "Img_F04_03" },
+    { "id": "mF04_4", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_PeckGrooving_F04", "endNode": "Img_F04_04" },
+    { "id": "mF04_5", "type": "DESCRIBED_BY_IMAGE", "startNode": "Param_Cool_UltraHigh", "endNode": "Img_F04_05" },
+    { "id": "mF04_6", "type": "DESCRIBED_BY_IMAGE", "startNode": "CoT_F04_6", "endNode": "Img_F04_06" },
+    { "id": "mF04_7", "type": "DESCRIBED_BY_IMAGE", "startNode": "Insert_QC02MO", "endNode": "Img_F04_07" },
+    { "id": "mF04_8", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_PeckGrooving_F04", "endNode": "Img_F04_08" },
+    { "id": "mF04_9", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_OffsetContour_F04", "endNode": "Img_F04_09" },
+    { "id": "mF04_10", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_PrecProfiling_F04", "endNode": "Img_F04_10" },
+    { "id": "mF04_11", "type": "DESCRIBED_BY_IMAGE", "startNode": "Insert_QC02MO", "endNode": "Img_F04_11" },
+    { "id": "mF04_12", "type": "DESCRIBED_BY_IMAGE", "startNode": "Const_Draft_F04", "endNode": "Img_F04_12" },
+    { "id": "mF04_13", "type": "DESCRIBED_BY_IMAGE", "startNode": "Feat_F04", "endNode": "Img_F04_13" },
+    { "id": "mF04_14", "type": "DESCRIBED_BY_IMAGE", "startNode": "Param_f_Rough_F04", "endNode": "Img_F04_14" },
+    { "id": "mF04_15", "type": "DESCRIBED_BY_IMAGE", "startNode": "CoT_F04_1", "endNode": "Img_F04_15" },
+    { "id": "mF04_16", "type": "DESCRIBED_BY_IMAGE", "startNode": "CoT_F04_4", "endNode": "Img_F04_16" },
+    { "id": "mF04_17", "type": "DESCRIBED_BY_IMAGE", "startNode": "Const_Precision_F04", "endNode": "Img_F04_17" },
+    { "id": "mF04_18", "type": "DESCRIBED_BY_IMAGE", "startNode": "Insert_QC02MO", "endNode": "Img_F04_18" },
+    { "id": "mF04_19", "type": "DESCRIBED_BY_IMAGE", "startNode": "CoT_F04_5", "endNode": "Img_F04_19" },
+    { "id": "mF04_20", "type": "DESCRIBED_BY_IMAGE", "startNode": "Part_CasingRing", "endNode": "Img_F04_20" },
+
+  
+    { "id": "bridge_F04_F03", "type": "SIMILAR_STRATEGY", "startNode": "Feat_F04", "endNode": "Feat_F03", "properties": { "desc": "均采用Rtool < Rfeat的插补仿形策略，但F04规格更小" }}
+  ]
+}

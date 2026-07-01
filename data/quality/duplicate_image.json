@@ -1,0 +1,86 @@
+{
+  "duplicate_group_count": 10,
+  "duplicate_file_count": 20,
+  "groups": [
+    {
+      "hash": "a87afa6b70f8ee6099e4e95334cd90cccc52d9cb578ad7c77b21919cbdb24584",
+      "count": 2,
+      "files": [
+        "2/classes/0/0025 (2).png",
+        "2/classes/0/0025 (2)_1.png"
+      ]
+    },
+    {
+      "hash": "2a8ae0bd751d9dca56f9197e5c07c2368b55a6a874814926bf6d5e06f19d4867",
+      "count": 2,
+      "files": [
+        "2/classes/0/0025.png",
+        "2/classes/0/67.png"
+      ]
+    },
+    {
+      "hash": "a7baeadefd37881451af67d5464edf8f4e678f969cb9aca313359d1fb053f569",
+      "count": 2,
+      "files": [
+        "2/classes/0/0026 (2).png",
+        "2/classes/0/0026 (3).png"
+      ]
+    },
+    {
+      "hash": "e602c43a93f43bab503f54b2f56a0036827d1baeb8eea498c1d75ffa1edc3586",
+      "count": 2,
+      "files": [
+        "2/classes/0/0026.png",
+        "2/classes/0/68.png"
+      ]
+    },
+    {
+      "hash": "8af6b97d52d3294dc8e6f1d8b801cfc70c8236d2a88d8ca2438798c212deeae3",
+      "count": 2,
+      "files": [
+        "2/classes/0/0027 (2).png",
+        "2/classes/0/65.png"
+      ]
+    },
+    {
+      "hash": "1697e4dfde52859c96bb76b2892d0081165c9e805d47c00b9cc08e569bde471e",
+      "count": 2,
+      "files": [
+        "2/classes/0/0027.png",
+        "2/classes/0/94.png"
+      ]
+    },
+    {
+      "hash": "9720e9b67de624d25abc92b437abf9e5ce126577358f35b07503b8ea70988a0a",
+      "count": 2,
+      "files": [
+        "2/classes/0/0028 (2).png",
+        "2/classes/0/54.png"
+      ]
+    },
+    {
+      "hash": "c45d1efac9723eecee4f682d35055c5f340745afd4cc39cdff6da9e8e961675c",
+      "count": 2,
+      "files": [
+        "2/classes/0/0028.png",
+        "2/classes/0/5u.png"
+      ]
+    },
+    {
+      "hash": "8ea07434b42312be754be20cec21a1adce8f2eefe368dd1578ed68cc4919d206",
+      "count": 2,
+      "files": [
+        "2/classes/0/0029 (2).png",
+        "2/classes/0/89.png"
+      ]
+    },
+    {
+      "hash": "54bbfe8f7f00e77245233546736fea31832b20bdbd48d9a6d712d63edb04f750",
+      "count": 2,
+      "files": [
+        "2/classes/0/0029.png",
+        "2/classes/0/90.png"
+      ]
+    }
+  ]
+}

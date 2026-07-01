@@ -1,0 +1,112 @@
+{
+  "nodes": [
+
+    { "id": "Part_Internal_Blind", "label": "零件", "properties": { "name": "航空发动机内孔异形组件", "geometric_class": "内孔型面 (Internal Profile)" }},
+    { "id": "Mat_Shared_Ti6Al4V", "label": "材料", "properties": { "name": "钛合金 Ti-6AI-4V", "desc": "难加工/导热差" }},
+    { "id": "Global_AeroEngine_Category", "label": "零件类型", "properties": { "name": "航空发动机关键组件" }},
+
+    { "id": "Feat_F12", "label": "特征", "properties": { "name": "F12 内孔特定圆角过渡", "key_dimension": "R2.25 (非标圆角)" }},
+
+    { "id": "Const_Draft_F12", "label": "几何约束", "properties": { "name": "内壁斜度: 20°" }},
+    { "id": "Const_TargetR_F12", "label": "几何约束", "properties": { "name": "目标半径: R2.25mm", "status": "非标尺寸" }},
+    { "id": "Const_Space_F12", "label": "几何约束", "properties": { "name": "加工空间: 内孔盲区 (Blind Zone)", "challenge": "可视性差/排屑难" }},
+    { "id": "Const_ToolR_Limit_F12", "label": "几何约束", "properties": { "name": "刀具半径限制: < 2.25mm", "logic": "为了避免颤振，刀具R必须小于特征R" }},
+
+    { "id": "Holder_CER_PU5", "label": "Equipment", "properties": { "name": "内孔仿形刀杆: CER2525", "system": "PU5 U-Style (锁紧力大)" }},
+    { "id": "Insert_U5R_WK077", "label": "Tool", "properties": { "name": "内孔仿形刀片: U5R-R1.5", "logic": "标准R1.5刀尖展成R2.25" }},
+
+    { "id": "Proc_Internal_Profiling_F12", "label": "工序", "properties": { "name": "F12 内孔型面精加工阶段" }},
+    { "id": "Step_StepBoring_F12", "label": "工步", "properties": { "name": "1. 内孔阶梯镗削 (Roughing)", "allowance": "预留0.3mm" }},
+    { "id": "Step_CircInterp_F12", "label": "工步", "properties": { "name": "2. 圆弧插补展成 (Finishing)", "logic": "G02/G03指令展成R2.25" }},
+    { "id": "Step_InterruptedCut_F12", "label": "工步", "properties": { "name": "3. 断屑控制加工", "method": "微停顿/变进给策略" }},
+
+    { "id": "Param_Vc_Internal_F12", "label": "切削参数", "properties": { "name": "内孔线速度 Vc: 70 m/min", "limit": "比外圆加工降低20%" }},
+    { "id": "Param_f_Low_F12", "label": "切削参数", "properties": { "name": "精加工进给 f: 0.08 mm/rev", "logic": "防止刀杆弹性变形导致尺寸超差" }},
+    { "id": "Param_ap_Finish_F12", "label": "切削参数", "properties": { "name": "精切深 ap: 0.1 mm" }},
+    { "id": "Param_Coolant_Through", "label": "冷却要求", "properties": { "name": "高压内冷 (Through-Tool Coolant)", "goal": "盲区强制排屑" }},
+    { "id": "Logic_Point_Contact_F12", "label": "力学逻辑", "properties": { "name": "点接触加工模型", "advantage": "切削力小/抑制内孔颤振" }},
+
+    { "id": "CoT_F12_1", "label": "分析", "properties": { "name": "Context: 识别R2.25内孔非标特征" }},
+    { "id": "CoT_F12_2", "label": "分析", "properties": { "name": "Logic: 对比成型(A)与展成(B)方案" }},
+    { "id": "CoT_F12_3", "label": "分析", "properties": { "name": "Reason: 排除成型刀(易颤振/成本高)" }},
+    { "id": "CoT_F12_4", "label": "分析", "properties": { "name": "Decision: 选用标准R1.5刀片展成R2.25" }},
+    { "id": "CoT_F12_5", "label": "分析", "properties": { "name": "Physics: 补偿内孔散热差，设定Vc降低20%" }},
+    { "id": "CoT_F12_6", "label": "分析", "properties": { "name": "Verify: 开启内冷并限制 ap<=0.1mm 确保精度" }},
+
+    { "id": "Img_F12_01", "label": "Image", "properties": { "name": "F12内孔特征定义图", "filename": "F12_1.png" }},
+    { "id": "Img_F12_02", "label": "Image", "properties": { "name": "R2.25非标尺寸校验图", "filename": "F12_2.png" }},
+    { "id": "Img_F12_03", "filename": "F12_3.png", "label": "Image", "properties": { "name": "内孔盲区(Blind Zone)实拍" }},
+    { "id": "Img_F12_04", "filename": "F12_4.png", "label": "Image", "properties": { "name": "CER刀杆内冷孔细节图" }},
+    { "id": "Img_F12_05", "filename": "F12_5.png", "label": "Image", "properties": { "name": "U-Shape刀片避让角分析" }},
+    { "id": "Img_F12_06", "filename": "F12_6.png", "label": "Image", "properties": { "name": "内孔镗削切屑缠绕形态" }},
+    { "id": "Img_F12_07", "filename": "F12_7.png", "label": "Image", "properties": { "name": "展成法(Generating)轨迹动画" }},
+    { "id": "Img_F12_08", "filename": "F12_8.png", "label": "Image", "properties": { "name": "点接触vs线接触受力对比" }},
+    { "id": "Img_F12_09", "filename": "F12_9.png", "label": "Image", "properties": { "name": "内孔颤振(Bore Chatter)频谱" }},
+    { "id": "Img_F12_10", "filename": "F12_10.png", "label": "Image", "properties": { "name": "高压内冷排屑流场模拟" }},
+    { "id": "Img_F12_11", "filename": "F12_11.png", "label": "Image", "properties": { "name": "Vc降低20%对刀具寿命影响" }},
+    { "id": "Img_F12_12", "filename": "F12_12.png", "label": "Image", "properties": { "name": "G02/G03展成圆角精度实测" }},
+    { "id": "Img_F12_13", "filename": "F12_13.png", "label": "Image", "properties": { "name": "刀杆弹性“让刀”位移图" }},
+    { "id": "Img_F12_14", "filename": "F12_14.png", "label": "Image", "properties": { "name": "内孔型面 Ra0.8 纹理图" }},
+    { "id": "Img_F12_15", "filename": "F12_15.png", "label": "Image", "properties": { "name": "CoT展成策略决策树" }},
+    { "id": "Img_F12_16", "filename": "F12_16.png", "label": "Image", "properties": { "name": "钛合金内孔加工热平衡云图" }},
+    { "id": "Img_F12_17", "filename": "F12_17.png", "label": "Image", "properties": { "name": "特定圆角过渡区点云扫描" }},
+    { "id": "Img_F12_18", "filename": "F12_18.png", "label": "Image", "properties": { "name": "断屑控制(Interrupted)策略图" }},
+    { "id": "Img_F12_19", "filename": "F12_19.png", "label": "Image", "properties": { "name": "PU5锁紧系统结构解析" }},
+    { "id": "Img_F12_20", "filename": "F12_20.png", "label": "Image", "properties": { "name": "F12特征最终合格质检单" }}
+  ],
+  "relationships": [
+  
+    { "id": "rF12_1", "type": "HAS_PART_TYPE", "startNode": "Global_AeroEngine_Category", "endNode": "Part_Internal_Blind" },
+    { "id": "rF12_2", "type": "HAS_FEATURE", "startNode": "Part_Internal_Blind", "endNode": "Feat_F12" },
+    { "id": "rF12_3", "type": "USES_MATERIAL", "startNode": "Feat_F12", "endNode": "Mat_Shared_Ti6Al4V" },
+
+    { "id": "rF12_4", "type": "HAS_CONSTRAINT", "startNode": "Feat_F12", "endNode": "Const_TargetR_F12" },
+    { "id": "rF12_5", "type": "HAS_CONSTRAINT", "startNode": "Feat_F12", "endNode": "Const_Space_F12" },
+    { "id": "rF12_6", "type": "HAS_CONSTRAINT", "startNode": "Feat_F12", "endNode": "Const_ToolR_Limit_F12" },
+
+    { "id": "rF12_7", "type": "HAS_PROCESS", "startNode": "Feat_F12", "endNode": "Proc_Internal_Profiling_F12" },
+    { "id": "rF12_8", "type": "INCLUDES_STEP", "startNode": "Proc_Internal_Profiling_F12", "endNode": "Step_StepBoring_F12" },
+    { "id": "rF12_9", "type": "PRECEDES", "startNode": "Step_StepBoring_F12", "endNode": "Step_CircInterp_F12" },
+    { "id": "rF12_10", "type": "INCLUDES_STEP", "startNode": "Proc_Internal_Profiling_F12", "endNode": "Step_CircInterp_F12" },
+    { "id": "rF12_11", "type": "PRECEDES", "startNode": "Step_CircInterp_F12", "endNode": "Step_InterruptedCut_F12" },
+    { "id": "rF12_12", "type": "INCLUDES_STEP", "startNode": "Proc_Internal_Profiling_F12", "endNode": "Step_InterruptedCut_F12" },
+
+    { "id": "rF12_13", "type": "USES_TOOL", "startNode": "Step_CircInterp_F12", "endNode": "Insert_U5R_WK077" },
+    { "id": "rF12_14", "type": "HAS_HOLDER", "startNode": "Insert_U5R_WK077", "endNode": "Holder_CER_PU5" },
+    { "id": "rF12_15", "type": "APPLY_LOGIC", "startNode": "Step_CircInterp_F12", "endNode": "Logic_Point_Contact_F12" },
+    { "id": "rF12_16", "type": "SET_PARAM", "startNode": "Step_CircInterp_F12", "endNode": "Param_Vc_Internal_F12" },
+    { "id": "rF12_17", "type": "SET_PARAM", "startNode": "Step_CircInterp_F12", "endNode": "Param_f_Low_F12" },
+    { "id": "rF12_18", "type": "REQUIRES", "startNode": "Step_InterruptedCut_F12", "endNode": "Param_Coolant_Through" },
+
+    { "id": "rF12_19", "type": "PRECEDES", "startNode": "CoT_F12_1", "endNode": "CoT_F12_2" },
+    { "id": "rF12_20", "type": "PRECEDES", "startNode": "CoT_F12_2", "endNode": "CoT_F12_3" },
+    { "id": "rF12_21", "type": "PRECEDES", "startNode": "CoT_F12_3", "endNode": "CoT_F12_4" },
+    { "id": "rF12_22", "type": "PRECEDES", "startNode": "CoT_F12_4", "endNode": "CoT_F12_5" },
+    { "id": "rF12_23", "type": "PRECEDES", "startNode": "CoT_F12_5", "endNode": "CoT_F12_6" },
+    { "id": "rF12_24", "type": "HAS_ANALYSIS", "startNode": "Feat_F12", "endNode": "CoT_F12_1" },
+
+  
+    { "id": "mF12_1", "type": "DESCRIBED_BY_IMAGE", "startNode": "Feat_F12", "endNode": "Img_F12_01" },
+    { "id": "mF12_2", "type": "DESCRIBED_BY_IMAGE", "startNode": "Const_TargetR_F12", "endNode": "Img_F12_02" },
+    { "id": "mF12_3", "type": "DESCRIBED_BY_IMAGE", "startNode": "Const_Space_F12", "endNode": "Img_F12_03" },
+    { "id": "mF12_4", "type": "DESCRIBED_BY_IMAGE", "startNode": "Holder_CER_PU5", "endNode": "Img_F12_04" },
+    { "id": "mF12_5", "type": "DESCRIBED_BY_IMAGE", "startNode": "Insert_U5R_WK077", "endNode": "Img_F12_05" },
+    { "id": "mF12_6", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_InterruptedCut_F12", "endNode": "Img_F12_06" },
+    { "id": "mF12_7", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_CircInterp_F12", "endNode": "Img_F12_07" },
+    { "id": "mF12_8", "type": "DESCRIBED_BY_IMAGE", "startNode": "Logic_Point_Contact_F12", "endNode": "Img_F12_08" },
+    { "id": "mF12_9", "type": "DESCRIBED_BY_IMAGE", "startNode": "CoT_F12_3", "endNode": "Img_F12_09" },
+    { "id": "mF12_10", "type": "DESCRIBED_BY_IMAGE", "startNode": "Param_Coolant_Through", "endNode": "Img_F12_10" },
+    { "id": "mF12_11", "type": "DESCRIBED_BY_IMAGE", "startNode": "Param_Vc_Internal_F12", "endNode": "Img_F12_11" },
+    { "id": "mF12_12", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_CircInterp_F12", "endNode": "Img_F12_12" },
+    { "id": "mF12_13", "type": "DESCRIBED_BY_IMAGE", "startNode": "Param_f_Low_F12", "endNode": "Img_F12_13" },
+    { "id": "mF12_14", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_CircInterp_F12", "endNode": "Img_F12_14" },
+    { "id": "mF12_15", "type": "DESCRIBED_BY_IMAGE", "startNode": "CoT_F12_1", "endNode": "Img_F12_15" },
+    { "id": "mF12_16", "type": "DESCRIBED_BY_IMAGE", "startNode": "Mat_Shared_Ti6Al4V", "endNode": "Img_F12_16" },
+    { "id": "mF12_17", "type": "DESCRIBED_BY_IMAGE", "startNode": "Feat_F12", "endNode": "Img_F12_17" },
+    { "id": "mF12_18", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_InterruptedCut_F12", "endNode": "Img_F12_18" },
+    { "id": "mF12_19", "type": "DESCRIBED_BY_IMAGE", "startNode": "Holder_CER_PU5", "endNode": "Img_F12_19" },
+    { "id": "mF12_20", "type": "DESCRIBED_BY_IMAGE", "startNode": "Part_Internal_Blind", "endNode": "Img_F12_20" },
+
+    { "id": "bridge_F12_F06", "type": "SIZE_STRATEGY_VARIANT", "startNode": "Feat_F12", "endNode": "Feat_F06", "properties": { "desc": "F12偏重于特定非标尺寸的展成，F06偏重于深孔长悬伸的刚性控制" }}
+  ]
+}

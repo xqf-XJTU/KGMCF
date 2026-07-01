@@ -1,0 +1,122 @@
+{
+  "nodes": [
+
+    { "id": "Part_CasingRing", "label": "零件", "properties": { "name": "航空发动机机匣环件" }},
+    { "id": "Mat_Shared_Ti6Al4V", "label": "材料", "properties": { "name": "钛合金 Ti-6AI-4V", "type": "航空典型材料" }},
+
+
+    { "id": "Feat_F01", "label": "特征", "properties": { "name": "F01 外圆斜面轮廓", "raw_desc": "20° 斜面仿形" }},
+
+    { "id": "Const_Slope_F01", "label": "几何约束", "properties": { "name": "斜面角度: 20°", "meaning": "要求避让主偏角" }},
+    { "id": "Const_ProfileR_F01", "label": "几何约束", "properties": { "name": "过渡圆角: R>=0.8mm", "meaning": "匹配R0.8刀尖" }},
+    { "id": "Const_Roughness_F01", "label": "几何约束", "properties": { "name": "粗糙度: Ra<=1.6μm", "meaning": "配合面/流道面要求" }},
+    { "id": "Const_Access_F01", "label": "几何约束", "properties": { "name": "特征可达性: 外部开放", "meaning": "排屑容易/需控制缠屑" }},
+
+
+    { "id": "Holder_DVXNN", "label": "Equipment", "properties": { "name": "仿形刀杆: DVXNN2525", "style": "V-Style (35° Profile)" }},
+    { "id": "Insert_VNMG_F01", "label": "Tool", "properties": { "name": "刀片: VNMG160408", "geometry": "35°菱形/R0.8" }},
+
+
+    { "id": "Proc_Rough_F01", "label": "工序", "properties": { "name": "粗加工工序: 斜向进刀车削" }},
+    { "id": "Step_Ramp_F01", "label": "工步", "properties": { "name": "1. 沿斜面分层去余量", "step_size": "0.3mm" }},
+
+    { "id": "Proc_Semi_F01", "label": "工序", "properties": { "name": "半精加工工序: 轮廓描绘" }},
+    { "id": "Step_Tracing_F01", "label": "工步", "properties": { "name": "2. 统一余量/消除台阶痕" }},
+
+    { "id": "Proc_Finish_F01", "label": "工序", "properties": { "name": "精加工工序: 高速仿形" }},
+    { "id": "Step_HSProfiling_F01", "label": "工步", "properties": { "name": "3. 20°斜面一刀走完", "goal": "避免接刀痕" }},
+
+    { "id": "Param_Vc_Rough_F01", "label": "切削参数", "properties": { "name": "粗加工 Vc: 60 m/min" }},
+    { "id": "Param_f_Rough_F01", "label": "切削参数", "properties": { "name": "粗加工 f: 0.15 mm/rev" }},
+    { "id": "Param_ap_Rough_F01", "label": "切削参数", "properties": { "name": "粗加工 ap: 1.5 mm" }},
+    { "id": "Param_Vc_Finish_F01", "label": "切削参数", "properties": { "name": "精加工 Vc: 90 m/min" }},
+    { "id": "Param_RadialForce_F01", "label": "力学指标", "properties": { "name": "主导力: 径向力 (Radial Force)" }},
+
+    { "id": "CoT_F01_1", "label": "分析", "properties": { "name": "Visual: 识别连续20°外斜面" }},
+    { "id": "CoT_F01_2", "label": "分析", "properties": { "name": "Check: 80°刀片(CNMG)会产生后刀面干涉" }},
+    { "id": "CoT_F01_3", "label": "分析", "properties": { "name": "Logic: 必须选用35°尖锐刀尖避开干涉" }},
+    { "id": "CoT_F01_4", "label": "分析", "properties": { "name": "Decision: 选用VNMG+DVXNN组合" }},
+    { "id": "CoT_F01_5", "label": "分析", "properties": { "name": "Adjust: 35°尖端弱, 限制进给量<0.15" }},
+    { "id": "CoT_F01_6", "label": "分析", "properties": { "name": "Verify: 校验25x25刀杆刚性抗径向力" }},
+
+    { "id": "Img_F01_01", "label": "Image", "properties": { "name": "F01特征轮廓全景", "filename": "F01_1.png" }},
+    { "id": "Img_F01_02", "label": "Image", "properties": { "name": "20°斜面干涉示意图", "filename": "F01_2.png" }},
+    { "id": "Img_F01_03", "label": "Image", "properties": { "name": "VNMG刀片几何结构", "filename": "F01_3.png" }},
+    { "id": "Img_F01_04", "label": "Image", "properties": { "name": "仿形车削轨迹仿真", "filename": "F01_4.png" }},
+    { "id": "Img_F01_05", "label": "Image", "properties": { "name": "斜向进刀受力图", "filename": "F01_5.png" }},
+    { "id": "Img_F01_06", "label": "Image", "properties": { "name": "仿形加工表面纹理", "filename": "F01_6.png" }},
+    { "id": "Img_F01_07", "label": "Image", "properties": { "name": "80°刀片干涉对比图", "filename": "F01_7.png" }},
+    { "id": "Img_F01_08", "label": "Image", "properties": { "name": "DVXNN刀杆避让空间", "filename": "F01_8.png" }},
+    { "id": "Img_F01_09", "label": "Image", "properties": { "name": "R0.8刀尖磨损监测", "filename": "F01_9.png" }},
+    { "id": "Img_F01_10", "label": "Image", "properties": { "name": "排屑形态监控图", "filename": "F01_10.png" }},
+    { "id": "Img_F01_11", "label": "Image", "properties": { "name": "Ra1.6粗糙度实测图", "filename": "F01_11.png" }},
+    { "id": "Img_F01_12", "label": "Image", "properties": { "name": "切削温度分布模拟", "filename": "F01_12.png" }},
+    { "id": "Img_F01_13", "label": "Image", "properties": { "name": "斜向分层余量分布", "filename": "F01_13.png" }},
+    { "id": "Img_F01_14", "label": "Image", "properties": { "name": "刀杆截面刚性校验", "filename": "F01_14.png" }},
+    { "id": "Img_F01_15", "label": "Image", "properties": { "name": "CoT推理决策树", "filename": "F01_15.png" }},
+    { "id": "Img_F01_16", "label": "Image", "properties": { "name": "钛合金粘附磨损区", "filename": "F01_16.png" }},
+    { "id": "Img_F01_17", "label": "Image", "properties": { "name": "斜面接刀痕缺陷示例", "filename": "F01_17.png" }},
+    { "id": "Img_F01_18", "label": "Image", "properties": { "name": "35°刀尖强度分析", "filename": "F01_18.png" }},
+    { "id": "Img_F01_19", "label": "Image", "properties": { "name": "径向力传感器数据", "filename": "F01_19.png" }},
+    { "id": "Img_F01_20", "label": "Image", "properties": { "name": "F01三维测量报告", "filename": "F01_20.png" }}
+  ],
+  "relationships": [
+
+    { "id": "rF01_1", "type": "HAS_FEATURE", "startNode": "Part_CasingRing", "endNode": "Feat_F01" },
+    { "id": "rF01_2", "type": "USES_MATERIAL", "startNode": "Feat_F01", "endNode": "Mat_Shared_Ti6Al4V" },
+
+
+    { "id": "rF01_3", "type": "HAS_CONSTRAINT", "startNode": "Feat_F01", "endNode": "Const_Slope_F01" },
+    { "id": "rF01_4", "type": "HAS_CONSTRAINT", "startNode": "Feat_F01", "endNode": "Const_ProfileR_F01" },
+    { "id": "rF01_5", "type": "HAS_CONSTRAINT", "startNode": "Feat_F01", "endNode": "Const_Roughness_F01" },
+    { "id": "rF01_6", "type": "HAS_CONSTRAINT", "startNode": "Feat_F01", "endNode": "Const_Access_F01" },
+
+    { "id": "rF01_7", "type": "HAS_PROCESS", "startNode": "Feat_F01", "endNode": "Proc_Rough_F01" },
+    { "id": "rF01_8", "type": "INCLUDES_STEP", "startNode": "Proc_Rough_F01", "endNode": "Step_Ramp_F01" },
+    { "id": "rF01_9", "type": "PRECEDES", "startNode": "Proc_Rough_F01", "endNode": "Proc_Semi_F01" },
+    { "id": "rF01_10", "type": "HAS_PROCESS", "startNode": "Feat_F01", "endNode": "Proc_Semi_F01" },
+    { "id": "rF01_11", "type": "INCLUDES_STEP", "startNode": "Proc_Semi_F01", "endNode": "Step_Tracing_F01" },
+    { "id": "rF01_12", "type": "PRECEDES", "startNode": "Proc_Semi_F01", "endNode": "Proc_Finish_F01" },
+    { "id": "rF01_13", "type": "HAS_PROCESS", "startNode": "Feat_F01", "endNode": "Proc_Finish_F01" },
+    { "id": "rF01_14", "type": "INCLUDES_STEP", "startNode": "Proc_Finish_F01", "endNode": "Step_HSProfiling_F01" },
+
+
+    { "id": "rF01_15", "type": "USES_TOOL", "startNode": "Step_HSProfiling_F01", "endNode": "Insert_VNMG_F01" },
+    { "id": "rF01_16", "type": "HAS_HOLDER", "startNode": "Insert_VNMG_F01", "endNode": "Holder_DVXNN" },
+    { "id": "rF01_17", "type": "SET_PARAM", "startNode": "Step_Ramp_F01", "endNode": "Param_Vc_Rough_F01" },
+    { "id": "rF01_18", "type": "SET_PARAM", "startNode": "Step_HSProfiling_F01", "endNode": "Param_Vc_Finish_F01" },
+    { "id": "rF01_19", "type": "MONITOR_FORCE", "startNode": "Step_Ramp_F01", "endNode": "Param_RadialForce_F01" },
+
+
+    { "id": "rF01_20", "type": "PRECEDES", "startNode": "CoT_F01_1", "endNode": "CoT_F01_2" },
+    { "id": "rF01_21", "type": "PRECEDES", "startNode": "CoT_F01_2", "endNode": "CoT_F01_3" },
+    { "id": "rF01_22", "type": "PRECEDES", "startNode": "CoT_F01_3", "endNode": "CoT_F01_4" },
+    { "id": "rF01_23", "type": "PRECEDES", "startNode": "CoT_F01_4", "endNode": "CoT_F01_5" },
+    { "id": "rF01_24", "type": "PRECEDES", "startNode": "CoT_F01_5", "endNode": "CoT_F01_6" },
+    { "id": "rF01_25", "type": "HAS_ANALYSIS", "startNode": "Feat_F01", "endNode": "CoT_F01_1" },
+
+    { "id": "mF01_1", "type": "DESCRIBED_BY_IMAGE", "startNode": "Feat_F01", "endNode": "Img_F01_01" },
+    { "id": "mF01_2", "type": "DESCRIBED_BY_IMAGE", "startNode": "Const_Slope_F01", "endNode": "Img_F01_02" },
+    { "id": "mF01_3", "type": "DESCRIBED_BY_IMAGE", "startNode": "Insert_VNMG_F01", "endNode": "Img_F01_03" },
+    { "id": "mF01_4", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_HSProfiling_F01", "endNode": "Img_F01_04" },
+    { "id": "mF01_5", "type": "DESCRIBED_BY_IMAGE", "startNode": "Param_RadialForce_F01", "endNode": "Img_F01_05" },
+    { "id": "mF01_6", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_Tracing_F01", "endNode": "Img_F01_06" },
+    { "id": "mF01_7", "type": "DESCRIBED_BY_IMAGE", "startNode": "CoT_F01_2", "endNode": "Img_F01_07" },
+    { "id": "mF01_8", "type": "DESCRIBED_BY_IMAGE", "startNode": "Holder_DVXNN", "endNode": "Img_F01_08" },
+    { "id": "mF01_9", "type": "DESCRIBED_BY_IMAGE", "startNode": "Insert_VNMG_F01", "endNode": "Img_F01_13" },
+    { "id": "mF01_10", "type": "DESCRIBED_BY_IMAGE", "startNode": "Const_Access_F01", "endNode": "Img_F01_10" },
+    { "id": "mF01_11", "type": "DESCRIBED_BY_IMAGE", "startNode": "Const_Roughness_F01", "endNode": "Img_F01_11" },
+    { "id": "mF01_12", "type": "DESCRIBED_BY_IMAGE", "startNode": "CoT_F01_5", "endNode": "Img_F01_12" },
+    { "id": "mF01_13", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_Ramp_F01", "endNode": "Img_F01_13" },
+    { "id": "mF01_14", "type": "DESCRIBED_BY_IMAGE", "startNode": "CoT_F01_6", "endNode": "Img_F01_14" },
+    { "id": "mF01_15", "type": "DESCRIBED_BY_IMAGE", "startNode": "CoT_F01_1", "endNode": "Img_F01_15" },
+    { "id": "mF01_16", "type": "DESCRIBED_BY_IMAGE", "startNode": "Mat_Shared_Ti6Al4V", "endNode": "Img_F01_16" },
+    { "id": "mF01_17", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_HSProfiling_F01", "endNode": "Img_F01_17" },
+    { "id": "mF01_18", "type": "DESCRIBED_BY_IMAGE", "startNode": "CoT_F01_3", "endNode": "Img_F01_18" },
+    { "id": "mF01_19", "type": "DESCRIBED_BY_IMAGE", "startNode": "Param_RadialForce_F01", "endNode": "Img_F01_19" },
+    { "id": "mF01_20", "type": "DESCRIBED_BY_IMAGE", "startNode": "Part_CasingRing", "endNode": "Img_F01_20" },
+
+
+    { "id": "bridge_F01_F05", "type": "SAME_COMPONENT_FEATURE", "startNode": "Feat_F01", "endNode": "Feat_F05", "properties": { "desc": "同属于机匣环件的外部/内部分布特征" }}
+  ]
+}

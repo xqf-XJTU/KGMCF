@@ -1,0 +1,115 @@
+{
+  "nodes": [
+
+    { "id": "Part_Internal_Complex", "label": "零件", "properties": { "name": "深孔重载内腔组件" }},
+    { "id": "Mat_Shared_Ti6Al4V", "label": "材料", "properties": { "name": "钛合金 Ti-6AI-4V", "physics": "极高热负荷/加工硬化" }},
+    { "id": "Global_AeroEngine_Category", "label": "零件类型", "properties": { "name": "航空发动机关键组件" }},
+
+    { "id": "Feat_F07", "label": "特征", "properties": { "name": "F07 深孔大圆角过渡", "class": "深孔重载加工 (Heavy-Duty Internal)" }},
+
+    { "id": "Const_Draft_F07", "label": "几何约束", "properties": { "name": "内孔斜度: 20°" }},
+    { "id": "Const_PrimaryR_F07", "label": "几何约束", "properties": { "name": "核心圆角: R4.0mm", "meaning": "巨大切削接触区" }},
+    { "id": "Const_SecondaryR_F07", "label": "几何约束", "properties": { "name": "辅助圆角: R1.0mm" }},
+    { "id": "Const_Access_F07", "label": "几何约束", "properties": { "name": "长悬伸访问: >200mm" }},
+    { "id": "Const_Space_F07", "label": "几何约束", "properties": { "name": "内容空间: φ>60mm", "logic": "需容纳φ50刀杆" }},
+
+    { "id": "Holder_CER050_TN", "label": "Equipment", "properties": { "name": "强力压紧刀杆: CER050-TN", "clamping": "Top Notch (强力压紧)" }},
+    { "id": "Insert_U6R558", "label": "Tool", "properties": { "name": "加厚型刀片: U6R558 (5.5mm厚)", "advantage": "高截面模量/抗崩裂" }},
+
+    { "id": "Proc_Rough_F07", "label": "工序", "properties": { "name": "重载斜向镗削阶段" }},
+    { "id": "Step_RampBoring_F07", "label": "工步", "properties": { "name": "1. 20°斜向分层镗削", "note": "避免满刀切削" }},
+
+    { "id": "Proc_Semi_F07", "label": "工序", "properties": { "name": "弹性变形补偿阶段" }},
+    { "id": "Step_StressRelief_F07", "label": "工步", "properties": { "name": "2. 去应力切削 (Stress Relief)", "goal": "消除让刀误差" }},
+
+    { "id": "Proc_Finish_F07", "label": "工序", "properties": { "name": "低速成型精加工阶段" }},
+    { "id": "Step_LowSpeedForm_F07", "label": "工步", "properties": { "name": "3. 低速一次成型", "goal": "抑制低频颤振" }},
+
+    { "id": "Param_Vc_Rough_F07", "label": "切削参数", "properties": { "name": "粗加工 Vc: 45 m/min", "limit": "热负荷极高" }},
+    { "id": "Param_f_Balance_F07", "label": "切削参数", "properties": { "name": "平衡进给 f: 0.15 mm/rev", "limit": "刚性极限限制" }},
+    { "id": "Logic_Force_Area_Scale", "label": "力学模型", "properties": { "name": "切削力模型: Fc ∝ 接触面积", "info": "R4切削力显著大于F06(R2)" }},
+
+    { "id": "CoT_F07_1", "label": "分析", "properties": { "name": "Comparison: 对比F06(R2)与F07(R4)" }},
+    { "id": "CoT_F07_2", "label": "分析", "properties": { "name": "Inference: 圆角翻倍导致径向力Fr剧增" }},
+    { "id": "CoT_F07_3", "label": "分析", "properties": { "name": "Selection: 强制选用5.5mm加厚型刀片" }},
+    { "id": "CoT_F07_4", "label": "分析", "properties": { "name": "Adjustment: 降低Vc以平滑热负荷" }},
+    { "id": "CoT_F07_5", "label": "分析", "properties": { "name": "Validation: 校验φ50刀杆刚性极限" }},
+    { "id": "CoT_F07_6", "label": "分析", "properties": { "name": "Compensation: 预设去应力工序防止尺寸偏小" }},
+
+    { "id": "Img_F07_01", "label": "Image", "properties": { "name": "F07重载特征主图", "filename": "F07_1.png" }},
+    { "id": "Img_F07_02", "label": "Image", "properties": { "name": "R4接触弧长分析图", "filename": "F07_2.png" }},
+    { "id": "Img_F07_03", "label": "Image", "properties": { "name": "深孔φ50刀杆干涉图", "filename": "F07_3.png" }},
+    { "id": "Img_F07_04", "label": "Image", "properties": { "name": "TN型强力压紧结构图", "filename": "F07_4.png" }},
+    { "id": "Img_F07_05", "label": "Image", "properties": { "name": "5.5mm加厚刀片对比图", "filename": "F07_5.png" }},
+    { "id": "Img_F07_06", "label": "Image", "properties": { "name": "斜向分层镗削轨迹图", "filename": "F07_6.png" }},
+    { "id": "Img_F07_07", "label": "Image", "properties": { "name": "让刀误差(让刀量)分布图", "filename": "F07_7.png" }},
+    { "id": "Img_F07_08", "label": "Image", "properties": { "name": "低速成型表面纹理图", "filename": "F07_8.png" }},
+    { "id": "Img_F07_09", "label": "Image", "properties": { "name": "Fc与接触面积关联曲线", "filename": "F07_9.png" }},
+    { "id": "Img_F07_10", "label": "Image", "properties": { "name": "F06与F07受力对比云图", "filename": "F07_10.png" }},
+    { "id": "Img_F07_11", "label": "Image", "properties": { "name": "刀片截面模量校核图", "filename": "F07_11.png" }},
+    { "id": "Img_F07_12", "label": "Image", "properties": { "name": "200mm悬伸振动位移图", "filename": "F07_12.png" }},
+    { "id": "Img_F07_13", "label": "Image", "properties": { "name": "低频颤振抑制波形图", "filename": "F07_13.png" }},
+    { "id": "Img_F07_14", "label": "Image", "properties": { "name": "加厚刀片抗崩刃实拍", "filename": "F07_14.png" }},
+    { "id": "Img_F07_15", "label": "Image", "properties": { "name": "CoT重载决策逻辑图", "filename": "F07_15.png" }},
+    { "id": "Img_F07_16", "label": "Image", "properties": { "name": "切削区粘结磨损形态图", "filename": "F07_16.png" }},
+    { "id": "Img_F07_17", "label": "Image", "properties": { "name": "F07特征三维扫描云图", "filename": "F07_17.png" }},
+    { "id": "Img_F07_18", "label": "Image", "properties": { "name": "刀杆弹性变形补偿示意", "filename": "F07_18.png" }},
+    { "id": "Img_F07_19", "label": "Image", "properties": { "name": "不同厚度刀片寿命曲线", "filename": "F07_19.png" }},
+    { "id": "Img_F07_20", "label": "Image", "properties": { "name": "F07最终合格验收报告", "filename": "F07_20.png" }}
+  ],
+  "relationships": [
+
+    { "id": "rF07_1", "type": "HAS_PART_TYPE", "startNode": "Global_AeroEngine_Category", "endNode": "Part_Internal_Complex" },
+    { "id": "rF07_2", "type": "HAS_FEATURE", "startNode": "Part_Internal_Complex", "endNode": "Feat_F07" },
+    { "id": "rF07_3", "type": "USES_MATERIAL", "startNode": "Feat_F07", "endNode": "Mat_Shared_Ti6Al4V" },
+
+    { "id": "rF07_4", "type": "HAS_CONSTRAINT", "startNode": "Feat_F07", "endNode": "Const_Draft_F07" },
+    { "id": "rF07_5", "type": "HAS_CONSTRAINT", "startNode": "Feat_F07", "endNode": "Const_PrimaryR_F07" },
+    { "id": "rF07_6", "type": "HAS_CONSTRAINT", "startNode": "Feat_F07", "endNode": "Const_Access_F07" },
+    { "id": "rF07_7", "type": "HAS_CONSTRAINT", "startNode": "Feat_F07", "endNode": "Const_Space_F07" },
+
+    { "id": "rF07_8", "type": "HAS_PROCESS", "startNode": "Feat_F07", "endNode": "Proc_Rough_F07" },
+    { "id": "rF07_9", "type": "INCLUDES_STEP", "startNode": "Proc_Rough_F07", "endNode": "Step_RampBoring_F07" },
+    { "id": "rF07_10", "type": "PRECEDES", "startNode": "Proc_Rough_F07", "endNode": "Proc_Semi_F07" },
+    { "id": "rF07_11", "type": "HAS_PROCESS", "startNode": "Feat_F07", "endNode": "Proc_Semi_F07" },
+    { "id": "rF07_12", "type": "INCLUDES_STEP", "startNode": "Proc_Semi_F07", "endNode": "Step_StressRelief_F07" },
+    { "id": "rF07_13", "type": "PRECEDES", "startNode": "Proc_Semi_F07", "endNode": "Proc_Finish_F07" },
+    { "id": "rF07_14", "type": "HAS_PROCESS", "startNode": "Feat_F07", "endNode": "Proc_Finish_F07" },
+    { "id": "rF07_15", "type": "INCLUDES_STEP", "startNode": "Proc_Finish_F07", "endNode": "Step_LowSpeedForm_F07" },
+
+    { "id": "rF07_16", "type": "USES_TOOL", "startNode": "Step_LowSpeedForm_F07", "endNode": "Insert_U6R558" },
+    { "id": "rF07_17", "type": "HAS_HOLDER", "startNode": "Insert_U6R558", "endNode": "Holder_CER050_TN" },
+    { "id": "rF07_18", "type": "APPLY_LOGIC", "startNode": "Step_RampBoring_F07", "endNode": "Logic_Force_Area_Scale" },
+    { "id": "rF07_19", "type": "SET_PARAM", "startNode": "Step_RampBoring_F07", "endNode": "Param_Vc_Rough_F07" },
+    { "id": "rF07_20", "type": "SET_PARAM", "startNode": "Step_RampBoring_F07", "endNode": "Param_f_Balance_F07" },
+
+    { "id": "rF07_21", "type": "PRECEDES", "startNode": "CoT_F07_1", "endNode": "CoT_F07_2" },
+    { "id": "rF07_22", "type": "PRECEDES", "startNode": "CoT_F07_2", "endNode": "CoT_F07_3" },
+    { "id": "rF07_23", "type": "PRECEDES", "startNode": "CoT_F07_3", "endNode": "CoT_F07_4" },
+    { "id": "rF07_24", "type": "PRECEDES", "startNode": "CoT_F07_4", "endNode": "CoT_F07_5" },
+    { "id": "rF07_25", "type": "PRECEDES", "startNode": "CoT_F07_5", "endNode": "CoT_F07_6" },
+    { "id": "rF07_26", "type": "HAS_ANALYSIS", "startNode": "Feat_F07", "endNode": "CoT_F07_1" },
+
+
+    { "id": "mF07_1", "type": "DESCRIBED_BY_IMAGE", "startNode": "Feat_F07", "endNode": "Img_F07_01" },
+    { "id": "mF07_2", "type": "DESCRIBED_BY_IMAGE", "startNode": "Const_PrimaryR_F07", "endNode": "Img_F07_02" },
+    { "id": "mF07_3", "type": "DESCRIBED_BY_IMAGE", "startNode": "Const_Space_F07", "endNode": "Img_F07_03" },
+    { "id": "mF07_4", "type": "DESCRIBED_BY_IMAGE", "startNode": "Holder_CER050_TN", "endNode": "Img_F07_04" },
+    { "id": "mF07_5", "type": "DESCRIBED_BY_IMAGE", "startNode": "Insert_U6R558", "endNode": "Img_F07_05" },
+    { "id": "mF07_6", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_RampBoring_F07", "endNode": "Img_F07_06" },
+    { "id": "mF07_7", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_StressRelief_F07", "endNode": "Img_F07_07" },
+    { "id": "mF07_8", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_LowSpeedForm_F07", "endNode": "Img_F07_08" },
+    { "id": "mF07_9", "type": "DESCRIBED_BY_IMAGE", "startNode": "Logic_Force_Area_Scale", "endNode": "Img_F07_09" },
+    { "id": "mF07_10", "type": "DESCRIBED_BY_IMAGE", "startNode": "CoT_F07_2", "endNode": "Img_F07_10" },
+    { "id": "mF07_11", "type": "DESCRIBED_BY_IMAGE", "startNode": "Insert_U6R558", "endNode": "Img_F07_11" },
+    { "id": "mF07_12", "type": "DESCRIBED_BY_IMAGE", "startNode": "Const_Access_F07", "endNode": "Img_F07_12" },
+    { "id": "mF07_13", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_LowSpeedForm_F07", "endNode": "Img_F07_13" },
+    { "id": "mF07_14", "type": "DESCRIBED_BY_IMAGE", "startNode": "Insert_U6R558", "endNode": "Img_F07_14" },
+    { "id": "mF07_15", "type": "DESCRIBED_BY_IMAGE", "startNode": "CoT_F07_1", "endNode": "Img_F07_15" },
+    { "id": "mF07_16", "type": "DESCRIBED_BY_IMAGE", "startNode": "Param_Vc_Rough_F07", "endNode": "Img_F07_16" },
+    { "id": "mF07_17", "type": "DESCRIBED_BY_IMAGE", "startNode": "Feat_F07", "endNode": "Img_F07_17" },
+    { "id": "mF07_18", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_StressRelief_F07", "endNode": "Img_F07_18" },
+    { "id": "mF07_19", "type": "DESCRIBED_BY_IMAGE", "startNode": "Insert_U6R558", "endNode": "Img_F07_19" },
+    { "id": "mF07_20", "type": "DESCRIBED_BY_IMAGE", "startNode": "Part_Internal_Complex", "endNode": "Img_F07_20" }
+  ]
+}

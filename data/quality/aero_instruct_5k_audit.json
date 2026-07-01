@@ -1,0 +1,20 @@
+{
+  "aero_instruct_records": 5000,
+  "feature_count": 20,
+  "source_instance_count": 1000,
+  "augmented_view_count": 4000,
+  "unique_augmented_images_referenced": 4000,
+  "unique_reasoning_text_count": 5000,
+  "unique_process_plan_reference_count": 5000,
+  "reasoning_equals_plan_count": 0,
+  "split_counts": {
+    "train": 3500,
+    "validation": 750,
+    "test": 750
+  },
+  "leakage_source_count": 0,
+  "heldout_validation_case_count": 100,
+  "validation_representative_sample_count": 100,
+  "missing_image_examples": [],
+  "validation_record_case_ids_aligned": true
+}

@@ -1,0 +1,627 @@
+{
+  "nodes": [
+    {
+      "id": "Part_Seal_Component",
+      "label": "零件",
+      "properties": {
+        "name": "航空密封环组件 (Seal Fin)",
+        "class": "复杂密封结构"
+      }
+    },
+    {
+      "id": "Mat_Shared_Ti6Al4V",
+      "label": "材料",
+      "properties": {
+        "name": "钛合金 Ti-6AI-4V",
+        "desc": "难加工/易热变形"
+      }
+    },
+    {
+      "id": "Global_AeroEngine_Category",
+      "label": "零件类型",
+      "properties": {
+        "name": "航空发动机关键组件"
+      }
+    },
+    {
+      "id": "Feat_F11",
+      "label": "特征",
+      "properties": {
+        "name": "F11 非对称窄型面",
+        "geometric_class": "复杂密封齿 (Complex Seal Fin)"
+      }
+    },
+    {
+      "id": "Const_LeftR_F11",
+      "label": "几何约束",
+      "properties": {
+        "name": "左侧(主侧)圆角: R1.0mm"
+      }
+    },
+    {
+      "id": "Const_RightR_F11",
+      "label": "几何约束",
+      "properties": {
+        "name": "右侧(副侧)圆角: R0.4mm",
+        "logic": "非对称硬约束"
+      }
+    },
+    {
+      "id": "Const_Width_F11",
+      "label": "几何约束",
+      "properties": {
+        "name": "通道宽度: 2.0mm",
+        "meaning": "极窄空间/限制刀具宽度"
+      }
+    },
+    {
+      "id": "Const_Tolerance_F11",
+      "label": "几何约束",
+      "properties": {
+        "name": "型面轮廓度: ±0.02mm",
+        "precision": "精密级"
+      }
+    },
+    {
+      "id": "Holder_CFGL_WK076",
+      "label": "Equipment",
+      "properties": {
+        "name": "侧车专用刀杆: CFGL2525",
+        "capability": "Side Turning (侧向车削)"
+      }
+    },
+    {
+      "id": "Insert_QC04MO_Asym_F11",
+      "label": "Tool",
+      "properties": {
+        "name": "非对称定制刀片: QC04MO-2R1",
+        "feature": "左R1/右R0.4一次装夹成型"
+      }
+    },
+    {
+      "id": "Proc_F11_Profiling",
+      "label": "工序",
+      "properties": {
+        "name": "F11 非对称型面加工阶段"
+      }
+    },
+    {
+      "id": "Step_Channel_Slotting_F11",
+      "label": "工步",
+      "properties": {
+        "name": "1. 通道开槽 (直进直出)",
+        "allowance": "预留0.2mm"
+      }
+    },
+    {
+      "id": "Step_Side_Prof_Left_F11",
+      "label": "工步",
+      "properties": {
+        "name": "2. 左侧仿形 (R1.0侧半精加工)"
+      }
+    },
+    {
+      "id": "Step_Side_Prof_Right_F11",
+      "label": "工步",
+      "properties": {
+        "name": "3. 右侧仿形 (R0.4侧精加工)",
+        "goal": "最终连通底部"
+      }
+    },
+    {
+      "id": "Param_Vc_F11",
+      "label": "切削参数",
+      "properties": {
+        "name": "精加工速度 Vc: 100 m/min",
+        "desc": "接触面积小允许高速"
+      }
+    },
+    {
+      "id": "Param_f_Low_F11",
+      "label": "切削参数",
+      "properties": {
+        "name": "低偏摆进给 f: 0.04 mm/rev",
+        "logic": "修正偏摆误差/牺牲效率取精度"
+      }
+    },
+    {
+      "id": "Param_Dir_PushPull",
+      "label": "工艺经验",
+      "properties": {
+        "name": "切削方向: 大R向小R加工",
+        "method": "Push / Pull"
+      }
+    },
+    {
+      "id": "Risk_Deflection_F11",
+      "label": "物理校验",
+      "properties": {
+        "name": "侧向偏摆风险 (Deflection)",
+        "trigger": "2mm窄刃横向受力"
+      }
+    },
+    {
+      "id": "CoT_F11_1",
+      "label": "分析",
+      "properties": {
+        "name": "Pattern: 识别左平缓(R1)右陡峭(R0.4)异形槽"
+      }
+    },
+    {
+      "id": "CoT_F11_2",
+      "label": "分析",
+      "properties": {
+        "name": "Reject: 放弃标准R0.4刀片(加工左侧效率极低且易断)"
+      }
+    },
+    {
+      "id": "CoT_F11_3",
+      "label": "分析",
+      "properties": {
+        "name": "Match: 检索并选用定制 QC04MO-2R1 刀片"
+      }
+    },
+    {
+      "id": "CoT_F11_4",
+      "label": "分析",
+      "properties": {
+        "name": "Physics: 警告2mm窄刃侧向偏摆(Deflection)风险"
+      }
+    },
+    {
+      "id": "CoT_F11_5",
+      "label": "分析",
+      "properties": {
+        "name": "Strategy: 强制设定 f < 0.05 保证轮廓度"
+      }
+    },
+    {
+      "id": "CoT_F11_6",
+      "label": "分析",
+      "properties": {
+        "name": "Decision: 采用一次装夹Match-Fit策略实现最高效率"
+      }
+    },
+    {
+      "id": "Img_F11_01",
+      "label": "Image",
+      "properties": {
+        "name": "F11非对称型面全景",
+        "filename": "F11_1.png"
+      }
+    },
+    {
+      "id": "Img_F11_02",
+      "label": "Image",
+      "properties": {
+        "name": "密封齿(Seal Fin)装配位示意",
+        "filename": "F11_2.png"
+      }
+    },
+    {
+      "id": "Img_F11_03",
+      "label": "Image",
+      "properties": {
+        "name": "左右R角不对称性比对",
+        "filename": "F11_3.png"
+      }
+    },
+    {
+      "id": "Img_F11_04",
+      "label": "Image",
+      "properties": {
+        "name": "QC04MO-2R1刀尖几何显微图",
+        "filename": "F11_4.png"
+      }
+    },
+    {
+      "id": "Img_F11_05",
+      "label": "Image",
+      "properties": {
+        "name": "2mm窄刃侧向刚性受力云图",
+        "filename": "F11_5.png"
+      }
+    },
+    {
+      "id": "Img_F11_06",
+      "label": "Image",
+      "properties": {
+        "name": "通道开槽余量分布示意",
+        "filename": "F11_6.png"
+      }
+    },
+    {
+      "id": "Img_F11_07",
+      "label": "Image",
+      "properties": {
+        "name": "左侧R1.0仿形路径轨迹图",
+        "filename": "F11_7.png"
+      }
+    },
+    {
+      "id": "Img_F11_08",
+      "label": "Image",
+      "properties": {
+        "name": "右侧R0.4陡峭型面仿形动态",
+        "filename": "F11_8.png"
+      }
+    },
+    {
+      "id": "Img_F11_09",
+      "label": "Image",
+      "properties": {
+        "name": "侧车(Side Turning)切屑流向监控",
+        "filename": "F11_9.png"
+      }
+    },
+    {
+      "id": "Img_F11_10",
+      "label": "Image",
+      "properties": {
+        "name": "偏摆(Deflection)引起的形位误差分析",
+        "filename": "F11_10.png"
+      }
+    },
+    {
+      "id": "Img_F11_11",
+      "label": "Image",
+      "properties": {
+        "name": "±0.02mm型面公差实测曲线",
+        "filename": "F11_11.png"
+      }
+    },
+    {
+      "id": "Img_F11_12",
+      "label": "Image",
+      "properties": {
+        "name": "Push/Pull双向切削稳定性对比",
+        "filename": "F11_12.png"
+      }
+    },
+    {
+      "id": "Img_F11_13",
+      "label": "Image",
+      "properties": {
+        "name": "刀片R1与R0.4端磨损均匀性图",
+        "filename": "F11_13.png"
+      }
+    },
+    {
+      "id": "Img_F11_14",
+      "label": "Image",
+      "properties": {
+        "name": "窄通道排屑阻塞热成像图",
+        "filename": "F11_14.png"
+      }
+    },
+    {
+      "id": "Img_F11_15",
+      "label": "Image",
+      "properties": {
+        "name": "CoT“左右逢源”定制决策流",
+        "filename": "F11_15.png"
+      }
+    },
+    {
+      "id": "Img_F11_16",
+      "label": "Image",
+      "properties": {
+        "name": "钛合金型面冷作硬化检测图",
+        "filename": "F11_16.png"
+      }
+    },
+    {
+      "id": "Img_F11_17",
+      "label": "Image",
+      "properties": {
+        "name": "Match-Fit完美贴合加工视频截图",
+        "filename": "F11_17.png"
+      }
+    },
+    {
+      "id": "Img_F11_18",
+      "label": "Image",
+      "properties": {
+        "name": "CFGL刀杆WK076特殊涂层形貌",
+        "filename": "F11_18.png"
+      }
+    },
+    {
+      "id": "Img_F11_19",
+      "label": "Image",
+      "properties": {
+        "name": "不同切削方向下的表面粗糙度",
+        "filename": "F11_19.png"
+      }
+    },
+    {
+      "id": "Img_F11_20",
+      "label": "Image",
+      "properties": {
+        "name": "F11特征最后三维扫描验收图",
+        "filename": "F11_20.png"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "id": "rF11_1",
+      "type": "HAS_PART_TYPE",
+      "startNode": "Global_AeroEngine_Category",
+      "endNode": "Part_Seal_Component"
+    },
+    {
+      "id": "rF11_2",
+      "type": "HAS_FEATURE",
+      "startNode": "Part_Seal_Component",
+      "endNode": "Feat_F11"
+    },
+    {
+      "id": "rF11_3",
+      "type": "USES_MATERIAL",
+      "startNode": "Feat_F11",
+      "endNode": "Mat_Shared_Ti6Al4V"
+    },
+    {
+      "id": "rF11_4",
+      "type": "HAS_CONSTRAINT",
+      "startNode": "Feat_F11",
+      "endNode": "Const_LeftR_F11"
+    },
+    {
+      "id": "rF11_5",
+      "type": "HAS_CONSTRAINT",
+      "startNode": "Feat_F11",
+      "endNode": "Const_RightR_F11"
+    },
+    {
+      "id": "rF11_6",
+      "type": "HAS_CONSTRAINT",
+      "startNode": "Feat_F11",
+      "endNode": "Const_Width_F11"
+    },
+    {
+      "id": "rF11_7",
+      "type": "HAS_CONSTRAINT",
+      "startNode": "Feat_F11",
+      "endNode": "Const_Tolerance_F11"
+    },
+    {
+      "id": "rF11_8",
+      "type": "HAS_PROCESS",
+      "startNode": "Feat_F11",
+      "endNode": "Proc_F11_Profiling"
+    },
+    {
+      "id": "rF11_9",
+      "type": "INCLUDES_STEP",
+      "startNode": "Proc_F11_Profiling",
+      "endNode": "Step_Channel_Slotting_F11"
+    },
+    {
+      "id": "rF11_10",
+      "type": "PRECEDES",
+      "startNode": "Step_Channel_Slotting_F11",
+      "endNode": "Step_Side_Prof_Left_F11"
+    },
+    {
+      "id": "rF11_11",
+      "type": "INCLUDES_STEP",
+      "startNode": "Proc_F11_Profiling",
+      "endNode": "Step_Side_Prof_Left_F11"
+    },
+    {
+      "id": "rF11_12",
+      "type": "PRECEDES",
+      "startNode": "Step_Side_Prof_Left_F11",
+      "endNode": "Step_Side_Prof_Right_F11"
+    },
+    {
+      "id": "rF11_13",
+      "type": "INCLUDES_STEP",
+      "startNode": "Proc_F11_Profiling",
+      "endNode": "Step_Side_Prof_Right_F11"
+    },
+    {
+      "id": "rF11_14",
+      "type": "USES_TOOL",
+      "startNode": "Step_Side_Prof_Right_F11",
+      "endNode": "Insert_QC04MO_Asym_F11"
+    },
+    {
+      "id": "rF11_15",
+      "type": "HAS_HOLDER",
+      "startNode": "Insert_QC04MO_Asym_F11",
+      "endNode": "Holder_CFGL_WK076"
+    },
+    {
+      "id": "rF11_16",
+      "type": "SET_PARAM",
+      "startNode": "Step_Side_Prof_Right_F11",
+      "endNode": "Param_Vc_F11"
+    },
+    {
+      "id": "rF11_17",
+      "type": "SET_PARAM",
+      "startNode": "Step_Side_Prof_Right_F11",
+      "endNode": "Param_f_Low_F11"
+    },
+    {
+      "id": "rF11_18",
+      "type": "IDENTIFIES_RISK",
+      "startNode": "Const_Width_F11",
+      "endNode": "Risk_Deflection_F11"
+    },
+    {
+      "id": "rF11_19",
+      "type": "APPLY_EXPERIENCE",
+      "startNode": "Step_Side_Prof_Left_F11",
+      "endNode": "Param_Dir_PushPull"
+    },
+    {
+      "id": "rF11_20",
+      "type": "PRECEDES",
+      "startNode": "CoT_F11_1",
+      "endNode": "CoT_F11_2"
+    },
+    {
+      "id": "rF11_21",
+      "type": "PRECEDES",
+      "startNode": "CoT_F11_2",
+      "endNode": "CoT_F11_3"
+    },
+    {
+      "id": "rF11_22",
+      "type": "PRECEDES",
+      "startNode": "CoT_F11_3",
+      "endNode": "CoT_F11_4"
+    },
+    {
+      "id": "rF11_23",
+      "type": "PRECEDES",
+      "startNode": "CoT_F11_4",
+      "endNode": "CoT_F11_5"
+    },
+    {
+      "id": "rF11_24",
+      "type": "PRECEDES",
+      "startNode": "CoT_F11_5",
+      "endNode": "CoT_F11_6"
+    },
+    {
+      "id": "rF11_25",
+      "type": "HAS_ANALYSIS",
+      "startNode": "Feat_F11",
+      "endNode": "CoT_F11_1"
+    },
+    {
+      "id": "mF11_1",
+      "type": "DESCRIBED_BY_IMAGE",
+      "startNode": "Feat_F11",
+      "endNode": "Img_F11_01"
+    },
+    {
+      "id": "mF11_2",
+      "type": "DESCRIBED_BY_IMAGE",
+      "startNode": "Part_Seal_Component",
+      "endNode": "Img_F11_02"
+    },
+    {
+      "id": "mF11_3",
+      "type": "DESCRIBED_BY_IMAGE",
+      "startNode": "Const_LeftR_F11",
+      "endNode": "Img_F11_03"
+    },
+    {
+      "id": "mF11_4",
+      "type": "DESCRIBED_BY_IMAGE",
+      "startNode": "Insert_QC04MO_Asym_F11",
+      "endNode": "Img_F11_04"
+    },
+    {
+      "id": "mF11_5",
+      "type": "DESCRIBED_BY_IMAGE",
+      "startNode": "Risk_Deflection_F11",
+      "endNode": "Img_F11_05"
+    },
+    {
+      "id": "mF11_6",
+      "type": "DESCRIBED_BY_IMAGE",
+      "startNode": "Step_Channel_Slotting_F11",
+      "endNode": "Img_F11_06"
+    },
+    {
+      "id": "mF11_7",
+      "type": "DESCRIBED_BY_IMAGE",
+      "startNode": "Step_Side_Prof_Left_F11",
+      "endNode": "Img_F11_07"
+    },
+    {
+      "id": "mF11_8",
+      "type": "DESCRIBED_BY_IMAGE",
+      "startNode": "Step_Side_Prof_Right_F11",
+      "endNode": "Img_F11_08"
+    },
+    {
+      "id": "mF11_9",
+      "type": "DESCRIBED_BY_IMAGE",
+      "startNode": "Holder_CFGL_WK076",
+      "endNode": "Img_F11_09"
+    },
+    {
+      "id": "mF11_10",
+      "type": "DESCRIBED_BY_IMAGE",
+      "startNode": "Risk_Deflection_F11",
+      "endNode": "Img_F11_10"
+    },
+    {
+      "id": "mF11_11",
+      "type": "DESCRIBED_BY_IMAGE",
+      "startNode": "Const_Tolerance_F11",
+      "endNode": "Img_F11_11"
+    },
+    {
+      "id": "mF11_12",
+      "type": "DESCRIBED_BY_IMAGE",
+      "startNode": "Param_Dir_PushPull",
+      "endNode": "Img_F11_12"
+    },
+    {
+      "id": "mF11_13",
+      "type": "DESCRIBED_BY_IMAGE",
+      "startNode": "Insert_QC04MO_Asym_F11",
+      "endNode": "Img_F11_13"
+    },
+    {
+      "id": "mF11_14",
+      "type": "DESCRIBED_BY_IMAGE",
+      "startNode": "Const_Width_F11",
+      "endNode": "Img_F11_14"
+    },
+    {
+      "id": "mF11_15",
+      "type": "DESCRIBED_BY_IMAGE",
+      "startNode": "CoT_F11_1",
+      "endNode": "Img_F11_15"
+    },
+    {
+      "id": "mF11_16",
+      "type": "DESCRIBED_BY_IMAGE",
+      "startNode": "Mat_Shared_Ti6Al4V",
+      "endNode": "Img_F11_16"
+    },
+    {
+      "id": "mF11_17",
+      "type": "DESCRIBED_BY_IMAGE",
+      "startNode": "CoT_F11_6",
+      "endNode": "Img_F11_17"
+    },
+    {
+      "id": "mF11_18",
+      "type": "DESCRIBED_BY_IMAGE",
+      "startNode": "Holder_CFGL_WK076",
+      "endNode": "Img_F11_18"
+    },
+    {
+      "id": "mF11_19",
+      "type": "DESCRIBED_BY_IMAGE",
+      "startNode": "Param_f_Low_F11",
+      "endNode": "Img_F11_19"
+    },
+    {
+      "id": "mF11_20",
+      "type": "DESCRIBED_BY_IMAGE",
+      "startNode": "Feat_F11",
+      "endNode": "Img_F11_20"
+    },
+    {
+      "id": "bridge_F11_F09",
+      "type": "ASYMMETRY_CONCEPT_LINK",
+      "startNode": "Feat_F11",
+      "endNode": "Feat_F09",
+      "properties": {
+        "desc": "均采用不对称刀片解决复合圆角问题，但F11偏重于密封型面控制，F09偏重于多曲率效率优化"
+      }
+    }
+  ]
+}

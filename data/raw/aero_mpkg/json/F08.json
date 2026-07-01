@@ -1,0 +1,122 @@
+{
+  "nodes": [
+
+    { "id": "Part_CasingRing", "label": "零件", "properties": { "name": "航空发动机机匣环件" }},
+    { "id": "Mat_Shared_Ti6Al4V", "label": "材料", "properties": { "name": "钛合金 Ti-6AI-4V", "desc": "高强度/难加工/热敏性" }},
+    { "id": "Global_AeroEngine_Category", "label": "零件类型", "properties": { "name": "航空发动机关键组件" }},
+
+    { "id": "Feat_F08", "label": "特征", "properties": { "name": "F05 双圆角过渡槽", "complexity": "复合曲率 (Compound Curvature)" }},
+
+    { "id": "Const_Draft_F08", "label": "几何约束", "properties": { "name": "侧壁斜度: 20°" }},
+    { "id": "Const_MinR_F08", "label": "几何约束", "properties": { "name": "底部最小圆角: R2.0mm", "logic": "决定性约束/刀具半径上限" }},
+    { "id": "Const_MaxR_F08", "label": "几何约束", "properties": { "name": "顶部过渡圆角: R3.0mm" }},
+    { "id": "Const_Width_F08", "label": "几何约束", "properties": { "name": "槽宽约束: >4.0mm", "desc": "需容纳4mm宽刃刀具" }},
+    { "id": "Const_Strategy_F08", "label": "工艺策略约束", "properties": { "name": "混合策略: 成型+展成 (Hybrid)" }},
+
+    { "id": "Holder_CFGL_F08", "label": "Equipment", "properties": { "name": "外圆切槽刀杆: CFGL2525", "shank": "25x25mm" }},
+    { "id": "Insert_QC04_F08", "label": "Tool", "properties": { "name": "宽刃仿形刀片: QC04MO-10 (R2.0)", "width": "4.0mm" }},
+
+    { "id": "Proc_Rough_F08", "label": "工序", "properties": { "name": "扩槽切削阶段 (Roughing)" }},
+    { "id": "Step_Widening_F08", "label": "工步", "properties": { "name": "1. 4mm宽刃扩槽", "strategy": "先中间后两边" }},
+    
+    { "id": "Proc_Semi_F08", "label": "工序", "properties": { "name": "轮廓描绘阶段 (Semi-Finish)" }},
+    { "id": "Step_Tracing_F08", "label": "工步", "properties": { "name": "2. 沿20°斜面及R3区描绘" }},
+    
+    { "id": "Proc_Finish_F08", "label": "工序", "properties": { "name": "混合仿形精加工阶段 (Finishing)" }},
+    { "id": "Step_Hybrid_Profiling", "label": "工步", "properties": { "name": "3. 混合仿形 (R2成型+R3展成)" }},
+
+    { "id": "Param_Vc_Rough_F08", "label": "切削参数", "properties": { "name": "粗加工 Vc: 60 m/min" }},
+    { "id": "Param_f_Rough_F08", "label": "切削参数", "properties": { "name": "粗加工 f: 0.1 mm/rev" }},
+    { "id": "Param_ap_Rough_F08", "label": "切削参数", "properties": { "name": "粗加工 ap: 2.0 mm" }},
+    { "id": "Param_Power_F08", "label": "物理校验", "properties": { "name": "主轴功率校验: 中高 (Moderate-High)" }},
+    { "id": "Logic_MinMax_Rule", "label": "力学逻辑", "properties": { "name": "最小半径准则: Rtool <= Rmin(2.0)" }},
+
+    { "id": "CoT_F08_1", "label": "分析", "properties": { "name": "Scan: 识别底部R2与顶部R3复合结构" }},
+    { "id": "CoT_F08_2", "label": "分析", "properties": { "name": "Rule: 应用最小半径准则锁定R2刀具" }},
+    { "id": "CoT_F08_3", "label": "分析", "properties": { "name": "Logic: 底部贴合(Forming)与顶部插补(Generating)分配" }},
+    { "id": "CoT_F08_4", "label": "分析", "properties": { "name": "Check: 4mm宽刃径向力对刀杆刚性需求校验" }},
+    { "id": "CoT_F08_5", "label": "分析", "properties": { "name": "Verify: 主轴功率能否负载宽刃满刀切削" }},
+    { "id": "CoT_F08_6", "label": "分析", "properties": { "name": "Final: 生成连续仿形路径，无需换刀" }},
+
+    { "id": "Img_F08_01", "label": "Image", "properties": { "name": "F08双圆角特征截面图", "filename": "F08_1.png" }},
+    { "id": "Img_F08_02", "label": "Image", "properties": { "name": "复合曲率几何扫描图", "filename": "F08_2.png" }},
+    { "id": "Img_F08_03", "label": "Image", "properties": { "name": "R2与R3包络线对比图", "filename": "F08_3.png" }},
+    { "id": "Img_F08_04", "label": "Image", "properties": { "name": "4mm宽刃扩槽轨迹图", "filename": "F08_4.png" }},
+    { "id": "Img_F08_05", "label": "Image", "properties": { "name": "混合仿形原理动画示意", "filename": "F08_5.png" }},
+    { "id": "Img_F08_06", "label": "Image", "properties": { "name": "主轴负荷功率实时曲线", "filename": "F08_6.png" }},
+    { "id": "Img_F08_07", "label": "Image", "properties": { "name": "R2贴合加工接触受力图", "filename": "F08_7.png" }},
+    { "id": "Img_F08_08", "label": "Image", "properties": { "name": "R3展成插补轨迹云图", "filename": "F08_8.png" }},
+    { "id": "Img_F08_09", "label": "Image", "properties": { "name": "CFGL刀杆抗侧向力模拟", "filename": "F08_9.png" }},
+    { "id": "Img_F08_10", "label": "Image", "properties": { "name": "宽刃切削热积累色散图", "filename": "F08_10.png" }},
+    { "id": "Img_F08_11", "label": "Image", "properties": { "name": "精加工表面Ra纹理实测", "filename": "F08_11.png" }},
+    { "id": "Img_F08_12", "label": "Image", "properties": { "name": "QC04MO刀片耐磨性分析", "filename": "F08_12.png" }},
+    { "id": "Img_F08_13", "label": "Image", "properties": { "name": "20°斜面接刀痕预防图", "filename": "F08_13.png" }},
+    { "id": "Img_F08_14", "label": "Image", "properties": { "name": "最小半径准则逻辑图解", "filename": "F08_14.png" }},
+    { "id": "Img_F08_15", "label": "Image", "properties": { "name": "CoT双圆角决策流图", "filename": "F08_15.png" }},
+    { "id": "Img_F08_16", "label": "Image", "properties": { "name": "槽宽与刀宽干涉检查图", "filename": "F08_16.png" }},
+    { "id": "Img_F08_17", "label": "Image", "properties": { "name": "混合仿形路径优化对比", "filename": "F08_17.png" }},
+    { "id": "Img_F08_18", "label": "Image", "properties": { "name": "钛合金宽切屑排屑形态", "filename": "F08_18.png" }},
+    { "id": "Img_F08_19", "label": "Image", "properties": { "name": "切削效率提升统计表", "filename": "F08_19.png" }},
+    { "id": "Img_F08_20", "label": "Image", "properties": { "name": "F08成品最终质量报告", "filename": "F08_20.png" }}
+  ],
+  "relationships": [
+
+    { "id": "rF08_1", "type": "HAS_PART_TYPE", "startNode": "Global_AeroEngine_Category", "endNode": "Part_CasingRing" },
+    { "id": "rF08_2", "type": "HAS_FEATURE", "startNode": "Part_CasingRing", "endNode": "Feat_F08" },
+    { "id": "rF08_3", "type": "USES_MATERIAL", "startNode": "Feat_F08", "endNode": "Mat_Shared_Ti6Al4V" },
+
+
+    { "id": "rF08_4", "type": "HAS_CONSTRAINT", "startNode": "Feat_F08", "endNode": "Const_MinR_F08" },
+    { "id": "rF08_5", "type": "HAS_CONSTRAINT", "startNode": "Feat_F08", "endNode": "Const_MaxR_F08" },
+    { "id": "rF08_6", "type": "HAS_CONSTRAINT", "startNode": "Feat_F08", "endNode": "Const_Draft_F08" },
+    { "id": "rF08_7", "type": "HAS_CONSTRAINT", "startNode": "Feat_F08", "endNode": "Const_Width_F08" },
+
+
+    { "id": "rF08_8", "type": "HAS_PROCESS", "startNode": "Feat_F08", "endNode": "Proc_Rough_F08" },
+    { "id": "rF08_9", "type": "INCLUDES_STEP", "startNode": "Proc_Rough_F08", "endNode": "Step_Widening_F08" },
+    { "id": "rF08_10", "type": "PRECEDES", "startNode": "Proc_Rough_F08", "endNode": "Proc_Semi_F08" },
+    { "id": "rF08_11", "type": "HAS_PROCESS", "startNode": "Feat_F08", "endNode": "Proc_Semi_F08" },
+    { "id": "rF08_12", "type": "INCLUDES_STEP", "startNode": "Proc_Semi_F08", "endNode": "Step_Tracing_F08" },
+    { "id": "rF08_13", "type": "PRECEDES", "startNode": "Proc_Semi_F08", "endNode": "Proc_Finish_F08" },
+    { "id": "rF08_14", "type": "HAS_PROCESS", "startNode": "Feat_F08", "endNode": "Proc_Finish_F08" },
+    { "id": "rF08_15", "type": "INCLUDES_STEP", "startNode": "Proc_Finish_F08", "endNode": "Step_Hybrid_Profiling" },
+
+
+    { "id": "rF08_16", "type": "USES_TOOL", "startNode": "Step_Hybrid_Profiling", "endNode": "Insert_QC04_F08" },
+    { "id": "rF08_17", "type": "HAS_HOLDER", "startNode": "Insert_QC04_F08", "endNode": "Holder_CFGL_F08" },
+    { "id": "rF08_18", "type": "APPLY_LOGIC", "startNode": "Insert_QC04_F08", "endNode": "Logic_MinMax_Rule" },
+    { "id": "rF08_19", "type": "SET_PARAM", "startNode": "Step_Widening_F08", "endNode": "Param_Vc_Rough_F08" },
+    { "id": "rF08_20", "type": "SET_PARAM", "startNode": "Step_Widening_F08", "endNode": "Param_f_Rough_F08" },
+    { "id": "rF08_21", "type": "POWER_CHECK", "startNode": "Step_Widening_F08", "endNode": "Param_Power_F08" },
+
+    { "id": "rF08_22", "type": "PRECEDES", "startNode": "CoT_F08_1", "endNode": "CoT_F08_2" },
+    { "id": "rF08_23", "type": "PRECEDES", "startNode": "CoT_F08_2", "endNode": "CoT_F08_3" },
+    { "id": "rF08_24", "type": "PRECEDES", "startNode": "CoT_F08_3", "endNode": "CoT_F08_4" },
+    { "id": "rF08_25", "type": "PRECEDES", "startNode": "CoT_F08_4", "endNode": "CoT_F08_5" },
+    { "id": "rF08_26", "type": "PRECEDES", "startNode": "CoT_F08_5", "endNode": "CoT_F08_6" },
+    { "id": "rF08_27", "type": "HAS_ANALYSIS", "startNode": "Feat_F08", "endNode": "CoT_F08_1" },
+
+    { "id": "mF08_1", "type": "DESCRIBED_BY_IMAGE", "startNode": "Feat_F08", "endNode": "Img_F08_01" },
+    { "id": "mF08_2", "type": "DESCRIBED_BY_IMAGE", "startNode": "Feat_F08", "endNode": "Img_F08_02" },
+    { "id": "mF08_3", "type": "DESCRIBED_BY_IMAGE", "startNode": "Const_MaxR_F08", "endNode": "Img_F08_03" },
+    { "id": "mF08_4", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_Widening_F08", "endNode": "Img_F08_04" },
+    { "id": "mF08_5", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_Hybrid_Profiling", "endNode": "Img_F08_05" },
+    { "id": "mF08_6", "type": "DESCRIBED_BY_IMAGE", "startNode": "Param_Power_F08", "endNode": "Img_F08_06" },
+    { "id": "mF08_7", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_Hybrid_Profiling", "endNode": "Img_F08_07" },
+    { "id": "mF08_8", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_Hybrid_Profiling", "endNode": "Img_F08_08" },
+    { "id": "mF08_9", "type": "DESCRIBED_BY_IMAGE", "startNode": "Holder_CFGL_F08", "endNode": "Img_F08_09" },
+    { "id": "mF08_10", "type": "DESCRIBED_BY_IMAGE", "startNode": "CoT_F08_4", "endNode": "Img_F08_10" },
+    { "id": "mF08_11", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_Hybrid_Profiling", "endNode": "Img_F08_11" },
+    { "id": "mF08_12", "type": "DESCRIBED_BY_IMAGE", "startNode": "Insert_QC04_F08", "endNode": "Img_F08_12" },
+    { "id": "mF08_13", "type": "DESCRIBED_BY_IMAGE", "startNode": "Const_Draft_F08", "endNode": "Img_F08_13" },
+    { "id": "mF08_14", "type": "DESCRIBED_BY_IMAGE", "startNode": "Logic_MinMax_Rule", "endNode": "Img_F08_14" },
+    { "id": "mF08_15", "type": "DESCRIBED_BY_IMAGE", "startNode": "CoT_F08_1", "endNode": "Img_F08_15" },
+    { "id": "mF08_16", "type": "DESCRIBED_BY_IMAGE", "startNode": "Const_Width_F08", "endNode": "Img_F08_16" },
+    { "id": "mF08_17", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_Hybrid_Profiling", "endNode": "Img_F08_17" },
+    { "id": "mF08_18", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_Widening_F08", "endNode": "Img_F08_18" },
+    { "id": "mF08_19", "type": "DESCRIBED_BY_IMAGE", "startNode": "Feat_F08", "endNode": "Img_F08_19" },
+    { "id": "mF08_20", "type": "DESCRIBED_BY_IMAGE", "startNode": "Part_CasingRing", "endNode": "Img_F08_20" },
+
+    { "id": "bridge_F08_F05", "type": "SAME_COMPONENT_GROOVE", "startNode": "Feat_F08", "endNode": "Feat_F05", "properties": { "desc": "机匣环件的不同凹槽特征，F08具有更复杂的双圆角结构" }}
+  ]
+}

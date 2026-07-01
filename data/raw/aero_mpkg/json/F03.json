@@ -1,0 +1,115 @@
+{
+  "nodes": [
+    { "id": "Part_CasingRing_F03", "label": "零件", "properties": { "name": "航空机匣环件 (F03版)" }},
+    { "id": "Mat_Shared_Ti6Al4V", "label": "材料", "properties": { "name": "钛合金 Ti-6AI-4V", "desc": "航空典型材料" }},
+    { "id": "Machine_HorizontalLathe", "label": "Equipment", "properties": { "name": "数控卧车 (CNC Horizontal Lathe)", "type": "数控卧式车床" }},
+    { "id": "Global_AeroEngine_Category", "label": "零件类型", "properties": { "name": "航空发动机关键组件" }},
+
+    { "id": "Feat_F03", "label": "特征", "properties": { "name": "F03 非标角度轮廓槽", "key_feat": "19.5° 非标斜度" }},
+
+    { "id": "Const_Slope_F03", "label": "几何约束", "properties": { "name": "非标斜度: 19.5°", "risk": "普通刀具难以切入死角" }},
+    { "id": "Const_Fillet_F03", "label": "几何约束", "properties": { "name": "特征圆角: R4.0mm" }},
+    { "id": "Const_Corner_F03", "label": "几何约束", "properties": { "name": "过渡圆角: R1.0mm" }},
+    { "id": "Const_Access_F03", "label": "几何约束", "properties": { "name": "进入空间: 受限 (Restricted)" }},
+
+    { "id": "Holder_CFGL_WK070", "label": "Equipment", "properties": { "name": "切槽刀杆: CFGL2525", "feature": "侧向刚性极佳" }},
+    { "id": "Insert_QC04MO", "label": "Tool", "properties": { "name": "刀片: QC04MO-F (R2圆头)", "logic": "小刀修大面 (R2修R4)" }},
+
+    { "id": "Proc_Rough_F03", "label": "工序", "properties": { "name": "粗加工阶段: 多刀切槽" }},
+    { "id": "Step_MultiPass_F03", "label": "工步", "properties": { "name": "1. 直进直出多刀排槽", "desc": "留阶梯状余量" }},
+    
+    { "id": "Proc_Semi_F03", "label": "工序", "properties": { "name": "半精加工阶段: 斜坡插补" }},
+    { "id": "Step_RampInterp_F03", "label": "工步", "properties": { "name": "2. 沿19.5°轨迹初步修整" }},
+    
+    { "id": "Proc_Finish_F03", "label": "工序", "properties": { "name": "精加工阶段: 动态展成仿形" }},
+    { "id": "Step_DynamicGen_F03", "label": "工步", "properties": { "name": "3. X-Z联动动态展成R4圆角" }},
+
+    { "id": "Param_Vc_Finish_F03", "label": "切削参数", "properties": { "name": "精加工 Vc: 100 m/min", "reason": "点接触散热快/允许高速" }},
+    { "id": "Param_f_Scallop_F03", "label": "切削参数", "properties": { "name": "精加工 f: 0.08 mm/rev", "logic": "由残留高度(Scallop)反算" }},
+    { "id": "Param_Force_Point_F03", "label": "力学模型", "properties": { "name": "点接触切削力模型", "desc": "切削力小/适合弱刚性特征" }},
+
+    { "id": "CoT_F03_1", "label": "分析", "properties": { "name": "Feature: 识别19.5°斜度与R4圆角" }},
+    { "id": "CoT_F03_2", "label": "分析", "properties": { "name": "Decision: 放弃成型刀/选择仿形方案B" }},
+    { "id": "CoT_F03_3", "label": "分析", "properties": { "name": "Match: 检索QC04系列/确定R2刀尖" }},
+    { "id": "CoT_F03_4", "label": "分析", "properties": { "name": "Verify: 校验Rtool(2.0) < Rfeat(4.0)有效性" }},
+    { "id": "CoT_F03_5", "label": "分析", "properties": { "name": "Efficiency: 提高Vc至100m/min补偿效率" }},
+    { "id": "CoT_F03_6", "label": "分析", "properties": { "name": "Control: 严格限制进给f以保证粗糙度" }},
+
+
+    { "id": "Img_F03_01", "label": "Image", "properties": { "name": "F03特征设计定义图", "filename": "F03_1.png" }},
+    { "id": "Img_F03_02", "label": "Image", "properties": { "name": "19.5°非标角度校验图", "filename": "F03_2.png" }},
+    { "id": "Img_F03_03", "label": "Image", "properties": { "name": "数控卧车对刀操作图", "filename": "F03_3.png" }},
+    { "id": "Img_F03_04", "label": "Image", "properties": { "name": "多刀切槽余量分布图", "filename": "F03_4.png" }},
+    { "id": "Img_F03_05", "label": "Image", "properties": { "name": "小刀修大面原理示意图", "filename": "F03_5.png" }},
+    { "id": "Img_F03_06", "label": "Image", "properties": { "name": "X-Z两轴联动轨迹图", "filename": "F03_6.png" }},
+    { "id": "Img_F03_07", "label": "Image", "properties": { "name": "R2刀尖动态仿形动图", "filename": "F03_7.png" }},
+    { "id": "Img_F03_08", "label": "Image", "properties": { "name": "残留高度(Scallop)微观图", "filename": "F03_8.png" }},
+    { "id": "Img_F03_09", "label": "Image", "properties": { "name": "CFGL刀杆侧向刚性图", "filename": "F03_9.png" }},
+    { "id": "Img_F03_10", "label": "Image", "properties": { "name": "19.5°斜坡插补受力曲线", "filename": "F03_10.png" }},
+    { "id": "Img_F03_11", "label": "Image", "properties": { "name": "高速切削下的切屑形态", "filename": "F03_11.png" }},
+    { "id": "Img_F03_12", "label": "Image", "properties": { "name": "点接触散热模型云图", "filename": "F03_12.png" }},
+    { "id": "Img_F03_13", "label": "Image", "properties": { "name": "QC04MO刀片涂层磨损图", "filename": "F03_13.png" }},
+    { "id": "Img_F03_14", "label": "Image", "properties": { "name": "非标角度干涉避让图", "filename": "F03_14.png" }},
+    { "id": "Img_F03_15", "label": "Image", "properties": { "name": "CoT方案A与方案B对比图", "filename": "F03_15.png" }},
+    { "id": "Img_F03_16", "label": "Image", "properties": { "name": "精加工表面质量Ra检测", "filename": "F03_16.png" }},
+    { "id": "Img_F03_17", "label": "Image", "properties": { "name": "卧式加工排屑流动模拟", "filename": "F03_17.png" }},
+    { "id": "Img_F03_18", "label": "Image", "properties": { "name": "特征可达性评估报告", "filename": "F03_18.png" }},
+    { "id": "Img_F03_19", "label": "Image", "properties": { "name": "动态展成参数优化表", "filename": "F03_19.png" }},
+    { "id": "Img_F03_20", "label": "Image", "properties": { "name": "F03特征三维扫描云图", "filename": "F03_20.png" }}
+  ],
+  "relationships": [
+    { "id": "rF03_1", "type": "HAS_PART_TYPE", "startNode": "Global_AeroEngine_Category", "endNode": "Part_CasingRing_F03" },
+    { "id": "rF03_2", "type": "HAS_FEATURE", "startNode": "Part_CasingRing_F03", "endNode": "Feat_F03" },
+    { "id": "rF03_3", "type": "USES_MATERIAL", "startNode": "Part_CasingRing_F03", "endNode": "Mat_Shared_Ti6Al4V" },
+    { "id": "rF03_4", "type": "USES_EQUIPMENT", "startNode": "Proc_Rough_F03", "endNode": "Machine_HorizontalLathe" },
+
+    { "id": "rF03_5", "type": "HAS_CONSTRAINT", "startNode": "Feat_F03", "endNode": "Const_Slope_F03" },
+    { "id": "rF03_6", "type": "HAS_CONSTRAINT", "startNode": "Feat_F03", "endNode": "Const_Fillet_F03" },
+    { "id": "rF03_7", "type": "HAS_CONSTRAINT", "startNode": "Feat_F03", "endNode": "Const_Access_F03" },
+
+    { "id": "rF03_8", "type": "HAS_PROCESS", "startNode": "Feat_F03", "endNode": "Proc_Rough_F03" },
+    { "id": "rF03_9", "type": "INCLUDES_STEP", "startNode": "Proc_Rough_F03", "endNode": "Step_MultiPass_F03" },
+    { "id": "rF03_10", "type": "PRECEDES", "startNode": "Proc_Rough_F03", "endNode": "Proc_Semi_F03" },
+    { "id": "rF03_11", "type": "HAS_PROCESS", "startNode": "Feat_F03", "endNode": "Proc_Semi_F03" },
+    { "id": "rF03_12", "type": "INCLUDES_STEP", "startNode": "Proc_Semi_F03", "endNode": "Step_RampInterp_F03" },
+    { "id": "rF03_13", "type": "PRECEDES", "startNode": "Proc_Semi_F03", "endNode": "Proc_Finish_F03" },
+    { "id": "rF03_14", "type": "HAS_PROCESS", "startNode": "Feat_F03", "endNode": "Proc_Finish_F03" },
+    { "id": "rF03_15", "type": "INCLUDES_STEP", "startNode": "Proc_Finish_F03", "endNode": "Step_DynamicGen_F03" },
+
+
+    { "id": "rF03_16", "type": "USES_TOOL", "startNode": "Step_DynamicGen_F03", "endNode": "Insert_QC04MO" },
+    { "id": "rF03_17", "type": "HAS_HOLDER", "startNode": "Insert_QC04MO", "endNode": "Holder_CFGL_WK070" },
+    { "id": "rF03_18", "type": "SET_PARAM", "startNode": "Step_DynamicGen_F03", "endNode": "Param_Vc_Finish_F03" },
+    { "id": "rF03_19", "type": "SET_PARAM", "startNode": "Step_DynamicGen_F03", "endNode": "Param_f_Scallop_F03" },
+    { "id": "rF03_20", "type": "APPLY_MODEL", "startNode": "Step_DynamicGen_F03", "endNode": "Param_Force_Point_F03" },
+
+
+    { "id": "rF03_21", "type": "PRECEDES", "startNode": "CoT_F03_1", "endNode": "CoT_F03_2" },
+    { "id": "rF03_22", "type": "PRECEDES", "startNode": "CoT_F03_2", "endNode": "CoT_F03_3" },
+    { "id": "rF03_23", "type": "PRECEDES", "startNode": "CoT_F03_3", "endNode": "CoT_F03_4" },
+    { "id": "rF03_24", "type": "PRECEDES", "startNode": "CoT_F03_4", "endNode": "CoT_F03_5" },
+    { "id": "rF03_25", "type": "HAS_ANALYSIS", "startNode": "Feat_F03", "endNode": "CoT_F03_1" },
+
+
+    { "id": "mF03_1", "type": "DESCRIBED_BY_IMAGE", "startNode": "Feat_F03", "endNode": "Img_F03_01" },
+    { "id": "mF03_2", "type": "DESCRIBED_BY_IMAGE", "startNode": "Const_Slope_F03", "endNode": "Img_F03_02" },
+    { "id": "mF03_3", "type": "DESCRIBED_BY_IMAGE", "startNode": "Machine_HorizontalLathe", "endNode": "Img_F03_03" },
+    { "id": "mF03_4", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_MultiPass_F03", "endNode": "Img_F03_04" },
+    { "id": "mF03_5", "type": "DESCRIBED_BY_IMAGE", "startNode": "Insert_QC04MO", "endNode": "Img_F03_05" },
+    { "id": "mF03_6", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_DynamicGen_F03", "endNode": "Img_F03_06" },
+    { "id": "mF03_7", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_DynamicGen_F03", "endNode": "Img_F03_07" },
+    { "id": "mF03_8", "type": "DESCRIBED_BY_IMAGE", "startNode": "Param_f_Scallop_F03", "endNode": "Img_F03_08" },
+    { "id": "mF03_9", "type": "DESCRIBED_BY_IMAGE", "startNode": "Holder_CFGL_WK070", "endNode": "Img_F03_09" },
+    { "id": "mF03_10", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_RampInterp_F03", "endNode": "Img_F03_10" },
+    { "id": "mF03_11", "type": "DESCRIBED_BY_IMAGE", "startNode": "Param_Vc_Finish_F03", "endNode": "Img_F03_11" },
+    { "id": "mF03_12", "type": "DESCRIBED_BY_IMAGE", "startNode": "Param_Force_Point_F03", "endNode": "Img_F03_12" },
+    { "id": "mF03_13", "type": "DESCRIBED_BY_IMAGE", "startNode": "Insert_QC04MO", "endNode": "Img_F03_13" },
+    { "id": "mF03_14", "type": "DESCRIBED_BY_IMAGE", "startNode": "Const_Slope_F03", "endNode": "Img_F03_14" },
+    { "id": "mF03_15", "type": "DESCRIBED_BY_IMAGE", "startNode": "CoT_F03_2", "endNode": "Img_F03_15" },
+    { "id": "mF03_16", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_DynamicGen_F03", "endNode": "Img_F03_16" },
+    { "id": "mF03_17", "type": "DESCRIBED_BY_IMAGE", "startNode": "Machine_HorizontalLathe", "endNode": "Img_F03_17" },
+    { "id": "mF03_18", "type": "DESCRIBED_BY_IMAGE", "startNode": "Const_Access_F03", "endNode": "Img_F03_18" },
+    { "id": "mF03_19", "type": "DESCRIBED_BY_IMAGE", "startNode": "CoT_F03_5", "endNode": "Img_F03_19" },
+    { "id": "mF03_20", "type": "DESCRIBED_BY_IMAGE", "startNode": "Feat_F03", "endNode": "Img_F03_20" }
+  ]
+}

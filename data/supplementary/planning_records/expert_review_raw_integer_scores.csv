@@ -1,0 +1,1201 @@
+﻿case_id,feature_id,case_index,plan_id,expert_id,method,tool_suitability_1_5,route_rationality_1_5,parameter_safety_1_5,manufacturability_1_5,engineering_usability_1_5,overall_expert_score,hard_veto,veto_reason,comments
+F00_01,F00,1,F00_01_P01,E1,Vanilla MLLM,5,2,2,2,3,2.8,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F00_01,F00,1,F00_01_P01,E2,Vanilla MLLM,2,4,4,3,2,3,No,,Requires modification before shop-floor use.
+F00_01,F00,1,F00_01_P01,E3,Vanilla MLLM,3,3,2,2,4,2.8,No,,Requires modification before shop-floor use.
+F00_02,F00,2,F00_02_P01,E1,Vanilla MLLM,3,2,2,2,2,2.2,No,,Requires modification before shop-floor use.
+F00_02,F00,2,F00_02_P01,E2,Vanilla MLLM,3,3,3,2,4,3,No,,Requires modification before shop-floor use.
+F00_02,F00,2,F00_02_P01,E3,Vanilla MLLM,2,3,2,2,3,2.4,No,,Requires modification before shop-floor use.
+F00_03,F00,3,F00_03_P01,E1,Vanilla MLLM,2,2,4,3,3,2.8,No,,Requires modification before shop-floor use.
+F00_03,F00,3,F00_03_P01,E2,Vanilla MLLM,4,3,3,3,3,3.2,No,,Requires modification before shop-floor use.
+F00_03,F00,3,F00_03_P01,E3,Vanilla MLLM,3,3,2,3,2,2.6,No,,Requires modification before shop-floor use.
+F00_04,F00,4,F00_04_P01,E1,Vanilla MLLM,2,4,2,2,2,2.4,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F00_04,F00,4,F00_04_P01,E2,Vanilla MLLM,3,3,2,2,2,2.4,No,,Requires modification before shop-floor use.
+F00_04,F00,4,F00_04_P01,E3,Vanilla MLLM,2,2,4,2,4,2.8,No,,Requires modification before shop-floor use.
+F00_05,F00,5,F00_05_P01,E1,Vanilla MLLM,4,3,2,3,2,2.8,No,,Requires modification before shop-floor use.
+F00_05,F00,5,F00_05_P01,E2,Vanilla MLLM,4,4,2,3,3,3.2,No,,Requires modification before shop-floor use.
+F00_05,F00,5,F00_05_P01,E3,Vanilla MLLM,2,2,3,2,3,2.4,No,,Requires modification before shop-floor use.
+F01_01,F01,1,F01_01_P01,E1,Vanilla MLLM,3,3,2,4,2,2.8,No,,Requires modification before shop-floor use.
+F01_01,F01,1,F01_01_P01,E2,Vanilla MLLM,2,4,2,3,3,2.8,No,,Requires modification before shop-floor use.
+F01_01,F01,1,F01_01_P01,E3,Vanilla MLLM,3,3,3,4,3,3.2,No,,Requires modification before shop-floor use.
+F01_02,F01,2,F01_02_P01,E1,Vanilla MLLM,3,3,3,4,4,3.4,No,,Requires modification before shop-floor use.
+F01_02,F01,2,F01_02_P01,E2,Vanilla MLLM,3,3,3,2,2,2.6,No,,Requires modification before shop-floor use.
+F01_02,F01,2,F01_02_P01,E3,Vanilla MLLM,3,3,4,2,2,2.8,No,,Requires modification before shop-floor use.
+F01_03,F01,3,F01_03_P01,E1,Vanilla MLLM,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F01_03,F01,3,F01_03_P01,E2,Vanilla MLLM,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F01_03,F01,3,F01_03_P01,E3,Vanilla MLLM,4,4,5,5,4,4.4,No,,Acceptable plan with only minor tuning required.
+F01_04,F01,4,F01_04_P01,E1,Vanilla MLLM,5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F01_04,F01,4,F01_04_P01,E2,Vanilla MLLM,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F01_04,F01,4,F01_04_P01,E3,Vanilla MLLM,5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F01_05,F01,5,F01_05_P01,E1,Vanilla MLLM,4,4,4,4,5,4.2,No,,Acceptable plan with only minor tuning required.
+F01_05,F01,5,F01_05_P01,E2,Vanilla MLLM,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F01_05,F01,5,F01_05_P01,E3,Vanilla MLLM,4,4,4,5,4,4.2,No,,Acceptable plan with only minor tuning required.
+F02_01,F02,1,F02_01_P01,E1,Vanilla MLLM,3,2,3,5,3,3.2,No,,Requires modification before shop-floor use.
+F02_01,F02,1,F02_01_P01,E2,Vanilla MLLM,3,2,3,3,5,3.2,No,,Requires modification before shop-floor use.
+F02_01,F02,1,F02_01_P01,E3,Vanilla MLLM,3,2,4,3,3,3,No,,Requires modification before shop-floor use.
+F02_02,F02,2,F02_02_P01,E1,Vanilla MLLM,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F02_02,F02,2,F02_02_P01,E2,Vanilla MLLM,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F02_02,F02,2,F02_02_P01,E3,Vanilla MLLM,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F02_03,F02,3,F02_03_P01,E1,Vanilla MLLM,3,2,3,4,3,3,No,,Requires modification before shop-floor use.
+F02_03,F02,3,F02_03_P01,E2,Vanilla MLLM,3,2,2,3,3,2.6,No,,Requires modification before shop-floor use.
+F02_03,F02,3,F02_03_P01,E3,Vanilla MLLM,2,2,2,3,3,2.4,No,,Requires modification before shop-floor use.
+F02_04,F02,4,F02_04_P01,E1,Vanilla MLLM,2,3,3,2,5,3,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F02_04,F02,4,F02_04_P01,E2,Vanilla MLLM,4,2,3,3,2,2.8,No,,Requires modification before shop-floor use.
+F02_04,F02,4,F02_04_P01,E3,Vanilla MLLM,3,3,2,4,3,3,No,,Requires modification before shop-floor use.
+F02_05,F02,5,F02_05_P01,E1,Vanilla MLLM,2,3,2,2,2,2.2,No,,Requires modification before shop-floor use.
+F02_05,F02,5,F02_05_P01,E2,Vanilla MLLM,2,2,2,3,3,2.4,No,,Requires modification before shop-floor use.
+F02_05,F02,5,F02_05_P01,E3,Vanilla MLLM,2,3,3,3,3,2.8,No,,Requires modification before shop-floor use.
+F03_01,F03,1,F03_01_P01,E1,Vanilla MLLM,4,4,5,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F03_01,F03,1,F03_01_P01,E2,Vanilla MLLM,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F03_01,F03,1,F03_01_P01,E3,Vanilla MLLM,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F03_02,F03,2,F03_02_P01,E1,Vanilla MLLM,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F03_02,F03,2,F03_02_P01,E2,Vanilla MLLM,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F03_02,F03,2,F03_02_P01,E3,Vanilla MLLM,5,4,5,4,4,4.4,No,,Acceptable plan with only minor tuning required.
+F03_03,F03,3,F03_03_P01,E1,Vanilla MLLM,4,3,2,3,3,3,No,,Requires modification before shop-floor use.
+F03_03,F03,3,F03_03_P01,E2,Vanilla MLLM,3,3,3,3,2,2.8,No,,Requires modification before shop-floor use.
+F03_03,F03,3,F03_03_P01,E3,Vanilla MLLM,3,3,1,3,2,2.4,No,,Requires modification before shop-floor use.
+F03_04,F03,4,F03_04_P01,E1,Vanilla MLLM,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F03_04,F03,4,F03_04_P01,E2,Vanilla MLLM,4,5,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F03_04,F03,4,F03_04_P01,E3,Vanilla MLLM,4,5,4,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F03_05,F03,5,F03_05_P01,E1,Vanilla MLLM,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F03_05,F03,5,F03_05_P01,E2,Vanilla MLLM,4,5,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F03_05,F03,5,F03_05_P01,E3,Vanilla MLLM,5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F04_01,F04,1,F04_01_P01,E1,Vanilla MLLM,4,4,5,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F04_01,F04,1,F04_01_P01,E2,Vanilla MLLM,4,4,4,5,5,4.4,No,,Acceptable plan with only minor tuning required.
+F04_01,F04,1,F04_01_P01,E3,Vanilla MLLM,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F04_02,F04,2,F04_02_P01,E1,Vanilla MLLM,3,3,3,3,2,2.8,No,,Requires modification before shop-floor use.
+F04_02,F04,2,F04_02_P01,E2,Vanilla MLLM,2,2,3,3,3,2.6,No,,Requires modification before shop-floor use.
+F04_02,F04,2,F04_02_P01,E3,Vanilla MLLM,3,4,4,2,3,3.2,No,,Requires modification before shop-floor use.
+F04_03,F04,3,F04_03_P01,E1,Vanilla MLLM,3,3,3,2,4,3,No,,Requires modification before shop-floor use.
+F04_03,F04,3,F04_03_P01,E2,Vanilla MLLM,4,2,3,3,2,2.8,No,,Requires modification before shop-floor use.
+F04_03,F04,3,F04_03_P01,E3,Vanilla MLLM,2,2,2,4,4,2.8,No,,Requires modification before shop-floor use.
+F04_04,F04,4,F04_04_P01,E1,Vanilla MLLM,2,4,2,4,4,3.2,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F04_04,F04,4,F04_04_P01,E2,Vanilla MLLM,3,3,3,2,3,2.8,No,,Requires modification before shop-floor use.
+F04_04,F04,4,F04_04_P01,E3,Vanilla MLLM,3,4,2,2,3,2.8,No,,Requires modification before shop-floor use.
+F04_05,F04,5,F04_05_P01,E1,Vanilla MLLM,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F04_05,F04,5,F04_05_P01,E2,Vanilla MLLM,5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F04_05,F04,5,F04_05_P01,E3,Vanilla MLLM,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F05_01,F05,1,F05_01_P01,E1,Vanilla MLLM,3,2,2,2,2,2.2,No,,Requires modification before shop-floor use.
+F05_01,F05,1,F05_01_P01,E2,Vanilla MLLM,2,3,2,2,4,2.6,No,,Requires modification before shop-floor use.
+F05_01,F05,1,F05_01_P01,E3,Vanilla MLLM,2,3,4,2,3,2.8,No,,Requires modification before shop-floor use.
+F05_02,F05,2,F05_02_P01,E1,Vanilla MLLM,4,3,3,3,2,3,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F05_02,F05,2,F05_02_P01,E2,Vanilla MLLM,3,2,3,3,2,2.6,No,,Requires modification before shop-floor use.
+F05_02,F05,2,F05_02_P01,E3,Vanilla MLLM,4,3,4,2,4,3.4,No,,Requires modification before shop-floor use.
+F05_03,F05,3,F05_03_P01,E1,Vanilla MLLM,2,2,2,2,4,2.4,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F05_03,F05,3,F05_03_P01,E2,Vanilla MLLM,3,2,3,3,2,2.6,No,,Requires modification before shop-floor use.
+F05_03,F05,3,F05_03_P01,E3,Vanilla MLLM,2,3,3,2,3,2.6,No,,Requires modification before shop-floor use.
+F05_04,F05,4,F05_04_P01,E1,Vanilla MLLM,2,2,1,3,4,2.4,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F05_04,F05,4,F05_04_P01,E2,Vanilla MLLM,2,2,2,3,4,2.6,No,,Requires modification before shop-floor use.
+F05_04,F05,4,F05_04_P01,E3,Vanilla MLLM,5,3,3,2,2,3,No,,Requires modification before shop-floor use.
+F05_05,F05,5,F05_05_P01,E1,Vanilla MLLM,2,3,2,3,2,2.4,No,,Requires modification before shop-floor use.
+F05_05,F05,5,F05_05_P01,E2,Vanilla MLLM,4,2,3,2,3,2.8,No,,Requires modification before shop-floor use.
+F05_05,F05,5,F05_05_P01,E3,Vanilla MLLM,2,3,1,3,2,2.2,No,,Requires modification before shop-floor use.
+F06_01,F06,1,F06_01_P01,E1,Vanilla MLLM,3,3,2,4,2,2.8,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F06_01,F06,1,F06_01_P01,E2,Vanilla MLLM,3,3,2,3,2,2.6,No,,Requires modification before shop-floor use.
+F06_01,F06,1,F06_01_P01,E3,Vanilla MLLM,3,3,3,3,2,2.8,No,,Requires modification before shop-floor use.
+F06_02,F06,2,F06_02_P01,E1,Vanilla MLLM,3,2,2,3,2,2.4,No,,Requires modification before shop-floor use.
+F06_02,F06,2,F06_02_P01,E2,Vanilla MLLM,2,3,3,3,3,2.8,No,,Requires modification before shop-floor use.
+F06_02,F06,2,F06_02_P01,E3,Vanilla MLLM,3,2,4,2,4,3,No,,Requires modification before shop-floor use.
+F06_03,F06,3,F06_03_P01,E1,Vanilla MLLM,3,3,3,4,3,3.2,No,,Requires modification before shop-floor use.
+F06_03,F06,3,F06_03_P01,E2,Vanilla MLLM,3,4,3,2,4,3.2,No,,Requires modification before shop-floor use.
+F06_03,F06,3,F06_03_P01,E3,Vanilla MLLM,2,2,4,3,3,2.8,No,,Requires modification before shop-floor use.
+F06_04,F06,4,F06_04_P01,E1,Vanilla MLLM,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F06_04,F06,4,F06_04_P01,E2,Vanilla MLLM,4,5,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F06_04,F06,4,F06_04_P01,E3,Vanilla MLLM,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F06_05,F06,5,F06_05_P01,E1,Vanilla MLLM,3,3,3,2,3,2.8,No,,Requires modification before shop-floor use.
+F06_05,F06,5,F06_05_P01,E2,Vanilla MLLM,3,3,3,2,3,2.8,No,,Requires modification before shop-floor use.
+F06_05,F06,5,F06_05_P01,E3,Vanilla MLLM,2,4,3,4,2,3,No,,Requires modification before shop-floor use.
+F07_01,F07,1,F07_01_P01,E1,Vanilla MLLM,3,4,3,4,3,3.4,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F07_01,F07,1,F07_01_P01,E2,Vanilla MLLM,3,3,3,2,2,2.6,No,,Requires modification before shop-floor use.
+F07_01,F07,1,F07_01_P01,E3,Vanilla MLLM,4,3,3,3,4,3.4,No,,Requires modification before shop-floor use.
+F07_02,F07,2,F07_02_P01,E1,Vanilla MLLM,4,3,3,5,3,3.6,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F07_02,F07,2,F07_02_P01,E2,Vanilla MLLM,3,3,3,3,3,3,No,,Requires modification before shop-floor use.
+F07_02,F07,2,F07_02_P01,E3,Vanilla MLLM,3,3,2,3,2,2.6,No,,Requires modification before shop-floor use.
+F07_03,F07,3,F07_03_P01,E1,Vanilla MLLM,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F07_03,F07,3,F07_03_P01,E2,Vanilla MLLM,4,4,4,5,4,4.2,No,,Acceptable plan with only minor tuning required.
+F07_03,F07,3,F07_03_P01,E3,Vanilla MLLM,4,4,4,4,5,4.2,No,,Acceptable plan with only minor tuning required.
+F07_04,F07,4,F07_04_P01,E1,Vanilla MLLM,2,2,2,2,3,2.2,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F07_04,F07,4,F07_04_P01,E2,Vanilla MLLM,3,2,2,4,4,3,No,,Requires modification before shop-floor use.
+F07_04,F07,4,F07_04_P01,E3,Vanilla MLLM,2,2,1,5,3,2.6,No,,Requires modification before shop-floor use.
+F07_05,F07,5,F07_05_P01,E1,Vanilla MLLM,4,4,2,3,2,3,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F07_05,F07,5,F07_05_P01,E2,Vanilla MLLM,3,2,3,2,4,2.8,No,,Requires modification before shop-floor use.
+F07_05,F07,5,F07_05_P01,E3,Vanilla MLLM,3,3,2,4,3,3,No,,Requires modification before shop-floor use.
+F08_01,F08,1,F08_01_P01,E1,Vanilla MLLM,2,3,2,4,2,2.6,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F08_01,F08,1,F08_01_P01,E2,Vanilla MLLM,3,3,2,2,2,2.4,No,,Requires modification before shop-floor use.
+F08_01,F08,1,F08_01_P01,E3,Vanilla MLLM,2,2,1,4,4,2.6,No,,Requires modification before shop-floor use.
+F08_02,F08,2,F08_02_P01,E1,Vanilla MLLM,2,2,3,3,3,2.6,No,,Requires modification before shop-floor use.
+F08_02,F08,2,F08_02_P01,E2,Vanilla MLLM,2,3,3,3,2,2.6,No,,Requires modification before shop-floor use.
+F08_02,F08,2,F08_02_P01,E3,Vanilla MLLM,3,3,3,3,3,3,No,,Requires modification before shop-floor use.
+F08_03,F08,3,F08_03_P01,E1,Vanilla MLLM,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F08_03,F08,3,F08_03_P01,E2,Vanilla MLLM,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F08_03,F08,3,F08_03_P01,E3,Vanilla MLLM,4,4,4,4,5,4.2,No,,Acceptable plan with only minor tuning required.
+F08_04,F08,4,F08_04_P01,E1,Vanilla MLLM,2,2,1,3,3,2.2,No,,Requires modification before shop-floor use.
+F08_04,F08,4,F08_04_P01,E2,Vanilla MLLM,2,3,2,3,3,2.6,No,,Requires modification before shop-floor use.
+F08_04,F08,4,F08_04_P01,E3,Vanilla MLLM,2,3,3,2,2,2.4,No,,Requires modification before shop-floor use.
+F08_05,F08,5,F08_05_P01,E1,Vanilla MLLM,3,4,2,3,3,3,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F08_05,F08,5,F08_05_P01,E2,Vanilla MLLM,2,2,2,4,2,2.4,No,,Requires modification before shop-floor use.
+F08_05,F08,5,F08_05_P01,E3,Vanilla MLLM,4,3,3,2,2,2.8,No,,Requires modification before shop-floor use.
+F09_01,F09,1,F09_01_P01,E1,Vanilla MLLM,2,2,2,2,3,2.2,No,,Requires modification before shop-floor use.
+F09_01,F09,1,F09_01_P01,E2,Vanilla MLLM,3,3,3,3,4,3.2,No,,Requires modification before shop-floor use.
+F09_01,F09,1,F09_01_P01,E3,Vanilla MLLM,3,3,2,2,2,2.4,No,,Requires modification before shop-floor use.
+F09_02,F09,2,F09_02_P01,E1,Vanilla MLLM,2,2,3,2,3,2.4,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F09_02,F09,2,F09_02_P01,E2,Vanilla MLLM,4,3,2,4,2,3,No,,Requires modification before shop-floor use.
+F09_02,F09,2,F09_02_P01,E3,Vanilla MLLM,2,3,3,3,3,2.8,No,,Requires modification before shop-floor use.
+F09_03,F09,3,F09_03_P01,E1,Vanilla MLLM,2,4,2,2,3,2.6,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F09_03,F09,3,F09_03_P01,E2,Vanilla MLLM,2,2,2,4,3,2.6,No,,Requires modification before shop-floor use.
+F09_03,F09,3,F09_03_P01,E3,Vanilla MLLM,3,2,3,3,2,2.6,No,,Requires modification before shop-floor use.
+F09_04,F09,4,F09_04_P01,E1,Vanilla MLLM,5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F09_04,F09,4,F09_04_P01,E2,Vanilla MLLM,4,5,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F09_04,F09,4,F09_04_P01,E3,Vanilla MLLM,5,4,4,5,4,4.4,No,,Acceptable plan with only minor tuning required.
+F09_05,F09,5,F09_05_P01,E1,Vanilla MLLM,2,3,2,3,2,2.4,No,,Requires modification before shop-floor use.
+F09_05,F09,5,F09_05_P01,E2,Vanilla MLLM,3,3,3,2,3,2.8,No,,Requires modification before shop-floor use.
+F09_05,F09,5,F09_05_P01,E3,Vanilla MLLM,4,4,2,2,2,2.8,No,,Requires modification before shop-floor use.
+F10_01,F10,1,F10_01_P01,E1,Vanilla MLLM,2,2,3,3,3,2.6,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F10_01,F10,1,F10_01_P01,E2,Vanilla MLLM,3,2,2,3,2,2.4,No,,Requires modification before shop-floor use.
+F10_01,F10,1,F10_01_P01,E3,Vanilla MLLM,4,3,3,3,4,3.4,No,,Requires modification before shop-floor use.
+F10_02,F10,2,F10_02_P01,E1,Vanilla MLLM,4,4,4,5,4,4.2,No,,Acceptable plan with only minor tuning required.
+F10_02,F10,2,F10_02_P01,E2,Vanilla MLLM,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F10_02,F10,2,F10_02_P01,E3,Vanilla MLLM,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F10_03,F10,3,F10_03_P01,E1,Vanilla MLLM,3,2,4,3,3,3,No,,Requires modification before shop-floor use.
+F10_03,F10,3,F10_03_P01,E2,Vanilla MLLM,3,3,3,2,4,3,No,,Requires modification before shop-floor use.
+F10_03,F10,3,F10_03_P01,E3,Vanilla MLLM,3,3,2,4,2,2.8,No,,Requires modification before shop-floor use.
+F10_04,F10,4,F10_04_P01,E1,Vanilla MLLM,3,2,1,4,3,2.6,No,,Requires modification before shop-floor use.
+F10_04,F10,4,F10_04_P01,E2,Vanilla MLLM,3,3,1,3,3,2.6,No,,Requires modification before shop-floor use.
+F10_04,F10,4,F10_04_P01,E3,Vanilla MLLM,3,3,1,2,2,2.2,No,,Requires modification before shop-floor use.
+F10_05,F10,5,F10_05_P01,E1,Vanilla MLLM,3,2,2,4,2,2.6,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F10_05,F10,5,F10_05_P01,E2,Vanilla MLLM,3,3,1,4,3,2.8,No,,Requires modification before shop-floor use.
+F10_05,F10,5,F10_05_P01,E3,Vanilla MLLM,3,2,3,2,2,2.4,No,,Requires modification before shop-floor use.
+F11_01,F11,1,F11_01_P01,E1,Vanilla MLLM,2,2,2,2,3,2.2,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F11_01,F11,1,F11_01_P01,E2,Vanilla MLLM,4,3,3,2,2,2.8,No,,Requires modification before shop-floor use.
+F11_01,F11,1,F11_01_P01,E3,Vanilla MLLM,3,5,2,3,4,3.4,No,,Requires modification before shop-floor use.
+F11_02,F11,2,F11_02_P01,E1,Vanilla MLLM,4,4,4,4,5,4.2,No,,Acceptable plan with only minor tuning required.
+F11_02,F11,2,F11_02_P01,E2,Vanilla MLLM,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F11_02,F11,2,F11_02_P01,E3,Vanilla MLLM,5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F11_03,F11,3,F11_03_P01,E1,Vanilla MLLM,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F11_03,F11,3,F11_03_P01,E2,Vanilla MLLM,4,4,5,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F11_03,F11,3,F11_03_P01,E3,Vanilla MLLM,5,4,5,4,4,4.4,No,,Acceptable plan with only minor tuning required.
+F11_04,F11,4,F11_04_P01,E1,Vanilla MLLM,4,2,2,4,3,3,No,,Requires modification before shop-floor use.
+F11_04,F11,4,F11_04_P01,E2,Vanilla MLLM,2,2,2,2,2,2,No,,Requires modification before shop-floor use.
+F11_04,F11,4,F11_04_P01,E3,Vanilla MLLM,2,4,3,3,3,3,No,,Requires modification before shop-floor use.
+F11_05,F11,5,F11_05_P01,E1,Vanilla MLLM,2,3,2,2,2,2.2,No,,Requires modification before shop-floor use.
+F11_05,F11,5,F11_05_P01,E2,Vanilla MLLM,4,3,4,2,4,3.4,No,,Requires modification before shop-floor use.
+F11_05,F11,5,F11_05_P01,E3,Vanilla MLLM,4,2,3,3,4,3.2,No,,Requires modification before shop-floor use.
+F12_01,F12,1,F12_01_P01,E1,Vanilla MLLM,4,3,2,2,3,2.8,No,,Requires modification before shop-floor use.
+F12_01,F12,1,F12_01_P01,E2,Vanilla MLLM,3,3,2,3,3,2.8,No,,Requires modification before shop-floor use.
+F12_01,F12,1,F12_01_P01,E3,Vanilla MLLM,3,3,3,2,2,2.6,No,,Requires modification before shop-floor use.
+F12_02,F12,2,F12_02_P01,E1,Vanilla MLLM,4,3,2,3,2,2.8,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F12_02,F12,2,F12_02_P01,E2,Vanilla MLLM,3,2,3,3,3,2.8,No,,Requires modification before shop-floor use.
+F12_02,F12,2,F12_02_P01,E3,Vanilla MLLM,4,4,2,3,2,3,No,,Requires modification before shop-floor use.
+F12_03,F12,3,F12_03_P01,E1,Vanilla MLLM,2,3,1,5,2,2.6,No,,Requires modification before shop-floor use.
+F12_03,F12,3,F12_03_P01,E2,Vanilla MLLM,2,2,3,3,2,2.4,No,,Requires modification before shop-floor use.
+F12_03,F12,3,F12_03_P01,E3,Vanilla MLLM,3,2,3,2,2,2.4,No,,Requires modification before shop-floor use.
+F12_04,F12,4,F12_04_P01,E1,Vanilla MLLM,2,3,2,3,2,2.4,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F12_04,F12,4,F12_04_P01,E2,Vanilla MLLM,3,2,2,3,3,2.6,No,,Requires modification before shop-floor use.
+F12_04,F12,4,F12_04_P01,E3,Vanilla MLLM,3,3,3,3,4,3.2,No,,Requires modification before shop-floor use.
+F12_05,F12,5,F12_05_P01,E1,Vanilla MLLM,3,3,1,3,3,2.6,No,,Requires modification before shop-floor use.
+F12_05,F12,5,F12_05_P01,E2,Vanilla MLLM,3,2,2,3,2,2.4,No,,Requires modification before shop-floor use.
+F12_05,F12,5,F12_05_P01,E3,Vanilla MLLM,3,3,1,3,3,2.6,No,,Requires modification before shop-floor use.
+F13_01,F13,1,F13_01_P01,E1,Vanilla MLLM,2,2,3,3,2,2.4,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F13_01,F13,1,F13_01_P01,E2,Vanilla MLLM,3,3,3,2,4,3,No,,Requires modification before shop-floor use.
+F13_01,F13,1,F13_01_P01,E3,Vanilla MLLM,2,2,2,2,4,2.4,No,,Requires modification before shop-floor use.
+F13_02,F13,2,F13_02_P01,E1,Vanilla MLLM,4,4,4,4,5,4.2,No,,Acceptable plan with only minor tuning required.
+F13_02,F13,2,F13_02_P01,E2,Vanilla MLLM,4,4,4,5,5,4.4,No,,Acceptable plan with only minor tuning required.
+F13_02,F13,2,F13_02_P01,E3,Vanilla MLLM,4,5,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F13_03,F13,3,F13_03_P01,E1,Vanilla MLLM,4,5,3,4,2,3.6,No,,Requires modification before shop-floor use.
+F13_03,F13,3,F13_03_P01,E2,Vanilla MLLM,4,3,2,3,2,2.8,No,,Requires modification before shop-floor use.
+F13_03,F13,3,F13_03_P01,E3,Vanilla MLLM,4,5,1,2,3,3,No,,Requires modification before shop-floor use.
+F13_04,F13,4,F13_04_P01,E1,Vanilla MLLM,3,3,3,2,2,2.6,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F13_04,F13,4,F13_04_P01,E2,Vanilla MLLM,2,3,2,3,3,2.6,No,,Requires modification before shop-floor use.
+F13_04,F13,4,F13_04_P01,E3,Vanilla MLLM,3,3,3,2,3,2.8,No,,Requires modification before shop-floor use.
+F13_05,F13,5,F13_05_P01,E1,Vanilla MLLM,4,2,3,2,3,2.8,No,,Requires modification before shop-floor use.
+F13_05,F13,5,F13_05_P01,E2,Vanilla MLLM,2,3,3,4,3,3,No,,Requires modification before shop-floor use.
+F13_05,F13,5,F13_05_P01,E3,Vanilla MLLM,2,2,4,4,2,2.8,No,,Requires modification before shop-floor use.
+F14_01,F14,1,F14_01_P01,E1,Vanilla MLLM,3,2,2,3,3,2.6,No,,Requires modification before shop-floor use.
+F14_01,F14,1,F14_01_P01,E2,Vanilla MLLM,2,2,1,2,2,1.8,No,,Requires modification before shop-floor use.
+F14_01,F14,1,F14_01_P01,E3,Vanilla MLLM,3,3,1,3,2,2.4,No,,Requires modification before shop-floor use.
+F14_02,F14,2,F14_02_P01,E1,Vanilla MLLM,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F14_02,F14,2,F14_02_P01,E2,Vanilla MLLM,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F14_02,F14,2,F14_02_P01,E3,Vanilla MLLM,4,4,4,4,5,4.2,No,,Acceptable plan with only minor tuning required.
+F14_03,F14,3,F14_03_P01,E1,Vanilla MLLM,3,4,3,3,3,3.2,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F14_03,F14,3,F14_03_P01,E2,Vanilla MLLM,3,2,3,2,3,2.6,No,,Requires modification before shop-floor use.
+F14_03,F14,3,F14_03_P01,E3,Vanilla MLLM,3,3,3,3,3,3,No,,Requires modification before shop-floor use.
+F14_04,F14,4,F14_04_P01,E1,Vanilla MLLM,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F14_04,F14,4,F14_04_P01,E2,Vanilla MLLM,4,5,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F14_04,F14,4,F14_04_P01,E3,Vanilla MLLM,5,5,4,5,4,4.6,No,,Acceptable plan with only minor tuning required.
+F14_05,F14,5,F14_05_P01,E1,Vanilla MLLM,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F14_05,F14,5,F14_05_P01,E2,Vanilla MLLM,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F14_05,F14,5,F14_05_P01,E3,Vanilla MLLM,4,4,5,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F15_01,F15,1,F15_01_P01,E1,Vanilla MLLM,4,2,3,2,2,2.6,No,,Requires modification before shop-floor use.
+F15_01,F15,1,F15_01_P01,E2,Vanilla MLLM,2,4,3,4,4,3.4,No,,Requires modification before shop-floor use.
+F15_01,F15,1,F15_01_P01,E3,Vanilla MLLM,4,3,2,2,4,3,No,,Requires modification before shop-floor use.
+F15_02,F15,2,F15_02_P01,E1,Vanilla MLLM,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F15_02,F15,2,F15_02_P01,E2,Vanilla MLLM,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F15_02,F15,2,F15_02_P01,E3,Vanilla MLLM,5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F15_03,F15,3,F15_03_P01,E1,Vanilla MLLM,3,2,3,2,2,2.4,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F15_03,F15,3,F15_03_P01,E2,Vanilla MLLM,3,2,2,3,3,2.6,No,,Requires modification before shop-floor use.
+F15_03,F15,3,F15_03_P01,E3,Vanilla MLLM,3,2,2,3,2,2.4,No,,Requires modification before shop-floor use.
+F15_04,F15,4,F15_04_P01,E1,Vanilla MLLM,3,3,2,3,3,2.8,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F15_04,F15,4,F15_04_P01,E2,Vanilla MLLM,3,3,3,3,4,3.2,No,,Requires modification before shop-floor use.
+F15_04,F15,4,F15_04_P01,E3,Vanilla MLLM,3,5,2,3,3,3.2,No,,Requires modification before shop-floor use.
+F15_05,F15,5,F15_05_P01,E1,Vanilla MLLM,3,3,4,2,2,2.8,No,,Requires modification before shop-floor use.
+F15_05,F15,5,F15_05_P01,E2,Vanilla MLLM,3,4,2,3,2,2.8,No,,Requires modification before shop-floor use.
+F15_05,F15,5,F15_05_P01,E3,Vanilla MLLM,2,2,3,3,3,2.6,No,,Requires modification before shop-floor use.
+F16_01,F16,1,F16_01_P01,E1,Vanilla MLLM,2,3,2,4,2,2.6,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F16_01,F16,1,F16_01_P01,E2,Vanilla MLLM,2,3,2,3,2,2.4,No,,Requires modification before shop-floor use.
+F16_01,F16,1,F16_01_P01,E3,Vanilla MLLM,3,2,3,3,2,2.6,No,,Requires modification before shop-floor use.
+F16_02,F16,2,F16_02_P01,E1,Vanilla MLLM,3,3,3,2,3,2.8,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F16_02,F16,2,F16_02_P01,E2,Vanilla MLLM,2,3,3,2,4,2.8,No,,Requires modification before shop-floor use.
+F16_02,F16,2,F16_02_P01,E3,Vanilla MLLM,3,3,3,3,2,2.8,No,,Requires modification before shop-floor use.
+F16_03,F16,3,F16_03_P01,E1,Vanilla MLLM,2,3,1,2,3,2.2,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F16_03,F16,3,F16_03_P01,E2,Vanilla MLLM,4,4,2,2,2,2.8,No,,Requires modification before shop-floor use.
+F16_03,F16,3,F16_03_P01,E3,Vanilla MLLM,3,2,3,2,3,2.6,No,,Requires modification before shop-floor use.
+F16_04,F16,4,F16_04_P01,E1,Vanilla MLLM,2,4,2,2,4,2.8,No,,Requires modification before shop-floor use.
+F16_04,F16,4,F16_04_P01,E2,Vanilla MLLM,3,3,3,3,3,3,No,,Requires modification before shop-floor use.
+F16_04,F16,4,F16_04_P01,E3,Vanilla MLLM,2,3,3,5,3,3.2,No,,Requires modification before shop-floor use.
+F16_05,F16,5,F16_05_P01,E1,Vanilla MLLM,3,2,3,4,4,3.2,No,,Requires modification before shop-floor use.
+F16_05,F16,5,F16_05_P01,E2,Vanilla MLLM,3,2,3,3,4,3,No,,Requires modification before shop-floor use.
+F16_05,F16,5,F16_05_P01,E3,Vanilla MLLM,4,3,2,3,2,2.8,No,,Requires modification before shop-floor use.
+F17_01,F17,1,F17_01_P01,E1,Vanilla MLLM,3,3,2,2,2,2.4,No,,Requires modification before shop-floor use.
+F17_01,F17,1,F17_01_P01,E2,Vanilla MLLM,4,3,2,3,3,3,No,,Requires modification before shop-floor use.
+F17_01,F17,1,F17_01_P01,E3,Vanilla MLLM,4,2,3,3,2,2.8,No,,Requires modification before shop-floor use.
+F17_02,F17,2,F17_02_P01,E1,Vanilla MLLM,3,3,4,3,2,3,No,,Requires modification before shop-floor use.
+F17_02,F17,2,F17_02_P01,E2,Vanilla MLLM,2,3,1,5,2,2.6,No,,Requires modification before shop-floor use.
+F17_02,F17,2,F17_02_P01,E3,Vanilla MLLM,2,3,4,3,2,2.8,No,,Requires modification before shop-floor use.
+F17_03,F17,3,F17_03_P01,E1,Vanilla MLLM,2,3,3,2,3,2.6,No,,Requires modification before shop-floor use.
+F17_03,F17,3,F17_03_P01,E2,Vanilla MLLM,4,3,2,3,2,2.8,No,,Requires modification before shop-floor use.
+F17_03,F17,3,F17_03_P01,E3,Vanilla MLLM,4,4,3,3,4,3.6,No,,Requires modification before shop-floor use.
+F17_04,F17,4,F17_04_P01,E1,Vanilla MLLM,3,2,3,3,3,2.8,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F17_04,F17,4,F17_04_P01,E2,Vanilla MLLM,3,3,2,3,2,2.6,No,,Requires modification before shop-floor use.
+F17_04,F17,4,F17_04_P01,E3,Vanilla MLLM,3,2,3,2,3,2.6,No,,Requires modification before shop-floor use.
+F17_05,F17,5,F17_05_P01,E1,Vanilla MLLM,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F17_05,F17,5,F17_05_P01,E2,Vanilla MLLM,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F17_05,F17,5,F17_05_P01,E3,Vanilla MLLM,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F18_01,F18,1,F18_01_P01,E1,Vanilla MLLM,3,2,3,3,3,2.8,No,,Requires modification before shop-floor use.
+F18_01,F18,1,F18_01_P01,E2,Vanilla MLLM,3,4,3,3,2,3,No,,Requires modification before shop-floor use.
+F18_01,F18,1,F18_01_P01,E3,Vanilla MLLM,2,3,2,2,4,2.6,No,,Requires modification before shop-floor use.
+F18_02,F18,2,F18_02_P01,E1,Vanilla MLLM,3,3,3,4,4,3.4,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F18_02,F18,2,F18_02_P01,E2,Vanilla MLLM,2,4,2,3,2,2.6,No,,Requires modification before shop-floor use.
+F18_02,F18,2,F18_02_P01,E3,Vanilla MLLM,3,3,3,4,3,3.2,No,,Requires modification before shop-floor use.
+F18_03,F18,3,F18_03_P01,E1,Vanilla MLLM,2,3,1,2,3,2.2,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F18_03,F18,3,F18_03_P01,E2,Vanilla MLLM,3,2,3,4,3,3,No,,Requires modification before shop-floor use.
+F18_03,F18,3,F18_03_P01,E3,Vanilla MLLM,2,3,3,2,2,2.4,No,,Requires modification before shop-floor use.
+F18_04,F18,4,F18_04_P01,E1,Vanilla MLLM,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F18_04,F18,4,F18_04_P01,E2,Vanilla MLLM,5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F18_04,F18,4,F18_04_P01,E3,Vanilla MLLM,5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F18_05,F18,5,F18_05_P01,E1,Vanilla MLLM,5,4,3,4,4,4,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F18_05,F18,5,F18_05_P01,E2,Vanilla MLLM,3,3,2,4,3,3,No,,Requires modification before shop-floor use.
+F18_05,F18,5,F18_05_P01,E3,Vanilla MLLM,2,3,2,2,2,2.2,No,,Requires modification before shop-floor use.
+F19_01,F19,1,F19_01_P01,E1,Vanilla MLLM,2,4,2,4,4,3.2,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F19_01,F19,1,F19_01_P01,E2,Vanilla MLLM,5,3,2,2,3,3,No,,Requires modification before shop-floor use.
+F19_01,F19,1,F19_01_P01,E3,Vanilla MLLM,3,3,3,3,2,2.8,No,,Requires modification before shop-floor use.
+F19_02,F19,2,F19_02_P01,E1,Vanilla MLLM,3,3,3,4,2,3,No,,Requires modification before shop-floor use.
+F19_02,F19,2,F19_02_P01,E2,Vanilla MLLM,4,2,2,2,2,2.4,No,,Requires modification before shop-floor use.
+F19_02,F19,2,F19_02_P01,E3,Vanilla MLLM,2,2,2,2,4,2.4,No,,Requires modification before shop-floor use.
+F19_03,F19,3,F19_03_P01,E1,Vanilla MLLM,2,3,3,2,2,2.4,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F19_03,F19,3,F19_03_P01,E2,Vanilla MLLM,2,2,2,2,4,2.4,No,,Requires modification before shop-floor use.
+F19_03,F19,3,F19_03_P01,E3,Vanilla MLLM,3,3,2,3,4,3,No,,Requires modification before shop-floor use.
+F19_04,F19,4,F19_04_P01,E1,Vanilla MLLM,3,3,1,3,2,2.4,No,,Requires modification before shop-floor use.
+F19_04,F19,4,F19_04_P01,E2,Vanilla MLLM,2,3,3,3,4,3,No,,Requires modification before shop-floor use.
+F19_04,F19,4,F19_04_P01,E3,Vanilla MLLM,3,3,3,3,2,2.8,No,,Requires modification before shop-floor use.
+F19_05,F19,5,F19_05_P01,E1,Vanilla MLLM,4,3,2,3,3,3,No,,Requires modification before shop-floor use.
+F19_05,F19,5,F19_05_P01,E2,Vanilla MLLM,5,2,2,4,3,3.2,No,,Requires modification before shop-floor use.
+F19_05,F19,5,F19_05_P01,E3,Vanilla MLLM,4,4,4,3,2,3.4,No,,Requires modification before shop-floor use.
+F00_01,F00,1,F00_01_P02,E1,RAG-based Planner,5,5,4,4,4,4.4,No,,Acceptable plan with only minor tuning required.
+F00_01,F00,1,F00_01_P02,E2,RAG-based Planner,5,5,4,4,4,4.4,No,,Acceptable plan with only minor tuning required.
+F00_01,F00,1,F00_01_P02,E3,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F00_02,F00,2,F00_02_P02,E1,RAG-based Planner,5,5,4,4,4,4.4,No,,Acceptable plan with only minor tuning required.
+F00_02,F00,2,F00_02_P02,E2,RAG-based Planner,4,5,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F00_02,F00,2,F00_02_P02,E3,RAG-based Planner,4,4,4,4,5,4.2,No,,Acceptable plan with only minor tuning required.
+F00_03,F00,3,F00_03_P02,E1,RAG-based Planner,2,3,3,4,4,3.2,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F00_03,F00,3,F00_03_P02,E2,RAG-based Planner,3,3,2,3,3,2.8,No,,Requires modification before shop-floor use.
+F00_03,F00,3,F00_03_P02,E3,RAG-based Planner,3,2,4,4,3,3.2,No,,Requires modification before shop-floor use.
+F00_04,F00,4,F00_04_P02,E1,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F00_04,F00,4,F00_04_P02,E2,RAG-based Planner,5,5,4,4,4,4.4,No,,Acceptable plan with only minor tuning required.
+F00_04,F00,4,F00_04_P02,E3,RAG-based Planner,4,4,4,4,5,4.2,No,,Acceptable plan with only minor tuning required.
+F00_05,F00,5,F00_05_P02,E1,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F00_05,F00,5,F00_05_P02,E2,RAG-based Planner,5,5,4,4,4,4.4,No,,Acceptable plan with only minor tuning required.
+F00_05,F00,5,F00_05_P02,E3,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F01_01,F01,1,F01_01_P02,E1,RAG-based Planner,4,3,3,3,4,3.4,No,,Requires modification before shop-floor use.
+F01_01,F01,1,F01_01_P02,E2,RAG-based Planner,3,4,4,3,3,3.4,No,,Requires modification before shop-floor use.
+F01_01,F01,1,F01_01_P02,E3,RAG-based Planner,4,3,3,4,3,3.4,No,,Requires modification before shop-floor use.
+F01_02,F01,2,F01_02_P02,E1,RAG-based Planner,3,3,4,2,3,3,No,,Requires modification before shop-floor use.
+F01_02,F01,2,F01_02_P02,E2,RAG-based Planner,3,3,4,3,4,3.4,No,,Requires modification before shop-floor use.
+F01_02,F01,2,F01_02_P02,E3,RAG-based Planner,4,3,2,4,3,3.2,No,,Requires modification before shop-floor use.
+F01_03,F01,3,F01_03_P02,E1,RAG-based Planner,3,2,3,4,2,2.8,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F01_03,F01,3,F01_03_P02,E2,RAG-based Planner,4,3,3,2,3,3,No,,Requires modification before shop-floor use.
+F01_03,F01,3,F01_03_P02,E3,RAG-based Planner,4,4,3,4,3,3.6,No,,Requires modification before shop-floor use.
+F01_04,F01,4,F01_04_P02,E1,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F01_04,F01,4,F01_04_P02,E2,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F01_04,F01,4,F01_04_P02,E3,RAG-based Planner,4,4,4,4,5,4.2,No,,Acceptable plan with only minor tuning required.
+F01_05,F01,5,F01_05_P02,E1,RAG-based Planner,3,3,4,2,3,3,No,,Requires modification before shop-floor use.
+F01_05,F01,5,F01_05_P02,E2,RAG-based Planner,3,3,3,3,4,3.2,No,,Requires modification before shop-floor use.
+F01_05,F01,5,F01_05_P02,E3,RAG-based Planner,4,3,3,2,4,3.2,No,,Requires modification before shop-floor use.
+F02_01,F02,1,F02_01_P02,E1,RAG-based Planner,4,5,4,5,5,4.6,No,,Acceptable plan with only minor tuning required.
+F02_01,F02,1,F02_01_P02,E2,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F02_01,F02,1,F02_01_P02,E3,RAG-based Planner,4,5,4,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F02_02,F02,2,F02_02_P02,E1,RAG-based Planner,3,3,3,4,3,3.2,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F02_02,F02,2,F02_02_P02,E2,RAG-based Planner,4,4,2,3,2,3,No,,Requires modification before shop-floor use.
+F02_02,F02,2,F02_02_P02,E3,RAG-based Planner,4,4,4,3,5,4,No,,Requires modification before shop-floor use.
+F02_03,F02,3,F02_03_P02,E1,RAG-based Planner,3,3,3,3,3,3,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F02_03,F02,3,F02_03_P02,E2,RAG-based Planner,4,3,3,2,3,3,No,,Requires modification before shop-floor use.
+F02_03,F02,3,F02_03_P02,E3,RAG-based Planner,3,3,3,5,4,3.6,No,,Requires modification before shop-floor use.
+F02_04,F02,4,F02_04_P02,E1,RAG-based Planner,2,2,4,3,3,2.8,No,,Requires modification before shop-floor use.
+F02_04,F02,4,F02_04_P02,E2,RAG-based Planner,3,4,2,2,2,2.6,No,,Requires modification before shop-floor use.
+F02_04,F02,4,F02_04_P02,E3,RAG-based Planner,3,3,4,4,3,3.4,No,,Requires modification before shop-floor use.
+F02_05,F02,5,F02_05_P02,E1,RAG-based Planner,3,3,2,3,3,2.8,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F02_05,F02,5,F02_05_P02,E2,RAG-based Planner,3,3,4,3,3,3.2,No,,Requires modification before shop-floor use.
+F02_05,F02,5,F02_05_P02,E3,RAG-based Planner,2,2,3,3,2,2.4,No,,Requires modification before shop-floor use.
+F03_01,F03,1,F03_01_P02,E1,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F03_01,F03,1,F03_01_P02,E2,RAG-based Planner,4,4,4,5,5,4.4,No,,Acceptable plan with only minor tuning required.
+F03_01,F03,1,F03_01_P02,E3,RAG-based Planner,4,4,5,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F03_02,F03,2,F03_02_P02,E1,RAG-based Planner,3,4,3,3,4,3.4,No,,Requires modification before shop-floor use.
+F03_02,F03,2,F03_02_P02,E2,RAG-based Planner,3,4,3,4,3,3.4,No,,Requires modification before shop-floor use.
+F03_02,F03,2,F03_02_P02,E3,RAG-based Planner,4,4,4,3,2,3.4,No,,Requires modification before shop-floor use.
+F03_03,F03,3,F03_03_P02,E1,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F03_03,F03,3,F03_03_P02,E2,RAG-based Planner,4,5,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F03_03,F03,3,F03_03_P02,E3,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F03_04,F03,4,F03_04_P02,E1,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F03_04,F03,4,F03_04_P02,E2,RAG-based Planner,5,5,4,5,4,4.6,No,,Acceptable plan with only minor tuning required.
+F03_04,F03,4,F03_04_P02,E3,RAG-based Planner,4,4,4,4,5,4.2,No,,Acceptable plan with only minor tuning required.
+F03_05,F03,5,F03_05_P02,E1,RAG-based Planner,3,3,4,4,3,3.4,No,,Requires modification before shop-floor use.
+F03_05,F03,5,F03_05_P02,E2,RAG-based Planner,3,4,2,3,3,3,No,,Requires modification before shop-floor use.
+F03_05,F03,5,F03_05_P02,E3,RAG-based Planner,3,3,2,2,3,2.6,No,,Requires modification before shop-floor use.
+F04_01,F04,1,F04_01_P02,E1,RAG-based Planner,2,3,3,4,4,3.2,No,,Requires modification before shop-floor use.
+F04_01,F04,1,F04_01_P02,E2,RAG-based Planner,3,3,2,3,3,2.8,No,,Requires modification before shop-floor use.
+F04_01,F04,1,F04_01_P02,E3,RAG-based Planner,3,3,4,3,3,3.2,No,,Requires modification before shop-floor use.
+F04_02,F04,2,F04_02_P02,E1,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F04_02,F04,2,F04_02_P02,E2,RAG-based Planner,4,4,4,4,5,4.2,No,,Acceptable plan with only minor tuning required.
+F04_02,F04,2,F04_02_P02,E3,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F04_03,F04,3,F04_03_P02,E1,RAG-based Planner,5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F04_03,F04,3,F04_03_P02,E2,RAG-based Planner,5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F04_03,F04,3,F04_03_P02,E3,RAG-based Planner,5,5,5,4,4,4.6,No,,Acceptable plan with only minor tuning required.
+F04_04,F04,4,F04_04_P02,E1,RAG-based Planner,5,4,4,5,5,4.6,No,,Acceptable plan with only minor tuning required.
+F04_04,F04,4,F04_04_P02,E2,RAG-based Planner,5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F04_04,F04,4,F04_04_P02,E3,RAG-based Planner,4,4,4,4,5,4.2,No,,Acceptable plan with only minor tuning required.
+F04_05,F04,5,F04_05_P02,E1,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F04_05,F04,5,F04_05_P02,E2,RAG-based Planner,5,5,4,4,5,4.6,No,,Acceptable plan with only minor tuning required.
+F04_05,F04,5,F04_05_P02,E3,RAG-based Planner,5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F05_01,F05,1,F05_01_P02,E1,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F05_01,F05,1,F05_01_P02,E2,RAG-based Planner,5,4,4,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F05_01,F05,1,F05_01_P02,E3,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F05_02,F05,2,F05_02_P02,E1,RAG-based Planner,2,3,3,3,4,3,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F05_02,F05,2,F05_02_P02,E2,RAG-based Planner,3,3,2,4,3,3,No,,Requires modification before shop-floor use.
+F05_02,F05,2,F05_02_P02,E3,RAG-based Planner,3,3,2,5,4,3.4,No,,Requires modification before shop-floor use.
+F05_03,F05,3,F05_03_P02,E1,RAG-based Planner,2,3,4,3,4,3.2,No,,Requires modification before shop-floor use.
+F05_03,F05,3,F05_03_P02,E2,RAG-based Planner,4,3,4,4,3,3.6,No,,Requires modification before shop-floor use.
+F05_03,F05,3,F05_03_P02,E3,RAG-based Planner,3,3,4,3,3,3.2,No,,Requires modification before shop-floor use.
+F05_04,F05,4,F05_04_P02,E1,RAG-based Planner,3,4,3,4,3,3.4,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F05_04,F05,4,F05_04_P02,E2,RAG-based Planner,4,3,3,4,3,3.4,No,,Requires modification before shop-floor use.
+F05_04,F05,4,F05_04_P02,E3,RAG-based Planner,4,3,3,3,3,3.2,No,,Requires modification before shop-floor use.
+F05_05,F05,5,F05_05_P02,E1,RAG-based Planner,4,4,5,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F05_05,F05,5,F05_05_P02,E2,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F05_05,F05,5,F05_05_P02,E3,RAG-based Planner,4,5,4,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F06_01,F06,1,F06_01_P02,E1,RAG-based Planner,5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F06_01,F06,1,F06_01_P02,E2,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F06_01,F06,1,F06_01_P02,E3,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F06_02,F06,2,F06_02_P02,E1,RAG-based Planner,5,5,5,4,4,4.6,No,,Acceptable plan with only minor tuning required.
+F06_02,F06,2,F06_02_P02,E2,RAG-based Planner,5,5,4,4,4,4.4,No,,Acceptable plan with only minor tuning required.
+F06_02,F06,2,F06_02_P02,E3,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F06_03,F06,3,F06_03_P02,E1,RAG-based Planner,4,3,2,3,3,3,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F06_03,F06,3,F06_03_P02,E2,RAG-based Planner,2,2,3,2,3,2.4,No,,Requires modification before shop-floor use.
+F06_03,F06,3,F06_03_P02,E3,RAG-based Planner,4,3,3,4,3,3.4,No,,Requires modification before shop-floor use.
+F06_04,F06,4,F06_04_P02,E1,RAG-based Planner,4,4,4,5,4,4.2,No,,Acceptable plan with only minor tuning required.
+F06_04,F06,4,F06_04_P02,E2,RAG-based Planner,4,4,4,5,5,4.4,No,,Acceptable plan with only minor tuning required.
+F06_04,F06,4,F06_04_P02,E3,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F06_05,F06,5,F06_05_P02,E1,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F06_05,F06,5,F06_05_P02,E2,RAG-based Planner,4,5,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F06_05,F06,5,F06_05_P02,E3,RAG-based Planner,4,4,4,5,4,4.2,No,,Acceptable plan with only minor tuning required.
+F07_01,F07,1,F07_01_P02,E1,RAG-based Planner,4,2,2,3,4,3,No,,Requires modification before shop-floor use.
+F07_01,F07,1,F07_01_P02,E2,RAG-based Planner,3,4,3,2,3,3,No,,Requires modification before shop-floor use.
+F07_01,F07,1,F07_01_P02,E3,RAG-based Planner,5,4,4,3,3,3.8,No,,Requires modification before shop-floor use.
+F07_02,F07,2,F07_02_P02,E1,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F07_02,F07,2,F07_02_P02,E2,RAG-based Planner,4,5,4,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F07_02,F07,2,F07_02_P02,E3,RAG-based Planner,5,4,4,5,4,4.4,No,,Acceptable plan with only minor tuning required.
+F07_03,F07,3,F07_03_P02,E1,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F07_03,F07,3,F07_03_P02,E2,RAG-based Planner,4,4,4,4,5,4.2,No,,Acceptable plan with only minor tuning required.
+F07_03,F07,3,F07_03_P02,E3,RAG-based Planner,4,4,4,5,4,4.2,No,,Acceptable plan with only minor tuning required.
+F07_04,F07,4,F07_04_P02,E1,RAG-based Planner,4,3,3,2,3,3,No,,Requires modification before shop-floor use.
+F07_04,F07,4,F07_04_P02,E2,RAG-based Planner,4,5,4,3,2,3.6,No,,Requires modification before shop-floor use.
+F07_04,F07,4,F07_04_P02,E3,RAG-based Planner,3,3,3,3,2,2.8,No,,Requires modification before shop-floor use.
+F07_05,F07,5,F07_05_P02,E1,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F07_05,F07,5,F07_05_P02,E2,RAG-based Planner,4,4,4,4,5,4.2,No,,Acceptable plan with only minor tuning required.
+F07_05,F07,5,F07_05_P02,E3,RAG-based Planner,5,4,4,5,4,4.4,No,,Acceptable plan with only minor tuning required.
+F08_01,F08,1,F08_01_P02,E1,RAG-based Planner,4,4,4,5,4,4.2,No,,Acceptable plan with only minor tuning required.
+F08_01,F08,1,F08_01_P02,E2,RAG-based Planner,5,4,4,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F08_01,F08,1,F08_01_P02,E3,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F08_02,F08,2,F08_02_P02,E1,RAG-based Planner,4,5,5,4,4,4.4,No,,Acceptable plan with only minor tuning required.
+F08_02,F08,2,F08_02_P02,E2,RAG-based Planner,4,5,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F08_02,F08,2,F08_02_P02,E3,RAG-based Planner,4,4,4,5,4,4.2,No,,Acceptable plan with only minor tuning required.
+F08_03,F08,3,F08_03_P02,E1,RAG-based Planner,4,4,4,5,4,4.2,No,,Acceptable plan with only minor tuning required.
+F08_03,F08,3,F08_03_P02,E2,RAG-based Planner,4,4,4,5,4,4.2,No,,Acceptable plan with only minor tuning required.
+F08_03,F08,3,F08_03_P02,E3,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F08_04,F08,4,F08_04_P02,E1,RAG-based Planner,4,4,4,5,4,4.2,No,,Acceptable plan with only minor tuning required.
+F08_04,F08,4,F08_04_P02,E2,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F08_04,F08,4,F08_04_P02,E3,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F08_05,F08,5,F08_05_P02,E1,RAG-based Planner,4,4,4,5,4,4.2,No,,Acceptable plan with only minor tuning required.
+F08_05,F08,5,F08_05_P02,E2,RAG-based Planner,5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F08_05,F08,5,F08_05_P02,E3,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F09_01,F09,1,F09_01_P02,E1,RAG-based Planner,3,3,3,2,4,3,No,,Requires modification before shop-floor use.
+F09_01,F09,1,F09_01_P02,E2,RAG-based Planner,3,4,3,3,3,3.2,No,,Requires modification before shop-floor use.
+F09_01,F09,1,F09_01_P02,E3,RAG-based Planner,3,4,2,4,4,3.4,No,,Requires modification before shop-floor use.
+F09_02,F09,2,F09_02_P02,E1,RAG-based Planner,5,5,4,4,4,4.4,No,,Acceptable plan with only minor tuning required.
+F09_02,F09,2,F09_02_P02,E2,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F09_02,F09,2,F09_02_P02,E3,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F09_03,F09,3,F09_03_P02,E1,RAG-based Planner,2,4,2,3,3,2.8,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F09_03,F09,3,F09_03_P02,E2,RAG-based Planner,4,3,3,4,5,3.8,No,,Requires modification before shop-floor use.
+F09_03,F09,3,F09_03_P02,E3,RAG-based Planner,4,4,3,2,3,3.2,No,,Requires modification before shop-floor use.
+F09_04,F09,4,F09_04_P02,E1,RAG-based Planner,4,4,4,5,5,4.4,No,,Acceptable plan with only minor tuning required.
+F09_04,F09,4,F09_04_P02,E2,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F09_04,F09,4,F09_04_P02,E3,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F09_05,F09,5,F09_05_P02,E1,RAG-based Planner,4,4,4,5,5,4.4,No,,Acceptable plan with only minor tuning required.
+F09_05,F09,5,F09_05_P02,E2,RAG-based Planner,5,4,4,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F09_05,F09,5,F09_05_P02,E3,RAG-based Planner,4,5,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F10_01,F10,1,F10_01_P02,E1,RAG-based Planner,3,3,4,3,4,3.4,No,,Requires modification before shop-floor use.
+F10_01,F10,1,F10_01_P02,E2,RAG-based Planner,3,3,2,3,3,2.8,No,,Requires modification before shop-floor use.
+F10_01,F10,1,F10_01_P02,E3,RAG-based Planner,5,4,3,3,3,3.6,No,,Requires modification before shop-floor use.
+F10_02,F10,2,F10_02_P02,E1,RAG-based Planner,3,3,3,3,4,3.2,No,,Requires modification before shop-floor use.
+F10_02,F10,2,F10_02_P02,E2,RAG-based Planner,2,4,4,2,4,3.2,No,,Requires modification before shop-floor use.
+F10_02,F10,2,F10_02_P02,E3,RAG-based Planner,3,5,2,3,3,3.2,No,,Requires modification before shop-floor use.
+F10_03,F10,3,F10_03_P02,E1,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F10_03,F10,3,F10_03_P02,E2,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F10_03,F10,3,F10_03_P02,E3,RAG-based Planner,4,4,4,4,5,4.2,No,,Acceptable plan with only minor tuning required.
+F10_04,F10,4,F10_04_P02,E1,RAG-based Planner,4,2,2,2,5,3,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F10_04,F10,4,F10_04_P02,E2,RAG-based Planner,3,4,2,2,3,2.8,No,,Requires modification before shop-floor use.
+F10_04,F10,4,F10_04_P02,E3,RAG-based Planner,3,2,3,3,3,2.8,No,,Requires modification before shop-floor use.
+F10_05,F10,5,F10_05_P02,E1,RAG-based Planner,4,4,4,4,5,4.2,No,,Acceptable plan with only minor tuning required.
+F10_05,F10,5,F10_05_P02,E2,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F10_05,F10,5,F10_05_P02,E3,RAG-based Planner,5,4,4,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F11_01,F11,1,F11_01_P02,E1,RAG-based Planner,3,3,3,4,4,3.4,No,,Requires modification before shop-floor use.
+F11_01,F11,1,F11_01_P02,E2,RAG-based Planner,4,4,3,3,3,3.4,No,,Requires modification before shop-floor use.
+F11_01,F11,1,F11_01_P02,E3,RAG-based Planner,3,4,3,4,2,3.2,No,,Requires modification before shop-floor use.
+F11_02,F11,2,F11_02_P02,E1,RAG-based Planner,3,2,3,3,2,2.6,No,,Requires modification before shop-floor use.
+F11_02,F11,2,F11_02_P02,E2,RAG-based Planner,3,3,3,4,3,3.2,No,,Requires modification before shop-floor use.
+F11_02,F11,2,F11_02_P02,E3,RAG-based Planner,3,4,3,3,3,3.2,No,,Requires modification before shop-floor use.
+F11_03,F11,3,F11_03_P02,E1,RAG-based Planner,3,2,2,3,3,2.6,No,,Requires modification before shop-floor use.
+F11_03,F11,3,F11_03_P02,E2,RAG-based Planner,3,4,2,3,3,3,No,,Requires modification before shop-floor use.
+F11_03,F11,3,F11_03_P02,E3,RAG-based Planner,3,2,3,2,4,2.8,No,,Requires modification before shop-floor use.
+F11_04,F11,4,F11_04_P02,E1,RAG-based Planner,2,3,3,3,3,2.8,No,,Requires modification before shop-floor use.
+F11_04,F11,4,F11_04_P02,E2,RAG-based Planner,3,3,3,4,3,3.2,No,,Requires modification before shop-floor use.
+F11_04,F11,4,F11_04_P02,E3,RAG-based Planner,3,2,3,3,2,2.6,No,,Requires modification before shop-floor use.
+F11_05,F11,5,F11_05_P02,E1,RAG-based Planner,3,3,3,2,4,3,No,,Requires modification before shop-floor use.
+F11_05,F11,5,F11_05_P02,E2,RAG-based Planner,5,4,4,4,3,4,No,,Requires modification before shop-floor use.
+F11_05,F11,5,F11_05_P02,E3,RAG-based Planner,2,3,3,2,4,2.8,No,,Requires modification before shop-floor use.
+F12_01,F12,1,F12_01_P02,E1,RAG-based Planner,4,3,2,3,2,2.8,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F12_01,F12,1,F12_01_P02,E2,RAG-based Planner,4,3,3,3,3,3.2,No,,Requires modification before shop-floor use.
+F12_01,F12,1,F12_01_P02,E3,RAG-based Planner,3,3,3,4,3,3.2,No,,Requires modification before shop-floor use.
+F12_02,F12,2,F12_02_P02,E1,RAG-based Planner,4,4,4,5,4,4.2,No,,Acceptable plan with only minor tuning required.
+F12_02,F12,2,F12_02_P02,E2,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F12_02,F12,2,F12_02_P02,E3,RAG-based Planner,5,5,4,4,4,4.4,No,,Acceptable plan with only minor tuning required.
+F12_03,F12,3,F12_03_P02,E1,RAG-based Planner,4,5,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F12_03,F12,3,F12_03_P02,E2,RAG-based Planner,4,4,4,5,4,4.2,No,,Acceptable plan with only minor tuning required.
+F12_03,F12,3,F12_03_P02,E3,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F12_04,F12,4,F12_04_P02,E1,RAG-based Planner,2,3,4,2,4,3,No,,Requires modification before shop-floor use.
+F12_04,F12,4,F12_04_P02,E2,RAG-based Planner,3,3,3,3,3,3,No,,Requires modification before shop-floor use.
+F12_04,F12,4,F12_04_P02,E3,RAG-based Planner,3,4,3,4,3,3.4,No,,Requires modification before shop-floor use.
+F12_05,F12,5,F12_05_P02,E1,RAG-based Planner,5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F12_05,F12,5,F12_05_P02,E2,RAG-based Planner,5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F12_05,F12,5,F12_05_P02,E3,RAG-based Planner,4,5,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F13_01,F13,1,F13_01_P02,E1,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F13_01,F13,1,F13_01_P02,E2,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F13_01,F13,1,F13_01_P02,E3,RAG-based Planner,5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F13_02,F13,2,F13_02_P02,E1,RAG-based Planner,3,3,3,4,3,3.2,No,,Requires modification before shop-floor use.
+F13_02,F13,2,F13_02_P02,E2,RAG-based Planner,3,3,3,3,3,3,No,,Requires modification before shop-floor use.
+F13_02,F13,2,F13_02_P02,E3,RAG-based Planner,3,3,4,3,3,3.2,No,,Requires modification before shop-floor use.
+F13_03,F13,3,F13_03_P02,E1,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F13_03,F13,3,F13_03_P02,E2,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F13_03,F13,3,F13_03_P02,E3,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F13_04,F13,4,F13_04_P02,E1,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F13_04,F13,4,F13_04_P02,E2,RAG-based Planner,4,4,4,5,5,4.4,No,,Acceptable plan with only minor tuning required.
+F13_04,F13,4,F13_04_P02,E3,RAG-based Planner,5,4,4,5,5,4.6,No,,Acceptable plan with only minor tuning required.
+F13_05,F13,5,F13_05_P02,E1,RAG-based Planner,2,4,4,4,3,3.4,No,,Requires modification before shop-floor use.
+F13_05,F13,5,F13_05_P02,E2,RAG-based Planner,2,4,2,3,3,2.8,No,,Requires modification before shop-floor use.
+F13_05,F13,5,F13_05_P02,E3,RAG-based Planner,3,3,2,3,3,2.8,No,,Requires modification before shop-floor use.
+F14_01,F14,1,F14_01_P02,E1,RAG-based Planner,4,4,5,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F14_01,F14,1,F14_01_P02,E2,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F14_01,F14,1,F14_01_P02,E3,RAG-based Planner,4,4,4,5,4,4.2,No,,Acceptable plan with only minor tuning required.
+F14_02,F14,2,F14_02_P02,E1,RAG-based Planner,3,3,2,3,3,2.8,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F14_02,F14,2,F14_02_P02,E2,RAG-based Planner,4,4,2,3,3,3.2,No,,Requires modification before shop-floor use.
+F14_02,F14,2,F14_02_P02,E3,RAG-based Planner,3,3,4,2,4,3.2,No,,Requires modification before shop-floor use.
+F14_03,F14,3,F14_03_P02,E1,RAG-based Planner,4,4,4,5,4,4.2,No,,Acceptable plan with only minor tuning required.
+F14_03,F14,3,F14_03_P02,E2,RAG-based Planner,4,4,4,5,5,4.4,No,,Acceptable plan with only minor tuning required.
+F14_03,F14,3,F14_03_P02,E3,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F14_04,F14,4,F14_04_P02,E1,RAG-based Planner,3,4,4,4,2,3.4,No,,Requires modification before shop-floor use.
+F14_04,F14,4,F14_04_P02,E2,RAG-based Planner,4,3,3,5,3,3.6,No,,Requires modification before shop-floor use.
+F14_04,F14,4,F14_04_P02,E3,RAG-based Planner,3,2,3,4,3,3,No,,Requires modification before shop-floor use.
+F14_05,F14,5,F14_05_P02,E1,RAG-based Planner,2,3,5,3,3,3.2,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F14_05,F14,5,F14_05_P02,E2,RAG-based Planner,3,2,3,3,3,2.8,No,,Requires modification before shop-floor use.
+F14_05,F14,5,F14_05_P02,E3,RAG-based Planner,3,5,4,3,3,3.6,No,,Requires modification before shop-floor use.
+F15_01,F15,1,F15_01_P02,E1,RAG-based Planner,3,4,2,3,3,3,No,,Requires modification before shop-floor use.
+F15_01,F15,1,F15_01_P02,E2,RAG-based Planner,4,4,4,3,2,3.4,No,,Requires modification before shop-floor use.
+F15_01,F15,1,F15_01_P02,E3,RAG-based Planner,3,3,3,2,2,2.6,No,,Requires modification before shop-floor use.
+F15_02,F15,2,F15_02_P02,E1,RAG-based Planner,4,3,3,4,3,3.4,No,,Requires modification before shop-floor use.
+F15_02,F15,2,F15_02_P02,E2,RAG-based Planner,4,3,2,3,4,3.2,No,,Requires modification before shop-floor use.
+F15_02,F15,2,F15_02_P02,E3,RAG-based Planner,3,3,4,3,3,3.2,No,,Requires modification before shop-floor use.
+F15_03,F15,3,F15_03_P02,E1,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F15_03,F15,3,F15_03_P02,E2,RAG-based Planner,4,4,5,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F15_03,F15,3,F15_03_P02,E3,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F15_04,F15,4,F15_04_P02,E1,RAG-based Planner,3,3,3,3,3,3,No,,Requires modification before shop-floor use.
+F15_04,F15,4,F15_04_P02,E2,RAG-based Planner,3,3,3,4,4,3.4,No,,Requires modification before shop-floor use.
+F15_04,F15,4,F15_04_P02,E3,RAG-based Planner,3,4,3,3,4,3.4,No,,Requires modification before shop-floor use.
+F15_05,F15,5,F15_05_P02,E1,RAG-based Planner,4,4,4,4,5,4.2,No,,Acceptable plan with only minor tuning required.
+F15_05,F15,5,F15_05_P02,E2,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F15_05,F15,5,F15_05_P02,E3,RAG-based Planner,4,4,5,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F16_01,F16,1,F16_01_P02,E1,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F16_01,F16,1,F16_01_P02,E2,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F16_01,F16,1,F16_01_P02,E3,RAG-based Planner,4,5,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F16_02,F16,2,F16_02_P02,E1,RAG-based Planner,4,4,4,5,4,4.2,No,,Acceptable plan with only minor tuning required.
+F16_02,F16,2,F16_02_P02,E2,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F16_02,F16,2,F16_02_P02,E3,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F16_03,F16,3,F16_03_P02,E1,RAG-based Planner,3,3,2,4,3,3,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F16_03,F16,3,F16_03_P02,E2,RAG-based Planner,3,3,2,3,4,3,No,,Requires modification before shop-floor use.
+F16_03,F16,3,F16_03_P02,E3,RAG-based Planner,3,3,3,3,3,3,No,,Requires modification before shop-floor use.
+F16_04,F16,4,F16_04_P02,E1,RAG-based Planner,4,4,4,5,5,4.4,No,,Acceptable plan with only minor tuning required.
+F16_04,F16,4,F16_04_P02,E2,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F16_04,F16,4,F16_04_P02,E3,RAG-based Planner,4,4,5,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F16_05,F16,5,F16_05_P02,E1,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F16_05,F16,5,F16_05_P02,E2,RAG-based Planner,5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F16_05,F16,5,F16_05_P02,E3,RAG-based Planner,5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F17_01,F17,1,F17_01_P02,E1,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F17_01,F17,1,F17_01_P02,E2,RAG-based Planner,4,4,4,5,4,4.2,No,,Acceptable plan with only minor tuning required.
+F17_01,F17,1,F17_01_P02,E3,RAG-based Planner,4,4,4,4,5,4.2,No,,Acceptable plan with only minor tuning required.
+F17_02,F17,2,F17_02_P02,E1,RAG-based Planner,5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F17_02,F17,2,F17_02_P02,E2,RAG-based Planner,4,4,4,4,5,4.2,No,,Acceptable plan with only minor tuning required.
+F17_02,F17,2,F17_02_P02,E3,RAG-based Planner,4,4,5,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F17_03,F17,3,F17_03_P02,E1,RAG-based Planner,4,4,4,3,3,3.6,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F17_03,F17,3,F17_03_P02,E2,RAG-based Planner,4,3,3,4,3,3.4,No,,Requires modification before shop-floor use.
+F17_03,F17,3,F17_03_P02,E3,RAG-based Planner,3,3,3,3,3,3,No,,Requires modification before shop-floor use.
+F17_04,F17,4,F17_04_P02,E1,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F17_04,F17,4,F17_04_P02,E2,RAG-based Planner,4,5,4,5,4,4.4,No,,Acceptable plan with only minor tuning required.
+F17_04,F17,4,F17_04_P02,E3,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F17_05,F17,5,F17_05_P02,E1,RAG-based Planner,4,3,3,4,3,3.4,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F17_05,F17,5,F17_05_P02,E2,RAG-based Planner,3,4,3,3,4,3.4,No,,Requires modification before shop-floor use.
+F17_05,F17,5,F17_05_P02,E3,RAG-based Planner,3,3,2,2,3,2.6,No,,Requires modification before shop-floor use.
+F18_01,F18,1,F18_01_P02,E1,RAG-based Planner,3,3,3,3,4,3.2,No,,Requires modification before shop-floor use.
+F18_01,F18,1,F18_01_P02,E2,RAG-based Planner,3,3,3,3,3,3,No,,Requires modification before shop-floor use.
+F18_01,F18,1,F18_01_P02,E3,RAG-based Planner,2,4,4,3,3,3.2,No,,Requires modification before shop-floor use.
+F18_02,F18,2,F18_02_P02,E1,RAG-based Planner,4,4,4,4,5,4.2,No,,Acceptable plan with only minor tuning required.
+F18_02,F18,2,F18_02_P02,E2,RAG-based Planner,5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F18_02,F18,2,F18_02_P02,E3,RAG-based Planner,4,5,5,4,4,4.4,No,,Acceptable plan with only minor tuning required.
+F18_03,F18,3,F18_03_P02,E1,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F18_03,F18,3,F18_03_P02,E2,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F18_03,F18,3,F18_03_P02,E3,RAG-based Planner,4,5,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F18_04,F18,4,F18_04_P02,E1,RAG-based Planner,2,3,2,4,3,2.8,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F18_04,F18,4,F18_04_P02,E2,RAG-based Planner,2,4,3,4,2,3,No,,Requires modification before shop-floor use.
+F18_04,F18,4,F18_04_P02,E3,RAG-based Planner,3,3,4,3,3,3.2,No,,Requires modification before shop-floor use.
+F18_05,F18,5,F18_05_P02,E1,RAG-based Planner,4,3,3,2,3,3,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F18_05,F18,5,F18_05_P02,E2,RAG-based Planner,3,3,4,3,3,3.2,No,,Requires modification before shop-floor use.
+F18_05,F18,5,F18_05_P02,E3,RAG-based Planner,3,3,2,3,3,2.8,No,,Requires modification before shop-floor use.
+F19_01,F19,1,F19_01_P02,E1,RAG-based Planner,4,5,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F19_01,F19,1,F19_01_P02,E2,RAG-based Planner,4,4,4,5,4,4.2,No,,Acceptable plan with only minor tuning required.
+F19_01,F19,1,F19_01_P02,E3,RAG-based Planner,5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F19_02,F19,2,F19_02_P02,E1,RAG-based Planner,5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F19_02,F19,2,F19_02_P02,E2,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F19_02,F19,2,F19_02_P02,E3,RAG-based Planner,4,4,4,5,4,4.2,No,,Acceptable plan with only minor tuning required.
+F19_03,F19,3,F19_03_P02,E1,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F19_03,F19,3,F19_03_P02,E2,RAG-based Planner,4,5,4,5,4,4.4,No,,Acceptable plan with only minor tuning required.
+F19_03,F19,3,F19_03_P02,E3,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F19_04,F19,4,F19_04_P02,E1,RAG-based Planner,5,4,4,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F19_04,F19,4,F19_04_P02,E2,RAG-based Planner,4,4,4,4,5,4.2,No,,Acceptable plan with only minor tuning required.
+F19_04,F19,4,F19_04_P02,E3,RAG-based Planner,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F19_05,F19,5,F19_05_P02,E1,RAG-based Planner,2,2,3,3,3,2.6,No,,Requires modification before shop-floor use.
+F19_05,F19,5,F19_05_P02,E2,RAG-based Planner,2,3,4,2,3,2.8,No,,Requires modification before shop-floor use.
+F19_05,F19,5,F19_05_P02,E3,RAG-based Planner,2,3,3,4,3,3,No,,Requires modification before shop-floor use.
+F00_01,F00,1,F00_01_P03,E1,Standard ReAct Agent,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F00_01,F00,1,F00_01_P03,E2,Standard ReAct Agent,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F00_01,F00,1,F00_01_P03,E3,Standard ReAct Agent,5,5,4,4,4,4.4,No,,Acceptable plan with only minor tuning required.
+F00_02,F00,2,F00_02_P03,E1,Standard ReAct Agent,4,4,4,4,5,4.2,No,,Acceptable plan with only minor tuning required.
+F00_02,F00,2,F00_02_P03,E2,Standard ReAct Agent,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F00_02,F00,2,F00_02_P03,E3,Standard ReAct Agent,5,4,4,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F00_03,F00,3,F00_03_P03,E1,Standard ReAct Agent,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F00_03,F00,3,F00_03_P03,E2,Standard ReAct Agent,5,5,4,5,4,4.6,No,,Acceptable plan with only minor tuning required.
+F00_03,F00,3,F00_03_P03,E3,Standard ReAct Agent,5,5,4,4,4,4.4,No,,Acceptable plan with only minor tuning required.
+F00_04,F00,4,F00_04_P03,E1,Standard ReAct Agent,3,4,3,3,3,3.2,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F00_04,F00,4,F00_04_P03,E2,Standard ReAct Agent,3,3,3,3,4,3.2,No,,Requires modification before shop-floor use.
+F00_04,F00,4,F00_04_P03,E3,Standard ReAct Agent,3,3,4,4,4,3.6,No,,Requires modification before shop-floor use.
+F00_05,F00,5,F00_05_P03,E1,Standard ReAct Agent,3,3,3,4,3,3.2,No,,Requires modification before shop-floor use.
+F00_05,F00,5,F00_05_P03,E2,Standard ReAct Agent,3,3,3,3,2,2.8,No,,Requires modification before shop-floor use.
+F00_05,F00,5,F00_05_P03,E3,Standard ReAct Agent,4,4,3,3,3,3.4,No,,Requires modification before shop-floor use.
+F01_01,F01,1,F01_01_P03,E1,Standard ReAct Agent,4,4,5,4,3,4,No,,Requires modification before shop-floor use.
+F01_01,F01,1,F01_01_P03,E2,Standard ReAct Agent,3,3,3,3,3,3,No,,Requires modification before shop-floor use.
+F01_01,F01,1,F01_01_P03,E3,Standard ReAct Agent,4,4,3,3,4,3.6,No,,Requires modification before shop-floor use.
+F01_02,F01,2,F01_02_P03,E1,Standard ReAct Agent,4,4,5,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F01_02,F01,2,F01_02_P03,E2,Standard ReAct Agent,5,5,4,4,4,4.4,No,,Acceptable plan with only minor tuning required.
+F01_02,F01,2,F01_02_P03,E3,Standard ReAct Agent,5,5,4,5,4,4.6,No,,Acceptable plan with only minor tuning required.
+F01_03,F01,3,F01_03_P03,E1,Standard ReAct Agent,4,4,5,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F01_03,F01,3,F01_03_P03,E2,Standard ReAct Agent,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F01_03,F01,3,F01_03_P03,E3,Standard ReAct Agent,5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F01_04,F01,4,F01_04_P03,E1,Standard ReAct Agent,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F01_04,F01,4,F01_04_P03,E2,Standard ReAct Agent,4,4,5,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F01_04,F01,4,F01_04_P03,E3,Standard ReAct Agent,4,4,4,5,4,4.2,No,,Acceptable plan with only minor tuning required.
+F01_05,F01,5,F01_05_P03,E1,Standard ReAct Agent,5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F01_05,F01,5,F01_05_P03,E2,Standard ReAct Agent,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F01_05,F01,5,F01_05_P03,E3,Standard ReAct Agent,5,5,4,4,4,4.4,No,,Acceptable plan with only minor tuning required.
+F02_01,F02,1,F02_01_P03,E1,Standard ReAct Agent,3,3,4,4,4,3.6,No,,Requires modification before shop-floor use.
+F02_01,F02,1,F02_01_P03,E2,Standard ReAct Agent,3,4,2,3,2,2.8,No,,Requires modification before shop-floor use.
+F02_01,F02,1,F02_01_P03,E3,Standard ReAct Agent,4,3,3,3,2,3,No,,Requires modification before shop-floor use.
+F02_02,F02,2,F02_02_P03,E1,Standard ReAct Agent,4,4,4,5,4,4.2,No,,Acceptable plan with only minor tuning required.
+F02_02,F02,2,F02_02_P03,E2,Standard ReAct Agent,4,4,4,5,5,4.4,No,,Acceptable plan with only minor tuning required.
+F02_02,F02,2,F02_02_P03,E3,Standard ReAct Agent,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F02_03,F02,3,F02_03_P03,E1,Standard ReAct Agent,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F02_03,F02,3,F02_03_P03,E2,Standard ReAct Agent,5,5,4,4,4,4.4,No,,Acceptable plan with only minor tuning required.
+F02_03,F02,3,F02_03_P03,E3,Standard ReAct Agent,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F02_04,F02,4,F02_04_P03,E1,Standard ReAct Agent,4,4,3,3,4,3.6,No,,Requires modification before shop-floor use.
+F02_04,F02,4,F02_04_P03,E2,Standard ReAct Agent,4,4,3,4,4,3.8,No,,Requires modification before shop-floor use.
+F02_04,F02,4,F02_04_P03,E3,Standard ReAct Agent,4,4,3,5,4,4,No,,Requires modification before shop-floor use.
+F02_05,F02,5,F02_05_P03,E1,Standard ReAct Agent,3,3,3,4,3,3.2,No,,Requires modification before shop-floor use.
+F02_05,F02,5,F02_05_P03,E2,Standard ReAct Agent,3,3,4,2,4,3.2,No,,Requires modification before shop-floor use.
+F02_05,F02,5,F02_05_P03,E3,Standard ReAct Agent,2,4,2,3,4,3,No,,Requires modification before shop-floor use.
+F03_01,F03,1,F03_01_P03,E1,Standard ReAct Agent,4,5,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F03_01,F03,1,F03_01_P03,E2,Standard ReAct Agent,5,5,4,4,4,4.4,No,,Acceptable plan with only minor tuning required.
+F03_01,F03,1,F03_01_P03,E3,Standard ReAct Agent,4,4,4,4,5,4.2,No,,Acceptable plan with only minor tuning required.
+F03_02,F03,2,F03_02_P03,E1,Standard ReAct Agent,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F03_02,F03,2,F03_02_P03,E2,Standard ReAct Agent,4,5,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F03_02,F03,2,F03_02_P03,E3,Standard ReAct Agent,5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F03_03,F03,3,F03_03_P03,E1,Standard ReAct Agent,4,4,4,5,4,4.2,No,,Acceptable plan with only minor tuning required.
+F03_03,F03,3,F03_03_P03,E2,Standard ReAct Agent,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F03_03,F03,3,F03_03_P03,E3,Standard ReAct Agent,5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F03_04,F03,4,F03_04_P03,E1,Standard ReAct Agent,3,3,2,4,3,3,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F03_04,F03,4,F03_04_P03,E2,Standard ReAct Agent,3,3,3,3,3,3,No,,Requires modification before shop-floor use.
+F03_04,F03,4,F03_04_P03,E3,Standard ReAct Agent,4,3,4,3,3,3.4,No,,Requires modification before shop-floor use.
+F03_05,F03,5,F03_05_P03,E1,Standard ReAct Agent,4,5,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F03_05,F03,5,F03_05_P03,E2,Standard ReAct Agent,5,4,5,5,4,4.6,No,,Acceptable plan with only minor tuning required.
+F03_05,F03,5,F03_05_P03,E3,Standard ReAct Agent,5,5,4,4,5,4.6,No,,Acceptable plan with only minor tuning required.
+F04_01,F04,1,F04_01_P03,E1,Standard ReAct Agent,5,5,4,4,4,4.4,No,,Acceptable plan with only minor tuning required.
+F04_01,F04,1,F04_01_P03,E2,Standard ReAct Agent,5,5,4,5,4,4.6,No,,Acceptable plan with only minor tuning required.
+F04_01,F04,1,F04_01_P03,E3,Standard ReAct Agent,5,4,4,5,4,4.4,No,,Acceptable plan with only minor tuning required.
+F04_02,F04,2,F04_02_P03,E1,Standard ReAct Agent,5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F04_02,F04,2,F04_02_P03,E2,Standard ReAct Agent,5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F04_02,F04,2,F04_02_P03,E3,Standard ReAct Agent,4,4,4,4,5,4.2,No,,Acceptable plan with only minor tuning required.
+F04_03,F04,3,F04_03_P03,E1,Standard ReAct Agent,4,4,5,5,4,4.4,No,,Acceptable plan with only minor tuning required.
+F04_03,F04,3,F04_03_P03,E2,Standard ReAct Agent,5,5,4,4,4,4.4,No,,Acceptable plan with only minor tuning required.
+F04_03,F04,3,F04_03_P03,E3,Standard ReAct Agent,4,4,4,4,5,4.2,No,,Acceptable plan with only minor tuning required.
+F04_04,F04,4,F04_04_P03,E1,Standard ReAct Agent,5,4,4,5,4,4.4,No,,Acceptable plan with only minor tuning required.
+F04_04,F04,4,F04_04_P03,E2,Standard ReAct Agent,5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F04_04,F04,4,F04_04_P03,E3,Standard ReAct Agent,4,5,5,4,4,4.4,No,,Acceptable plan with only minor tuning required.
+F04_05,F04,5,F04_05_P03,E1,Standard ReAct Agent,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F04_05,F04,5,F04_05_P03,E2,Standard ReAct Agent,4,4,4,5,4,4.2,No,,Acceptable plan with only minor tuning required.
+F04_05,F04,5,F04_05_P03,E3,Standard ReAct Agent,5,4,4,5,4,4.4,No,,Acceptable plan with only minor tuning required.
+F05_01,F05,1,F05_01_P03,E1,Standard ReAct Agent,4,2,4,3,3,3.2,No,,Requires modification before shop-floor use.
+F05_01,F05,1,F05_01_P03,E2,Standard ReAct Agent,3,3,2,3,3,2.8,No,,Requires modification before shop-floor use.
+F05_01,F05,1,F05_01_P03,E3,Standard ReAct Agent,3,4,3,2,4,3.2,No,,Requires modification before shop-floor use.
+F05_02,F05,2,F05_02_P03,E1,Standard ReAct Agent,5,5,5,5,4,4.8,No,,Acceptable plan with only minor tuning required.
+F05_02,F05,2,F05_02_P03,E2,Standard ReAct Agent,4,4,4,5,5,4.4,No,,Acceptable plan with only minor tuning required.
+F05_02,F05,2,F05_02_P03,E3,Standard ReAct Agent,4,4,4,5,4,4.2,No,,Acceptable plan with only minor tuning required.
+F05_03,F05,3,F05_03_P03,E1,Standard ReAct Agent,4,4,5,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F05_03,F05,3,F05_03_P03,E2,Standard ReAct Agent,4,4,4,4,5,4.2,No,,Acceptable plan with only minor tuning required.
+F05_03,F05,3,F05_03_P03,E3,Standard ReAct Agent,4,5,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F05_04,F05,4,F05_04_P03,E1,Standard ReAct Agent,4,4,4,5,4,4.2,No,,Acceptable plan with only minor tuning required.
+F05_04,F05,4,F05_04_P03,E2,Standard ReAct Agent,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F05_04,F05,4,F05_04_P03,E3,Standard ReAct Agent,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F05_05,F05,5,F05_05_P03,E1,Standard ReAct Agent,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F05_05,F05,5,F05_05_P03,E2,Standard ReAct Agent,5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F05_05,F05,5,F05_05_P03,E3,Standard ReAct Agent,5,4,4,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F06_01,F06,1,F06_01_P03,E1,Standard ReAct Agent,4,4,4,5,4,4.2,No,,Acceptable plan with only minor tuning required.
+F06_01,F06,1,F06_01_P03,E2,Standard ReAct Agent,4,5,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F06_01,F06,1,F06_01_P03,E3,Standard ReAct Agent,5,5,4,4,4,4.4,No,,Acceptable plan with only minor tuning required.
+F06_02,F06,2,F06_02_P03,E1,Standard ReAct Agent,5,4,4,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F06_02,F06,2,F06_02_P03,E2,Standard ReAct Agent,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F06_02,F06,2,F06_02_P03,E3,Standard ReAct Agent,4,5,4,5,4,4.4,No,,Acceptable plan with only minor tuning required.
+F06_03,F06,3,F06_03_P03,E1,Standard ReAct Agent,4,3,3,3,4,3.4,No,,Requires modification before shop-floor use.
+F06_03,F06,3,F06_03_P03,E2,Standard ReAct Agent,3,3,2,5,2,3,No,,Requires modification before shop-floor use.
+F06_03,F06,3,F06_03_P03,E3,Standard ReAct Agent,3,3,3,4,3,3.2,No,,Requires modification before shop-floor use.
+F06_04,F06,4,F06_04_P03,E1,Standard ReAct Agent,4,4,4,4,5,4.2,No,,Acceptable plan with only minor tuning required.
+F06_04,F06,4,F06_04_P03,E2,Standard ReAct Agent,4,4,4,5,4,4.2,No,,Acceptable plan with only minor tuning required.
+F06_04,F06,4,F06_04_P03,E3,Standard ReAct Agent,5,5,5,4,4,4.6,No,,Acceptable plan with only minor tuning required.
+F06_05,F06,5,F06_05_P03,E1,Standard ReAct Agent,4,5,4,5,5,4.6,No,,Acceptable plan with only minor tuning required.
+F06_05,F06,5,F06_05_P03,E2,Standard ReAct Agent,5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F06_05,F06,5,F06_05_P03,E3,Standard ReAct Agent,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F07_01,F07,1,F07_01_P03,E1,Standard ReAct Agent,4,5,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F07_01,F07,1,F07_01_P03,E2,Standard ReAct Agent,4,4,4,4,5,4.2,No,,Acceptable plan with only minor tuning required.
+F07_01,F07,1,F07_01_P03,E3,Standard ReAct Agent,4,4,4,4,5,4.2,No,,Acceptable plan with only minor tuning required.
+F07_02,F07,2,F07_02_P03,E1,Standard ReAct Agent,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F07_02,F07,2,F07_02_P03,E2,Standard ReAct Agent,4,5,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F07_02,F07,2,F07_02_P03,E3,Standard ReAct Agent,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F07_03,F07,3,F07_03_P03,E1,Standard ReAct Agent,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F07_03,F07,3,F07_03_P03,E2,Standard ReAct Agent,4,5,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F07_03,F07,3,F07_03_P03,E3,Standard ReAct Agent,5,4,4,5,4,4.4,No,,Acceptable plan with only minor tuning required.
+F07_04,F07,4,F07_04_P03,E1,Standard ReAct Agent,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F07_04,F07,4,F07_04_P03,E2,Standard ReAct Agent,5,4,5,4,5,4.6,No,,Acceptable plan with only minor tuning required.
+F07_04,F07,4,F07_04_P03,E3,Standard ReAct Agent,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F07_05,F07,5,F07_05_P03,E1,Standard ReAct Agent,4,4,5,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F07_05,F07,5,F07_05_P03,E2,Standard ReAct Agent,5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F07_05,F07,5,F07_05_P03,E3,Standard ReAct Agent,4,4,5,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F08_01,F08,1,F08_01_P03,E1,Standard ReAct Agent,4,5,5,4,4,4.4,No,,Acceptable plan with only minor tuning required.
+F08_01,F08,1,F08_01_P03,E2,Standard ReAct Agent,5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F08_01,F08,1,F08_01_P03,E3,Standard ReAct Agent,4,4,4,5,4,4.2,No,,Acceptable plan with only minor tuning required.
+F08_02,F08,2,F08_02_P03,E1,Standard ReAct Agent,5,4,5,4,5,4.6,No,,Acceptable plan with only minor tuning required.
+F08_02,F08,2,F08_02_P03,E2,Standard ReAct Agent,4,5,4,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F08_02,F08,2,F08_02_P03,E3,Standard ReAct Agent,4,4,4,5,5,4.4,No,,Acceptable plan with only minor tuning required.
+F08_03,F08,3,F08_03_P03,E1,Standard ReAct Agent,5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F08_03,F08,3,F08_03_P03,E2,Standard ReAct Agent,5,5,5,5,5,5,No,,Acceptable plan with only minor tuning required.
+F08_03,F08,3,F08_03_P03,E3,Standard ReAct Agent,4,5,4,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F08_04,F08,4,F08_04_P03,E1,Standard ReAct Agent,5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F08_04,F08,4,F08_04_P03,E2,Standard ReAct Agent,4,5,4,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F08_04,F08,4,F08_04_P03,E3,Standard ReAct Agent,4,5,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F08_05,F08,5,F08_05_P03,E1,Standard ReAct Agent,3,4,3,3,3,3.2,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F08_05,F08,5,F08_05_P03,E2,Standard ReAct Agent,4,4,2,3,3,3.2,No,,Requires modification before shop-floor use.
+F08_05,F08,5,F08_05_P03,E3,Standard ReAct Agent,5,3,4,3,3,3.6,No,,Requires modification before shop-floor use.
+F09_01,F09,1,F09_01_P03,E1,Standard ReAct Agent,3,2,4,3,3,3,No,,Requires modification before shop-floor use.
+F09_01,F09,1,F09_01_P03,E2,Standard ReAct Agent,3,2,3,4,3,3,No,,Requires modification before shop-floor use.
+F09_01,F09,1,F09_01_P03,E3,Standard ReAct Agent,3,4,3,3,3,3.2,No,,Requires modification before shop-floor use.
+F09_02,F09,2,F09_02_P03,E1,Standard ReAct Agent,4,3,3,3,3,3.2,No,,Requires modification before shop-floor use.
+F09_02,F09,2,F09_02_P03,E2,Standard ReAct Agent,3,3,3,4,3,3.2,No,,Requires modification before shop-floor use.
+F09_02,F09,2,F09_02_P03,E3,Standard ReAct Agent,4,3,4,3,4,3.6,No,,Requires modification before shop-floor use.
+F09_03,F09,3,F09_03_P03,E1,Standard ReAct Agent,4,4,4,3,3,3.6,No,,Requires modification before shop-floor use.
+F09_03,F09,3,F09_03_P03,E2,Standard ReAct Agent,4,4,3,4,3,3.6,No,,Requires modification before shop-floor use.
+F09_03,F09,3,F09_03_P03,E3,Standard ReAct Agent,4,4,3,2,3,3.2,No,,Requires modification before shop-floor use.
+F09_04,F09,4,F09_04_P03,E1,Standard ReAct Agent,5,5,4,4,4,4.4,No,,Acceptable plan with only minor tuning required.
+F09_04,F09,4,F09_04_P03,E2,Standard ReAct Agent,5,4,5,4,4,4.4,No,,Acceptable plan with only minor tuning required.
+F09_04,F09,4,F09_04_P03,E3,Standard ReAct Agent,4,4,5,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F09_05,F09,5,F09_05_P03,E1,Standard ReAct Agent,4,5,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F09_05,F09,5,F09_05_P03,E2,Standard ReAct Agent,5,4,4,5,4,4.4,No,,Acceptable plan with only minor tuning required.
+F09_05,F09,5,F09_05_P03,E3,Standard ReAct Agent,4,4,4,5,4,4.2,No,,Acceptable plan with only minor tuning required.
+F10_01,F10,1,F10_01_P03,E1,Standard ReAct Agent,3,4,5,3,4,3.8,No,,Requires modification before shop-floor use.
+F10_01,F10,1,F10_01_P03,E2,Standard ReAct Agent,4,4,3,3,3,3.4,No,,Requires modification before shop-floor use.
+F10_01,F10,1,F10_01_P03,E3,Standard ReAct Agent,3,3,3,3,4,3.2,No,,Requires modification before shop-floor use.
+F10_02,F10,2,F10_02_P03,E1,Standard ReAct Agent,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F10_02,F10,2,F10_02_P03,E2,Standard ReAct Agent,4,4,4,4,5,4.2,No,,Acceptable plan with only minor tuning required.
+F10_02,F10,2,F10_02_P03,E3,Standard ReAct Agent,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F10_03,F10,3,F10_03_P03,E1,Standard ReAct Agent,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F10_03,F10,3,F10_03_P03,E2,Standard ReAct Agent,4,5,4,5,5,4.6,No,,Acceptable plan with only minor tuning required.
+F10_03,F10,3,F10_03_P03,E3,Standard ReAct Agent,4,4,5,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F10_04,F10,4,F10_04_P03,E1,Standard ReAct Agent,4,4,4,5,5,4.4,No,,Acceptable plan with only minor tuning required.
+F10_04,F10,4,F10_04_P03,E2,Standard ReAct Agent,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F10_04,F10,4,F10_04_P03,E3,Standard ReAct Agent,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F10_05,F10,5,F10_05_P03,E1,Standard ReAct Agent,5,4,4,5,5,4.6,No,,Acceptable plan with only minor tuning required.
+F10_05,F10,5,F10_05_P03,E2,Standard ReAct Agent,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F10_05,F10,5,F10_05_P03,E3,Standard ReAct Agent,5,5,5,4,4,4.6,No,,Acceptable plan with only minor tuning required.
+F11_01,F11,1,F11_01_P03,E1,Standard ReAct Agent,4,4,4,5,5,4.4,No,,Acceptable plan with only minor tuning required.
+F11_01,F11,1,F11_01_P03,E2,Standard ReAct Agent,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F11_01,F11,1,F11_01_P03,E3,Standard ReAct Agent,4,5,4,5,4,4.4,No,,Acceptable plan with only minor tuning required.
+F11_02,F11,2,F11_02_P03,E1,Standard ReAct Agent,4,4,5,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F11_02,F11,2,F11_02_P03,E2,Standard ReAct Agent,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F11_02,F11,2,F11_02_P03,E3,Standard ReAct Agent,4,5,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F11_03,F11,3,F11_03_P03,E1,Standard ReAct Agent,3,3,3,3,4,3.2,No,,Requires modification before shop-floor use.
+F11_03,F11,3,F11_03_P03,E2,Standard ReAct Agent,3,3,3,4,4,3.4,No,,Requires modification before shop-floor use.
+F11_03,F11,3,F11_03_P03,E3,Standard ReAct Agent,4,2,3,3,4,3.2,No,,Requires modification before shop-floor use.
+F11_04,F11,4,F11_04_P03,E1,Standard ReAct Agent,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F11_04,F11,4,F11_04_P03,E2,Standard ReAct Agent,4,4,4,5,4,4.2,No,,Acceptable plan with only minor tuning required.
+F11_04,F11,4,F11_04_P03,E3,Standard ReAct Agent,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F11_05,F11,5,F11_05_P03,E1,Standard ReAct Agent,2,4,4,5,2,3.4,No,,Requires modification before shop-floor use.
+F11_05,F11,5,F11_05_P03,E2,Standard ReAct Agent,4,3,2,3,4,3.2,No,,Requires modification before shop-floor use.
+F11_05,F11,5,F11_05_P03,E3,Standard ReAct Agent,4,4,3,3,3,3.4,No,,Requires modification before shop-floor use.
+F12_01,F12,1,F12_01_P03,E1,Standard ReAct Agent,3,3,3,4,3,3.2,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F12_01,F12,1,F12_01_P03,E2,Standard ReAct Agent,3,4,3,3,4,3.4,No,,Requires modification before shop-floor use.
+F12_01,F12,1,F12_01_P03,E3,Standard ReAct Agent,4,3,2,3,5,3.4,No,,Requires modification before shop-floor use.
+F12_02,F12,2,F12_02_P03,E1,Standard ReAct Agent,3,4,4,3,5,3.8,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F12_02,F12,2,F12_02_P03,E2,Standard ReAct Agent,3,3,3,4,2,3,No,,Requires modification before shop-floor use.
+F12_02,F12,2,F12_02_P03,E3,Standard ReAct Agent,3,4,3,3,4,3.4,No,,Requires modification before shop-floor use.
+F12_03,F12,3,F12_03_P03,E1,Standard ReAct Agent,5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F12_03,F12,3,F12_03_P03,E2,Standard ReAct Agent,4,4,4,5,4,4.2,No,,Acceptable plan with only minor tuning required.
+F12_03,F12,3,F12_03_P03,E3,Standard ReAct Agent,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F12_04,F12,4,F12_04_P03,E1,Standard ReAct Agent,4,3,3,2,4,3.2,No,,Requires modification before shop-floor use.
+F12_04,F12,4,F12_04_P03,E2,Standard ReAct Agent,3,4,3,4,4,3.6,No,,Requires modification before shop-floor use.
+F12_04,F12,4,F12_04_P03,E3,Standard ReAct Agent,4,3,4,3,2,3.2,No,,Requires modification before shop-floor use.
+F12_05,F12,5,F12_05_P03,E1,Standard ReAct Agent,2,3,3,2,3,2.6,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F12_05,F12,5,F12_05_P03,E2,Standard ReAct Agent,5,4,3,4,3,3.8,No,,Requires modification before shop-floor use.
+F12_05,F12,5,F12_05_P03,E3,Standard ReAct Agent,3,3,4,3,3,3.2,No,,Requires modification before shop-floor use.
+F13_01,F13,1,F13_01_P03,E1,Standard ReAct Agent,4,2,3,4,3,3.2,No,,Requires modification before shop-floor use.
+F13_01,F13,1,F13_01_P03,E2,Standard ReAct Agent,3,3,2,3,3,2.8,No,,Requires modification before shop-floor use.
+F13_01,F13,1,F13_01_P03,E3,Standard ReAct Agent,4,4,4,4,3,3.8,No,,Requires modification before shop-floor use.
+F13_02,F13,2,F13_02_P03,E1,Standard ReAct Agent,5,5,4,5,4,4.6,No,,Acceptable plan with only minor tuning required.
+F13_02,F13,2,F13_02_P03,E2,Standard ReAct Agent,5,4,5,4,4,4.4,No,,Acceptable plan with only minor tuning required.
+F13_02,F13,2,F13_02_P03,E3,Standard ReAct Agent,4,4,5,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F13_03,F13,3,F13_03_P03,E1,Standard ReAct Agent,4,4,3,5,3,3.8,No,,Requires modification before shop-floor use.
+F13_03,F13,3,F13_03_P03,E2,Standard ReAct Agent,4,3,3,4,2,3.2,No,,Requires modification before shop-floor use.
+F13_03,F13,3,F13_03_P03,E3,Standard ReAct Agent,3,3,2,4,3,3,No,,Requires modification before shop-floor use.
+F13_04,F13,4,F13_04_P03,E1,Standard ReAct Agent,4,5,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F13_04,F13,4,F13_04_P03,E2,Standard ReAct Agent,4,5,4,5,4,4.4,No,,Acceptable plan with only minor tuning required.
+F13_04,F13,4,F13_04_P03,E3,Standard ReAct Agent,4,4,5,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F13_05,F13,5,F13_05_P03,E1,Standard ReAct Agent,5,4,5,4,4,4.4,No,,Acceptable plan with only minor tuning required.
+F13_05,F13,5,F13_05_P03,E2,Standard ReAct Agent,5,5,4,5,4,4.6,No,,Acceptable plan with only minor tuning required.
+F13_05,F13,5,F13_05_P03,E3,Standard ReAct Agent,4,5,4,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F14_01,F14,1,F14_01_P03,E1,Standard ReAct Agent,5,5,5,4,5,4.8,No,,Acceptable plan with only minor tuning required.
+F14_01,F14,1,F14_01_P03,E2,Standard ReAct Agent,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F14_01,F14,1,F14_01_P03,E3,Standard ReAct Agent,4,4,4,5,4,4.2,No,,Acceptable plan with only minor tuning required.
+F14_02,F14,2,F14_02_P03,E1,Standard ReAct Agent,3,4,3,4,3,3.4,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F14_02,F14,2,F14_02_P03,E2,Standard ReAct Agent,4,5,3,4,3,3.8,No,,Requires modification before shop-floor use.
+F14_02,F14,2,F14_02_P03,E3,Standard ReAct Agent,4,2,3,5,3,3.4,No,,Requires modification before shop-floor use.
+F14_03,F14,3,F14_03_P03,E1,Standard ReAct Agent,3,4,4,4,4,3.8,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F14_03,F14,3,F14_03_P03,E2,Standard ReAct Agent,4,2,3,4,3,3.2,No,,Requires modification before shop-floor use.
+F14_03,F14,3,F14_03_P03,E3,Standard ReAct Agent,3,3,3,4,3,3.2,No,,Requires modification before shop-floor use.
+F14_04,F14,4,F14_04_P03,E1,Standard ReAct Agent,4,5,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F14_04,F14,4,F14_04_P03,E2,Standard ReAct Agent,5,5,4,5,4,4.6,No,,Acceptable plan with only minor tuning required.
+F14_04,F14,4,F14_04_P03,E3,Standard ReAct Agent,5,5,4,4,4,4.4,No,,Acceptable plan with only minor tuning required.
+F14_05,F14,5,F14_05_P03,E1,Standard ReAct Agent,5,4,4,5,5,4.6,No,,Acceptable plan with only minor tuning required.
+F14_05,F14,5,F14_05_P03,E2,Standard ReAct Agent,5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F14_05,F14,5,F14_05_P03,E3,Standard ReAct Agent,4,4,4,5,4,4.2,No,,Acceptable plan with only minor tuning required.
+F15_01,F15,1,F15_01_P03,E1,Standard ReAct Agent,4,4,5,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F15_01,F15,1,F15_01_P03,E2,Standard ReAct Agent,4,4,4,5,4,4.2,No,,Acceptable plan with only minor tuning required.
+F15_01,F15,1,F15_01_P03,E3,Standard ReAct Agent,4,4,4,5,5,4.4,No,,Acceptable plan with only minor tuning required.
+F15_02,F15,2,F15_02_P03,E1,Standard ReAct Agent,4,5,5,4,5,4.6,No,,Acceptable plan with only minor tuning required.
+F15_02,F15,2,F15_02_P03,E2,Standard ReAct Agent,4,4,5,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F15_02,F15,2,F15_02_P03,E3,Standard ReAct Agent,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F15_03,F15,3,F15_03_P03,E1,Standard ReAct Agent,3,3,3,3,4,3.2,No,,Requires modification before shop-floor use.
+F15_03,F15,3,F15_03_P03,E2,Standard ReAct Agent,4,2,2,3,3,2.8,No,,Requires modification before shop-floor use.
+F15_03,F15,3,F15_03_P03,E3,Standard ReAct Agent,3,3,4,3,4,3.4,No,,Requires modification before shop-floor use.
+F15_04,F15,4,F15_04_P03,E1,Standard ReAct Agent,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F15_04,F15,4,F15_04_P03,E2,Standard ReAct Agent,4,5,4,5,5,4.6,No,,Acceptable plan with only minor tuning required.
+F15_04,F15,4,F15_04_P03,E3,Standard ReAct Agent,5,5,5,4,4,4.6,No,,Acceptable plan with only minor tuning required.
+F15_05,F15,5,F15_05_P03,E1,Standard ReAct Agent,4,4,4,4,5,4.2,No,,Acceptable plan with only minor tuning required.
+F15_05,F15,5,F15_05_P03,E2,Standard ReAct Agent,4,4,4,5,4,4.2,No,,Acceptable plan with only minor tuning required.
+F15_05,F15,5,F15_05_P03,E3,Standard ReAct Agent,5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F16_01,F16,1,F16_01_P03,E1,Standard ReAct Agent,4,5,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F16_01,F16,1,F16_01_P03,E2,Standard ReAct Agent,4,5,4,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F16_01,F16,1,F16_01_P03,E3,Standard ReAct Agent,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F16_02,F16,2,F16_02_P03,E1,Standard ReAct Agent,4,4,4,5,5,4.4,No,,Acceptable plan with only minor tuning required.
+F16_02,F16,2,F16_02_P03,E2,Standard ReAct Agent,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F16_02,F16,2,F16_02_P03,E3,Standard ReAct Agent,4,4,4,4,5,4.2,No,,Acceptable plan with only minor tuning required.
+F16_03,F16,3,F16_03_P03,E1,Standard ReAct Agent,4,5,4,5,5,4.6,No,,Acceptable plan with only minor tuning required.
+F16_03,F16,3,F16_03_P03,E2,Standard ReAct Agent,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F16_03,F16,3,F16_03_P03,E3,Standard ReAct Agent,4,4,4,5,4,4.2,No,,Acceptable plan with only minor tuning required.
+F16_04,F16,4,F16_04_P03,E1,Standard ReAct Agent,4,4,5,5,4,4.4,No,,Acceptable plan with only minor tuning required.
+F16_04,F16,4,F16_04_P03,E2,Standard ReAct Agent,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F16_04,F16,4,F16_04_P03,E3,Standard ReAct Agent,4,4,5,5,4,4.4,No,,Acceptable plan with only minor tuning required.
+F16_05,F16,5,F16_05_P03,E1,Standard ReAct Agent,5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F16_05,F16,5,F16_05_P03,E2,Standard ReAct Agent,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F16_05,F16,5,F16_05_P03,E3,Standard ReAct Agent,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F17_01,F17,1,F17_01_P03,E1,Standard ReAct Agent,4,4,5,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F17_01,F17,1,F17_01_P03,E2,Standard ReAct Agent,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F17_01,F17,1,F17_01_P03,E3,Standard ReAct Agent,4,5,4,5,4,4.4,No,,Acceptable plan with only minor tuning required.
+F17_02,F17,2,F17_02_P03,E1,Standard ReAct Agent,3,3,4,3,3,3.2,No,,Requires modification before shop-floor use.
+F17_02,F17,2,F17_02_P03,E2,Standard ReAct Agent,3,3,4,3,4,3.4,No,,Requires modification before shop-floor use.
+F17_02,F17,2,F17_02_P03,E3,Standard ReAct Agent,3,2,2,4,4,3,No,,Requires modification before shop-floor use.
+F17_03,F17,3,F17_03_P03,E1,Standard ReAct Agent,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F17_03,F17,3,F17_03_P03,E2,Standard ReAct Agent,4,5,4,5,4,4.4,No,,Acceptable plan with only minor tuning required.
+F17_03,F17,3,F17_03_P03,E3,Standard ReAct Agent,4,5,4,5,4,4.4,No,,Acceptable plan with only minor tuning required.
+F17_04,F17,4,F17_04_P03,E1,Standard ReAct Agent,4,5,5,5,5,4.8,No,,Acceptable plan with only minor tuning required.
+F17_04,F17,4,F17_04_P03,E2,Standard ReAct Agent,4,4,5,5,4,4.4,No,,Acceptable plan with only minor tuning required.
+F17_04,F17,4,F17_04_P03,E3,Standard ReAct Agent,4,4,4,4,5,4.2,No,,Acceptable plan with only minor tuning required.
+F17_05,F17,5,F17_05_P03,E1,Standard ReAct Agent,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F17_05,F17,5,F17_05_P03,E2,Standard ReAct Agent,4,4,4,5,4,4.2,No,,Acceptable plan with only minor tuning required.
+F17_05,F17,5,F17_05_P03,E3,Standard ReAct Agent,5,5,4,4,4,4.4,No,,Acceptable plan with only minor tuning required.
+F18_01,F18,1,F18_01_P03,E1,Standard ReAct Agent,2,4,4,3,4,3.4,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F18_01,F18,1,F18_01_P03,E2,Standard ReAct Agent,3,4,3,4,3,3.4,No,,Requires modification before shop-floor use.
+F18_01,F18,1,F18_01_P03,E3,Standard ReAct Agent,3,3,4,3,4,3.4,No,,Requires modification before shop-floor use.
+F18_02,F18,2,F18_02_P03,E1,Standard ReAct Agent,5,4,4,5,4,4.4,No,,Acceptable plan with only minor tuning required.
+F18_02,F18,2,F18_02_P03,E2,Standard ReAct Agent,4,5,4,5,4,4.4,No,,Acceptable plan with only minor tuning required.
+F18_02,F18,2,F18_02_P03,E3,Standard ReAct Agent,4,5,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F18_03,F18,3,F18_03_P03,E1,Standard ReAct Agent,2,3,3,4,4,3.2,No,,Requires modification before shop-floor use.
+F18_03,F18,3,F18_03_P03,E2,Standard ReAct Agent,3,4,4,3,4,3.6,No,,Requires modification before shop-floor use.
+F18_03,F18,3,F18_03_P03,E3,Standard ReAct Agent,3,3,3,3,4,3.2,No,,Requires modification before shop-floor use.
+F18_04,F18,4,F18_04_P03,E1,Standard ReAct Agent,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F18_04,F18,4,F18_04_P03,E2,Standard ReAct Agent,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F18_04,F18,4,F18_04_P03,E3,Standard ReAct Agent,4,5,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F18_05,F18,5,F18_05_P03,E1,Standard ReAct Agent,4,4,5,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F18_05,F18,5,F18_05_P03,E2,Standard ReAct Agent,4,4,4,5,4,4.2,No,,Acceptable plan with only minor tuning required.
+F18_05,F18,5,F18_05_P03,E3,Standard ReAct Agent,4,4,4,5,4,4.2,No,,Acceptable plan with only minor tuning required.
+F19_01,F19,1,F19_01_P03,E1,Standard ReAct Agent,5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F19_01,F19,1,F19_01_P03,E2,Standard ReAct Agent,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F19_01,F19,1,F19_01_P03,E3,Standard ReAct Agent,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F19_02,F19,2,F19_02_P03,E1,Standard ReAct Agent,5,3,3,3,3,3.4,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F19_02,F19,2,F19_02_P03,E2,Standard ReAct Agent,2,4,3,4,3,3.2,No,,Requires modification before shop-floor use.
+F19_02,F19,2,F19_02_P03,E3,Standard ReAct Agent,3,4,3,4,4,3.6,No,,Requires modification before shop-floor use.
+F19_03,F19,3,F19_03_P03,E1,Standard ReAct Agent,4,4,5,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F19_03,F19,3,F19_03_P03,E2,Standard ReAct Agent,4,4,4,4,5,4.2,No,,Acceptable plan with only minor tuning required.
+F19_03,F19,3,F19_03_P03,E3,Standard ReAct Agent,4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F19_04,F19,4,F19_04_P03,E1,Standard ReAct Agent,4,4,5,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F19_04,F19,4,F19_04_P03,E2,Standard ReAct Agent,5,5,4,4,5,4.6,No,,Acceptable plan with only minor tuning required.
+F19_04,F19,4,F19_04_P03,E3,Standard ReAct Agent,5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F19_05,F19,5,F19_05_P03,E1,Standard ReAct Agent,3,3,3,4,4,3.4,No,,Requires modification before shop-floor use.
+F19_05,F19,5,F19_05_P03,E2,Standard ReAct Agent,4,3,2,3,3,3,No,,Requires modification before shop-floor use.
+F19_05,F19,5,F19_05_P03,E3,Standard ReAct Agent,4,5,3,4,4,4,No,,Requires modification before shop-floor use.
+F00_01,F00,1,F00_01_P04,E1,KGMCF (Ours),5,4,5,5,4,4.6,No,,Acceptable plan with only minor tuning required.
+F00_01,F00,1,F00_01_P04,E2,KGMCF (Ours),5,5,5,5,4,4.8,No,,Acceptable plan with only minor tuning required.
+F00_01,F00,1,F00_01_P04,E3,KGMCF (Ours),5,5,5,5,4,4.8,No,,Acceptable plan with only minor tuning required.
+F00_02,F00,2,F00_02_P04,E1,KGMCF (Ours),4,4,4,5,4,4.2,No,,Acceptable plan with only minor tuning required.
+F00_02,F00,2,F00_02_P04,E2,KGMCF (Ours),5,5,4,4,5,4.6,No,,Acceptable plan with only minor tuning required.
+F00_02,F00,2,F00_02_P04,E3,KGMCF (Ours),4,5,4,5,5,4.6,No,,Acceptable plan with only minor tuning required.
+F00_03,F00,3,F00_03_P04,E1,KGMCF (Ours),3,4,3,4,5,3.8,No,,Requires modification before shop-floor use.
+F00_03,F00,3,F00_03_P04,E2,KGMCF (Ours),3,3,2,5,3,3.2,No,,Requires modification before shop-floor use.
+F00_03,F00,3,F00_03_P04,E3,KGMCF (Ours),3,4,3,3,3,3.2,No,,Requires modification before shop-floor use.
+F00_04,F00,4,F00_04_P04,E1,KGMCF (Ours),5,4,4,5,5,4.6,No,,Acceptable plan with only minor tuning required.
+F00_04,F00,4,F00_04_P04,E2,KGMCF (Ours),5,4,5,5,4,4.6,No,,Acceptable plan with only minor tuning required.
+F00_04,F00,4,F00_04_P04,E3,KGMCF (Ours),5,5,4,4,5,4.6,No,,Acceptable plan with only minor tuning required.
+F00_05,F00,5,F00_05_P04,E1,KGMCF (Ours),4,5,5,4,4,4.4,No,,Acceptable plan with only minor tuning required.
+F00_05,F00,5,F00_05_P04,E2,KGMCF (Ours),4,5,4,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F00_05,F00,5,F00_05_P04,E3,KGMCF (Ours),5,4,5,4,4,4.4,No,,Acceptable plan with only minor tuning required.
+F01_01,F01,1,F01_01_P04,E1,KGMCF (Ours),5,5,5,4,4,4.6,No,,Acceptable plan with only minor tuning required.
+F01_01,F01,1,F01_01_P04,E2,KGMCF (Ours),5,5,5,4,5,4.8,No,,Acceptable plan with only minor tuning required.
+F01_01,F01,1,F01_01_P04,E3,KGMCF (Ours),4,4,5,5,5,4.6,No,,Acceptable plan with only minor tuning required.
+F01_02,F01,2,F01_02_P04,E1,KGMCF (Ours),4,5,5,5,4,4.6,No,,Acceptable plan with only minor tuning required.
+F01_02,F01,2,F01_02_P04,E2,KGMCF (Ours),4,4,5,5,5,4.6,No,,Acceptable plan with only minor tuning required.
+F01_02,F01,2,F01_02_P04,E3,KGMCF (Ours),4,4,5,5,4,4.4,No,,Acceptable plan with only minor tuning required.
+F01_03,F01,3,F01_03_P04,E1,KGMCF (Ours),4,4,5,5,5,4.6,No,,Acceptable plan with only minor tuning required.
+F01_03,F01,3,F01_03_P04,E2,KGMCF (Ours),4,5,4,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F01_03,F01,3,F01_03_P04,E3,KGMCF (Ours),5,5,4,4,4,4.4,No,,Acceptable plan with only minor tuning required.
+F01_04,F01,4,F01_04_P04,E1,KGMCF (Ours),4,5,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F01_04,F01,4,F01_04_P04,E2,KGMCF (Ours),4,5,5,5,5,4.8,No,,Acceptable plan with only minor tuning required.
+F01_04,F01,4,F01_04_P04,E3,KGMCF (Ours),4,5,5,4,5,4.6,No,,Acceptable plan with only minor tuning required.
+F01_05,F01,5,F01_05_P04,E1,KGMCF (Ours),4,5,4,5,4,4.4,No,,Acceptable plan with only minor tuning required.
+F01_05,F01,5,F01_05_P04,E2,KGMCF (Ours),4,5,5,5,5,4.8,No,,Acceptable plan with only minor tuning required.
+F01_05,F01,5,F01_05_P04,E3,KGMCF (Ours),4,4,4,5,5,4.4,No,,Acceptable plan with only minor tuning required.
+F02_01,F02,1,F02_01_P04,E1,KGMCF (Ours),4,4,4,5,5,4.4,No,,Acceptable plan with only minor tuning required.
+F02_01,F02,1,F02_01_P04,E2,KGMCF (Ours),5,5,4,4,4,4.4,No,,Acceptable plan with only minor tuning required.
+F02_01,F02,1,F02_01_P04,E3,KGMCF (Ours),5,5,4,4,4,4.4,No,,Acceptable plan with only minor tuning required.
+F02_02,F02,2,F02_02_P04,E1,KGMCF (Ours),5,5,4,4,4,4.4,No,,Acceptable plan with only minor tuning required.
+F02_02,F02,2,F02_02_P04,E2,KGMCF (Ours),4,5,5,4,4,4.4,No,,Acceptable plan with only minor tuning required.
+F02_02,F02,2,F02_02_P04,E3,KGMCF (Ours),5,5,5,5,5,5,No,,Acceptable plan with only minor tuning required.
+F02_03,F02,3,F02_03_P04,E1,KGMCF (Ours),4,4,5,5,5,4.6,No,,Acceptable plan with only minor tuning required.
+F02_03,F02,3,F02_03_P04,E2,KGMCF (Ours),4,5,4,5,4,4.4,No,,Acceptable plan with only minor tuning required.
+F02_03,F02,3,F02_03_P04,E3,KGMCF (Ours),5,5,4,4,4,4.4,No,,Acceptable plan with only minor tuning required.
+F02_04,F02,4,F02_04_P04,E1,KGMCF (Ours),4,4,5,5,5,4.6,No,,Acceptable plan with only minor tuning required.
+F02_04,F02,4,F02_04_P04,E2,KGMCF (Ours),4,5,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F02_04,F02,4,F02_04_P04,E3,KGMCF (Ours),4,4,5,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F02_05,F02,5,F02_05_P04,E1,KGMCF (Ours),5,5,4,4,5,4.6,No,,Acceptable plan with only minor tuning required.
+F02_05,F02,5,F02_05_P04,E2,KGMCF (Ours),5,4,4,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F02_05,F02,5,F02_05_P04,E3,KGMCF (Ours),4,4,4,5,4,4.2,No,,Acceptable plan with only minor tuning required.
+F03_01,F03,1,F03_01_P04,E1,KGMCF (Ours),4,5,4,5,5,4.6,No,,Acceptable plan with only minor tuning required.
+F03_01,F03,1,F03_01_P04,E2,KGMCF (Ours),5,4,4,5,5,4.6,No,,Acceptable plan with only minor tuning required.
+F03_01,F03,1,F03_01_P04,E3,KGMCF (Ours),5,4,4,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F03_02,F03,2,F03_02_P04,E1,KGMCF (Ours),5,5,4,4,4,4.4,No,,Acceptable plan with only minor tuning required.
+F03_02,F03,2,F03_02_P04,E2,KGMCF (Ours),5,4,5,4,5,4.6,No,,Acceptable plan with only minor tuning required.
+F03_02,F03,2,F03_02_P04,E3,KGMCF (Ours),4,5,4,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F03_03,F03,3,F03_03_P04,E1,KGMCF (Ours),5,5,4,5,4,4.6,No,,Acceptable plan with only minor tuning required.
+F03_03,F03,3,F03_03_P04,E2,KGMCF (Ours),4,4,4,5,5,4.4,No,,Acceptable plan with only minor tuning required.
+F03_03,F03,3,F03_03_P04,E3,KGMCF (Ours),4,5,5,4,5,4.6,No,,Acceptable plan with only minor tuning required.
+F03_04,F03,4,F03_04_P04,E1,KGMCF (Ours),4,4,4,4,5,4.2,No,,Acceptable plan with only minor tuning required.
+F03_04,F03,4,F03_04_P04,E2,KGMCF (Ours),4,5,4,5,4,4.4,No,,Acceptable plan with only minor tuning required.
+F03_04,F03,4,F03_04_P04,E3,KGMCF (Ours),4,5,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F03_05,F03,5,F03_05_P04,E1,KGMCF (Ours),5,4,5,5,5,4.8,No,,Acceptable plan with only minor tuning required.
+F03_05,F03,5,F03_05_P04,E2,KGMCF (Ours),5,4,5,5,4,4.6,No,,Acceptable plan with only minor tuning required.
+F03_05,F03,5,F03_05_P04,E3,KGMCF (Ours),5,4,5,5,4,4.6,No,,Acceptable plan with only minor tuning required.
+F04_01,F04,1,F04_01_P04,E1,KGMCF (Ours),5,4,5,5,4,4.6,No,,Acceptable plan with only minor tuning required.
+F04_01,F04,1,F04_01_P04,E2,KGMCF (Ours),4,4,4,5,5,4.4,No,,Acceptable plan with only minor tuning required.
+F04_01,F04,1,F04_01_P04,E3,KGMCF (Ours),4,5,5,4,5,4.6,No,,Acceptable plan with only minor tuning required.
+F04_02,F04,2,F04_02_P04,E1,KGMCF (Ours),5,4,4,5,4,4.4,No,,Acceptable plan with only minor tuning required.
+F04_02,F04,2,F04_02_P04,E2,KGMCF (Ours),4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F04_02,F04,2,F04_02_P04,E3,KGMCF (Ours),4,5,5,5,4,4.6,No,,Acceptable plan with only minor tuning required.
+F04_03,F04,3,F04_03_P04,E1,KGMCF (Ours),4,4,5,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F04_03,F04,3,F04_03_P04,E2,KGMCF (Ours),4,4,4,5,5,4.4,No,,Acceptable plan with only minor tuning required.
+F04_03,F04,3,F04_03_P04,E3,KGMCF (Ours),4,5,5,5,5,4.8,No,,Acceptable plan with only minor tuning required.
+F04_04,F04,4,F04_04_P04,E1,KGMCF (Ours),4,4,3,3,3,3.4,No,,Requires modification before shop-floor use.
+F04_04,F04,4,F04_04_P04,E2,KGMCF (Ours),4,3,3,4,3,3.4,No,,Requires modification before shop-floor use.
+F04_04,F04,4,F04_04_P04,E3,KGMCF (Ours),4,4,4,3,4,3.8,No,,Requires modification before shop-floor use.
+F04_05,F04,5,F04_05_P04,E1,KGMCF (Ours),4,4,4,5,4,4.2,No,,Acceptable plan with only minor tuning required.
+F04_05,F04,5,F04_05_P04,E2,KGMCF (Ours),5,4,4,5,4,4.4,No,,Acceptable plan with only minor tuning required.
+F04_05,F04,5,F04_05_P04,E3,KGMCF (Ours),4,4,5,5,5,4.6,No,,Acceptable plan with only minor tuning required.
+F05_01,F05,1,F05_01_P04,E1,KGMCF (Ours),5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F05_01,F05,1,F05_01_P04,E2,KGMCF (Ours),5,4,5,4,4,4.4,No,,Acceptable plan with only minor tuning required.
+F05_01,F05,1,F05_01_P04,E3,KGMCF (Ours),4,5,5,4,5,4.6,No,,Acceptable plan with only minor tuning required.
+F05_02,F05,2,F05_02_P04,E1,KGMCF (Ours),5,4,4,5,5,4.6,No,,Acceptable plan with only minor tuning required.
+F05_02,F05,2,F05_02_P04,E2,KGMCF (Ours),5,5,5,4,5,4.8,No,,Acceptable plan with only minor tuning required.
+F05_02,F05,2,F05_02_P04,E3,KGMCF (Ours),5,4,4,5,5,4.6,No,,Acceptable plan with only minor tuning required.
+F05_03,F05,3,F05_03_P04,E1,KGMCF (Ours),4,5,4,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F05_03,F05,3,F05_03_P04,E2,KGMCF (Ours),4,4,4,5,5,4.4,No,,Acceptable plan with only minor tuning required.
+F05_03,F05,3,F05_03_P04,E3,KGMCF (Ours),4,5,4,5,5,4.6,No,,Acceptable plan with only minor tuning required.
+F05_04,F05,4,F05_04_P04,E1,KGMCF (Ours),5,4,4,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F05_04,F05,4,F05_04_P04,E2,KGMCF (Ours),4,4,5,5,5,4.6,No,,Acceptable plan with only minor tuning required.
+F05_04,F05,4,F05_04_P04,E3,KGMCF (Ours),5,4,5,5,5,4.8,No,,Acceptable plan with only minor tuning required.
+F05_05,F05,5,F05_05_P04,E1,KGMCF (Ours),4,4,3,3,5,3.8,No,,Requires modification before shop-floor use.
+F05_05,F05,5,F05_05_P04,E2,KGMCF (Ours),3,3,3,3,3,3,No,,Requires modification before shop-floor use.
+F05_05,F05,5,F05_05_P04,E3,KGMCF (Ours),5,4,4,3,3,3.8,No,,Requires modification before shop-floor use.
+F06_01,F06,1,F06_01_P04,E1,KGMCF (Ours),5,5,4,4,5,4.6,No,,Acceptable plan with only minor tuning required.
+F06_01,F06,1,F06_01_P04,E2,KGMCF (Ours),5,5,5,5,4,4.8,No,,Acceptable plan with only minor tuning required.
+F06_01,F06,1,F06_01_P04,E3,KGMCF (Ours),5,5,4,5,4,4.6,No,,Acceptable plan with only minor tuning required.
+F06_02,F06,2,F06_02_P04,E1,KGMCF (Ours),4,5,5,5,5,4.8,No,,Acceptable plan with only minor tuning required.
+F06_02,F06,2,F06_02_P04,E2,KGMCF (Ours),4,5,4,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F06_02,F06,2,F06_02_P04,E3,KGMCF (Ours),4,5,4,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F06_03,F06,3,F06_03_P04,E1,KGMCF (Ours),4,4,5,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F06_03,F06,3,F06_03_P04,E2,KGMCF (Ours),4,5,5,5,5,4.8,No,,Acceptable plan with only minor tuning required.
+F06_03,F06,3,F06_03_P04,E3,KGMCF (Ours),5,5,4,5,5,4.8,No,,Acceptable plan with only minor tuning required.
+F06_04,F06,4,F06_04_P04,E1,KGMCF (Ours),4,5,4,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F06_04,F06,4,F06_04_P04,E2,KGMCF (Ours),4,4,4,5,5,4.4,No,,Acceptable plan with only minor tuning required.
+F06_04,F06,4,F06_04_P04,E3,KGMCF (Ours),4,5,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F06_05,F06,5,F06_05_P04,E1,KGMCF (Ours),4,5,4,5,4,4.4,No,,Acceptable plan with only minor tuning required.
+F06_05,F06,5,F06_05_P04,E2,KGMCF (Ours),4,4,4,5,5,4.4,No,,Acceptable plan with only minor tuning required.
+F06_05,F06,5,F06_05_P04,E3,KGMCF (Ours),4,5,4,5,4,4.4,No,,Acceptable plan with only minor tuning required.
+F07_01,F07,1,F07_01_P04,E1,KGMCF (Ours),4,3,5,4,4,4,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F07_01,F07,1,F07_01_P04,E2,KGMCF (Ours),5,4,3,4,4,4,No,,Requires modification before shop-floor use.
+F07_01,F07,1,F07_01_P04,E3,KGMCF (Ours),3,4,3,4,3,3.4,No,,Requires modification before shop-floor use.
+F07_02,F07,2,F07_02_P04,E1,KGMCF (Ours),4,5,4,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F07_02,F07,2,F07_02_P04,E2,KGMCF (Ours),5,5,4,5,4,4.6,No,,Acceptable plan with only minor tuning required.
+F07_02,F07,2,F07_02_P04,E3,KGMCF (Ours),4,4,5,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F07_03,F07,3,F07_03_P04,E1,KGMCF (Ours),4,5,4,5,4,4.4,No,,Acceptable plan with only minor tuning required.
+F07_03,F07,3,F07_03_P04,E2,KGMCF (Ours),4,5,5,5,5,4.8,No,,Acceptable plan with only minor tuning required.
+F07_03,F07,3,F07_03_P04,E3,KGMCF (Ours),4,4,4,5,5,4.4,No,,Acceptable plan with only minor tuning required.
+F07_04,F07,4,F07_04_P04,E1,KGMCF (Ours),5,5,4,4,5,4.6,No,,Acceptable plan with only minor tuning required.
+F07_04,F07,4,F07_04_P04,E2,KGMCF (Ours),4,4,5,5,5,4.6,No,,Acceptable plan with only minor tuning required.
+F07_04,F07,4,F07_04_P04,E3,KGMCF (Ours),4,4,5,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F07_05,F07,5,F07_05_P04,E1,KGMCF (Ours),4,4,4,5,5,4.4,No,,Acceptable plan with only minor tuning required.
+F07_05,F07,5,F07_05_P04,E2,KGMCF (Ours),4,5,4,5,4,4.4,No,,Acceptable plan with only minor tuning required.
+F07_05,F07,5,F07_05_P04,E3,KGMCF (Ours),5,4,5,4,5,4.6,No,,Acceptable plan with only minor tuning required.
+F08_01,F08,1,F08_01_P04,E1,KGMCF (Ours),4,5,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F08_01,F08,1,F08_01_P04,E2,KGMCF (Ours),5,5,5,4,5,4.8,No,,Acceptable plan with only minor tuning required.
+F08_01,F08,1,F08_01_P04,E3,KGMCF (Ours),4,4,5,5,4,4.4,No,,Acceptable plan with only minor tuning required.
+F08_02,F08,2,F08_02_P04,E1,KGMCF (Ours),5,4,4,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F08_02,F08,2,F08_02_P04,E2,KGMCF (Ours),4,5,5,5,5,4.8,No,,Acceptable plan with only minor tuning required.
+F08_02,F08,2,F08_02_P04,E3,KGMCF (Ours),4,4,5,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F08_03,F08,3,F08_03_P04,E1,KGMCF (Ours),4,5,4,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F08_03,F08,3,F08_03_P04,E2,KGMCF (Ours),4,5,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F08_03,F08,3,F08_03_P04,E3,KGMCF (Ours),4,4,5,5,5,4.6,No,,Acceptable plan with only minor tuning required.
+F08_04,F08,4,F08_04_P04,E1,KGMCF (Ours),4,4,5,5,4,4.4,No,,Acceptable plan with only minor tuning required.
+F08_04,F08,4,F08_04_P04,E2,KGMCF (Ours),4,4,4,4,5,4.2,No,,Acceptable plan with only minor tuning required.
+F08_04,F08,4,F08_04_P04,E3,KGMCF (Ours),5,5,5,4,4,4.6,No,,Acceptable plan with only minor tuning required.
+F08_05,F08,5,F08_05_P04,E1,KGMCF (Ours),5,4,4,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F08_05,F08,5,F08_05_P04,E2,KGMCF (Ours),5,4,4,5,5,4.6,No,,Acceptable plan with only minor tuning required.
+F08_05,F08,5,F08_05_P04,E3,KGMCF (Ours),4,4,5,5,4,4.4,No,,Acceptable plan with only minor tuning required.
+F09_01,F09,1,F09_01_P04,E1,KGMCF (Ours),5,5,5,5,5,5,No,,Acceptable plan with only minor tuning required.
+F09_01,F09,1,F09_01_P04,E2,KGMCF (Ours),4,5,4,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F09_01,F09,1,F09_01_P04,E3,KGMCF (Ours),4,5,4,5,4,4.4,No,,Acceptable plan with only minor tuning required.
+F09_02,F09,2,F09_02_P04,E1,KGMCF (Ours),5,5,4,5,4,4.6,No,,Acceptable plan with only minor tuning required.
+F09_02,F09,2,F09_02_P04,E2,KGMCF (Ours),4,4,4,5,5,4.4,No,,Acceptable plan with only minor tuning required.
+F09_02,F09,2,F09_02_P04,E3,KGMCF (Ours),4,4,5,5,5,4.6,No,,Acceptable plan with only minor tuning required.
+F09_03,F09,3,F09_03_P04,E1,KGMCF (Ours),4,5,5,5,4,4.6,No,,Acceptable plan with only minor tuning required.
+F09_03,F09,3,F09_03_P04,E2,KGMCF (Ours),5,4,4,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F09_03,F09,3,F09_03_P04,E3,KGMCF (Ours),5,4,5,5,5,4.8,No,,Acceptable plan with only minor tuning required.
+F09_04,F09,4,F09_04_P04,E1,KGMCF (Ours),5,5,4,5,4,4.6,No,,Acceptable plan with only minor tuning required.
+F09_04,F09,4,F09_04_P04,E2,KGMCF (Ours),4,5,4,5,5,4.6,No,,Acceptable plan with only minor tuning required.
+F09_04,F09,4,F09_04_P04,E3,KGMCF (Ours),4,5,4,5,5,4.6,No,,Acceptable plan with only minor tuning required.
+F09_05,F09,5,F09_05_P04,E1,KGMCF (Ours),5,4,4,5,5,4.6,No,,Acceptable plan with only minor tuning required.
+F09_05,F09,5,F09_05_P04,E2,KGMCF (Ours),4,5,4,5,5,4.6,No,,Acceptable plan with only minor tuning required.
+F09_05,F09,5,F09_05_P04,E3,KGMCF (Ours),5,4,4,5,4,4.4,No,,Acceptable plan with only minor tuning required.
+F10_01,F10,1,F10_01_P04,E1,KGMCF (Ours),5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F10_01,F10,1,F10_01_P04,E2,KGMCF (Ours),5,4,4,5,4,4.4,No,,Acceptable plan with only minor tuning required.
+F10_01,F10,1,F10_01_P04,E3,KGMCF (Ours),5,5,5,5,5,5,No,,Acceptable plan with only minor tuning required.
+F10_02,F10,2,F10_02_P04,E1,KGMCF (Ours),5,5,4,5,5,4.8,No,,Acceptable plan with only minor tuning required.
+F10_02,F10,2,F10_02_P04,E2,KGMCF (Ours),4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F10_02,F10,2,F10_02_P04,E3,KGMCF (Ours),5,5,5,5,4,4.8,No,,Acceptable plan with only minor tuning required.
+F10_03,F10,3,F10_03_P04,E1,KGMCF (Ours),4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F10_03,F10,3,F10_03_P04,E2,KGMCF (Ours),5,5,4,4,5,4.6,No,,Acceptable plan with only minor tuning required.
+F10_03,F10,3,F10_03_P04,E3,KGMCF (Ours),5,4,4,5,4,4.4,No,,Acceptable plan with only minor tuning required.
+F10_04,F10,4,F10_04_P04,E1,KGMCF (Ours),5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F10_04,F10,4,F10_04_P04,E2,KGMCF (Ours),4,4,4,5,4,4.2,No,,Acceptable plan with only minor tuning required.
+F10_04,F10,4,F10_04_P04,E3,KGMCF (Ours),5,5,4,5,5,4.8,No,,Acceptable plan with only minor tuning required.
+F10_05,F10,5,F10_05_P04,E1,KGMCF (Ours),4,4,4,5,4,4.2,No,,Acceptable plan with only minor tuning required.
+F10_05,F10,5,F10_05_P04,E2,KGMCF (Ours),5,4,4,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F10_05,F10,5,F10_05_P04,E3,KGMCF (Ours),4,4,4,5,4,4.2,No,,Acceptable plan with only minor tuning required.
+F11_01,F11,1,F11_01_P04,E1,KGMCF (Ours),4,5,4,5,4,4.4,No,,Acceptable plan with only minor tuning required.
+F11_01,F11,1,F11_01_P04,E2,KGMCF (Ours),4,5,5,4,5,4.6,No,,Acceptable plan with only minor tuning required.
+F11_01,F11,1,F11_01_P04,E3,KGMCF (Ours),4,5,5,5,4,4.6,No,,Acceptable plan with only minor tuning required.
+F11_02,F11,2,F11_02_P04,E1,KGMCF (Ours),4,4,3,3,3,3.4,No,,Requires modification before shop-floor use.
+F11_02,F11,2,F11_02_P04,E2,KGMCF (Ours),3,4,2,4,3,3.2,No,,Requires modification before shop-floor use.
+F11_02,F11,2,F11_02_P04,E3,KGMCF (Ours),4,3,4,3,4,3.6,No,,Requires modification before shop-floor use.
+F11_03,F11,3,F11_03_P04,E1,KGMCF (Ours),5,5,4,4,4,4.4,No,,Acceptable plan with only minor tuning required.
+F11_03,F11,3,F11_03_P04,E2,KGMCF (Ours),4,4,5,5,5,4.6,No,,Acceptable plan with only minor tuning required.
+F11_03,F11,3,F11_03_P04,E3,KGMCF (Ours),5,5,4,5,5,4.8,No,,Acceptable plan with only minor tuning required.
+F11_04,F11,4,F11_04_P04,E1,KGMCF (Ours),5,4,4,5,4,4.4,No,,Acceptable plan with only minor tuning required.
+F11_04,F11,4,F11_04_P04,E2,KGMCF (Ours),5,5,4,5,4,4.6,No,,Acceptable plan with only minor tuning required.
+F11_04,F11,4,F11_04_P04,E3,KGMCF (Ours),5,5,5,4,5,4.8,No,,Acceptable plan with only minor tuning required.
+F11_05,F11,5,F11_05_P04,E1,KGMCF (Ours),5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F11_05,F11,5,F11_05_P04,E2,KGMCF (Ours),4,5,4,5,4,4.4,No,,Acceptable plan with only minor tuning required.
+F11_05,F11,5,F11_05_P04,E3,KGMCF (Ours),5,5,4,5,4,4.6,No,,Acceptable plan with only minor tuning required.
+F12_01,F12,1,F12_01_P04,E1,KGMCF (Ours),5,5,4,4,4,4.4,No,,Acceptable plan with only minor tuning required.
+F12_01,F12,1,F12_01_P04,E2,KGMCF (Ours),4,4,4,5,4,4.2,No,,Acceptable plan with only minor tuning required.
+F12_01,F12,1,F12_01_P04,E3,KGMCF (Ours),4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F12_02,F12,2,F12_02_P04,E1,KGMCF (Ours),4,4,5,5,5,4.6,No,,Acceptable plan with only minor tuning required.
+F12_02,F12,2,F12_02_P04,E2,KGMCF (Ours),5,5,4,5,4,4.6,No,,Acceptable plan with only minor tuning required.
+F12_02,F12,2,F12_02_P04,E3,KGMCF (Ours),5,4,5,4,4,4.4,No,,Acceptable plan with only minor tuning required.
+F12_03,F12,3,F12_03_P04,E1,KGMCF (Ours),4,3,4,4,3,3.6,No,,Requires modification before shop-floor use.
+F12_03,F12,3,F12_03_P04,E2,KGMCF (Ours),4,4,4,4,4,4,No,,Requires modification before shop-floor use.
+F12_03,F12,3,F12_03_P04,E3,KGMCF (Ours),4,4,3,5,4,4,No,,Requires modification before shop-floor use.
+F12_04,F12,4,F12_04_P04,E1,KGMCF (Ours),5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F12_04,F12,4,F12_04_P04,E2,KGMCF (Ours),4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F12_04,F12,4,F12_04_P04,E3,KGMCF (Ours),4,4,5,5,5,4.6,No,,Acceptable plan with only minor tuning required.
+F12_05,F12,5,F12_05_P04,E1,KGMCF (Ours),4,4,3,3,4,3.6,No,,Requires modification before shop-floor use.
+F12_05,F12,5,F12_05_P04,E2,KGMCF (Ours),3,3,5,3,4,3.6,No,,Requires modification before shop-floor use.
+F12_05,F12,5,F12_05_P04,E3,KGMCF (Ours),4,5,3,3,5,4,No,,Requires modification before shop-floor use.
+F13_01,F13,1,F13_01_P04,E1,KGMCF (Ours),5,4,4,5,4,4.4,No,,Acceptable plan with only minor tuning required.
+F13_01,F13,1,F13_01_P04,E2,KGMCF (Ours),4,4,5,5,5,4.6,No,,Acceptable plan with only minor tuning required.
+F13_01,F13,1,F13_01_P04,E3,KGMCF (Ours),5,4,4,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F13_02,F13,2,F13_02_P04,E1,KGMCF (Ours),4,5,5,4,4,4.4,No,,Acceptable plan with only minor tuning required.
+F13_02,F13,2,F13_02_P04,E2,KGMCF (Ours),4,5,5,5,5,4.8,No,,Acceptable plan with only minor tuning required.
+F13_02,F13,2,F13_02_P04,E3,KGMCF (Ours),4,5,4,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F13_03,F13,3,F13_03_P04,E1,KGMCF (Ours),4,4,4,5,5,4.4,No,,Requires modification before shop-floor use.
+F13_03,F13,3,F13_03_P04,E2,KGMCF (Ours),3,4,3,3,4,3.4,No,,Requires modification before shop-floor use.
+F13_03,F13,3,F13_03_P04,E3,KGMCF (Ours),4,4,4,3,3,3.6,No,,Requires modification before shop-floor use.
+F13_04,F13,4,F13_04_P04,E1,KGMCF (Ours),4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F13_04,F13,4,F13_04_P04,E2,KGMCF (Ours),5,5,4,4,4,4.4,No,,Acceptable plan with only minor tuning required.
+F13_04,F13,4,F13_04_P04,E3,KGMCF (Ours),5,5,4,4,4,4.4,No,,Acceptable plan with only minor tuning required.
+F13_05,F13,5,F13_05_P04,E1,KGMCF (Ours),4,5,4,3,4,4,No,,Requires modification before shop-floor use.
+F13_05,F13,5,F13_05_P04,E2,KGMCF (Ours),4,4,3,4,5,4,No,,Requires modification before shop-floor use.
+F13_05,F13,5,F13_05_P04,E3,KGMCF (Ours),5,3,3,4,3,3.6,No,,Requires modification before shop-floor use.
+F14_01,F14,1,F14_01_P04,E1,KGMCF (Ours),5,4,5,4,5,4.6,No,,Acceptable plan with only minor tuning required.
+F14_01,F14,1,F14_01_P04,E2,KGMCF (Ours),5,4,5,4,5,4.6,No,,Acceptable plan with only minor tuning required.
+F14_01,F14,1,F14_01_P04,E3,KGMCF (Ours),5,5,4,5,4,4.6,No,,Acceptable plan with only minor tuning required.
+F14_02,F14,2,F14_02_P04,E1,KGMCF (Ours),4,4,4,5,5,4.4,No,,Acceptable plan with only minor tuning required.
+F14_02,F14,2,F14_02_P04,E2,KGMCF (Ours),4,4,5,5,4,4.4,No,,Acceptable plan with only minor tuning required.
+F14_02,F14,2,F14_02_P04,E3,KGMCF (Ours),4,4,4,4,4,4,No,,Acceptable plan with only minor tuning required.
+F14_03,F14,3,F14_03_P04,E1,KGMCF (Ours),5,5,5,5,5,5,No,,Acceptable plan with only minor tuning required.
+F14_03,F14,3,F14_03_P04,E2,KGMCF (Ours),5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F14_03,F14,3,F14_03_P04,E3,KGMCF (Ours),5,4,4,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F14_04,F14,4,F14_04_P04,E1,KGMCF (Ours),4,5,5,5,4,4.6,No,,Acceptable plan with only minor tuning required.
+F14_04,F14,4,F14_04_P04,E2,KGMCF (Ours),5,5,4,5,5,4.8,No,,Acceptable plan with only minor tuning required.
+F14_04,F14,4,F14_04_P04,E3,KGMCF (Ours),5,5,5,5,5,5,No,,Acceptable plan with only minor tuning required.
+F14_05,F14,5,F14_05_P04,E1,KGMCF (Ours),5,5,5,4,5,4.8,No,,Acceptable plan with only minor tuning required.
+F14_05,F14,5,F14_05_P04,E2,KGMCF (Ours),5,4,5,4,5,4.6,No,,Acceptable plan with only minor tuning required.
+F14_05,F14,5,F14_05_P04,E3,KGMCF (Ours),4,5,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F15_01,F15,1,F15_01_P04,E1,KGMCF (Ours),4,5,4,5,4,4.4,No,,Acceptable plan with only minor tuning required.
+F15_01,F15,1,F15_01_P04,E2,KGMCF (Ours),5,4,4,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F15_01,F15,1,F15_01_P04,E3,KGMCF (Ours),5,5,4,5,4,4.6,No,,Acceptable plan with only minor tuning required.
+F15_02,F15,2,F15_02_P04,E1,KGMCF (Ours),4,5,4,5,5,4.6,No,,Acceptable plan with only minor tuning required.
+F15_02,F15,2,F15_02_P04,E2,KGMCF (Ours),5,4,4,5,5,4.6,No,,Acceptable plan with only minor tuning required.
+F15_02,F15,2,F15_02_P04,E3,KGMCF (Ours),5,4,4,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F15_03,F15,3,F15_03_P04,E1,KGMCF (Ours),4,4,4,5,4,4.2,No,,Acceptable plan with only minor tuning required.
+F15_03,F15,3,F15_03_P04,E2,KGMCF (Ours),4,4,4,5,5,4.4,No,,Acceptable plan with only minor tuning required.
+F15_03,F15,3,F15_03_P04,E3,KGMCF (Ours),5,5,5,4,5,4.8,No,,Acceptable plan with only minor tuning required.
+F15_04,F15,4,F15_04_P04,E1,KGMCF (Ours),5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F15_04,F15,4,F15_04_P04,E2,KGMCF (Ours),4,5,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F15_04,F15,4,F15_04_P04,E3,KGMCF (Ours),5,4,4,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F15_05,F15,5,F15_05_P04,E1,KGMCF (Ours),4,5,4,5,5,4.6,No,,Acceptable plan with only minor tuning required.
+F15_05,F15,5,F15_05_P04,E2,KGMCF (Ours),5,5,5,4,5,4.8,No,,Acceptable plan with only minor tuning required.
+F15_05,F15,5,F15_05_P04,E3,KGMCF (Ours),5,4,4,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F16_01,F16,1,F16_01_P04,E1,KGMCF (Ours),4,4,5,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F16_01,F16,1,F16_01_P04,E2,KGMCF (Ours),5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F16_01,F16,1,F16_01_P04,E3,KGMCF (Ours),4,4,5,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F16_02,F16,2,F16_02_P04,E1,KGMCF (Ours),5,4,4,5,5,4.6,No,,Acceptable plan with only minor tuning required.
+F16_02,F16,2,F16_02_P04,E2,KGMCF (Ours),5,5,5,4,4,4.6,No,,Acceptable plan with only minor tuning required.
+F16_02,F16,2,F16_02_P04,E3,KGMCF (Ours),4,5,5,4,5,4.6,No,,Acceptable plan with only minor tuning required.
+F16_03,F16,3,F16_03_P04,E1,KGMCF (Ours),4,3,3,5,5,4,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F16_03,F16,3,F16_03_P04,E2,KGMCF (Ours),4,3,4,4,3,3.6,No,,Requires modification before shop-floor use.
+F16_03,F16,3,F16_03_P04,E3,KGMCF (Ours),5,3,3,3,4,3.6,No,,Requires modification before shop-floor use.
+F16_04,F16,4,F16_04_P04,E1,KGMCF (Ours),4,5,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F16_04,F16,4,F16_04_P04,E2,KGMCF (Ours),5,5,4,4,5,4.6,No,,Acceptable plan with only minor tuning required.
+F16_04,F16,4,F16_04_P04,E3,KGMCF (Ours),4,4,4,4,5,4.2,No,,Acceptable plan with only minor tuning required.
+F16_05,F16,5,F16_05_P04,E1,KGMCF (Ours),5,5,5,5,4,4.8,No,,Acceptable plan with only minor tuning required.
+F16_05,F16,5,F16_05_P04,E2,KGMCF (Ours),4,4,4,5,4,4.2,No,,Acceptable plan with only minor tuning required.
+F16_05,F16,5,F16_05_P04,E3,KGMCF (Ours),4,5,5,5,5,4.8,No,,Acceptable plan with only minor tuning required.
+F17_01,F17,1,F17_01_P04,E1,KGMCF (Ours),5,4,5,4,4,4.4,No,,Acceptable plan with only minor tuning required.
+F17_01,F17,1,F17_01_P04,E2,KGMCF (Ours),5,5,4,5,4,4.6,No,,Acceptable plan with only minor tuning required.
+F17_01,F17,1,F17_01_P04,E3,KGMCF (Ours),5,4,5,5,5,4.8,No,,Acceptable plan with only minor tuning required.
+F17_02,F17,2,F17_02_P04,E1,KGMCF (Ours),5,4,4,5,5,4.6,No,,Acceptable plan with only minor tuning required.
+F17_02,F17,2,F17_02_P04,E2,KGMCF (Ours),5,5,4,4,5,4.6,No,,Acceptable plan with only minor tuning required.
+F17_02,F17,2,F17_02_P04,E3,KGMCF (Ours),5,5,4,5,4,4.6,No,,Acceptable plan with only minor tuning required.
+F17_03,F17,3,F17_03_P04,E1,KGMCF (Ours),5,5,4,5,5,4.8,No,,Acceptable plan with only minor tuning required.
+F17_03,F17,3,F17_03_P04,E2,KGMCF (Ours),4,5,5,4,5,4.6,No,,Acceptable plan with only minor tuning required.
+F17_03,F17,3,F17_03_P04,E3,KGMCF (Ours),4,4,5,5,4,4.4,No,,Acceptable plan with only minor tuning required.
+F17_04,F17,4,F17_04_P04,E1,KGMCF (Ours),4,4,5,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F17_04,F17,4,F17_04_P04,E2,KGMCF (Ours),4,5,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F17_04,F17,4,F17_04_P04,E3,KGMCF (Ours),5,5,4,5,4,4.6,No,,Acceptable plan with only minor tuning required.
+F17_05,F17,5,F17_05_P04,E1,KGMCF (Ours),4,4,3,3,4,3.6,Yes,Obvious manufacturing risk: infeasible tool access or collision/unsafe parameters.,Requires modification before shop-floor use.
+F17_05,F17,5,F17_05_P04,E2,KGMCF (Ours),3,3,4,4,4,3.6,No,,Requires modification before shop-floor use.
+F17_05,F17,5,F17_05_P04,E3,KGMCF (Ours),4,5,3,4,3,3.8,No,,Requires modification before shop-floor use.
+F18_01,F18,1,F18_01_P04,E1,KGMCF (Ours),3,4,3,3,3,3.2,No,,Requires modification before shop-floor use.
+F18_01,F18,1,F18_01_P04,E2,KGMCF (Ours),4,3,3,3,3,3.2,No,,Requires modification before shop-floor use.
+F18_01,F18,1,F18_01_P04,E3,KGMCF (Ours),3,4,4,3,4,3.6,No,,Requires modification before shop-floor use.
+F18_02,F18,2,F18_02_P04,E1,KGMCF (Ours),5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F18_02,F18,2,F18_02_P04,E2,KGMCF (Ours),5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F18_02,F18,2,F18_02_P04,E3,KGMCF (Ours),5,5,5,5,4,4.8,No,,Acceptable plan with only minor tuning required.
+F18_03,F18,3,F18_03_P04,E1,KGMCF (Ours),4,5,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F18_03,F18,3,F18_03_P04,E2,KGMCF (Ours),5,4,5,5,5,4.8,No,,Acceptable plan with only minor tuning required.
+F18_03,F18,3,F18_03_P04,E3,KGMCF (Ours),5,5,5,5,4,4.8,No,,Acceptable plan with only minor tuning required.
+F18_04,F18,4,F18_04_P04,E1,KGMCF (Ours),4,4,4,5,4,4.2,No,,Acceptable plan with only minor tuning required.
+F18_04,F18,4,F18_04_P04,E2,KGMCF (Ours),5,5,4,5,4,4.6,No,,Acceptable plan with only minor tuning required.
+F18_04,F18,4,F18_04_P04,E3,KGMCF (Ours),4,5,4,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F18_05,F18,5,F18_05_P04,E1,KGMCF (Ours),5,4,4,5,4,4.4,No,,Acceptable plan with only minor tuning required.
+F18_05,F18,5,F18_05_P04,E2,KGMCF (Ours),4,4,5,4,5,4.4,No,,Acceptable plan with only minor tuning required.
+F18_05,F18,5,F18_05_P04,E3,KGMCF (Ours),5,5,5,4,4,4.6,No,,Acceptable plan with only minor tuning required.
+F19_01,F19,1,F19_01_P04,E1,KGMCF (Ours),5,4,4,5,5,4.6,No,,Acceptable plan with only minor tuning required.
+F19_01,F19,1,F19_01_P04,E2,KGMCF (Ours),5,5,4,4,4,4.4,No,,Acceptable plan with only minor tuning required.
+F19_01,F19,1,F19_01_P04,E3,KGMCF (Ours),5,4,5,4,5,4.6,No,,Acceptable plan with only minor tuning required.
+F19_02,F19,2,F19_02_P04,E1,KGMCF (Ours),5,4,5,5,5,4.8,No,,Acceptable plan with only minor tuning required.
+F19_02,F19,2,F19_02_P04,E2,KGMCF (Ours),5,5,4,4,5,4.6,No,,Acceptable plan with only minor tuning required.
+F19_02,F19,2,F19_02_P04,E3,KGMCF (Ours),4,5,4,5,4,4.4,No,,Acceptable plan with only minor tuning required.
+F19_03,F19,3,F19_03_P04,E1,KGMCF (Ours),4,5,5,4,4,4.4,No,,Acceptable plan with only minor tuning required.
+F19_03,F19,3,F19_03_P04,E2,KGMCF (Ours),4,4,4,5,5,4.4,No,,Acceptable plan with only minor tuning required.
+F19_03,F19,3,F19_03_P04,E3,KGMCF (Ours),4,5,5,4,5,4.6,No,,Acceptable plan with only minor tuning required.
+F19_04,F19,4,F19_04_P04,E1,KGMCF (Ours),4,4,4,5,5,4.4,No,,Acceptable plan with only minor tuning required.
+F19_04,F19,4,F19_04_P04,E2,KGMCF (Ours),4,4,4,5,4,4.2,No,,Acceptable plan with only minor tuning required.
+F19_04,F19,4,F19_04_P04,E3,KGMCF (Ours),5,4,4,5,4,4.4,No,,Acceptable plan with only minor tuning required.
+F19_05,F19,5,F19_05_P04,E1,KGMCF (Ours),5,4,5,4,4,4.4,No,,Acceptable plan with only minor tuning required.
+F19_05,F19,5,F19_05_P04,E2,KGMCF (Ours),5,4,4,4,4,4.2,No,,Acceptable plan with only minor tuning required.
+F19_05,F19,5,F19_05_P04,E3,KGMCF (Ours),5,5,4,4,4,4.4,No,,Acceptable plan with only minor tuning required.

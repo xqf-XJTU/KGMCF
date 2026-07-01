@@ -1,0 +1,110 @@
+{
+  "nodes": [
+ 
+    { "id": "Part_Internal_Sealing", "label": "零件", "properties": { "name": "航空发动机密封型面组件", "geometric_class": "内孔精密角落" }},
+    { "id": "Mat_Shared_Ti6Al4V", "label": "材料", "properties": { "name": "钛合金 Ti-6AI-4V", "physics": "热导率极低/粘附性强" }},
+    { "id": "Global_AeroEngine_Category", "label": "零件类型", "properties": { "name": "航空发动机关键组件" }},
+
+
+    { "id": "Feat_F13", "label": "特征", "properties": { "name": "F13 内孔小圆角过渡", "function": "精密配合密封面试 (Sealing Surface)" }},
+
+    { "id": "Const_Draft_F13", "label": "几何约束", "properties": { "name": "内壁斜度: 20°" }},
+    { "id": "Const_TargetR_F13", "label": "几何约束", "properties": { "name": "目标半径: R0.8mm", "logic": "强约束/精密密封要求" }},
+    { "id": "Const_Access_F13", "label": "几何约束", "properties": { "name": "加工盲区: Blind Internal", "meaning": "要求刀具具有大避让角" }},
+    { "id": "Const_Chip_F13", "label": "加工挑战", "properties": { "name": "切屑堆积 (Chip Crowding)", "risk": "阻塞划伤精密表面" }},
+
+    { "id": "Holder_CER_PU5_WK078", "label": "Equipment", "properties": { "name": "内孔仿形刀杆: CER2525-PU5", "feature": "适配非对称双头刀片" }},
+    { "id": "Insert_U5R_R04", "label": "Tool", "properties": { "name": "非对称刀片: U5R-R0.4", "active_r": "R0.4mm (加工端)", "passive_r": "R2.5mm (避让端)" }},
+
+    { "id": "Proc_Sealing_Corner_F13", "label": "工序", "properties": { "name": "F13 密封圆角精加工阶段" }},
+    { "id": "Step_Offset_Turning_F13", "label": "工步", "properties": { "name": "1. 等距轮廓车削", "allowance": "预留0.15mm精加工余量" }},
+    { "id": "Step_Corner_Gen_F13", "label": "工步", "properties": { "name": "2. R0.8圆角展成", "logic": "利用R0.4刀尖插补G02/G03轨迹" }},
+    { "id": "Step_Vector_Retract_F13", "label": "工步", "properties": { "name": "3. 45°矢量退刀", "goal": "防止划伤已加工面" }},
+
+    { "id": "Param_Vc_Heat_F13", "label": "切削参数", "properties": { "name": "精加工 Vc: 80 m/min", "warning": "R0.4刀尖热容量极小" }},
+    { "id": "Param_f_Ra_F13", "label": "切削参数", "properties": { "name": "精密进给 f: 0.04 mm/rev", "formula": "Ra=1000*f^2/(8*Rtool)", "check": "必须 < 0.05" }},
+    { "id": "Param_ap_Delicate_F13", "label": "切削参数", "properties": { "name": "微量切深 ap: 0.1 mm", "strength": "R0.4尖端易崩" }},
+    { "id": "Param_Chatter_Logic_F13", "label": "力学模型", "properties": { "name": "颤振抑制模型", "logic": "点接触代替线接触(Forming)以抑制低频颤振" }},
+
+    { "id": "CoT_F13_1", "label": "分析", "properties": { "name": "Scan: 识别精密密封配合面R0.8特征" }},
+    { "id": "CoT_F13_2", "label": "分析", "properties": { "name": "Strategy: 对比成型刀(易颤振)与展成法(更灵活)" }},
+    { "id": "CoT_F13_3", "label": "分析", "properties": { "name": "Match: 选用U5R-R0.4刀片实现点接触加工" }},
+    { "id": "CoT_F13_4", "label": "分析", "properties": { "name": "Physics: 校验R0.4刀尖热集中风险，设定高压冷却" }},
+    { "id": "CoT_F13_5", "label": "分析", "properties": { "name": "Optim: 基于Ra0.8要求反算进给f至0.04mm" }},
+    { "id": "CoT_F13_6", "label": "分析", "properties": { "name": "Retract: 设定45°退刀矢量保护密封型面完整性" }},
+
+    { "id": "Img_F13_01", "label": "Image", "properties": { "name": "F13内孔小圆角特征主图", "filename": "F13_1.png" }},
+    { "id": "Img_F13_02", "label": "Image", "properties": { "name": "密封配合面公差标注图", "filename": "F13_2.png" }},
+    { "id": "Img_F13_03", "label": "Image", "properties": { "name": "切屑堆积(Chip Crowding)现场图", "filename": "F13_3.png" }},
+    { "id": "Img_F13_04", "label": "Image", "properties": { "name": "R0.4刀尖热集中云图", "filename": "F13_4.png" }},
+    { "id": "Img_F13_05", "label": "Image", "properties": { "name": "成型加工(Forming)颤振频谱", "filename": "F13_5.png" }},
+    { "id": "Img_F13_06", "label": "Image", "properties": { "name": "点接触展成法轨迹仿真", "filename": "F13_6.png" }},
+    { "id": "Img_F13_07", "label": "Image", "properties": { "name": "45°矢量退刀路径示意", "filename": "F13_7.png" }},
+    { "id": "Img_F13_08", "label": "Image", "properties": { "name": "非对称双圆角刀片结构解析", "filename": "F13_8.png" }},
+    { "id": "Img_F13_09", "label": "Image", "properties": { "name": "R0.4刀尖微观崩刃案例", "filename": "F13_9.png" }},
+    { "id": "Img_F13_10", "label": "Image", "properties": { "name": "等距轮廓偏移余量图", "filename": "F13_10.png" }},
+    { "id": "Img_F13_11", "label": "Image", "properties": { "name": "Ra0.8表面粗糙度干涉仪图", "filename": "F13_11.png" }},
+    { "id": "Img_F13_12", "label": "Image", "properties": { "name": "高压冷却液冲刷死角形态", "filename": "F13_12.png" }},
+    { "id": "Img_F13_13", "label": "Image", "properties": { "name": "刀片PVD TiAlN涂层厚度检测", "filename": "F13_13.png" }},
+    { "id": "Img_F13_14", "label": "Image", "properties": { "name": "切削方向对内孔稳定性影响", "filename": "F13_14.png" }},
+    { "id": "Img_F13_15", "label": "Image", "properties": { "name": "CoT“展成优于成型”逻辑流图", "filename": "F13_15.png" }},
+    { "id": "Img_F13_16", "label": "Image", "properties": { "name": "机匣内孔盲区光照补偿图", "filename": "F13_16.png" }},
+    { "id": "Img_F13_17", "label": "Image", "properties": { "name": "G02/G03圆弧逼近误差分析", "filename": "F13_17.png" }},
+    { "id": "Img_F13_18", "label": "Image", "properties": { "name": "密封段划伤缺陷对比表", "filename": "F13_18.png" }},
+    { "id": "Img_F13_19", "label": "Image", "properties": { "name": "刀杆避让角动态过盈检查", "filename": "F13_19.png" }},
+    { "id": "Img_F13_20", "label": "Image", "properties": { "name": "F13特征最终合格显微报告", "filename": "F13_20.png" }}
+  ],
+  "relationships": [
+
+    { "id": "rF13_1", "type": "HAS_PART_TYPE", "startNode": "Global_AeroEngine_Category", "endNode": "Part_Internal_Sealing" },
+    { "id": "rF13_2", "type": "HAS_FEATURE", "startNode": "Part_Internal_Sealing", "endNode": "Feat_F13" },
+    { "id": "rF13_3", "type": "USES_MATERIAL", "startNode": "Feat_F13", "endNode": "Mat_Shared_Ti6Al4V" },
+
+    { "id": "rF13_4", "type": "HAS_CONSTRAINT", "startNode": "Feat_F13", "endNode": "Const_TargetR_F13" },
+    { "id": "rF13_5", "type": "HAS_CONSTRAINT", "startNode": "Feat_F13", "endNode": "Const_Access_F13" },
+    { "id": "rF13_6", "type": "IDENTIFIES_CHALLENGE", "startNode": "Feat_F13", "endNode": "Const_Chip_F13" },
+
+    { "id": "rF13_7", "type": "HAS_PROCESS", "startNode": "Feat_F13", "endNode": "Proc_Sealing_Corner_F13" },
+    { "id": "rF13_8", "type": "INCLUDES_STEP", "startNode": "Proc_Sealing_Corner_F13", "endNode": "Step_Offset_Turning_F13" },
+    { "id": "rF13_9", "type": "PRECEDES", "startNode": "Step_Offset_Turning_F13", "endNode": "Step_Corner_Gen_F13" },
+    { "id": "rF13_10", "type": "INCLUDES_STEP", "startNode": "Proc_Sealing_Corner_F13", "endNode": "Step_Corner_Gen_F13" },
+    { "id": "rF13_11", "type": "PRECEDES", "startNode": "Step_Corner_Gen_F13", "endNode": "Step_Vector_Retract_F13" },
+    { "id": "rF13_12", "type": "INCLUDES_STEP", "startNode": "Proc_Sealing_Corner_F13", "endNode": "Step_Vector_Retract_F13" },
+
+    { "id": "rF13_13", "type": "USES_TOOL", "startNode": "Step_Corner_Gen_F13", "endNode": "Insert_U5R_R04" },
+    { "id": "rF13_14", "type": "HAS_HOLDER", "startNode": "Insert_U5R_R04", "endNode": "Holder_CER_PU5_WK078" },
+    { "id": "rF13_15", "type": "SET_PARAM", "startNode": "Step_Corner_Gen_F13", "endNode": "Param_f_Ra_F13" },
+    { "id": "rF13_16", "type": "SET_PARAM", "startNode": "Step_Corner_Gen_F13", "endNode": "Param_Vc_Heat_F13" },
+    { "id": "rF13_17", "type": "APPLY_LOGIC", "startNode": "Step_Corner_Gen_F13", "endNode": "Param_Chatter_Logic_F13" },
+
+    { "id": "rF13_18", "type": "PRECEDES", "startNode": "CoT_F13_1", "endNode": "CoT_F13_2" },
+    { "id": "rF13_19", "type": "PRECEDES", "startNode": "CoT_F13_2", "endNode": "CoT_F13_3" },
+    { "id": "rF13_20", "type": "PRECEDES", "startNode": "CoT_F13_3", "endNode": "CoT_F13_4" },
+    { "id": "rF13_21", "type": "PRECEDES", "startNode": "CoT_F13_4", "endNode": "CoT_F13_5" },
+    { "id": "rF13_22", "type": "PRECEDES", "startNode": "CoT_F13_5", "endNode": "CoT_F13_6" },
+    { "id": "rF13_23", "type": "HAS_ANALYSIS", "startNode": "Feat_F13", "endNode": "CoT_F13_1" },
+
+    { "id": "mF13_1", "type": "DESCRIBED_BY_IMAGE", "startNode": "Feat_F13", "endNode": "Img_F13_01" },
+    { "id": "mF13_2", "type": "DESCRIBED_BY_IMAGE", "startNode": "Feat_F13", "endNode": "Img_F13_02" },
+    { "id": "mF13_3", "type": "DESCRIBED_BY_IMAGE", "startNode": "Const_Chip_F13", "endNode": "Img_F13_03" },
+    { "id": "mF13_4", "type": "DESCRIBED_BY_IMAGE", "startNode": "Param_Vc_Heat_F13", "endNode": "Img_F13_04" },
+    { "id": "mF13_5", "type": "DESCRIBED_BY_IMAGE", "startNode": "Param_Chatter_Logic_F13", "endNode": "Img_F13_05" },
+    { "id": "mF13_6", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_Corner_Gen_F13", "endNode": "Img_F13_06" },
+    { "id": "mF13_7", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_Vector_Retract_F13", "endNode": "Img_F13_07" },
+    { "id": "mF13_8", "type": "DESCRIBED_BY_IMAGE", "startNode": "Insert_U5R_R04", "endNode": "Img_F13_08" },
+    { "id": "mF13_9", "type": "DESCRIBED_BY_IMAGE", "startNode": "Param_ap_Delicate_F13", "endNode": "Img_F13_09" },
+    { "id": "mF13_10", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_Offset_Turning_F13", "endNode": "Img_F13_10" },
+    { "id": "mF13_11", "type": "DESCRIBED_BY_IMAGE", "startNode": "Param_f_Ra_F13", "endNode": "Img_F13_11" },
+    { "id": "mF13_12", "type": "DESCRIBED_BY_IMAGE", "startNode": "Feat_F13", "endNode": "Img_F13_12" },
+    { "id": "mF13_13", "type": "DESCRIBED_BY_IMAGE", "startNode": "Insert_U5R_R04", "endNode": "Img_F13_13" },
+    { "id": "mF13_14", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_Corner_Gen_F13", "endNode": "Img_F13_14" },
+    { "id": "mF13_15", "type": "DESCRIBED_BY_IMAGE", "startNode": "CoT_F13_1", "endNode": "Img_F13_15" },
+    { "id": "mF13_16", "type": "DESCRIBED_BY_IMAGE", "startNode": "Const_Access_F13", "endNode": "Img_F13_16" },
+    { "id": "mF13_17", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_Corner_Gen_F13", "endNode": "Img_F13_17" },
+    { "id": "mF13_18", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_Vector_Retract_F13", "endNode": "Img_F13_18" },
+    { "id": "mF13_19", "type": "DESCRIBED_BY_IMAGE", "startNode": "Holder_CER_PU5_WK078", "endNode": "Img_F13_19" },
+    { "id": "mF13_20", "type": "DESCRIBED_BY_IMAGE", "startNode": "Part_Internal_Sealing", "endNode": "Img_F13_20" },
+
+    { "id": "bridge_F13_F12", "type": "PRECISION_VARIANT", "startNode": "Feat_F13", "endNode": "Feat_F12", "properties": { "desc": "均采用展成法处理内孔圆角，但F13由于R角更小(0.8)，对热集中和颤振抑制的要求更加苛刻" }}
+  ]
+}

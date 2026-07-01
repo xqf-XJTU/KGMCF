@@ -1,0 +1,111 @@
+{
+  "nodes": [
+
+    { "id": "Part_Precision_FixedSlot", "label": "零件", "properties": { "name": "航空发动机定宽精密槽组件", "class": "精密窄槽类" }},
+    { "id": "Mat_Shared_Ti6Al4V", "label": "材料", "properties": { "name": "钛合金 Ti-6AI-4V", "desc": "航空级/高应力敏感" }},
+    { "id": "Global_AeroEngine_Category", "label": "零件类型", "properties": { "name": "航空发动机关键组件" }},
+
+    { "id": "Feat_F18", "label": "特征", "properties": { "name": "F18 定宽斜度精密槽", "mode": "Form Plunging (成型切入式)" }},
+
+    { "id": "Const_Draft_F18", "label": "几何约束", "properties": { "name": "侧壁斜度: 19.5°", "meaning": "特殊非标角度/侧刃避让要求" }},
+    { "id": "Const_BottomR_F18", "label": "几何约束", "properties": { "name": "底角约束: R1.0mm", "logic": "1:1精确匹配要求" }},
+    { "id": "Const_SlotWidth_F18", "label": "几何约束", "properties": { "name": "定宽尺寸: 3.15mm", "status": "非标刃宽要求" }},
+    { "id": "Const_Precision_F18", "label": "几何约束", "properties": { "name": "精度等级: IT7", "requirement": "极严苛的形状公差" }},
+
+    { "id": "Holder_CFGL_WK083", "label": "Equipment", "properties": { "name": "精密切槽刀杆: CFGL2525", "feature": "高轴向刚性" }},
+    { "id": "Insert_QC04_F18", "label": "Tool", "properties": { "name": "定宽成型刀片: QC04-3.15R1", "geometry": "Fixed Profile (不适合仿形)" }},
+
+    { "id": "Proc_FormPlunging_F18", "label": "工序", "properties": { "name": "F18 定宽一次成型阶段" }},
+    { "id": "Step_DirectPlunge_F18", "label": "工步", "properties": { "name": "1. 径向单次切入", "goal": "一次性生成3.15mm槽宽" }},
+    { "id": "Step_MicroRetract_F18", "label": "工步", "properties": { "name": "2. 微量退刀 (0.1mm)", "logic": "释放切削应力/防止振纹" }},
+    { "id": "Step_SideCleaning_F18", "label": "工步", "properties": { "name": "3. 侧壁清根修正", "desc": "沿19.5°斜面微量位移修整" }},
+
+    { "id": "Param_Vc_Forming_F18", "label": "切削参数", "properties": { "name": "切速 Vc: 50-75 m/min", "warning": "防止积屑瘤" }},
+    { "id": "Param_f_Stress_F18", "label": "切削参数", "properties": { "name": "应力修正进给 f: 0.03 mm/rev", "limit": "满刃切削时需极小进给防崩刃" }},
+    { "id": "Logic_Pecking_Forming", "label": "工艺策略", "properties": { "name": "成型啄钻策略 (Pecking for Forming)", "goal": "分段切入辅助散热" }},
+    { "id": "Logic_Full_Width_Load", "label": "力学模型", "properties": { "name": "满刃切入径向载荷模型", "risk": "可能导致机床主轴过载" }},
+
+    { "id": "CoT_F18_1", "label": "分析", "properties": { "name": "Identify: 识别3.15mm宽R1底角特征" }},
+    { "id": "CoT_F18_2", "label": "分析", "properties": { "name": "Strategy: 逻辑排他，决定选用定宽成型法" }},
+    { "id": "CoT_F18_3", "label": "分析", "properties": { "name": "Match: 匹配1:1几何保真度刀片QC04-3.15R1" }},
+    { "id": "CoT_F18_4", "label": "分析", "properties": { "name": "Physics: 警告满刃切削钛合金产生的巨大径向力" }},
+    { "id": "CoT_F18_5", "label": "分析", "properties": { "name": "Adjustment: 进给率强制降低40%并分阶段切入" }},
+    { "id": "CoT_F18_6", "label": "分析", "properties": { "name": "Refinement: 增加微量退刀工步保证IT7级精度" }},
+
+    { "id": "Img_F18_01", "label": "Image", "properties": { "name": "F18定宽特征工程图", "filename": "F18_1.png" }},
+    { "id": "Img_F18_02", "label": "Image", "properties": { "name": "1:1几何吻合度(Fidelity)分析", "filename": "F18_2.png" }},
+    { "id": "Img_F18_03", "label": "Image", "properties": { "name": "满刃切入径向力受力云图", "filename": "F18_3.png" }},
+    { "id": "Img_F18_04", "label": "Image", "properties": { "name": "主轴过载(Overload)预警曲线", "filename": "F18_4.png" }},
+    { "id": "Img_F18_05", "label": "Image", "properties": { "name": "分阶段切入(Pecking)动作仿真", "filename": "F18_5.png" }},
+    { "id": "Img_F18_06", "label": "Image", "properties": { "name": "3.15mm非标刀片宽度实测", "filename": "F18_6.png" }},
+    { "id": "Img_F18_07", "label": "Image", "properties": { "name": "微量退刀(Micro-Retract)轨迹放大图", "filename": "F18_7.png" }},
+    { "id": "Img_F18_08", "label": "Image", "properties": { "name": "IT7级形状公差检具示意", "filename": "F18_8.png" }},
+    { "id": "Img_F18_09", "label": "Image", "properties": { "name": "侧壁清根修正路径示意", "filename": "F18_9.png" }},
+    { "id": "Img_F18_10", "label": "Image", "properties": { "name": "WK083基体在满刃切削时的热形变", "filename": "F18_10.png" }},
+    { "id": "Img_F18_11", "label": "Image", "properties": { "name": "钛合金积屑瘤对成型精度的影响", "filename": "F18_11.png" }},
+    { "id": "Img_F18_12", "label": "Image", "properties": { "name": "分段切入辅助散热(Pecking Cooling)模拟", "filename": "F18_12.png" }},
+    { "id": "Img_F18_13", "label": "Image", "properties": { "name": "底角R1过渡区显微测量", "filename": "F18_13.png" }},
+    { "id": "Img_F18_14", "label": "Image", "properties": { "name": "轴向刚性刀柄抗震动测试", "filename": "F18_14.png" }},
+    { "id": "Img_F18_15", "label": "Image", "properties": { "name": "CoT“成型法”决策逻辑树图", "filename": "F18_15.png" }},
+    { "id": "Img_F18_16", "label": "Image", "properties": { "name": "19.5°非标拔模角干涉检查", "filename": "F18_16.png" }},
+    { "id": "Img_F18_17", "label": "Image", "properties": { "name": "成型切入表面波纹度(Waviness)对比", "filename": "F18_17.png" }},
+    { "id": "Img_F18_18", "label": "Image", "properties": { "name": "进给率降低40%后的载荷对比图", "filename": "F18_18.png" }},
+    { "id": "Img_F18_19", "label": "Image", "properties": { "name": "特征深度一致性统计分析", "filename": "F18_19.png" }},
+    { "id": "Img_F18_20", "label": "Image", "properties": { "name": "F18特征最终三维扫描合格证书", "filename": "F18_20.png" }}
+  ],
+  "relationships": [
+
+    { "id": "rF18_1", "type": "HAS_PART_TYPE", "startNode": "Global_AeroEngine_Category", "endNode": "Part_Precision_FixedSlot" },
+    { "id": "rF18_2", "type": "HAS_FEATURE", "startNode": "Part_Precision_FixedSlot", "endNode": "Feat_F18" },
+    { "id": "rF18_3", "type": "USES_MATERIAL", "startNode": "Feat_F18", "endNode": "Mat_Shared_Ti6Al4V" },
+
+    { "id": "rF18_4", "type": "HAS_CONSTRAINT", "startNode": "Feat_F18", "endNode": "Const_SlotWidth_F18" },
+    { "id": "rF18_5", "type": "HAS_CONSTRAINT", "startNode": "Feat_F18", "endNode": "Const_BottomR_F18" },
+    { "id": "rF18_6", "type": "HAS_CONSTRAINT", "startNode": "Feat_F18", "endNode": "Const_Draft_F18" },
+    { "id": "rF18_7", "type": "HAS_CONSTRAINT", "startNode": "Feat_F18", "endNode": "Const_Precision_F18" },
+
+    { "id": "rF18_8", "type": "HAS_PROCESS", "startNode": "Feat_F18", "endNode": "Proc_FormPlunging_F18" },
+    { "id": "rF18_9", "type": "INCLUDES_STEP", "startNode": "Proc_FormPlunging_F18", "endNode": "Step_DirectPlunge_F18" },
+    { "id": "rF18_10", "type": "PRECEDES", "startNode": "Step_DirectPlunge_F18", "endNode": "Step_MicroRetract_F18" },
+    { "id": "rF18_11", "type": "INCLUDES_STEP", "startNode": "Proc_FormPlunging_F18", "endNode": "Step_MicroRetract_F18" },
+    { "id": "rF18_12", "type": "PRECEDES", "startNode": "Step_MicroRetract_F18", "endNode": "Step_SideCleaning_F18" },
+    { "id": "rF18_13", "type": "INCLUDES_STEP", "startNode": "Proc_FormPlunging_F18", "endNode": "Step_SideCleaning_F18" },
+
+    { "id": "rF18_14", "type": "USES_TOOL", "startNode": "Step_DirectPlunge_F18", "endNode": "Insert_QC04_F18" },
+    { "id": "rF18_15", "type": "HAS_HOLDER", "startNode": "Insert_QC04_F18", "endNode": "Holder_CFGL_WK083" },
+    { "id": "rF18_16", "type": "APPLY_STRATEGY", "startNode": "Step_DirectPlunge_F18", "endNode": "Logic_Pecking_Forming" },
+    { "id": "rF18_17", "type": "SET_PARAM", "startNode": "Step_DirectPlunge_F18", "endNode": "Param_f_Stress_F18" },
+    { "id": "rF18_18", "type": "SET_PARAM", "startNode": "Step_DirectPlunge_F18", "endNode": "Param_Vc_Forming_F18" },
+    { "id": "rF18_19", "type": "LOAD_CHECK", "startNode": "Step_DirectPlunge_F18", "endNode": "Logic_Full_Width_Load" },
+
+    { "id": "rF18_20", "type": "PRECEDES", "startNode": "CoT_F18_1", "endNode": "CoT_F18_2" },
+    { "id": "rF18_21", "type": "PRECEDES", "startNode": "CoT_F18_2", "endNode": "CoT_F18_3" },
+    { "id": "rF18_22", "type": "PRECEDES", "startNode": "CoT_F18_3", "endNode": "CoT_F18_4" },
+    { "id": "rF18_23", "type": "PRECEDES", "startNode": "CoT_F18_4", "endNode": "CoT_F18_5" },
+    { "id": "rF18_24", "type": "PRECEDES", "startNode": "CoT_F18_5", "endNode": "CoT_F18_6" },
+    { "id": "rF18_25", "type": "HAS_ANALYSIS", "startNode": "Feat_F18", "endNode": "CoT_F18_1" },
+
+    { "id": "mF18_1", "type": "DESCRIBED_BY_IMAGE", "startNode": "Feat_F18", "endNode": "Img_F18_01" },
+    { "id": "mF18_2", "type": "DESCRIBED_BY_IMAGE", "startNode": "CoT_F18_3", "endNode": "Img_F18_02" },
+    { "id": "mF18_3", "type": "DESCRIBED_BY_IMAGE", "startNode": "Logic_Full_Width_Load", "endNode": "Img_F18_03" },
+    { "id": "mF18_4", "type": "DESCRIBED_BY_IMAGE", "startNode": "Logic_Full_Width_Load", "endNode": "Img_F18_04" },
+    { "id": "mF18_5", "type": "DESCRIBED_BY_IMAGE", "startNode": "Logic_Pecking_Forming", "endNode": "Img_F18_05" },
+    { "id": "mF18_6", "type": "DESCRIBED_BY_IMAGE", "startNode": "Const_SlotWidth_F18", "endNode": "Img_F18_06" },
+    { "id": "mF18_7", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_MicroRetract_F18", "endNode": "Img_F18_07" },
+    { "id": "mF18_8", "type": "DESCRIBED_BY_IMAGE", "startNode": "Const_Precision_F18", "endNode": "Img_F18_08" },
+    { "id": "mF18_9", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_SideCleaning_F18", "endNode": "Img_F18_09" },
+    { "id": "mF18_10", "type": "DESCRIBED_BY_IMAGE", "startNode": "Insert_QC04_F18", "endNode": "Img_F18_10" },
+    { "id": "mF18_11", "type": "DESCRIBED_BY_IMAGE", "startNode": "Param_Vc_Forming_F18", "endNode": "Img_F18_11" },
+    { "id": "mF18_12", "type": "DESCRIBED_BY_IMAGE", "startNode": "Logic_Pecking_Forming", "endNode": "Img_F18_12" },
+    { "id": "mF18_13", "type": "DESCRIBED_BY_IMAGE", "startNode": "Const_BottomR_F18", "endNode": "Img_F18_13" },
+    { "id": "mF18_14", "type": "DESCRIBED_BY_IMAGE", "startNode": "Holder_CFGL_WK083", "endNode": "Img_F18_14" },
+    { "id": "mF18_15", "type": "DESCRIBED_BY_IMAGE", "startNode": "CoT_F18_1", "endNode": "Img_F18_15" },
+    { "id": "mF18_16", "type": "DESCRIBED_BY_IMAGE", "startNode": "Const_Draft_F18", "endNode": "Img_F18_16" },
+    { "id": "mF18_17", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_DirectPlunge_F18", "endNode": "Img_F18_17" },
+    { "id": "mF18_18", "type": "DESCRIBED_BY_IMAGE", "startNode": "CoT_F18_5", "endNode": "Img_F18_18" },
+    { "id": "mF18_19", "type": "DESCRIBED_BY_IMAGE", "startNode": "Feat_F18", "endNode": "Img_F18_19" },
+    { "id": "mF18_20", "type": "DESCRIBED_BY_IMAGE", "startNode": "Part_Precision_FixedSlot", "endNode": "Img_F18_20" },
+
+    { "id": "bridge_F18_F16", "type": "STRATEGY_VARIANT", "startNode": "Feat_F18", "endNode": "Feat_F16", "properties": { "desc": "针对精密宽槽，F18采用一次成型法(Conformal Forming)以保证几何一致性，F16则因宽度较大采用侧向偏移扩宽(Offsetting)" }}
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "nodes": [
+
+    { "id": "Part_CasingPrecisionSlot", "label": "零件", "properties": { "name": "航空发动机精密窄槽组件", "geometric_class": "极窄空间多曲率特征" }},
+    { "id": "Mat_Shared_Ti6Al4V", "label": "材料", "properties": { "name": "钛合金 Ti-6AI-4V", "physics": "高强/低导热/极易颤振" }},
+    { "id": "Global_AeroEngine_Category", "label": "零件类型", "properties": { "name": "航空发动机关键组件" }},
+
+    { "id": "Feat_F15", "label": "特征", "properties": { "name": "F15 窄间隙精密型面槽", "space_limit": "Highly Restricted (3.0mm)" }},
+
+    { "id": "Const_Draft_F15", "label": "几何约束", "properties": { "name": "侧壁斜度: 20.0°" }},
+    { "id": "Const_BottomR_F15", "label": "几何约束", "properties": { "name": "底角目标: R2.0mm", "conflict": "常规D4刀具无法进入" }},
+    { "id": "Const_EntryWidth_F15", "label": "几何约束", "properties": { "name": "入口宽度: 3.0mm", "meaning": "强物理边界限制" }},
+    { "id": "Const_ToolLogic_F15", "label": "几何推论", "properties": { "name": "刀具半径限制: R<=1.5mm", "logic": "刀具直径必须小于槽宽3mm" }},
+
+    { "id": "Holder_CFGL_P03", "label": "Equipment", "properties": { "name": "3.0mm系统切槽刀杆: CFGL2525P03", "system": "P03 Series (3mm)" }},
+    { "id": "Insert_QC03MO", "label": "Tool", "properties": { "name": "精密仿形窄刀片: QC03MO-F", "blade_width": "3.0mm", "tool_r": "R1.5 (全圆头)" }},
+
+    { "id": "Proc_NarrowProfiling_F15", "label": "工序", "properties": { "name": "F15 极窄间隙仿形加工阶段" }},
+    { "id": "Step_CenterPlunge_F15", "label": "工步", "properties": { "name": "1. 中心切入 (Centerline Plunge)", "desc": "沿中心线下刀至R2起始位置" }},
+    { "id": "Step_StepDownExp_F15", "label": "工步", "properties": { "name": "2. 阶梯扩槽 (Expansion)", "desc": "在3mm空间内微量左右摆动去除余量" }},
+    { "id": "Step_CircGen_F15", "label": "工步", "properties": { "name": "3. 圆弧生成 (Circular Generation)", "logic": "利用R1.5刀尖插补画出R2.0轮廓" }},
+
+    { "id": "Param_Vc_Narrow_F15", "label": "切削参数", "properties": { "name": "精加工速度 Vc: 75 m/min", "warning": "防积屑瘤需限速" }},
+    { "id": "Param_f_UltraLow_F15", "label": "切削参数", "properties": { "name": "极低进给 f: 0.03 mm/rev", "logic": "3mm窄刃横向刚性校核修正" }},
+    { "id": "Param_ap_Micro_F15", "label": "切削参数", "properties": { "name": "微量背吃刀量 ap: 0.1 mm", "goal": "防止让刀" }},
+    { "id": "Param_Cool_70Bar_F15", "label": "冷却要求", "properties": { "name": "高压冷却: >70 bar", "meaning": "冷却液需直达槽底排屑" }},
+
+    { "id": "CoT_F15_1", "label": "分析", "properties": { "name": "Scan: 识别20°斜面与R2底角的窄槽" }},
+    { "id": "CoT_F15_2", "label": "分析", "properties": { "name": "Conflict: 用户R2需求与3mm入口空间的数学冲突" }},
+    { "id": "CoT_F15_3", "label": "分析", "properties": { "name": "Decision: 强制放弃“成型”改为“仿形”方案" }},
+    { "id": "CoT_F15_4", "label": "分析", "properties": { "name": "Selection: 选用3mm系统下最大圆角刀具(R1.5)" }},
+    { "id": "CoT_F15_5", "label": "分析", "properties": { "name": "Implementation: 通过X-Z联动“画”出R2.0轮廓" }},
+    { "id": "CoT_F15_6", "label": "分析", "properties": { "name": "Correction: 针对窄刃刚性及钛合金热伤修正进给量" }},
+
+    { "id": "Img_F15_01", "label": "Image", "properties": { "name": "F15窄槽特征解剖图", "filename": "F15_1.png" }},
+    { "id": "Img_F15_02", "label": "Image", "properties": { "name": "R2圆角与3mm槽宽干涉分析图", "filename": "F15_2.png" }},
+    { "id": "Img_F15_03", "label": "Image", "properties": { "name": "数学冲突(Mathematical Conflict)图解", "filename": "F15_3.png" }},
+    { "id": "Img_F15_04", "label": "Image", "properties": { "name": "QC03MO全圆头刀片尺寸实拍", "filename": "F15_4.png" }},
+    { "id": "Img_F15_05", "label": "Image", "properties": { "name": "中心切入(Centerline)加工轨迹", "filename": "F15_5.png" }},
+    { "id": "Img_F15_06", "label": "Image", "properties": { "name": "微量左右摆动扩槽原理示意", "filename": "F15_6.png" }},
+    { "id": "Img_F15_07", "label": "Image", "properties": { "name": "X-Z联动插补R2.0动画帧", "filename": "F15_7.png" }},
+    { "id": "Img_F15_08", "label": "Image", "properties": { "name": "3mm窄刃横向载荷变形模拟", "filename": "F15_8.png" }},
+    { "id": "Img_F15_09", "label": "Image", "properties": { "name": "高压冷却液在3mm槽内流场图", "filename": "F15_9.png" }},
+    { "id": "Img_F15_10", "label": "Image", "properties": { "name": "精加工0.03mm进给表面纹理", "filename": "F15_10.png" }},
+    { "id": "Img_F15_11", "label": "Image", "properties": { "name": "积屑瘤(BUE)导致尺寸超差案例", "filename": "F15_11.png" }},
+    { "id": "Img_F15_12", "label": "Image", "properties": { "name": "WK080涂层抗粘结性能对比", "filename": "F15_12.png" }},
+    { "id": "Img_F15_13", "label": "Image", "properties": { "name": "窄槽排屑受阻热浓度分布", "filename": "F15_13.png" }},
+    { "id": "Img_F15_14", "label": "Image", "properties": { "name": "刀柄P03系列锁紧力测试图", "filename": "F15_14.png" }},
+    { "id": "Img_F15_15", "label": "Image", "properties": { "name": "CoT“成型转仿形”逻辑流程图", "filename": "F15_15.png" }},
+    { "id": "Img_F15_16", "label": "Image", "properties": { "name": "钛合金窄槽振动频谱分析", "filename": "F15_16.png" }},
+    { "id": "Img_F15_17", "label": "Image", "properties": { "name": "F15特征三维测量报告单", "filename": "F15_17.png" }},
+    { "id": "Img_F15_18", "label": "Image", "properties": { "name": "刀具标称半径R1.5实测图", "filename": "F15_18.png" }},
+    { "id": "Img_F15_19", "label": "Image", "properties": { "name": "槽深与排屑空间比例图", "filename": "F15_19.png" }},
+    { "id": "Img_F15_20", "label": "Image", "properties": { "name": "F15成品最终镜面效果实拍", "filename": "F15_20.png" }}
+  ],
+  "relationships": [
+
+    { "id": "rF15_1", "type": "HAS_PART_TYPE", "startNode": "Global_AeroEngine_Category", "endNode": "Part_CasingPrecisionSlot" },
+    { "id": "rF15_2", "type": "HAS_FEATURE", "startNode": "Part_CasingPrecisionSlot", "endNode": "Feat_F15" },
+    { "id": "rF15_3", "type": "USES_MATERIAL", "startNode": "Feat_F15", "endNode": "Mat_Shared_Ti6Al4V" },
+
+    { "id": "rF15_4", "type": "HAS_CONSTRAINT", "startNode": "Feat_F15", "endNode": "Const_EntryWidth_F15" },
+    { "id": "rF15_5", "type": "HAS_CONSTRAINT", "startNode": "Feat_F15", "endNode": "Const_BottomR_F15" },
+    { "id": "rF15_6", "type": "APPLY_LOGIC", "startNode": "Const_EntryWidth_F15", "endNode": "Const_ToolLogic_F15" },
+
+    { "id": "rF15_7", "type": "HAS_PROCESS", "startNode": "Feat_F15", "endNode": "Proc_NarrowProfiling_F15" },
+    { "id": "rF15_8", "type": "INCLUDES_STEP", "startNode": "Proc_NarrowProfiling_F15", "endNode": "Step_CenterPlunge_F15" },
+    { "id": "rF15_9", "type": "PRECEDES", "startNode": "Step_CenterPlunge_F15", "endNode": "Step_StepDownExp_F15" },
+    { "id": "rF15_10", "type": "INCLUDES_STEP", "startNode": "Proc_NarrowProfiling_F15", "endNode": "Step_StepDownExp_F15" },
+    { "id": "rF15_11", "type": "PRECEDES", "startNode": "Step_StepDownExp_F15", "endNode": "Step_CircGen_F15" },
+    { "id": "rF15_12", "type": "INCLUDES_STEP", "startNode": "Proc_NarrowProfiling_F15", "endNode": "Step_CircGen_F15" },
+
+    { "id": "rF15_13", "type": "USES_TOOL", "startNode": "Step_CircGen_F15", "endNode": "Insert_QC03MO" },
+    { "id": "rF15_14", "type": "HAS_HOLDER", "startNode": "Insert_QC03MO", "endNode": "Holder_CFGL_P03" },
+    { "id": "rF15_15", "type": "SET_PARAM", "startNode": "Step_CircGen_F15", "endNode": "Param_f_UltraLow_F15" },
+    { "id": "rF15_16", "type": "SET_PARAM", "startNode": "Step_CircGen_F15", "endNode": "Param_Vc_Narrow_F15" },
+    { "id": "rF15_17", "type": "REQUIRES_PRESSURE", "startNode": "Step_StepDownExp_F15", "endNode": "Param_Cool_70Bar_F15" },
+
+    { "id": "rF15_18", "type": "PRECEDES", "startNode": "CoT_F15_1", "endNode": "CoT_F15_2" },
+    { "id": "rF15_19", "type": "PRECEDES", "startNode": "CoT_F15_2", "endNode": "CoT_F15_3" },
+    { "id": "rF15_20", "type": "PRECEDES", "startNode": "CoT_F15_3", "endNode": "CoT_F15_4" },
+    { "id": "rF15_21", "type": "PRECEDES", "startNode": "CoT_F15_4", "endNode": "CoT_F15_5" },
+    { "id": "rF15_22", "type": "PRECEDES", "startNode": "CoT_F15_5", "endNode": "CoT_F15_6" },
+    { "id": "rF15_23", "type": "HAS_ANALYSIS", "startNode": "Feat_F15", "endNode": "CoT_F15_1" },
+
+    { "id": "mF15_1", "type": "DESCRIBED_BY_IMAGE", "startNode": "Feat_F15", "endNode": "Img_F15_01" },
+    { "id": "mF15_2", "type": "DESCRIBED_BY_IMAGE", "startNode": "Const_EntryWidth_F15", "endNode": "Img_F15_02" },
+    { "id": "mF15_3", "type": "DESCRIBED_BY_IMAGE", "startNode": "CoT_F15_2", "endNode": "Img_F15_03" },
+    { "id": "mF15_4", "type": "DESCRIBED_BY_IMAGE", "startNode": "Insert_QC03MO", "endNode": "Img_F15_04" },
+    { "id": "mF15_5", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_CenterPlunge_F15", "endNode": "Img_F15_05" },
+    { "id": "mF15_6", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_StepDownExp_F15", "endNode": "Img_F15_06" },
+    { "id": "mF15_7", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_CircGen_F15", "endNode": "Img_F15_07" },
+    { "id": "mF15_8", "type": "DESCRIBED_BY_IMAGE", "startNode": "Param_f_UltraLow_F15", "endNode": "Img_F15_08" },
+    { "id": "mF15_9", "type": "DESCRIBED_BY_IMAGE", "startNode": "Param_Cool_70Bar_F15", "endNode": "Img_F15_09" },
+    { "id": "mF15_10", "type": "DESCRIBED_BY_IMAGE", "startNode": "Param_ap_Micro_F15", "endNode": "Img_F15_10" },
+    { "id": "mF15_11", "type": "DESCRIBED_BY_IMAGE", "startNode": "Param_Vc_Narrow_F15", "endNode": "Img_F15_11" },
+    { "id": "mF15_12", "type": "DESCRIBED_BY_IMAGE", "startNode": "Insert_QC03MO", "endNode": "Img_F15_12" },
+    { "id": "mF15_13", "type": "DESCRIBED_BY_IMAGE", "startNode": "CoT_F15_6", "endNode": "Img_F15_13" },
+    { "id": "mF15_14", "type": "DESCRIBED_BY_IMAGE", "startNode": "Holder_CFGL_P03", "endNode": "Img_F15_14" },
+    { "id": "mF15_15", "type": "DESCRIBED_BY_IMAGE", "startNode": "CoT_F15_1", "endNode": "Img_F15_15" },
+    { "id": "mF15_16", "type": "DESCRIBED_BY_IMAGE", "startNode": "Mat_Shared_Ti6Al4V", "endNode": "Img_F15_16" },
+    { "id": "mF15_17", "type": "DESCRIBED_BY_IMAGE", "startNode": "Feat_F15", "endNode": "Img_F15_17" },
+    { "id": "mF15_18", "type": "DESCRIBED_BY_IMAGE", "startNode": "Insert_QC03MO", "endNode": "Img_F15_18" },
+    { "id": "mF15_19", "type": "DESCRIBED_BY_IMAGE", "startNode": "Feat_F15", "endNode": "Img_F15_19" },
+    { "id": "mF15_20", "type": "DESCRIBED_BY_IMAGE", "startNode": "Part_CasingPrecisionSlot", "endNode": "Img_F15_20" },
+
+    { "id": "bridge_F15_F10", "type": "SIMILAR_SPACE_VARIANT", "startNode": "Feat_F15", "endNode": "Feat_F10", "properties": { "desc": "均处理3mm以下的窄槽，但F15具有更复杂的底角型面生成要求，由定宽切削演进为联动插补仿形" }}
+  ]
+}

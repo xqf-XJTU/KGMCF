@@ -1,0 +1,401 @@
+﻿case_id,feature_id,method,plan_id,MPSA,MSRV,TSA,G-PvR,ROUGE-L
+F00_C01,F00,Vanilla MLLM,F00_C01_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1635
+F00_C02,F00,Vanilla MLLM,F00_C02_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1635
+F00_C03,F00,Vanilla MLLM,F00_C03_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1635
+F00_C04,F00,Vanilla MLLM,F00_C04_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1635
+F00_C05,F00,Vanilla MLLM,F00_C05_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1635
+F01_C01,F01,Vanilla MLLM,F01_C01_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1566
+F01_C02,F01,Vanilla MLLM,F01_C02_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1566
+F01_C03,F01,Vanilla MLLM,F01_C03_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1566
+F01_C04,F01,Vanilla MLLM,F01_C04_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1566
+F01_C05,F01,Vanilla MLLM,F01_C05_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1566
+F02_C01,F02,Vanilla MLLM,F02_C01_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1469
+F02_C02,F02,Vanilla MLLM,F02_C02_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1469
+F02_C03,F02,Vanilla MLLM,F02_C03_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1469
+F02_C04,F02,Vanilla MLLM,F02_C04_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1469
+F02_C05,F02,Vanilla MLLM,F02_C05_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1469
+F03_C01,F03,Vanilla MLLM,F03_C01_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1512
+F03_C02,F03,Vanilla MLLM,F03_C02_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1512
+F03_C03,F03,Vanilla MLLM,F03_C03_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1512
+F03_C04,F03,Vanilla MLLM,F03_C04_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1512
+F03_C05,F03,Vanilla MLLM,F03_C05_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1512
+F04_C01,F04,Vanilla MLLM,F04_C01_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1625
+F04_C02,F04,Vanilla MLLM,F04_C02_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1625
+F04_C03,F04,Vanilla MLLM,F04_C03_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1625
+F04_C04,F04,Vanilla MLLM,F04_C04_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1625
+F04_C05,F04,Vanilla MLLM,F04_C05_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1625
+F05_C01,F05,Vanilla MLLM,F05_C01_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1985
+F05_C02,F05,Vanilla MLLM,F05_C02_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1985
+F05_C03,F05,Vanilla MLLM,F05_C03_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1985
+F05_C04,F05,Vanilla MLLM,F05_C04_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1985
+F05_C05,F05,Vanilla MLLM,F05_C05_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1985
+F06_C01,F06,Vanilla MLLM,F06_C01_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1818
+F06_C02,F06,Vanilla MLLM,F06_C02_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1818
+F06_C03,F06,Vanilla MLLM,F06_C03_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1818
+F06_C04,F06,Vanilla MLLM,F06_C04_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1818
+F06_C05,F06,Vanilla MLLM,F06_C05_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1818
+F07_C01,F07,Vanilla MLLM,F07_C01_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1615
+F07_C02,F07,Vanilla MLLM,F07_C02_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1615
+F07_C03,F07,Vanilla MLLM,F07_C03_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1615
+F07_C04,F07,Vanilla MLLM,F07_C04_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1615
+F07_C05,F07,Vanilla MLLM,F07_C05_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1615
+F08_C01,F08,Vanilla MLLM,F08_C01_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1796
+F08_C02,F08,Vanilla MLLM,F08_C02_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1796
+F08_C03,F08,Vanilla MLLM,F08_C03_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1796
+F08_C04,F08,Vanilla MLLM,F08_C04_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1796
+F08_C05,F08,Vanilla MLLM,F08_C05_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1796
+F09_C01,F09,Vanilla MLLM,F09_C01_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1677
+F09_C02,F09,Vanilla MLLM,F09_C02_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1677
+F09_C03,F09,Vanilla MLLM,F09_C03_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1677
+F09_C04,F09,Vanilla MLLM,F09_C04_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1677
+F09_C05,F09,Vanilla MLLM,F09_C05_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1677
+F10_C01,F10,Vanilla MLLM,F10_C01_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.197
+F10_C02,F10,Vanilla MLLM,F10_C02_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.197
+F10_C03,F10,Vanilla MLLM,F10_C03_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.197
+F10_C04,F10,Vanilla MLLM,F10_C04_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.197
+F10_C05,F10,Vanilla MLLM,F10_C05_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.197
+F11_C01,F11,Vanilla MLLM,F11_C01_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1667
+F11_C02,F11,Vanilla MLLM,F11_C02_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1667
+F11_C03,F11,Vanilla MLLM,F11_C03_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1667
+F11_C04,F11,Vanilla MLLM,F11_C04_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1667
+F11_C05,F11,Vanilla MLLM,F11_C05_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1667
+F12_C01,F12,Vanilla MLLM,F12_C01_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.2252
+F12_C02,F12,Vanilla MLLM,F12_C02_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.2252
+F12_C03,F12,Vanilla MLLM,F12_C03_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.2252
+F12_C04,F12,Vanilla MLLM,F12_C04_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.2252
+F12_C05,F12,Vanilla MLLM,F12_C05_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.2252
+F13_C01,F13,Vanilla MLLM,F13_C01_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1985
+F13_C02,F13,Vanilla MLLM,F13_C02_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1985
+F13_C03,F13,Vanilla MLLM,F13_C03_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1985
+F13_C04,F13,Vanilla MLLM,F13_C04_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1985
+F13_C05,F13,Vanilla MLLM,F13_C05_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1985
+F14_C01,F14,Vanilla MLLM,F14_C01_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1656
+F14_C02,F14,Vanilla MLLM,F14_C02_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1656
+F14_C03,F14,Vanilla MLLM,F14_C03_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1656
+F14_C04,F14,Vanilla MLLM,F14_C04_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1656
+F14_C05,F14,Vanilla MLLM,F14_C05_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1656
+F15_C01,F15,Vanilla MLLM,F15_C01_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1926
+F15_C02,F15,Vanilla MLLM,F15_C02_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1926
+F15_C03,F15,Vanilla MLLM,F15_C03_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1926
+F15_C04,F15,Vanilla MLLM,F15_C04_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1926
+F15_C05,F15,Vanilla MLLM,F15_C05_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1926
+F16_C01,F16,Vanilla MLLM,F16_C01_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1898
+F16_C02,F16,Vanilla MLLM,F16_C02_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1898
+F16_C03,F16,Vanilla MLLM,F16_C03_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1898
+F16_C04,F16,Vanilla MLLM,F16_C04_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1898
+F16_C05,F16,Vanilla MLLM,F16_C05_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1898
+F17_C01,F17,Vanilla MLLM,F17_C01_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1699
+F17_C02,F17,Vanilla MLLM,F17_C02_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1699
+F17_C03,F17,Vanilla MLLM,F17_C03_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1699
+F17_C04,F17,Vanilla MLLM,F17_C04_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1699
+F17_C05,F17,Vanilla MLLM,F17_C05_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1699
+F18_C01,F18,Vanilla MLLM,F18_C01_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1857
+F18_C02,F18,Vanilla MLLM,F18_C02_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1857
+F18_C03,F18,Vanilla MLLM,F18_C03_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1857
+F18_C04,F18,Vanilla MLLM,F18_C04_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1857
+F18_C05,F18,Vanilla MLLM,F18_C05_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1857
+F19_C01,F19,Vanilla MLLM,F19_C01_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1757
+F19_C02,F19,Vanilla MLLM,F19_C02_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1757
+F19_C03,F19,Vanilla MLLM,F19_C03_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1757
+F19_C04,F19,Vanilla MLLM,F19_C04_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1757
+F19_C05,F19,Vanilla MLLM,F19_C05_vanilla_mllm,0.0,0.3333,0.0,0.6667,0.1757
+F00_C01,F00,RAG-based Planner,F00_C01_rag_based_planner,0.0,1.0,0.6,0.0,0.2405
+F00_C02,F00,RAG-based Planner,F00_C02_rag_based_planner,0.0,1.0,0.6,0.0,0.2405
+F00_C03,F00,RAG-based Planner,F00_C03_rag_based_planner,0.0,1.0,0.6,0.0,0.2405
+F00_C04,F00,RAG-based Planner,F00_C04_rag_based_planner,0.0,1.0,0.6,0.0,0.2405
+F00_C05,F00,RAG-based Planner,F00_C05_rag_based_planner,0.0,1.0,0.6,0.0,0.2405
+F01_C01,F01,RAG-based Planner,F01_C01_rag_based_planner,0.0,1.0,0.5,0.0,0.241
+F01_C02,F01,RAG-based Planner,F01_C02_rag_based_planner,0.0,1.0,0.5,0.0,0.241
+F01_C03,F01,RAG-based Planner,F01_C03_rag_based_planner,0.0,1.0,0.5,0.0,0.241
+F01_C04,F01,RAG-based Planner,F01_C04_rag_based_planner,0.0,1.0,0.5,0.0,0.241
+F01_C05,F01,RAG-based Planner,F01_C05_rag_based_planner,0.0,1.0,0.5,0.0,0.241
+F02_C01,F02,RAG-based Planner,F02_C01_rag_based_planner,0.0,1.0,0.5714,0.0,0.2935
+F02_C02,F02,RAG-based Planner,F02_C02_rag_based_planner,0.0,1.0,0.5714,0.0,0.2935
+F02_C03,F02,RAG-based Planner,F02_C03_rag_based_planner,0.0,1.0,0.5714,0.0,0.2935
+F02_C04,F02,RAG-based Planner,F02_C04_rag_based_planner,0.0,1.0,0.5714,0.0,0.2935
+F02_C05,F02,RAG-based Planner,F02_C05_rag_based_planner,0.0,1.0,0.5714,0.0,0.2935
+F03_C01,F03,RAG-based Planner,F03_C01_rag_based_planner,0.0,1.0,0.6667,0.0,0.2727
+F03_C02,F03,RAG-based Planner,F03_C02_rag_based_planner,0.0,1.0,0.6667,0.0,0.2727
+F03_C03,F03,RAG-based Planner,F03_C03_rag_based_planner,0.0,1.0,0.6667,0.0,0.2727
+F03_C04,F03,RAG-based Planner,F03_C04_rag_based_planner,0.0,1.0,0.6667,0.0,0.2727
+F03_C05,F03,RAG-based Planner,F03_C05_rag_based_planner,0.0,1.0,0.6667,0.0,0.2727
+F04_C01,F04,RAG-based Planner,F04_C01_rag_based_planner,0.0,1.0,0.6667,0.0,0.2927
+F04_C02,F04,RAG-based Planner,F04_C02_rag_based_planner,0.0,1.0,0.6667,0.0,0.2927
+F04_C03,F04,RAG-based Planner,F04_C03_rag_based_planner,0.0,1.0,0.6667,0.0,0.2927
+F04_C04,F04,RAG-based Planner,F04_C04_rag_based_planner,0.0,1.0,0.6667,0.0,0.2927
+F04_C05,F04,RAG-based Planner,F04_C05_rag_based_planner,0.0,1.0,0.6667,0.0,0.2927
+F05_C01,F05,RAG-based Planner,F05_C01_rag_based_planner,0.0,1.0,0.8,0.0,0.2656
+F05_C02,F05,RAG-based Planner,F05_C02_rag_based_planner,0.0,1.0,0.8,0.0,0.2656
+F05_C03,F05,RAG-based Planner,F05_C03_rag_based_planner,0.0,1.0,0.8,0.0,0.2656
+F05_C04,F05,RAG-based Planner,F05_C04_rag_based_planner,0.0,1.0,0.8,0.0,0.2656
+F05_C05,F05,RAG-based Planner,F05_C05_rag_based_planner,0.0,1.0,0.8,0.0,0.2656
+F06_C01,F06,RAG-based Planner,F06_C01_rag_based_planner,0.0,1.0,0.625,0.0,0.3657
+F06_C02,F06,RAG-based Planner,F06_C02_rag_based_planner,0.0,1.0,0.625,0.0,0.3657
+F06_C03,F06,RAG-based Planner,F06_C03_rag_based_planner,0.0,1.0,0.625,0.0,0.3657
+F06_C04,F06,RAG-based Planner,F06_C04_rag_based_planner,0.0,1.0,0.625,0.0,0.3657
+F06_C05,F06,RAG-based Planner,F06_C05_rag_based_planner,0.0,1.0,0.625,0.0,0.3657
+F07_C01,F07,RAG-based Planner,F07_C01_rag_based_planner,0.0,1.0,0.5,0.0,0.3314
+F07_C02,F07,RAG-based Planner,F07_C02_rag_based_planner,0.0,1.0,0.5,0.0,0.3314
+F07_C03,F07,RAG-based Planner,F07_C03_rag_based_planner,0.0,1.0,0.5,0.0,0.3314
+F07_C04,F07,RAG-based Planner,F07_C04_rag_based_planner,0.0,1.0,0.5,0.0,0.3314
+F07_C05,F07,RAG-based Planner,F07_C05_rag_based_planner,0.0,1.0,0.5,0.0,0.3314
+F08_C01,F08,RAG-based Planner,F08_C01_rag_based_planner,0.0,1.0,0.6,0.0,0.3429
+F08_C02,F08,RAG-based Planner,F08_C02_rag_based_planner,0.0,1.0,0.6,0.0,0.3429
+F08_C03,F08,RAG-based Planner,F08_C03_rag_based_planner,0.0,1.0,0.6,0.0,0.3429
+F08_C04,F08,RAG-based Planner,F08_C04_rag_based_planner,0.0,1.0,0.6,0.0,0.3429
+F08_C05,F08,RAG-based Planner,F08_C05_rag_based_planner,0.0,1.0,0.6,0.0,0.3429
+F09_C01,F09,RAG-based Planner,F09_C01_rag_based_planner,0.0,1.0,0.5,0.0,0.3436
+F09_C02,F09,RAG-based Planner,F09_C02_rag_based_planner,0.0,1.0,0.5,0.0,0.3436
+F09_C03,F09,RAG-based Planner,F09_C03_rag_based_planner,0.0,1.0,0.5,0.0,0.3436
+F09_C04,F09,RAG-based Planner,F09_C04_rag_based_planner,0.0,1.0,0.5,0.0,0.3436
+F09_C05,F09,RAG-based Planner,F09_C05_rag_based_planner,0.0,1.0,0.5,0.0,0.3436
+F10_C01,F10,RAG-based Planner,F10_C01_rag_based_planner,0.0,1.0,0.6,0.0,0.4
+F10_C02,F10,RAG-based Planner,F10_C02_rag_based_planner,0.0,1.0,0.6,0.0,0.4
+F10_C03,F10,RAG-based Planner,F10_C03_rag_based_planner,0.0,1.0,0.6,0.0,0.4
+F10_C04,F10,RAG-based Planner,F10_C04_rag_based_planner,0.0,1.0,0.6,0.0,0.4
+F10_C05,F10,RAG-based Planner,F10_C05_rag_based_planner,0.0,1.0,0.6,0.0,0.4
+F11_C01,F11,RAG-based Planner,F11_C01_rag_based_planner,0.0,1.0,0.6,0.0,0.3415
+F11_C02,F11,RAG-based Planner,F11_C02_rag_based_planner,0.0,1.0,0.6,0.0,0.3415
+F11_C03,F11,RAG-based Planner,F11_C03_rag_based_planner,0.0,1.0,0.6,0.0,0.3415
+F11_C04,F11,RAG-based Planner,F11_C04_rag_based_planner,0.0,1.0,0.6,0.0,0.3415
+F11_C05,F11,RAG-based Planner,F11_C05_rag_based_planner,0.0,1.0,0.6,0.0,0.3415
+F12_C01,F12,RAG-based Planner,F12_C01_rag_based_planner,0.0,1.0,0.6,0.0,0.3924
+F12_C02,F12,RAG-based Planner,F12_C02_rag_based_planner,0.0,1.0,0.6,0.0,0.3924
+F12_C03,F12,RAG-based Planner,F12_C03_rag_based_planner,0.0,1.0,0.6,0.0,0.3924
+F12_C04,F12,RAG-based Planner,F12_C04_rag_based_planner,0.0,1.0,0.6,0.0,0.3924
+F12_C05,F12,RAG-based Planner,F12_C05_rag_based_planner,0.0,1.0,0.6,0.0,0.3924
+F13_C01,F13,RAG-based Planner,F13_C01_rag_based_planner,0.0,1.0,0.5,0.0,0.3913
+F13_C02,F13,RAG-based Planner,F13_C02_rag_based_planner,0.0,1.0,0.5,0.0,0.3913
+F13_C03,F13,RAG-based Planner,F13_C03_rag_based_planner,0.0,1.0,0.5,0.0,0.3913
+F13_C04,F13,RAG-based Planner,F13_C04_rag_based_planner,0.0,1.0,0.5,0.0,0.3913
+F13_C05,F13,RAG-based Planner,F13_C05_rag_based_planner,0.0,1.0,0.5,0.0,0.3913
+F14_C01,F14,RAG-based Planner,F14_C01_rag_based_planner,0.0,1.0,0.5,0.0,0.3593
+F14_C02,F14,RAG-based Planner,F14_C02_rag_based_planner,0.0,1.0,0.5,0.0,0.3593
+F14_C03,F14,RAG-based Planner,F14_C03_rag_based_planner,0.0,1.0,0.5,0.0,0.3593
+F14_C04,F14,RAG-based Planner,F14_C04_rag_based_planner,0.0,1.0,0.5,0.0,0.3593
+F14_C05,F14,RAG-based Planner,F14_C05_rag_based_planner,0.0,1.0,0.5,0.0,0.3593
+F15_C01,F15,RAG-based Planner,F15_C01_rag_based_planner,0.0,1.0,0.5,0.0,0.4028
+F15_C02,F15,RAG-based Planner,F15_C02_rag_based_planner,0.0,1.0,0.5,0.0,0.4028
+F15_C03,F15,RAG-based Planner,F15_C03_rag_based_planner,0.0,1.0,0.5,0.0,0.4028
+F15_C04,F15,RAG-based Planner,F15_C04_rag_based_planner,0.0,1.0,0.5,0.0,0.4028
+F15_C05,F15,RAG-based Planner,F15_C05_rag_based_planner,0.0,1.0,0.5,0.0,0.4028
+F16_C01,F16,RAG-based Planner,F16_C01_rag_based_planner,0.0,1.0,0.5,0.0,0.3636
+F16_C02,F16,RAG-based Planner,F16_C02_rag_based_planner,0.0,1.0,0.5,0.0,0.3636
+F16_C03,F16,RAG-based Planner,F16_C03_rag_based_planner,0.0,1.0,0.5,0.0,0.3636
+F16_C04,F16,RAG-based Planner,F16_C04_rag_based_planner,0.0,1.0,0.5,0.0,0.3636
+F16_C05,F16,RAG-based Planner,F16_C05_rag_based_planner,0.0,1.0,0.5,0.0,0.3636
+F17_C01,F17,RAG-based Planner,F17_C01_rag_based_planner,0.0,1.0,0.5714,0.0,0.3681
+F17_C02,F17,RAG-based Planner,F17_C02_rag_based_planner,0.0,1.0,0.5714,0.0,0.3681
+F17_C03,F17,RAG-based Planner,F17_C03_rag_based_planner,0.0,1.0,0.5714,0.0,0.3681
+F17_C04,F17,RAG-based Planner,F17_C04_rag_based_planner,0.0,1.0,0.5714,0.0,0.3681
+F17_C05,F17,RAG-based Planner,F17_C05_rag_based_planner,0.0,1.0,0.5714,0.0,0.3681
+F18_C01,F18,RAG-based Planner,F18_C01_rag_based_planner,0.0,1.0,0.6,0.0,0.3673
+F18_C02,F18,RAG-based Planner,F18_C02_rag_based_planner,0.0,1.0,0.6,0.0,0.3673
+F18_C03,F18,RAG-based Planner,F18_C03_rag_based_planner,0.0,1.0,0.6,0.0,0.3673
+F18_C04,F18,RAG-based Planner,F18_C04_rag_based_planner,0.0,1.0,0.6,0.0,0.3673
+F18_C05,F18,RAG-based Planner,F18_C05_rag_based_planner,0.0,1.0,0.6,0.0,0.3673
+F19_C01,F19,RAG-based Planner,F19_C01_rag_based_planner,0.0,1.0,0.6,0.0,0.3694
+F19_C02,F19,RAG-based Planner,F19_C02_rag_based_planner,0.0,1.0,0.6,0.0,0.3694
+F19_C03,F19,RAG-based Planner,F19_C03_rag_based_planner,0.0,1.0,0.6,0.0,0.3694
+F19_C04,F19,RAG-based Planner,F19_C04_rag_based_planner,0.0,1.0,0.6,0.0,0.3694
+F19_C05,F19,RAG-based Planner,F19_C05_rag_based_planner,0.0,1.0,0.6,0.0,0.3694
+F00_C01,F00,Standard ReAct Agent,F00_C01_standard_react_agent,0.7143,1.0,0.6,0.0,0.5907
+F00_C02,F00,Standard ReAct Agent,F00_C02_standard_react_agent,0.7143,1.0,0.6,0.0,0.5907
+F00_C03,F00,Standard ReAct Agent,F00_C03_standard_react_agent,0.7143,1.0,0.6,0.0,0.5907
+F00_C04,F00,Standard ReAct Agent,F00_C04_standard_react_agent,0.7143,1.0,0.6,0.0,0.5907
+F00_C05,F00,Standard ReAct Agent,F00_C05_standard_react_agent,0.7143,1.0,0.6,0.0,0.5907
+F01_C01,F01,Standard ReAct Agent,F01_C01_standard_react_agent,0.5714,1.0,0.5,0.0,0.5771
+F01_C02,F01,Standard ReAct Agent,F01_C02_standard_react_agent,0.5714,1.0,0.5,0.0,0.5771
+F01_C03,F01,Standard ReAct Agent,F01_C03_standard_react_agent,0.5714,1.0,0.5,0.0,0.5771
+F01_C04,F01,Standard ReAct Agent,F01_C04_standard_react_agent,0.5714,1.0,0.5,0.0,0.5771
+F01_C05,F01,Standard ReAct Agent,F01_C05_standard_react_agent,0.5714,1.0,0.5,0.0,0.5771
+F02_C01,F02,Standard ReAct Agent,F02_C01_standard_react_agent,0.6667,1.0,0.3636,0.0,0.6781
+F02_C02,F02,Standard ReAct Agent,F02_C02_standard_react_agent,0.6667,1.0,0.3636,0.0,0.6781
+F02_C03,F02,Standard ReAct Agent,F02_C03_standard_react_agent,0.6667,1.0,0.3636,0.0,0.6781
+F02_C04,F02,Standard ReAct Agent,F02_C04_standard_react_agent,0.6667,1.0,0.3636,0.0,0.6781
+F02_C05,F02,Standard ReAct Agent,F02_C05_standard_react_agent,0.6667,1.0,0.3636,0.0,0.6781
+F03_C01,F03,Standard ReAct Agent,F03_C01_standard_react_agent,0.6667,1.0,0.4545,0.0,0.633
+F03_C02,F03,Standard ReAct Agent,F03_C02_standard_react_agent,0.6667,1.0,0.4545,0.0,0.633
+F03_C03,F03,Standard ReAct Agent,F03_C03_standard_react_agent,0.6667,1.0,0.4545,0.0,0.633
+F03_C04,F03,Standard ReAct Agent,F03_C04_standard_react_agent,0.6667,1.0,0.4545,0.0,0.633
+F03_C05,F03,Standard ReAct Agent,F03_C05_standard_react_agent,0.6667,1.0,0.4545,0.0,0.633
+F04_C01,F04,Standard ReAct Agent,F04_C01_standard_react_agent,0.6667,1.0,0.6667,0.0,0.6162
+F04_C02,F04,Standard ReAct Agent,F04_C02_standard_react_agent,0.6667,1.0,0.6667,0.0,0.6162
+F04_C03,F04,Standard ReAct Agent,F04_C03_standard_react_agent,0.6667,1.0,0.6667,0.0,0.6162
+F04_C04,F04,Standard ReAct Agent,F04_C04_standard_react_agent,0.6667,1.0,0.6667,0.0,0.6162
+F04_C05,F04,Standard ReAct Agent,F04_C05_standard_react_agent,0.6667,1.0,0.6667,0.0,0.6162
+F05_C01,F05,Standard ReAct Agent,F05_C01_standard_react_agent,0.6667,1.0,0.8,0.0,0.5
+F05_C02,F05,Standard ReAct Agent,F05_C02_standard_react_agent,0.6667,1.0,0.8,0.0,0.5
+F05_C03,F05,Standard ReAct Agent,F05_C03_standard_react_agent,0.6667,1.0,0.8,0.0,0.5
+F05_C04,F05,Standard ReAct Agent,F05_C04_standard_react_agent,0.6667,1.0,0.8,0.0,0.5
+F05_C05,F05,Standard ReAct Agent,F05_C05_standard_react_agent,0.6667,1.0,0.8,0.0,0.5
+F06_C01,F06,Standard ReAct Agent,F06_C01_standard_react_agent,0.5714,1.0,0.625,0.0,0.5941
+F06_C02,F06,Standard ReAct Agent,F06_C02_standard_react_agent,0.5714,1.0,0.625,0.0,0.5941
+F06_C03,F06,Standard ReAct Agent,F06_C03_standard_react_agent,0.5714,1.0,0.625,0.0,0.5941
+F06_C04,F06,Standard ReAct Agent,F06_C04_standard_react_agent,0.5714,1.0,0.625,0.0,0.5941
+F06_C05,F06,Standard ReAct Agent,F06_C05_standard_react_agent,0.5714,1.0,0.625,0.0,0.5941
+F07_C01,F07,Standard ReAct Agent,F07_C01_standard_react_agent,0.6667,1.0,0.5,0.0,0.6061
+F07_C02,F07,Standard ReAct Agent,F07_C02_standard_react_agent,0.6667,1.0,0.5,0.0,0.6061
+F07_C03,F07,Standard ReAct Agent,F07_C03_standard_react_agent,0.6667,1.0,0.5,0.0,0.6061
+F07_C04,F07,Standard ReAct Agent,F07_C04_standard_react_agent,0.6667,1.0,0.5,0.0,0.6061
+F07_C05,F07,Standard ReAct Agent,F07_C05_standard_react_agent,0.6667,1.0,0.5,0.0,0.6061
+F08_C01,F08,Standard ReAct Agent,F08_C01_standard_react_agent,0.6667,1.0,0.6,0.0,0.5743
+F08_C02,F08,Standard ReAct Agent,F08_C02_standard_react_agent,0.6667,1.0,0.6,0.0,0.5743
+F08_C03,F08,Standard ReAct Agent,F08_C03_standard_react_agent,0.6667,1.0,0.6,0.0,0.5743
+F08_C04,F08,Standard ReAct Agent,F08_C04_standard_react_agent,0.6667,1.0,0.6,0.0,0.5743
+F08_C05,F08,Standard ReAct Agent,F08_C05_standard_react_agent,0.6667,1.0,0.6,0.0,0.5743
+F09_C01,F09,Standard ReAct Agent,F09_C01_standard_react_agent,1.0,1.0,0.5,0.0,0.6599
+F09_C02,F09,Standard ReAct Agent,F09_C02_standard_react_agent,1.0,1.0,0.5,0.0,0.6599
+F09_C03,F09,Standard ReAct Agent,F09_C03_standard_react_agent,1.0,1.0,0.5,0.0,0.6599
+F09_C04,F09,Standard ReAct Agent,F09_C04_standard_react_agent,1.0,1.0,0.5,0.0,0.6599
+F09_C05,F09,Standard ReAct Agent,F09_C05_standard_react_agent,1.0,1.0,0.5,0.0,0.6599
+F10_C01,F10,Standard ReAct Agent,F10_C01_standard_react_agent,1.0,1.0,0.6,0.0,0.6115
+F10_C02,F10,Standard ReAct Agent,F10_C02_standard_react_agent,1.0,1.0,0.6,0.0,0.6115
+F10_C03,F10,Standard ReAct Agent,F10_C03_standard_react_agent,1.0,1.0,0.6,0.0,0.6115
+F10_C04,F10,Standard ReAct Agent,F10_C04_standard_react_agent,1.0,1.0,0.6,0.0,0.6115
+F10_C05,F10,Standard ReAct Agent,F10_C05_standard_react_agent,1.0,1.0,0.6,0.0,0.6115
+F11_C01,F11,Standard ReAct Agent,F11_C01_standard_react_agent,1.0,1.0,0.6,0.0,0.67
+F11_C02,F11,Standard ReAct Agent,F11_C02_standard_react_agent,1.0,1.0,0.6,0.0,0.67
+F11_C03,F11,Standard ReAct Agent,F11_C03_standard_react_agent,1.0,1.0,0.6,0.0,0.67
+F11_C04,F11,Standard ReAct Agent,F11_C04_standard_react_agent,1.0,1.0,0.6,0.0,0.67
+F11_C05,F11,Standard ReAct Agent,F11_C05_standard_react_agent,1.0,1.0,0.6,0.0,0.67
+F12_C01,F12,Standard ReAct Agent,F12_C01_standard_react_agent,1.0,1.0,0.6,0.0,0.6524
+F12_C02,F12,Standard ReAct Agent,F12_C02_standard_react_agent,1.0,1.0,0.6,0.0,0.6524
+F12_C03,F12,Standard ReAct Agent,F12_C03_standard_react_agent,1.0,1.0,0.6,0.0,0.6524
+F12_C04,F12,Standard ReAct Agent,F12_C04_standard_react_agent,1.0,1.0,0.6,0.0,0.6524
+F12_C05,F12,Standard ReAct Agent,F12_C05_standard_react_agent,1.0,1.0,0.6,0.0,0.6524
+F13_C01,F13,Standard ReAct Agent,F13_C01_standard_react_agent,1.0,1.0,0.5,0.0,0.6748
+F13_C02,F13,Standard ReAct Agent,F13_C02_standard_react_agent,1.0,1.0,0.5,0.0,0.6748
+F13_C03,F13,Standard ReAct Agent,F13_C03_standard_react_agent,1.0,1.0,0.5,0.0,0.6748
+F13_C04,F13,Standard ReAct Agent,F13_C04_standard_react_agent,1.0,1.0,0.5,0.0,0.6748
+F13_C05,F13,Standard ReAct Agent,F13_C05_standard_react_agent,1.0,1.0,0.5,0.0,0.6748
+F14_C01,F14,Standard ReAct Agent,F14_C01_standard_react_agent,1.0,1.0,0.5,0.0,0.66
+F14_C02,F14,Standard ReAct Agent,F14_C02_standard_react_agent,1.0,1.0,0.5,0.0,0.66
+F14_C03,F14,Standard ReAct Agent,F14_C03_standard_react_agent,1.0,1.0,0.5,0.0,0.66
+F14_C04,F14,Standard ReAct Agent,F14_C04_standard_react_agent,1.0,1.0,0.5,0.0,0.66
+F14_C05,F14,Standard ReAct Agent,F14_C05_standard_react_agent,1.0,1.0,0.5,0.0,0.66
+F15_C01,F15,Standard ReAct Agent,F15_C01_standard_react_agent,1.0,1.0,0.5,0.0,0.6901
+F15_C02,F15,Standard ReAct Agent,F15_C02_standard_react_agent,1.0,1.0,0.5,0.0,0.6901
+F15_C03,F15,Standard ReAct Agent,F15_C03_standard_react_agent,1.0,1.0,0.5,0.0,0.6901
+F15_C04,F15,Standard ReAct Agent,F15_C04_standard_react_agent,1.0,1.0,0.5,0.0,0.6901
+F15_C05,F15,Standard ReAct Agent,F15_C05_standard_react_agent,1.0,1.0,0.5,0.0,0.6901
+F16_C01,F16,Standard ReAct Agent,F16_C01_standard_react_agent,1.0,1.0,0.5,0.0,0.6667
+F16_C02,F16,Standard ReAct Agent,F16_C02_standard_react_agent,1.0,1.0,0.5,0.0,0.6667
+F16_C03,F16,Standard ReAct Agent,F16_C03_standard_react_agent,1.0,1.0,0.5,0.0,0.6667
+F16_C04,F16,Standard ReAct Agent,F16_C04_standard_react_agent,1.0,1.0,0.5,0.0,0.6667
+F16_C05,F16,Standard ReAct Agent,F16_C05_standard_react_agent,1.0,1.0,0.5,0.0,0.6667
+F17_C01,F17,Standard ReAct Agent,F17_C01_standard_react_agent,1.0,1.0,0.5714,0.0,0.6869
+F17_C02,F17,Standard ReAct Agent,F17_C02_standard_react_agent,1.0,1.0,0.5714,0.0,0.6869
+F17_C03,F17,Standard ReAct Agent,F17_C03_standard_react_agent,1.0,1.0,0.5714,0.0,0.6869
+F17_C04,F17,Standard ReAct Agent,F17_C04_standard_react_agent,1.0,1.0,0.5714,0.0,0.6869
+F17_C05,F17,Standard ReAct Agent,F17_C05_standard_react_agent,1.0,1.0,0.5714,0.0,0.6869
+F18_C01,F18,Standard ReAct Agent,F18_C01_standard_react_agent,1.0,1.0,0.6,0.0,0.6395
+F18_C02,F18,Standard ReAct Agent,F18_C02_standard_react_agent,1.0,1.0,0.6,0.0,0.6395
+F18_C03,F18,Standard ReAct Agent,F18_C03_standard_react_agent,1.0,1.0,0.6,0.0,0.6395
+F18_C04,F18,Standard ReAct Agent,F18_C04_standard_react_agent,1.0,1.0,0.6,0.0,0.6395
+F18_C05,F18,Standard ReAct Agent,F18_C05_standard_react_agent,1.0,1.0,0.6,0.0,0.6395
+F19_C01,F19,Standard ReAct Agent,F19_C01_standard_react_agent,1.0,1.0,0.6,0.0,0.6702
+F19_C02,F19,Standard ReAct Agent,F19_C02_standard_react_agent,1.0,1.0,0.6,0.0,0.6702
+F19_C03,F19,Standard ReAct Agent,F19_C03_standard_react_agent,1.0,1.0,0.6,0.0,0.6702
+F19_C04,F19,Standard ReAct Agent,F19_C04_standard_react_agent,1.0,1.0,0.6,0.0,0.6702
+F19_C05,F19,Standard ReAct Agent,F19_C05_standard_react_agent,1.0,1.0,0.6,0.0,0.6702
+F00_C01,F00,KGMCF,F00_C01_kgmcf,1.0,1.0,0.6,0.0,0.756
+F00_C02,F00,KGMCF,F00_C02_kgmcf,1.0,1.0,0.6,0.0,0.756
+F00_C03,F00,KGMCF,F00_C03_kgmcf,1.0,1.0,0.6,0.0,0.756
+F00_C04,F00,KGMCF,F00_C04_kgmcf,1.0,1.0,0.6,0.0,0.756
+F00_C05,F00,KGMCF,F00_C05_kgmcf,1.0,1.0,0.6,0.0,0.756
+F01_C01,F01,KGMCF,F01_C01_kgmcf,1.0,1.0,0.5,0.0,0.7545
+F01_C02,F01,KGMCF,F01_C02_kgmcf,1.0,1.0,0.5,0.0,0.7545
+F01_C03,F01,KGMCF,F01_C03_kgmcf,1.0,1.0,0.5,0.0,0.7545
+F01_C04,F01,KGMCF,F01_C04_kgmcf,1.0,1.0,0.5,0.0,0.7545
+F01_C05,F01,KGMCF,F01_C05_kgmcf,1.0,1.0,0.5,0.0,0.7545
+F02_C01,F02,KGMCF,F02_C01_kgmcf,1.0,1.0,0.3636,0.0,0.8065
+F02_C02,F02,KGMCF,F02_C02_kgmcf,1.0,1.0,0.3636,0.0,0.8065
+F02_C03,F02,KGMCF,F02_C03_kgmcf,1.0,1.0,0.3636,0.0,0.8065
+F02_C04,F02,KGMCF,F02_C04_kgmcf,1.0,1.0,0.3636,0.0,0.8065
+F02_C05,F02,KGMCF,F02_C05_kgmcf,1.0,1.0,0.3636,0.0,0.8065
+F03_C01,F03,KGMCF,F03_C01_kgmcf,1.0,1.0,0.4545,0.0,0.8083
+F03_C02,F03,KGMCF,F03_C02_kgmcf,1.0,1.0,0.4545,0.0,0.8083
+F03_C03,F03,KGMCF,F03_C03_kgmcf,1.0,1.0,0.4545,0.0,0.8083
+F03_C04,F03,KGMCF,F03_C04_kgmcf,1.0,1.0,0.4545,0.0,0.8083
+F03_C05,F03,KGMCF,F03_C05_kgmcf,1.0,1.0,0.4545,0.0,0.8083
+F04_C01,F04,KGMCF,F04_C01_kgmcf,1.0,1.0,0.6667,0.0,0.7926
+F04_C02,F04,KGMCF,F04_C02_kgmcf,1.0,1.0,0.6667,0.0,0.7926
+F04_C03,F04,KGMCF,F04_C03_kgmcf,1.0,1.0,0.6667,0.0,0.7926
+F04_C04,F04,KGMCF,F04_C04_kgmcf,1.0,1.0,0.6667,0.0,0.7926
+F04_C05,F04,KGMCF,F04_C05_kgmcf,1.0,1.0,0.6667,0.0,0.7926
+F05_C01,F05,KGMCF,F05_C01_kgmcf,1.0,1.0,0.8,0.0,0.6753
+F05_C02,F05,KGMCF,F05_C02_kgmcf,1.0,1.0,0.8,0.0,0.6753
+F05_C03,F05,KGMCF,F05_C03_kgmcf,1.0,1.0,0.8,0.0,0.6753
+F05_C04,F05,KGMCF,F05_C04_kgmcf,1.0,1.0,0.8,0.0,0.6753
+F05_C05,F05,KGMCF,F05_C05_kgmcf,1.0,1.0,0.8,0.0,0.6753
+F06_C01,F06,KGMCF,F06_C01_kgmcf,1.0,1.0,0.625,0.0,0.7692
+F06_C02,F06,KGMCF,F06_C02_kgmcf,1.0,1.0,0.625,0.0,0.7692
+F06_C03,F06,KGMCF,F06_C03_kgmcf,1.0,1.0,0.625,0.0,0.7692
+F06_C04,F06,KGMCF,F06_C04_kgmcf,1.0,1.0,0.625,0.0,0.7692
+F06_C05,F06,KGMCF,F06_C05_kgmcf,1.0,1.0,0.625,0.0,0.7692
+F07_C01,F07,KGMCF,F07_C01_kgmcf,1.0,1.0,0.5,0.0,0.7664
+F07_C02,F07,KGMCF,F07_C02_kgmcf,1.0,1.0,0.5,0.0,0.7664
+F07_C03,F07,KGMCF,F07_C03_kgmcf,1.0,1.0,0.5,0.0,0.7664
+F07_C04,F07,KGMCF,F07_C04_kgmcf,1.0,1.0,0.5,0.0,0.7664
+F07_C05,F07,KGMCF,F07_C05_kgmcf,1.0,1.0,0.5,0.0,0.7664
+F08_C01,F08,KGMCF,F08_C01_kgmcf,1.0,1.0,0.6,0.0,0.7679
+F08_C02,F08,KGMCF,F08_C02_kgmcf,1.0,1.0,0.6,0.0,0.7679
+F08_C03,F08,KGMCF,F08_C03_kgmcf,1.0,1.0,0.6,0.0,0.7679
+F08_C04,F08,KGMCF,F08_C04_kgmcf,1.0,1.0,0.6,0.0,0.7679
+F08_C05,F08,KGMCF,F08_C05_kgmcf,1.0,1.0,0.6,0.0,0.7679
+F09_C01,F09,KGMCF,F09_C01_kgmcf,1.0,1.0,0.5,0.0,0.7273
+F09_C02,F09,KGMCF,F09_C02_kgmcf,1.0,1.0,0.5,0.0,0.7273
+F09_C03,F09,KGMCF,F09_C03_kgmcf,1.0,1.0,0.5,0.0,0.7273
+F09_C04,F09,KGMCF,F09_C04_kgmcf,1.0,1.0,0.5,0.0,0.7273
+F09_C05,F09,KGMCF,F09_C05_kgmcf,1.0,1.0,0.5,0.0,0.7273
+F10_C01,F10,KGMCF,F10_C01_kgmcf,1.0,1.0,0.6,0.0,0.6962
+F10_C02,F10,KGMCF,F10_C02_kgmcf,1.0,1.0,0.6,0.0,0.6962
+F10_C03,F10,KGMCF,F10_C03_kgmcf,1.0,1.0,0.6,0.0,0.6962
+F10_C04,F10,KGMCF,F10_C04_kgmcf,1.0,1.0,0.6,0.0,0.6962
+F10_C05,F10,KGMCF,F10_C05_kgmcf,1.0,1.0,0.6,0.0,0.6962
+F11_C01,F11,KGMCF,F11_C01_kgmcf,1.0,1.0,0.6,0.0,0.7363
+F11_C02,F11,KGMCF,F11_C02_kgmcf,1.0,1.0,0.6,0.0,0.7363
+F11_C03,F11,KGMCF,F11_C03_kgmcf,1.0,1.0,0.6,0.0,0.7363
+F11_C04,F11,KGMCF,F11_C04_kgmcf,1.0,1.0,0.6,0.0,0.7363
+F11_C05,F11,KGMCF,F11_C05_kgmcf,1.0,1.0,0.6,0.0,0.7363
+F12_C01,F12,KGMCF,F12_C01_kgmcf,1.0,1.0,0.6,0.0,0.7234
+F12_C02,F12,KGMCF,F12_C02_kgmcf,1.0,1.0,0.6,0.0,0.7234
+F12_C03,F12,KGMCF,F12_C03_kgmcf,1.0,1.0,0.6,0.0,0.7234
+F12_C04,F12,KGMCF,F12_C04_kgmcf,1.0,1.0,0.6,0.0,0.7234
+F12_C05,F12,KGMCF,F12_C05_kgmcf,1.0,1.0,0.6,0.0,0.7234
+F13_C01,F13,KGMCF,F13_C01_kgmcf,1.0,1.0,0.5,0.0,0.7561
+F13_C02,F13,KGMCF,F13_C02_kgmcf,1.0,1.0,0.5,0.0,0.7561
+F13_C03,F13,KGMCF,F13_C03_kgmcf,1.0,1.0,0.5,0.0,0.7561
+F13_C04,F13,KGMCF,F13_C04_kgmcf,1.0,1.0,0.5,0.0,0.7561
+F13_C05,F13,KGMCF,F13_C05_kgmcf,1.0,1.0,0.5,0.0,0.7561
+F14_C01,F14,KGMCF,F14_C01_kgmcf,1.0,1.0,0.5,0.0,0.7264
+F14_C02,F14,KGMCF,F14_C02_kgmcf,1.0,1.0,0.5,0.0,0.7264
+F14_C03,F14,KGMCF,F14_C03_kgmcf,1.0,1.0,0.5,0.0,0.7264
+F14_C04,F14,KGMCF,F14_C04_kgmcf,1.0,1.0,0.5,0.0,0.7264
+F14_C05,F14,KGMCF,F14_C05_kgmcf,1.0,1.0,0.5,0.0,0.7264
+F15_C01,F15,KGMCF,F15_C01_kgmcf,1.0,1.0,0.5,0.0,0.7674
+F15_C02,F15,KGMCF,F15_C02_kgmcf,1.0,1.0,0.5,0.0,0.7674
+F15_C03,F15,KGMCF,F15_C03_kgmcf,1.0,1.0,0.5,0.0,0.7674
+F15_C04,F15,KGMCF,F15_C04_kgmcf,1.0,1.0,0.5,0.0,0.7674
+F15_C05,F15,KGMCF,F15_C05_kgmcf,1.0,1.0,0.5,0.0,0.7674
+F16_C01,F16,KGMCF,F16_C01_kgmcf,1.0,1.0,0.5,0.0,0.7442
+F16_C02,F16,KGMCF,F16_C02_kgmcf,1.0,1.0,0.5,0.0,0.7442
+F16_C03,F16,KGMCF,F16_C03_kgmcf,1.0,1.0,0.5,0.0,0.7442
+F16_C04,F16,KGMCF,F16_C04_kgmcf,1.0,1.0,0.5,0.0,0.7442
+F16_C05,F16,KGMCF,F16_C05_kgmcf,1.0,1.0,0.5,0.0,0.7442
+F17_C01,F17,KGMCF,F17_C01_kgmcf,1.0,1.0,0.5714,0.0,0.7538
+F17_C02,F17,KGMCF,F17_C02_kgmcf,1.0,1.0,0.5714,0.0,0.7538
+F17_C03,F17,KGMCF,F17_C03_kgmcf,1.0,1.0,0.5714,0.0,0.7538
+F17_C04,F17,KGMCF,F17_C04_kgmcf,1.0,1.0,0.5714,0.0,0.7538
+F17_C05,F17,KGMCF,F17_C05_kgmcf,1.0,1.0,0.5714,0.0,0.7538
+F18_C01,F18,KGMCF,F18_C01_kgmcf,1.0,1.0,0.6,0.0,0.7168
+F18_C02,F18,KGMCF,F18_C02_kgmcf,1.0,1.0,0.6,0.0,0.7168
+F18_C03,F18,KGMCF,F18_C03_kgmcf,1.0,1.0,0.6,0.0,0.7168
+F18_C04,F18,KGMCF,F18_C04_kgmcf,1.0,1.0,0.6,0.0,0.7168
+F18_C05,F18,KGMCF,F18_C05_kgmcf,1.0,1.0,0.6,0.0,0.7168
+F19_C01,F19,KGMCF,F19_C01_kgmcf,1.0,1.0,0.6,0.0,0.7407
+F19_C02,F19,KGMCF,F19_C02_kgmcf,1.0,1.0,0.6,0.0,0.7407
+F19_C03,F19,KGMCF,F19_C03_kgmcf,1.0,1.0,0.6,0.0,0.7407
+F19_C04,F19,KGMCF,F19_C04_kgmcf,1.0,1.0,0.6,0.0,0.7407
+F19_C05,F19,KGMCF,F19_C05_kgmcf,1.0,1.0,0.6,0.0,0.7407

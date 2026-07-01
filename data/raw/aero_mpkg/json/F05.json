@@ -1,0 +1,120 @@
+{
+  "nodes": [
+   
+    { "id": "Part_CasingRing", "label": "零件", "properties": { "name": "航空发动机机匣环件" }},
+    { "id": "Mat_Ti6Al4V", "label": "材料", "properties": { "name": "Ti-6AI-4V (Grade 5 Titanium)", "type": "航空难加工材料" }},
+    { "id": "Hard_36HRC", "label": "硬度", "properties": { "name": "36 HRC", "impact": "影响切削力和刀具寿命" }},
+
+    { "id": "Feat_F05", "label": "特征", "properties": { "name": "F05 深异形凹槽", "desc": "带有倒扣结构" }},
+
+    { "id": "Const_Draft", "label": "几何约束", "properties": { "name": "侧壁斜度", "value": "20°", "meaning": "刀具干涉边界" }},
+    { "id": "Const_BRadius", "label": "几何约束", "properties": { "name": "底部圆角", "value": "R1.6mm", "priority": "强约束" }},
+    { "id": "Const_CRadius", "label": "几何约束", "properties": { "name": "过渡圆角", "value": "R1.0mm" }},
+    { "id": "Const_Depth", "label": "几何约束", "properties": { "name": "特征深度", "value": "25mm", "level": "深腔加工" }},
+    { "id": "Const_Width", "label": "几何约束", "properties": { "name": "槽口宽度", "value": "3.8mm", "check": "需大于刀片宽度3.77" }},
+    { "id": "Const_Aspect", "label": "几何约束", "properties": { "name": "长径比", "value": "6.5", "risk": "易振动" }},
+
+
+    { "id": "Holder_CGGL", "label": "刀杆", "properties": { "name": "CGGL2525P1604-WK014", "shank": "25x25mm" }},
+    { "id": "Insert_QC04", "label": "刀片", "properties": { "name": "QC04-R1.6R0.9-WK014", "width": "3.77mm", "coating": "PVD TiAlN" }},
+
+
+    { "id": "Proc_Rough", "label": "工序", "properties": { "name": "粗加工阶段" }},
+    { "id": "Step_Trochoidal", "label": "工步", "properties": { "name": "摆线车削", "strategy": "Trochoidal Turning", "goal": "降低切削力" }},
+    { "id": "Step_Plunge", "label": "工步", "properties": { "name": "插铣加工", "strategy": "Plunge Milling", "goal": "高效去除余量" }},
+    
+    { "id": "Proc_Semi", "label": "工序", "properties": { "name": "半精加工阶段" }},
+    { "id": "Step_VarDepth", "label": "工步", "properties": { "name": "变切深切削", "allowance": "0.2mm" }},
+    
+    { "id": "Proc_Finish", "label": "工序", "properties": { "name": "精加工阶段" }},
+    { "id": "Step_Profiling", "label": "工步", "properties": { "name": "仿形精车", "path": "20°斜面下行" }},
+
+
+    { "id": "Param_Vc_Rough", "label": "切削参数", "properties": { "name": "粗车线速度", "value": "50-60 m/min" }},
+    { "id": "Param_f_Rough", "label": "切削参数", "properties": { "name": "粗车进给量", "value": "0.10 mm/rev" }},
+    { "id": "Param_ap_Rough", "label": "切削参数", "properties": { "name": "粗车背吃刀量", "value": "1.5 mm" }},
+    { "id": "Param_Cool_High", "label": "冷却条件", "properties": { "name": "高压冷却", "pressure": "70 bar" }},
+
+
+    { "id": "CoT_1", "label": "推理步骤", "properties": { "name": "1.几何分析", "content": "识别深凹槽与底部R1.6" }},
+    { "id": "CoT_2", "label": "推理步骤", "properties": { "name": "2.约束提取", "content": "确定刀具半径与宽度阈值" }},
+    { "id": "CoT_3", "label": "推理步骤", "properties": { "name": "3.刀具匹配", "content": "从库中检索QC04系列" }},
+    { "id": "CoT_4", "label": "推理步骤", "properties": { "name": "4.物理校验", "content": "评估悬伸长与刚性风险" }},
+    { "id": "CoT_5", "label": "推理步骤", "properties": { "name": "5.策略生成", "content": "选择摆线降低径向力" }},
+    { "id": "CoT_6", "label": "推理步骤", "properties": { "name": "6.参数设定", "content": "基于热平衡设定Vc" }},
+
+
+    { "id": "Img_01", "label": "Image", "properties": { "filename": "F05_1.png", "desc": "特征定义域主图" }},
+    { "id": "Img_02", "label": "Image", "properties": { "filename": "F05_2.png", "desc": "几何约束细节图" }},
+    { "id": "Img_03", "label": "Image", "properties": { "filename": "F05_3.png", "desc": "材料微观组织图" }},
+    { "id": "Img_04", "label": "Image", "properties": { "filename": "F05_4.png", "desc": "刀具路径仿真图" }},
+    { "id": "Img_05", "label": "Image", "properties": { "filename": "F05_5.png", "desc": "物理感知参数对比表" }},
+    { "id": "Img_06", "label": "Image", "properties": { "filename": "F05_6.png", "desc": "粗加工切屑形态图" }},
+    { "id": "Img_07", "label": "Image", "properties": { "filename": "F05_7.png", "desc": "摆线轨迹优化图" }},
+    { "id": "Img_08", "label": "Image", "properties": { "filename": "F05_8.png", "desc": "插铣受力分析图" }},
+    { "id": "Img_09", "label": "Image", "properties": { "filename": "F05_9.png", "desc": "半精加工余量分布图" }},
+    { "id": "Img_10", "label": "Image", "properties": { "filename": "F05_10.png", "desc": "仿形加工干涉检查图" }},
+    { "id": "Img_11", "label": "Image", "properties": { "filename": "F05_11.png", "desc": "精加工表面粗糙度图" }},
+    { "id": "Img_12", "label": "Image", "properties": { "filename": "F05_12.png", "desc": "冷却液喷射形态图" }},
+    { "id": "Img_13", "label": "Image", "properties": { "filename": "F05_13.png", "desc": "刀具磨损监测图" }},
+    { "id": "Img_14", "label": "Image", "properties": { "filename": "F05_14.png", "desc": "加工震动频谱图" }},
+    { "id": "Img_15", "label": "Image", "properties": { "filename": "F05_15.png", "desc": "思维链推理流程图" }},
+    { "id": "Img_16", "label": "Image", "properties": { "filename": "F05_16.png", "desc": "切削温度分布场" }},
+    { "id": "Img_17", "label": "Image", "properties": { "filename": "F05_17.png", "desc": "特征三维点云图" }},
+    { "id": "Img_18", "label": "Image", "properties": { "filename": "F05_18.png", "desc": "刀片几何参数图" }},
+    { "id": "Img_19", "label": "Image", "properties": { "filename": "F05_19.png", "desc": "工艺方案对比图" }},
+    { "id": "Img_20", "label": "Image", "properties": { "filename": "F05_20.png", "desc": "最终检验合格报告图" }}
+  ],
+  "relationships": [
+    { "id": "r1", "type": "HAS_MATERIAL", "startNode": "Part_CasingRing", "endNode": "Mat_Ti6Al4V" },
+    { "id": "r2", "type": "HAS_HARDNESS", "startNode": "Mat_Ti6Al4V", "endNode": "Hard_36HRC" },
+    { "id": "r3", "type": "HAS_FEATURE", "startNode": "Part_CasingRing", "endNode": "Feat_F05" },
+    { "id": "r4", "type": "HAS_CONSTRAINT", "startNode": "Feat_F05", "endNode": "Const_Draft" },
+    { "id": "r5", "type": "HAS_CONSTRAINT", "startNode": "Feat_F05", "endNode": "Const_BRadius" },
+    { "id": "r6", "type": "HAS_CONSTRAINT", "startNode": "Feat_F05", "endNode": "Const_CRadius" },
+    { "id": "r7", "type": "HAS_CONSTRAINT", "startNode": "Feat_F05", "endNode": "Const_Depth" },
+    { "id": "r8", "type": "HAS_CONSTRAINT", "startNode": "Feat_F05", "endNode": "Const_Width" },
+    { "id": "r9", "type": "HAS_CONSTRAINT", "startNode": "Feat_F05", "endNode": "Const_Aspect" },
+    { "id": "r10", "type": "HAS_PROCESS", "startNode": "Feat_F05", "endNode": "Proc_Rough" },
+    { "id": "r11", "type": "INCLUDES_STEP", "startNode": "Proc_Rough", "endNode": "Step_Trochoidal" },
+    { "id": "r12", "type": "INCLUDES_STEP", "startNode": "Proc_Rough", "endNode": "Step_Plunge" },
+    { "id": "r13", "type": "PRECEDES", "startNode": "Proc_Rough", "endNode": "Proc_Semi" },
+    { "id": "r14", "type": "HAS_PROCESS", "startNode": "Feat_F05", "endNode": "Proc_Semi" },
+    { "id": "r15", "type": "INCLUDES_STEP", "startNode": "Proc_Semi", "endNode": "Step_VarDepth" },
+    { "id": "r16", "type": "PRECEDES", "startNode": "Proc_Semi", "endNode": "Proc_Finish" },
+    { "id": "r17", "type": "HAS_PROCESS", "startNode": "Feat_F05", "endNode": "Proc_Finish" },
+    { "id": "r18", "type": "INCLUDES_STEP", "startNode": "Proc_Finish", "endNode": "Step_Profiling" },
+    { "id": "r19", "type": "USES_TOOL", "startNode": "Step_Trochoidal", "endNode": "Insert_QC04" },
+    { "id": "r20", "type": "HAS_HOLDER", "startNode": "Insert_QC04", "endNode": "Holder_CGGL" },
+    { "id": "r21", "type": "SET_PARAMETER", "startNode": "Step_Trochoidal", "endNode": "Param_Vc_Rough" },
+    { "id": "r22", "type": "SET_PARAMETER", "startNode": "Step_Trochoidal", "endNode": "Param_f_Rough" },
+    { "id": "r23", "type": "HAS_COOLANT", "startNode": "Step_Trochoidal", "endNode": "Param_Cool_High" },
+    { "id": "r24", "type": "PRECEDES", "startNode": "CoT_1", "endNode": "CoT_2" },
+    { "id": "r25", "type": "PRECEDES", "startNode": "CoT_2", "endNode": "CoT_3" },
+    { "id": "r26", "type": "PRECEDES", "startNode": "CoT_3", "endNode": "CoT_4" },
+    { "id": "r27", "type": "PRECEDES", "startNode": "CoT_4", "endNode": "CoT_5" },
+    { "id": "r28", "type": "PRECEDES", "startNode": "CoT_5", "endNode": "CoT_6" },
+    { "id": "r29", "type": "GUIDES", "startNode": "CoT_5", "endNode": "Step_Trochoidal" },
+
+    { "id": "m1", "type": "DESCRIBED_BY_IMAGE", "startNode": "Feat_F05", "endNode": "Img_01" },       
+    { "id": "m2", "type": "DESCRIBED_BY_IMAGE", "startNode": "Const_Depth", "endNode": "Img_02" },    
+    { "id": "m3", "type": "DESCRIBED_BY_IMAGE", "startNode": "Mat_Ti6Al4V", "endNode": "Img_03" },    
+    { "id": "m4", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_Profiling", "endNode": "Img_04" }, 
+    { "id": "m5", "type": "DESCRIBED_BY_IMAGE", "startNode": "Param_Vc_Rough", "endNode": "Img_05" }, 
+    { "id": "m6", "type": "DESCRIBED_BY_IMAGE", "startNode": "Proc_Rough", "endNode": "Img_06" },    
+    { "id": "m7", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_Trochoidal", "endNode": "Img_07" },
+    { "id": "m8", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_Plunge", "endNode": "Img_08" },    
+    { "id": "m9", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_VarDepth", "endNode": "Img_09" },  
+    { "id": "m10", "type": "DESCRIBED_BY_IMAGE", "startNode": "Const_Draft", "endNode": "Img_10" },   
+    { "id": "m11", "type": "DESCRIBED_BY_IMAGE", "startNode": "Proc_Finish", "endNode": "Img_11" },   
+    { "id": "m12", "type": "DESCRIBED_BY_IMAGE", "startNode": "Param_Cool_High", "endNode": "Img_12" },
+    { "id": "m13", "type": "DESCRIBED_BY_IMAGE", "startNode": "Insert_QC04", "endNode": "Img_13" },    
+    { "id": "m14", "type": "DESCRIBED_BY_IMAGE", "startNode": "Const_Aspect", "endNode": "Img_14" },  
+    { "id": "m15", "type": "DESCRIBED_BY_IMAGE", "startNode": "CoT_1", "endNode": "Img_15" },         
+    { "id": "m16", "type": "DESCRIBED_BY_IMAGE", "startNode": "Hard_36HRC", "endNode": "Img_16" },    
+    { "id": "m17", "type": "DESCRIBED_BY_IMAGE", "startNode": "Feat_F05", "endNode": "Img_17" }, 
+    { "id": "m18", "type": "DESCRIBED_BY_IMAGE", "startNode": "Holder_CGGL", "endNode": "Img_18" }, 
+    { "id": "m19", "type": "DESCRIBED_BY_IMAGE", "startNode": "CoT_5", "endNode": "Img_19" },  
+    { "id": "m20", "type": "DESCRIBED_BY_IMAGE", "startNode": "Part_CasingRing", "endNode": "Img_20" } 
+  ]
+}

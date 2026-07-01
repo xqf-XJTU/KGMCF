@@ -1,0 +1,623 @@
+{
+  "nodes": [
+    {
+      "id": "Part_Monolithic_Casting",
+      "label": "零件",
+      "properties": {
+        "name": "航空复杂整体铸件",
+        "type": "Aerospace Monolithic Casting"
+      }
+    },
+    {
+      "id": "Mat_Cast_Steel_F19",
+      "label": "材料",
+      "properties": {
+        "name": "高温铸钢 (High-Temp Cast Steel)",
+        "feature": "高磨蚀性/热硬性"
+      }
+    },
+    {
+      "id": "Global_AeroEngine_Category",
+      "label": "零件类型",
+      "properties": {
+        "name": "航空发动机关键组件"
+      }
+    },
+    {
+      "id": "Feat_F19",
+      "label": "特征",
+      "properties": {
+        "name": "F19 铸件异形过渡槽",
+        "class": "中大尺寸异形槽 (Heavy Profiled)"
+      }
+    },
+    {
+      "id": "Const_Draft_F19",
+      "label": "几何约束",
+      "properties": {
+        "name": "非标拔模角: 19.5°"
+      }
+    },
+    {
+      "id": "Const_PrimaryR_F19",
+      "label": "几何约束",
+      "properties": {
+        "name": "强约束底角: R2.5mm",
+        "logic": "要求刀具半径1:1匹配"
+      }
+    },
+    {
+      "id": "Const_TargetWidth_F19",
+      "label": "几何约束",
+      "properties": {
+        "name": "目标槽宽: 3.7mm"
+      }
+    },
+    {
+      "id": "Const_Surface_Skin",
+      "label": "表面约束",
+      "properties": {
+        "name": "铸造毛坯硬皮 (Cast Skin)",
+        "challenge": "余量不均/易导致崩刃"
+      }
+    },
+    {
+      "id": "Holder_CFGL_F19",
+      "label": "Equipment",
+      "properties": {
+        "name": "外圆切槽刀杆: CFGL2525",
+        "shank": "25x25mm"
+      }
+    },
+    {
+      "id": "Insert_QC04_Cast_F19",
+      "label": "Tool",
+      "properties": {
+        "name": "精密成型仿形刀片: QC04-3.7R2.5",
+        "coating": "WK084 (Abrasive Resistant)"
+      }
+    },
+    {
+      "id": "Proc_Cast_Machining_F19",
+      "label": "工序",
+      "properties": {
+        "name": "F19 铸件毛坯开槽加工阶段"
+      }
+    },
+    {
+      "id": "Step_Skin_Removal_F19",
+      "label": "工步",
+      "properties": {
+        "name": "1. 破皮切入 (Surface Skin Removal)",
+        "strategy": "Constant Depth Plunge"
+      }
+    },
+    {
+      "id": "Step_Center_Plunge_F19",
+      "label": "工步",
+      "properties": {
+        "name": "2. 径向直切 (Centerline Plunging)",
+        "goal": "深至R2.5预定深度"
+      }
+    },
+    {
+      "id": "Step_Contour_Scan_F19",
+      "label": "工步",
+      "properties": {
+        "name": "3. 轮廓平滑扫描 (Profiling Scan)",
+        "logic": "R2.5刃口沿斜面扫掠R1区域"
+      }
+    },
+    {
+      "id": "Param_Vc_Cast_F19",
+      "label": "切削参数",
+      "properties": {
+        "name": "稳健切速 Vc: 45-65 m/min",
+        "logic": "铸钢磨损快需中低速"
+      }
+    },
+    {
+      "id": "Param_f_Cast_F19",
+      "label": "切削参数",
+      "properties": {
+        "name": "进给量 f: 0.12 mm/rev",
+        "check": "控制满刃成型时的机床共振"
+      }
+    },
+    {
+      "id": "Param_ap_Cast_F19",
+      "label": "切削参数",
+      "properties": {
+        "name": "精加工余量 ap: 0.2 mm",
+        "purpose": "穿透潜在硬化层"
+      }
+    },
+    {
+      "id": "Logic_Taylor_Formula",
+      "label": "寿命模型",
+      "properties": {
+        "name": "泰勒寿命公式 (Taylor's Formula)",
+        "usage": "评估WK084涂层抗磨损极限"
+      }
+    },
+    {
+      "id": "CoT_F19_1",
+      "label": "分析",
+      "properties": {
+        "name": "Context: 识别材料为高温铸钢而非钛合金"
+      }
+    },
+    {
+      "id": "CoT_F19_2",
+      "label": "分析",
+      "properties": {
+        "name": "Geometry: 判定3.7mm槽宽属于中等刚性窗口"
+      }
+    },
+    {
+      "id": "CoT_F19_3",
+      "label": "分析",
+      "properties": {
+        "name": "Tooling: 选用3.7mm定宽刀片以追求“一次成型”"
+      }
+    },
+    {
+      "id": "CoT_F19_4",
+      "label": "分析",
+      "properties": {
+        "name": "Physics: 针对铸钢磨蚀性设定中低切速"
+      }
+    },
+    {
+      "id": "CoT_F19_5",
+      "label": "分析",
+      "properties": {
+        "name": "Strategy: 必须增加破皮切入工序保护刀尖"
+      }
+    },
+    {
+      "id": "CoT_F19_6",
+      "label": "分析",
+      "properties": {
+        "name": "Cooling: 建议强制冷却以冲刷具有磨蚀性的微小钢屑"
+      }
+    },
+    {
+      "id": "Img_F19_01",
+      "label": "Image",
+      "properties": {
+        "name": "F19铸件异形槽总视图",
+        "filename": "F19_1.png"
+      }
+    },
+    {
+      "id": "Img_F19_02",
+      "label": "Image",
+      "properties": {
+        "name": "铸造硬皮(Cast Skin)微观形貌",
+        "filename": "F19_2.png"
+      }
+    },
+    {
+      "id": "Img_F19_03",
+      "label": "Image",
+      "properties": {
+        "name": "WK084涂层抗磨蚀性能实验",
+        "filename": "F19_3.png"
+      }
+    },
+    {
+      "id": "Img_F19_04",
+      "label": "Image",
+      "properties": {
+        "name": "破皮切入轨迹仿真",
+        "filename": "F19_4.png"
+      }
+    },
+    {
+      "id": "Img_F19_05",
+      "label": "Image",
+      "properties": {
+        "name": "泰勒公式寿命预估曲线图",
+        "filename": "F19_5.png"
+      }
+    },
+    {
+      "id": "Img_F19_06",
+      "label": "Image",
+      "properties": {
+        "name": "高温铸钢切屑形态实拍",
+        "filename": "F19_6.png"
+      }
+    },
+    {
+      "id": "Img_F19_07",
+      "label": "Image",
+      "properties": {
+        "name": "径向直切受力波动图",
+        "filename": "F19_7.png"
+      }
+    },
+    {
+      "id": "Img_F19_08",
+      "label": "Image",
+      "properties": {
+        "name": "轮廓扫描余量平滑效果图",
+        "filename": "F19_8.png"
+      }
+    },
+    {
+      "id": "Img_F19_09",
+      "label": "Image",
+      "properties": {
+        "name": "铸钢加工硬化层深度测量",
+        "filename": "F19_9.png"
+      }
+    },
+    {
+      "id": "Img_F19_10",
+      "label": "Image",
+      "properties": {
+        "name": "强制冷却喷射冲刷路径图",
+        "filename": "F19_10.png"
+      }
+    },
+    {
+      "id": "Img_F19_11",
+      "label": "Image",
+      "properties": {
+        "name": "3.7mm满刃切削颤振频谱分析",
+        "filename": "F19_11.png"
+      }
+    },
+    {
+      "id": "Img_F19_12",
+      "label": "Image",
+      "properties": {
+        "name": "R2.5底角1:1吻合度检测",
+        "filename": "F19_12.png"
+      }
+    },
+    {
+      "id": "Img_F19_13",
+      "label": "Image",
+      "properties": {
+        "name": "单头加强型刀片结构图",
+        "filename": "F19_13.png"
+      }
+    },
+    {
+      "id": "Img_F19_14",
+      "label": "Image",
+      "properties": {
+        "name": "铸件余量不均三维对比云图",
+        "filename": "F19_14.png"
+      }
+    },
+    {
+      "id": "Img_F19_15",
+      "label": "Image",
+      "properties": {
+        "name": "CoT铸钢加工决策逻辑流图",
+        "filename": "F19_15.png"
+      }
+    },
+    {
+      "id": "Img_F19_16",
+      "label": "Image",
+      "properties": {
+        "name": "WK084涂层剥落失效分析",
+        "filename": "F19_16.png"
+      }
+    },
+    {
+      "id": "Img_F19_17",
+      "label": "Image",
+      "properties": {
+        "name": "19.5°非标角成型误差图",
+        "filename": "F19_17.png"
+      }
+    },
+    {
+      "id": "Img_F19_18",
+      "label": "Image",
+      "properties": {
+        "name": "磨蚀性碎屑对表面质量的影响",
+        "filename": "F19_18.png"
+      }
+    },
+    {
+      "id": "Img_F19_19",
+      "label": "Image",
+      "properties": {
+        "name": "铸钢与钛合金热导率对比表",
+        "filename": "F19_19.png"
+      }
+    },
+    {
+      "id": "Img_F19_20",
+      "label": "Image",
+      "properties": {
+        "name": "F19特征最终尺寸质检报告",
+        "filename": "F19_20.png"
+      }
+    },
+    {
+      "id": "Risk_EdgeWear_F19",
+      "label": "物理约束",
+      "properties": {
+        "name": "涂层剥落/刃口磨损风险",
+        "desc": "高温铸钢磨蚀性导致WK084涂层及刃口失效风险"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "id": "rF19_1",
+      "type": "HAS_PART_TYPE",
+      "startNode": "Global_AeroEngine_Category",
+      "endNode": "Part_Monolithic_Casting"
+    },
+    {
+      "id": "rF19_2",
+      "type": "HAS_FEATURE",
+      "startNode": "Part_Monolithic_Casting",
+      "endNode": "Feat_F19"
+    },
+    {
+      "id": "rF19_3",
+      "type": "USES_MATERIAL",
+      "startNode": "Feat_F19",
+      "endNode": "Mat_Cast_Steel_F19"
+    },
+    {
+      "id": "rF19_4",
+      "type": "HAS_CONSTRAINT",
+      "startNode": "Feat_F19",
+      "endNode": "Const_Draft_F19"
+    },
+    {
+      "id": "rF19_5",
+      "type": "HAS_CONSTRAINT",
+      "startNode": "Feat_F19",
+      "endNode": "Const_PrimaryR_F19"
+    },
+    {
+      "id": "rF19_6",
+      "type": "HAS_CONSTRAINT",
+      "startNode": "Feat_F19",
+      "endNode": "Const_Surface_Skin"
+    },
+    {
+      "id": "rF19_7",
+      "type": "HAS_PROCESS",
+      "startNode": "Feat_F19",
+      "endNode": "Proc_Cast_Machining_F19"
+    },
+    {
+      "id": "rF19_8",
+      "type": "INCLUDES_STEP",
+      "startNode": "Proc_Cast_Machining_F19",
+      "endNode": "Step_Skin_Removal_F19"
+    },
+    {
+      "id": "rF19_9",
+      "type": "PRECEDES",
+      "startNode": "Step_Skin_Removal_F19",
+      "endNode": "Step_Center_Plunge_F19"
+    },
+    {
+      "id": "rF19_10",
+      "type": "INCLUDES_STEP",
+      "startNode": "Proc_Cast_Machining_F19",
+      "endNode": "Step_Center_Plunge_F19"
+    },
+    {
+      "id": "rF19_11",
+      "type": "PRECEDES",
+      "startNode": "Step_Center_Plunge_F19",
+      "endNode": "Step_Contour_Scan_F19"
+    },
+    {
+      "id": "rF19_12",
+      "type": "INCLUDES_STEP",
+      "startNode": "Proc_Cast_Machining_F19",
+      "endNode": "Step_Contour_Scan_F19"
+    },
+    {
+      "id": "rF19_13",
+      "type": "USES_TOOL",
+      "startNode": "Step_Center_Plunge_F19",
+      "endNode": "Insert_QC04_Cast_F19"
+    },
+    {
+      "id": "rF19_14",
+      "type": "HAS_HOLDER",
+      "startNode": "Insert_QC04_Cast_F19",
+      "endNode": "Holder_CFGL_F19"
+    },
+    {
+      "id": "rF19_15",
+      "type": "SET_PARAM",
+      "startNode": "Step_Contour_Scan_F19",
+      "endNode": "Param_Vc_Cast_F19"
+    },
+    {
+      "id": "rF19_16",
+      "type": "SET_PARAM",
+      "startNode": "Step_Contour_Scan_F19",
+      "endNode": "Param_ap_Cast_F19"
+    },
+    {
+      "id": "rF19_17",
+      "type": "APPLY_LOGIC",
+      "startNode": "Insert_QC04_Cast_F19",
+      "endNode": "Logic_Taylor_Formula"
+    },
+    {
+      "id": "rF19_18",
+      "type": "PRECEDES",
+      "startNode": "CoT_F19_1",
+      "endNode": "CoT_F19_2"
+    },
+    {
+      "id": "rF19_19",
+      "type": "PRECEDES",
+      "startNode": "CoT_F19_2",
+      "endNode": "CoT_F19_3"
+    },
+    {
+      "id": "rF19_20",
+      "type": "PRECEDES",
+      "startNode": "CoT_F19_3",
+      "endNode": "CoT_F19_4"
+    },
+    {
+      "id": "rF19_21",
+      "type": "PRECEDES",
+      "startNode": "CoT_F19_4",
+      "endNode": "CoT_F19_5"
+    },
+    {
+      "id": "rF19_22",
+      "type": "PRECEDES",
+      "startNode": "CoT_F19_5",
+      "endNode": "CoT_F19_6"
+    },
+    {
+      "id": "rF19_23",
+      "type": "HAS_ANALYSIS",
+      "startNode": "Feat_F19",
+      "endNode": "CoT_F19_1"
+    },
+    {
+      "id": "mF19_1",
+      "type": "DESCRIBED_BY_IMAGE",
+      "startNode": "Feat_F19",
+      "endNode": "Img_F19_01"
+    },
+    {
+      "id": "mF19_2",
+      "type": "DESCRIBED_BY_IMAGE",
+      "startNode": "Const_Surface_Skin",
+      "endNode": "Img_F19_02"
+    },
+    {
+      "id": "mF19_3",
+      "type": "DESCRIBED_BY_IMAGE",
+      "startNode": "Insert_QC04_Cast_F19",
+      "endNode": "Img_F19_03"
+    },
+    {
+      "id": "mF19_4",
+      "type": "DESCRIBED_BY_IMAGE",
+      "startNode": "Step_Skin_Removal_F19",
+      "endNode": "Img_F19_04"
+    },
+    {
+      "id": "mF19_5",
+      "type": "DESCRIBED_BY_IMAGE",
+      "startNode": "Logic_Taylor_Formula",
+      "endNode": "Img_F19_05"
+    },
+    {
+      "id": "mF19_6",
+      "type": "DESCRIBED_BY_IMAGE",
+      "startNode": "Mat_Cast_Steel_F19",
+      "endNode": "Img_F19_06"
+    },
+    {
+      "id": "mF19_7",
+      "type": "DESCRIBED_BY_IMAGE",
+      "startNode": "Step_Center_Plunge_F19",
+      "endNode": "Img_F19_07"
+    },
+    {
+      "id": "mF19_8",
+      "type": "DESCRIBED_BY_IMAGE",
+      "startNode": "Step_Contour_Scan_F19",
+      "endNode": "Img_F19_08"
+    },
+    {
+      "id": "mF19_9",
+      "type": "DESCRIBED_BY_IMAGE",
+      "startNode": "Param_ap_Cast_F19",
+      "endNode": "Img_F19_09"
+    },
+    {
+      "id": "mF19_10",
+      "type": "DESCRIBED_BY_IMAGE",
+      "startNode": "CoT_F19_6",
+      "endNode": "Img_F19_10"
+    },
+    {
+      "id": "mF19_11",
+      "type": "DESCRIBED_BY_IMAGE",
+      "startNode": "Param_f_Cast_F19",
+      "endNode": "Img_F19_11"
+    },
+    {
+      "id": "mF19_12",
+      "type": "DESCRIBED_BY_IMAGE",
+      "startNode": "Const_PrimaryR_F19",
+      "endNode": "Img_F19_12"
+    },
+    {
+      "id": "mF19_13",
+      "type": "DESCRIBED_BY_IMAGE",
+      "startNode": "Insert_QC04_Cast_F19",
+      "endNode": "Img_F19_13"
+    },
+    {
+      "id": "mF19_14",
+      "type": "DESCRIBED_BY_IMAGE",
+      "startNode": "Const_Surface_Skin",
+      "endNode": "Img_F19_14"
+    },
+    {
+      "id": "mF19_15",
+      "type": "DESCRIBED_BY_IMAGE",
+      "startNode": "CoT_F19_1",
+      "endNode": "Img_F19_15"
+    },
+    {
+      "id": "mF19_16",
+      "type": "DESCRIBED_BY_IMAGE",
+      "startNode": "Risk_EdgeWear_F19",
+      "endNode": "Img_F19_16"
+    },
+    {
+      "id": "mF19_17",
+      "type": "DESCRIBED_BY_IMAGE",
+      "startNode": "Const_Draft_F19",
+      "endNode": "Img_F19_17"
+    },
+    {
+      "id": "mF19_18",
+      "type": "DESCRIBED_BY_IMAGE",
+      "startNode": "Mat_Cast_Steel_F19",
+      "endNode": "Img_F19_18"
+    },
+    {
+      "id": "mF19_19",
+      "type": "DESCRIBED_BY_IMAGE",
+      "startNode": "Mat_Cast_Steel_F19",
+      "endNode": "Img_F19_19"
+    },
+    {
+      "id": "mF19_20",
+      "type": "DESCRIBED_BY_IMAGE",
+      "startNode": "Part_Monolithic_Casting",
+      "endNode": "Img_F19_20"
+    },
+    {
+      "id": "bridge_Cast_Ti",
+      "type": "MATERIAL_SWAP_COMPARISON",
+      "startNode": "Mat_Cast_Steel_F19",
+      "endNode": "Mat_Shared_Ti6Al4V",
+      "properties": {
+        "desc": "铸钢比钛合金具有更好的导热性但更强的磨蚀性，要求完全不同的切削涂层(WK084 vs WK083)"
+      }
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "nodes": [
+
+    { "id": "Part_VortexShell", "label": "零件", "properties": { "name": "航空机匣/涡轮壳体", "type": "Vortex Shell" }},
+    { "id": "Mat_Ti6Al4V_F00", "label": "材料", "properties": { "name": "钛合金 Ti-6AI-4V", "standard": "航空级标准" }},
+    { "id": "Comp_ModerateHigh", "label": "复杂度", "properties": { "name": "复杂度: 中高", "desc": "涉及大角度联动" }},
+
+
+    { "id": "Feat_F00", "label": "特征", "properties": { "name": "F00 大角度斜面槽", "raw_desc": "25°, R2, R1" }},
+
+    { "id": "Const_Draft_F00", "label": "几何约束", "properties": { "name": "侧壁斜度: 25.0°", "meaning": "关键约束/需偏转角" }},
+    { "id": "Const_BRadius_F00", "label": "几何约束", "properties": { "name": "底部圆角: R2.0mm", "meaning": "强约束/精加工准则" }},
+    { "id": "Const_FRadius_F00", "label": "几何约束", "properties": { "name": "上口过渡圆角: R1.0mm" }},
+    { "id": "Const_Depth_F00", "label": "几何约束", "properties": { "name": "槽深: 25mm", "reference": "刀柄高度25" }},
+    { "id": "Const_GWidth_F00", "label": "几何约束", "properties": { "name": "槽宽: >3.7mm", "meaning": "允许侧向进给" }},
+
+
+    { "id": "Holder_CFGL", "label": "Equipment", "properties": { "name": "刀杆: CFGL2525", "dim": "25x25x170mm" }},
+    { "id": "Insert_QC04_F00", "label": "Tool", "properties": { "name": "刀片: QC04-3.7R2", "substrate": "Carbide + AlTiN" }},
+
+  
+    { "id": "Proc_Rough_F00", "label": "工序", "properties": { "name": "粗加工工序: 扩槽铣/车" }},
+    { "id": "Step_Center_F00", "label": "工步", "properties": { "name": "1. 直落刀开中心槽" }},
+    { "id": "Step_Expand_F00", "label": "工步", "properties": { "name": "2. 分层横向扩槽", "allowance": "0.3mm" }},
+
+    { "id": "Proc_Semi_F00", "label": "工序", "properties": { "name": "半精加工工序: 斜面轨迹加工" }},
+    { "id": "Step_Staircase_F00", "label": "工步", "properties": { "name": "3. 阶梯状余量去除", "target": "25°斜面" }},
+
+    { "id": "Proc_Finish_F00", "label": "工序", "properties": { "name": "精加工工序: 全轮廓成型" }},
+    { "id": "Step_FullProfile_F00", "label": "工步", "properties": { "name": "4. 一次性切出R2及斜面" }},
+
+  
+    { "id": "Param_Vc_Rough_F00", "label": "切削参数", "properties": { "name": "粗加工 Vc: 55 m/min" }},
+    { "id": "Param_f_Rough_F00", "label": "切削参数", "properties": { "name": "粗加工 f: 0.12 mm/rev" }},
+    { "id": "Param_ap_Rough_F00", "label": "切削参数", "properties": { "name": "粗加工 ap: 2.0 mm" }},
+    { "id": "Param_Vc_Finish_F00", "label": "切削参数", "properties": { "name": "精加工 Vc: 85 m/min" }},
+    { "id": "Param_Cool_Flood", "label": "冷却策略", "properties": { "name": "全浸式冷却 (Flood Cooling)" }},
+
+
+    { "id": "CoT_F00_1", "label": "分析", "properties": { "name": "CoT 1: 识别25°斜面与R2底角" }},
+    { "id": "CoT_F00_2", "label": "分析", "properties": { "name": "CoT 2: 提取热负荷与变形风险" }},
+    { "id": "CoT_F00_3", "label": "分析", "properties": { "name": "CoT 3: 匹配QC04-3.7R2专用刀片" }},
+    { "id": "CoT_F00_4", "label": "分析", "properties": { "name": "CoT 4: 校验25x25刀杆抗侧向力" }},
+    { "id": "CoT_F00_5", "label": "分析", "properties": { "name": "CoT 5: 制定梯度扩槽卸力策略" }},
+    { "id": "CoT_F00_6", "label": "分析", "properties": { "name": "CoT 6: 设定Vc以平衡粘结磨损" }},
+
+
+    { "id": "Img_F00_01", "label": "Image", "properties": { "name": "F00特征全景图", "filename": "F00_1.png" }},
+    { "id": "Img_F00_02", "label": "Image", "properties": { "name": "斜面几何解析图", "filename": "F00_2.png" }},
+    { "id": "Img_F00_03", "label": "Image", "properties": { "name": "钛合金粘结磨损图", "filename": "F00_3.png" }},
+    { "id": "Img_F00_04", "label": "Image", "properties": { "name": "扩槽加工仿真轨迹", "filename": "F00_4.png" }},
+    { "id": "Img_F00_05", "label": "Image", "properties": { "name": "物理感知参数矩阵", "filename": "F00_5.png" }},
+    { "id": "Img_F00_06", "label": "Image", "properties": { "name": "粗加工切屑形态图", "filename": "F00_6.png" }},
+    { "id": "Img_F00_07", "label": "Image", "properties": { "name": "斜面阶梯去除示意图", "filename": "F00_7.png" }},
+    { "id": "Img_F00_08", "label": "Image", "properties": { "name": "一次成型刀路动图", "filename": "F00_8.png" }},
+    { "id": "Img_F00_09", "label": "Image", "properties": { "name": "刀尖R2受力分布图", "filename": "F00_9.png" }},
+    { "id": "Img_F00_10", "label": "Image", "properties": { "name": "25°干涉检查分析图", "filename": "F00_10.png" }},
+    { "id": "Img_F00_11", "label": "Image", "properties": { "name": "精加工Ra表面实测图", "filename": "F00_11.png" }},
+    { "id": "Img_F00_12", "label": "Image", "properties": { "name": "全浸式冷却覆盖图", "filename": "F00_12.png" }},
+    { "id": "Img_F00_13", "label": "Image", "properties": { "name": "AlTiN涂层微观形貌", "filename": "F00_13.png" }},
+    { "id": "Img_F00_14", "label": "Image", "properties": { "name": "加工系统刚性评估图", "filename": "F00_14.png" }},
+    { "id": "Img_F00_15", "label": "Image", "properties": { "name": "CoT思维推演逻辑图", "filename": "F00_15.png" }},
+    { "id": "Img_F00_16", "label": "Image", "properties": { "name": "切削区热平衡分析图", "filename": "F00_16.png" }},
+    { "id": "Img_F00_17", "label": "Image", "properties": { "name": "F00三维数字孪生图", "filename": "F00_17.png" }},
+    { "id": "Img_F00_18", "label": "Image", "properties": { "name": "定制刀片QC04图纸", "filename": "F00_18.png" }},
+    { "id": "Img_F00_19", "label": "Image", "properties": { "name": "加工效率提升对比图", "filename": "F00_19.png" }},
+    { "id": "Img_F00_20", "label": "Image", "properties": { "name": "F00最终合格质检图", "filename": "F00_20.png" }}
+  ],
+  "relationships": [
+    
+    { "id": "r1", "type": "HAS_MATERIAL", "startNode": "Part_VortexShell", "endNode": "Mat_Ti6Al4V_F00" },
+    { "id": "r2", "type": "HAS_COMPLEXITY", "startNode": "Feat_F00", "endNode": "Comp_ModerateHigh" },
+    { "id": "r3", "type": "HAS_FEATURE", "startNode": "Part_VortexShell", "endNode": "Feat_F00" },
+
+    
+    { "id": "r4", "type": "HAS_CONSTRAINT", "startNode": "Feat_F00", "endNode": "Const_Draft_F00" },
+    { "id": "r5", "type": "HAS_CONSTRAINT", "startNode": "Feat_F00", "endNode": "Const_BRadius_F00" },
+    { "id": "r6", "type": "HAS_CONSTRAINT", "startNode": "Feat_F00", "endNode": "Const_Depth_F00" },
+    { "id": "r7", "type": "HAS_CONSTRAINT", "startNode": "Feat_F00", "endNode": "Const_GWidth_F00" },
+
+    
+    { "id": "r8", "type": "HAS_PROCESS", "startNode": "Feat_F00", "endNode": "Proc_Rough_F00" },
+    { "id": "r9", "type": "INCLUDES_STEP", "startNode": "Proc_Rough_F00", "endNode": "Step_Center_F00" },
+    { "id": "r10", "type": "INCLUDES_STEP", "startNode": "Proc_Rough_F00", "endNode": "Step_Expand_F00" },
+    { "id": "r11", "type": "PRECEDES", "startNode": "Proc_Rough_F00", "endNode": "Proc_Semi_F00" },
+    { "id": "r12", "type": "HAS_PROCESS", "startNode": "Feat_F00", "endNode": "Proc_Semi_F00" },
+    { "id": "r13", "type": "INCLUDES_STEP", "startNode": "Proc_Semi_F00", "endNode": "Step_Staircase_F00" },
+    { "id": "r14", "type": "PRECEDES", "startNode": "Proc_Semi_F00", "endNode": "Proc_Finish_F00" },
+    { "id": "r15", "type": "INCLUDES_STEP", "startNode": "Proc_Finish_F00", "endNode": "Step_FullProfile_F00" },
+
+    
+    { "id": "r16", "type": "USES_TOOL", "startNode": "Step_FullProfile_F00", "endNode": "Insert_QC04_F00" },
+    { "id": "r17", "type": "HAS_HOLDER", "startNode": "Insert_QC04_F00", "endNode": "Holder_CFGL" },
+    { "id": "r18", "type": "SET_PARAM", "startNode": "Step_Center_F00", "endNode": "Param_Vc_Rough_F00" },
+    { "id": "r19", "type": "HAS_COOLANT", "startNode": "Step_Expand_F00", "endNode": "Param_Cool_Flood" },
+
+    
+    { "id": "r20", "type": "PRECEDES", "startNode": "CoT_F00_1", "endNode": "CoT_F00_2" },
+    { "id": "r21", "type": "PRECEDES", "startNode": "CoT_F00_2", "endNode": "CoT_F00_3" },
+    { "id": "r22", "type": "PRECEDES", "startNode": "CoT_F00_3", "endNode": "CoT_F00_4" },
+    { "id": "r23", "type": "PRECEDES", "startNode": "CoT_F00_4", "endNode": "CoT_F00_5" },
+    { "id": "r24", "type": "PRECEDES", "startNode": "CoT_F00_5", "endNode": "CoT_F00_6" },
+    { "id": "r25", "type": "HAS_ANALYSIS", "startNode": "Feat_F00", "endNode": "CoT_F00_1" },
+
+    
+    { "id": "m1", "type": "DESCRIBED_BY_IMAGE", "startNode": "Feat_F00", "endNode": "Img_F00_01" },
+    { "id": "m2", "type": "DESCRIBED_BY_IMAGE", "startNode": "Const_Draft_F00", "endNode": "Img_F00_02" },
+    { "id": "m3", "type": "DESCRIBED_BY_IMAGE", "startNode": "Mat_Ti6Al4V_F00", "endNode": "Img_F00_03" },
+    { "id": "m4", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_Expand_F00", "endNode": "Img_F00_04" },
+    { "id": "m5", "type": "DESCRIBED_BY_IMAGE", "startNode": "Param_Vc_Rough_F00", "endNode": "Img_F00_05" },
+    { "id": "m6", "type": "DESCRIBED_BY_IMAGE", "startNode": "Proc_Rough_F00", "endNode": "Img_F00_06" },
+    { "id": "m7", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_Staircase_F00", "endNode": "Img_F00_07" },
+    { "id": "m8", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_FullProfile_F00", "endNode": "Img_F00_08" },
+    { "id": "m9", "type": "DESCRIBED_BY_IMAGE", "startNode": "Const_BRadius_F00", "endNode": "Img_F00_09" },
+    { "id": "m10", "type": "DESCRIBED_BY_IMAGE", "startNode": "Const_FRadius_F00", "endNode": "Img_F00_10" },
+    { "id": "m11", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_FullProfile_F00", "endNode": "Img_F00_11" },
+    { "id": "m12", "type": "DESCRIBED_BY_IMAGE", "startNode": "Param_Cool_Flood", "endNode": "Img_F00_12" },
+    { "id": "m13", "type": "DESCRIBED_BY_IMAGE", "startNode": "Insert_QC04_F00", "endNode": "Img_F00_13" },
+    { "id": "m14", "type": "DESCRIBED_BY_IMAGE", "startNode": "Holder_CFGL", "endNode": "Img_F00_14" },
+    { "id": "m15", "type": "DESCRIBED_BY_IMAGE", "startNode": "CoT_F00_1", "endNode": "Img_F00_15" },
+    { "id": "m16", "type": "DESCRIBED_BY_IMAGE", "startNode": "Mat_Ti6Al4V_F00", "endNode": "Img_F00_16" },
+    { "id": "m17", "type": "DESCRIBED_BY_IMAGE", "startNode": "Feat_F00", "endNode": "Img_F00_17" },
+    { "id": "m18", "type": "DESCRIBED_BY_IMAGE", "startNode": "Insert_QC04_F00", "endNode": "Img_F00_18" },
+    { "id": "m19", "type": "DESCRIBED_BY_IMAGE", "startNode": "CoT_F00_5", "endNode": "Img_F00_19" },
+    { "id": "m20", "type": "DESCRIBED_BY_IMAGE", "startNode": "Part_VortexShell", "endNode": "Img_F00_20" }
+  ]
+}

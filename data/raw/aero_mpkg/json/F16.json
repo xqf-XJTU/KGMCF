@@ -1,0 +1,113 @@
+{
+  "nodes": [
+
+    { "id": "Part_Precision_Casing", "label": "零件", "properties": { "name": "航空发动机精密槽系组件", "geometric_class": "精密宽槽特征" }},
+    { "id": "Mat_Shared_Ti6Al4V", "label": "材料", "properties": { "name": "钛合金 Ti-6AI-4V", "challenge": "易磨损侧刃/加工硬化" }},
+    { "id": "Global_AeroEngine_Category", "label": "零件类型", "properties": { "name": "航空发动机关键组件" }},
+
+    { "id": "Feat_F16", "label": "特征", "properties": { "name": "F16 3.8mm 精密宽槽", "machining_mode": "Plunge & Side Turning (径向切入+侧向车削)" }},
+
+    { "id": "Const_TotalWidth_F16", "label": "几何约束", "properties": { "name": "目标宽度: 3.8mm", "precision": "精密级" }},
+    { "id": "Const_BottomR_F16", "label": "几何约束", "properties": { "name": "底角约束: R0.4mm" }},
+    { "id": "Const_ToolWidth_Limit_F16", "label": "几何约束", "properties": { "name": "刀具宽度约束: 3.0mm", "logic": "必须显著小于槽宽以留出补偿空间" }},
+    { "id": "Const_Clearance_F16", "label": "几何计算", "properties": { "name": "摆动自由度: 0.8mm", "formula": "3.8 - 3.0 = 0.8mm" }},
+    { "id": "Const_SideWall_Acc_F16", "label": "质量要求", "properties": { "name": "槽壁垂直度要求: 极高" }},
+
+    { "id": "Holder_CFGL_P03_WK081", "label": "Equipment", "properties": { "name": "3.0mm系统刀杆: CFGL2525", "desc": "适配QC03系列" }},
+    { "id": "Insert_QC03MO_F_F16", "label": "Tool", "properties": { "name": "精密宽刃刀片: QC03MO-F", "feature": "高精度研磨刃口/减少侧向抗力" }},
+
+    { "id": "Proc_Widening_F16", "label": "工序", "properties": { "name": "F16 小刀扩槽加工阶段" }},
+    { "id": "Step_CentralPlunge_F16", "label": "工步", "properties": { "name": "1. 中心直切 (Establish Reference)", "strategy": "Radial Feed" }},
+    { "id": "Step_LeftOffset_F16", "label": "工步", "properties": { "name": "2. 左侧偏移 0.4mm (Lateral Expansion)", "logic": "精加工左侧槽壁" }},
+    { "id": "Step_RightOffset_F16", "label": "工步", "properties": { "name": "3. 右侧偏移 0.4mm (Lateral Expansion)", "logic": "精加工右侧槽壁/确保总宽" }},
+
+    { "id": "Param_Vc_Finish_F16", "label": "切削参数", "properties": { "name": "精加工速度 Vc: 90 m/min", "reason": "侧向切削散热好/接触面积小" }},
+    { "id": "Param_f_Reduced_F16", "label": "切削参数", "properties": { "name": "偏移进给 f: 0.05 mm/rev", "logic": "侧向受力不平衡/降低30%进给以消除偏摆" }},
+    { "id": "Param_ap_Side_F16", "label": "切削参数", "properties": { "name": "侧向余量 ap: 0.4 mm", "method": "分两步去除" }},
+    { "id": "Risk_EdgeWear_F16", "label": "失效风险", "properties": { "name": "侧刃磨损风险 (Edge Wear)", "limit": "磨损0.02mm即导致3.8mm成型刀失效" }},
+    { "id": "Logic_SingleSided_Force", "label": "物理校验", "properties": { "name": "单边受力模型 (Physics Check)", "effect": "导致刀杆弹性偏摆" }},
+
+    { "id": "CoT_F16_1", "label": "分析", "properties": { "name": "Requirement: 3.8mm精密槽加工需求识别" }},
+    { "id": "CoT_F16_2", "label": "分析", "properties": { "name": "Conflict: 3.8mm成型刀在钛合金中磨损快且无法通过补偿修复" }},
+    { "id": "CoT_F16_3", "label": "分析", "properties": { "name": "Decision: 必须采用“小刀扩槽”专家策略" }},
+    { "id": "CoT_F16_4", "label": "分析", "properties": { "name": "Space: 预留0.8mm自由度实现槽宽闭环补偿" }},
+    { "id": "CoT_F16_5", "label": "分析", "properties": { "name": "Check: 侧向扩槽时单边受力导致不平衡" }},
+    { "id": "CoT_F16_6", "label": "分析", "properties": { "name": "Correction: 降低30%进给量以确保公差一致性" }},
+
+    { "id": "Img_F16_01", "label": "Image", "properties": { "name": "F16精密宽槽特征主图", "filename": "F16_1.png" }},
+    { "id": "Img_F16_02", "label": "Image", "properties": { "name": "3.8mm槽宽与侧壁垂直度要求图", "filename": "F16_2.png" }},
+    { "id": "Img_F16_03", "label": "Image", "properties": { "name": "3.8mm成型刀侧刃磨损失效案例", "filename": "F16_3.png" }},
+    { "id": "Img_F16_04", "label": "Image", "properties": { "name": "3.0mm刀片在槽内摆动自由度示意", "filename": "F16_4.png" }},
+    { "id": "Img_F16_05", "label": "Image", "properties": { "name": "中心切入(Central Plunge)轨迹图", "filename": "F16_5.png" }},
+    { "id": "Img_F16_06", "label": "Image", "properties": { "name": "单边受力(Single-sided Force)矢量分析", "filename": "F16_6.png" }},
+    { "id": "Img_F16_07", "label": "Image", "properties": { "name": "刀杆弹性偏摆(Deflection)仿真云图", "filename": "F16_7.png" }},
+    { "id": "Img_F16_08", "label": "Image", "properties": { "name": "侧向扩槽(Lateral Expansion)路径动图", "filename": "F16_8.png" }},
+    { "id": "Img_F16_09", "label": "Image", "properties": { "name": "0.4mm偏移余量分布示意", "filename": "F16_9.png" }},
+    { "id": "Img_F16_10", "label": "Image", "properties": { "name": "90m/min切速下侧向散热色图", "filename": "F16_10.png" }},
+    { "id": "Img_F16_11", "label": "Image", "properties": { "name": "进给降低30%后的表面粗糙度对比", "filename": "F16_11.png" }},
+    { "id": "Img_F16_12", "label": "Image", "properties": { "name": "闭环补偿逻辑(Closed-loop)流程图", "filename": "F16_12.png" }},
+    { "id": "Img_F16_13", "label": "Image", "properties": { "name": "QC03MO-F精磨刃口显微形貌", "filename": "F16_13.png" }},
+    { "id": "Img_F16_14", "label": "Image", "properties": { "name": "钛合金加工硬化层(Hardened Layer)检测", "filename": "F16_14.png" }},
+    { "id": "Img_F16_15", "label": "Image", "properties": { "name": "CoT“扩槽策略”决策逻辑图", "filename": "F16_15.png" }},
+    { "id": "Img_F16_16", "label": "Image", "properties": { "name": "槽壁垂直度(Verticality)测量报告", "filename": "F16_16.png" }},
+    { "id": "Img_F16_17", "label": "Image", "properties": { "name": "3.8mm总宽检具验证示意", "filename": "F16_17.png" }},
+    { "id": "Img_F16_18", "label": "Image", "properties": { "name": "刀尖R0.4与特征R角贴合图", "filename": "F16_18.png" }},
+    { "id": "Img_F16_19", "label": "Image", "properties": { "name": "WK081基体在侧车时的热稳定性", "filename": "F16_19.png" }},
+    { "id": "Img_F16_20", "label": "Image", "properties": { "name": "F16最终合格外观检全息图", "filename": "F16_20.png" }}
+  ],
+  "relationships": [
+
+    { "id": "rF16_1", "type": "HAS_PART_TYPE", "startNode": "Global_AeroEngine_Category", "endNode": "Part_Precision_Casing" },
+    { "id": "rF16_2", "type": "HAS_FEATURE", "startNode": "Part_Precision_Casing", "endNode": "Feat_F16" },
+    { "id": "rF16_3", "type": "USES_MATERIAL", "startNode": "Feat_F16", "endNode": "Mat_Shared_Ti6Al4V" },
+
+    { "id": "rF16_4", "type": "HAS_CONSTRAINT", "startNode": "Feat_F16", "endNode": "Const_TotalWidth_F16" },
+    { "id": "rF16_5", "type": "HAS_CONSTRAINT", "startNode": "Feat_F16", "endNode": "Const_ToolWidth_Limit_F16" },
+    { "id": "rF16_6", "type": "HAS_CONSTRAINT", "startNode": "Feat_F16", "endNode": "Const_SideWall_Acc_F16" },
+    { "id": "rF16_7", "type": "COMPUTE_CLEARANCE", "startNode": "Const_TotalWidth_F16", "endNode": "Const_Clearance_F16" },
+
+    { "id": "rF16_8", "type": "HAS_PROCESS", "startNode": "Feat_F16", "endNode": "Proc_Widening_F16" },
+    { "id": "rF16_9", "type": "INCLUDES_STEP", "startNode": "Proc_Widening_F16", "endNode": "Step_CentralPlunge_F16" },
+    { "id": "rF16_10", "type": "PRECEDES", "startNode": "Step_CentralPlunge_F16", "endNode": "Step_LeftOffset_F16" },
+    { "id": "rF16_11", "type": "INCLUDES_STEP", "startNode": "Proc_Widening_F16", "endNode": "Step_LeftOffset_F16" },
+    { "id": "rF16_12", "type": "PRECEDES", "startNode": "Step_LeftOffset_F16", "endNode": "Step_RightOffset_F16" },
+    { "id": "rF16_13", "type": "INCLUDES_STEP", "startNode": "Proc_Widening_F16", "endNode": "Step_RightOffset_F16" },
+
+    { "id": "rF16_14", "type": "USES_TOOL", "startNode": "Step_LeftOffset_F16", "endNode": "Insert_QC03MO_F_F16" },
+    { "id": "rF16_15", "type": "HAS_HOLDER", "startNode": "Insert_QC03MO_F_F16", "endNode": "Holder_CFGL_P03_WK081" },
+    { "id": "rF16_16", "type": "SET_PARAM", "startNode": "Step_LeftOffset_F16", "endNode": "Param_f_Reduced_F16" },
+    { "id": "rF16_17", "type": "SET_PARAM", "startNode": "Step_RightOffset_F16", "endNode": "Param_f_Reduced_F16" },
+    { "id": "rF16_18", "type": "APPLY_PHYSICS", "startNode": "Step_LeftOffset_F16", "endNode": "Logic_SingleSided_Force" },
+    { "id": "rF16_19", "type": "WARNING", "startNode": "Feat_F16", "endNode": "Risk_EdgeWear_F16" },
+
+    { "id": "rF16_20", "type": "PRECEDES", "startNode": "CoT_F16_1", "endNode": "CoT_F16_2" },
+    { "id": "rF16_21", "type": "PRECEDES", "startNode": "CoT_F16_2", "endNode": "CoT_F16_3" },
+    { "id": "rF16_22", "type": "PRECEDES", "startNode": "CoT_F16_3", "endNode": "CoT_F16_4" },
+    { "id": "rF16_23", "type": "PRECEDES", "startNode": "CoT_F16_4", "endNode": "CoT_F16_5" },
+    { "id": "rF16_24", "type": "PRECEDES", "startNode": "CoT_F16_5", "endNode": "CoT_F16_6" },
+    { "id": "rF16_25", "type": "HAS_ANALYSIS", "startNode": "Feat_F16", "endNode": "CoT_F16_1" },
+
+    { "id": "mF16_1", "type": "DESCRIBED_BY_IMAGE", "startNode": "Feat_F16", "endNode": "Img_F16_01" },
+    { "id": "mF16_2", "type": "DESCRIBED_BY_IMAGE", "startNode": "Const_TotalWidth_F16", "endNode": "Img_F16_02" },
+    { "id": "mF16_3", "type": "DESCRIBED_BY_IMAGE", "startNode": "Risk_EdgeWear_F16", "endNode": "Img_F16_03" },
+    { "id": "mF16_4", "type": "DESCRIBED_BY_IMAGE", "startNode": "Const_Clearance_F16", "endNode": "Img_F16_04" },
+    { "id": "mF16_5", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_CentralPlunge_F16", "endNode": "Img_F16_05" },
+    { "id": "mF16_6", "type": "DESCRIBED_BY_IMAGE", "startNode": "Logic_SingleSided_Force", "endNode": "Img_F16_06" },
+    { "id": "mF16_7", "type": "DESCRIBED_BY_IMAGE", "startNode": "Logic_SingleSided_Force", "endNode": "Img_F16_07" },
+    { "id": "mF16_8", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_LeftOffset_F16", "endNode": "Img_F16_08" },
+    { "id": "mF16_9", "type": "DESCRIBED_BY_IMAGE", "startNode": "Param_ap_Side_F16", "endNode": "Img_F16_09" },
+    { "id": "mF16_10", "type": "DESCRIBED_BY_IMAGE", "startNode": "Param_Vc_Finish_F16", "endNode": "Img_F16_10" },
+    { "id": "mF16_11", "type": "DESCRIBED_BY_IMAGE", "startNode": "Param_f_Reduced_F16", "endNode": "Img_F16_11" },
+    { "id": "mF16_12", "type": "DESCRIBED_BY_IMAGE", "startNode": "CoT_F16_3", "endNode": "Img_F16_12" },
+    { "id": "mF16_13", "type": "DESCRIBED_BY_IMAGE", "startNode": "Insert_QC03MO_F_F16", "endNode": "Img_F16_13" },
+    { "id": "mF16_14", "type": "DESCRIBED_BY_IMAGE", "startNode": "Mat_Shared_Ti6Al4V", "endNode": "Img_F16_14" },
+    { "id": "mF16_15", "type": "DESCRIBED_BY_IMAGE", "startNode": "CoT_F16_1", "endNode": "Img_F16_15" },
+    { "id": "mF16_16", "type": "DESCRIBED_BY_IMAGE", "startNode": "Const_SideWall_Acc_F16", "endNode": "Img_F16_16" },
+    { "id": "mF16_17", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_RightOffset_F16", "endNode": "Img_F16_17" },
+    { "id": "mF16_18", "type": "DESCRIBED_BY_IMAGE", "startNode": "Const_BottomR_F16", "endNode": "Img_F16_18" },
+    { "id": "mF16_19", "type": "DESCRIBED_BY_IMAGE", "startNode": "Insert_QC03MO_F_F16", "endNode": "Img_F16_19" },
+    { "id": "mF16_20", "type": "DESCRIBED_BY_IMAGE", "startNode": "Part_Precision_Casing", "endNode": "Img_F16_20" },
+
+    { "id": "bridge_F16_F15", "type": "STRATEGY_VARIANT", "startNode": "Feat_F16", "endNode": "Feat_F15", "properties": { "desc": "F16采用侧向偏移扩宽(Offsetting)，F15采用联动插补仿形(Circular Gen)，反映了槽宽与刀宽比例对策略的影响" }}
+  ]
+}

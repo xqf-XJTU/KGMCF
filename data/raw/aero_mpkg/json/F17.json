@@ -1,0 +1,112 @@
+{
+  "nodes": [
+
+    { "id": "Part_Casing_ExtremeRadius", "label": "零件", "properties": { "name": "航空发动机大半径型面组件", "geometric_key": "Extreme Radius Ratio" }},
+    { "id": "Mat_Shared_Ti6Al4V", "label": "材料", "properties": { "name": "钛合金 Ti-6AI-4V", "desc": "高韧性/加工硬化/低导热" }},
+    { "id": "Global_AeroEngine_Category", "label": "零件类型", "properties": { "name": "航空发动机关键组件" }},
+
+    { "id": "Feat_F17", "label": "特征", "properties": { "name": "F17 大半径过渡型面槽", "access_constraint": "3.0mm Narrow Entry" }},
+
+    { "id": "Const_Draft_F17", "label": "几何约束", "properties": { "name": "侧壁斜度: 19.5°", "note": "非标拔模角" }},
+    { "id": "Const_MinR_F17", "label": "几何约束", "properties": { "name": "底部最小半径: R2.0mm" }},
+    { "id": "Const_MaxR_F17", "label": "几何约束", "properties": { "name": "型面最大半径: R7.0mm", "challenge": "成型障碍/曲率过大" }},
+    { "id": "Const_WidthLimit_F17", "label": "几何约束", "properties": { "name": "入口宽度限制: 3.0mm", "logic": "强约束/限制刀具直径" }},
+    { "id": "Const_ToolLogic_F17", "label": "几何推论", "properties": { "name": "极限刀具半径: R<=1.5mm", "meaning": "进入空间的几何极限" }},
+
+    { "id": "Holder_CFGL_P03_WK082", "label": "Equipment", "properties": { "name": "3.0mm系统刀杆: CFGL-WK082", "orientation": "External Profile" }},
+    { "id": "Insert_QC03MO_F17", "label": "Tool", "properties": { "name": "窄刃长悬伸仿形刀片: QC03MO-F", "coating": "WK082 (高摩擦热优化)" }},
+
+    { "id": "Proc_RadiusGen_F17", "label": "工序", "properties": { "name": "F17 大曲率展成加工阶段" }},
+    { "id": "Step_GrooveOpen_F17", "label": "工步", "properties": { "name": "1. 直插开槽 (Groove Opening)", "strategy": "Plunge Milling" }},
+    { "id": "Step_ScallopTrace_F17", "label": "工步", "properties": { "name": "2. 残留高度控制仿形 (Scallop-Controlled)", "step_over": "0.05mm轴向步距" }},
+    { "id": "Step_PathSmoothing_F17", "label": "工步", "properties": { "name": "3. 连续路径平滑加工 (Continuous Smoothing)", "goal": "消除接刀痕" }},
+
+    { "id": "Param_Vc_Radius_F17", "label": "切削参数", "properties": { "name": "扫描切速 Vc: 85 m/min", "warning": "大面积扫掠产热快" }},
+    { "id": "Param_f_Mirror_F17", "label": "切削参数", "properties": { "name": "镜面进给 f: 0.02 mm/rev", "logic": "为了Ra<0.4镜面效果设定" }},
+    { "id": "Param_ap_Micro_F17", "label": "切削参数", "properties": { "name": "微量切深 ap: 0.05 mm", "goal": "减小刀具弹刀变形" }},
+    { "id": "Risk_PathLength_Wear", "label": "失效风险", "properties": { "name": "长路径磨损畸变", "reason": "加工路径≈普通槽5倍" }},
+    { "id": "Logic_Tool_Calibration", "label": "工艺决策", "properties": { "name": "刀具补偿校验 (Tool Offset Calibration)", "frequency": "加工R7区域前进行" }},
+
+    { "id": "CoT_F17_1", "label": "分析", "properties": { "name": "Input: 识别19.5°斜面与R2/R7悬殊圆角" }},
+    { "id": "CoT_F17_2", "label": "分析", "properties": { "name": "Conflict: R7圆角需求与3mm通道的几何矛盾" }},
+    { "id": "CoT_F17_3", "label": "分析", "properties": { "name": "Decision: 核心采用“极小步距展成法”" }},
+    { "id": "CoT_F17_4", "label": "分析", "properties": { "name": "Tooling: 选择R1.5全圆头刀片进入极限空间" }},
+    { "id": "CoT_F17_5", "label": "分析", "properties": { "name": "Physics: 预警路径长度5倍导致的刀尖形状变化" }},
+    { "id": "CoT_F17_6", "label": "分析", "properties": { "name": "Strategy: 设定0.02mm进给并建议中途补偿以保精度" }},
+
+    { "id": "Img_F17_01", "label": "Image", "properties": { "name": "F17悬殊圆角特征剖面图", "filename": "F17_1.png" }},
+    { "id": "Img_F17_02", "label": "Image", "properties": { "name": "3mm通道几何极限进入分析", "filename": "F17_2.png" }},
+    { "id": "Img_F17_03", "label": "Image", "properties": { "name": "R1.5刀尖扫掠R7型面轨迹图", "filename": "F17_3.png" }},
+    { "id": "Img_F17_04", "label": "Image", "properties": { "name": "0.05mm步距(Step-over)精细云图", "filename": "F17_4.png" }},
+    { "id": "Img_F17_05", "label": "Image", "properties": { "name": "刀具磨损导致的R7形状畸变分析", "filename": "F17_5.png" }},
+    { "id": "Img_F17_06", "label": "Image", "properties": { "name": "镜面表面(Ra<0.4)干涉仪实测图", "filename": "F17_6.png" }},
+    { "id": "Img_F17_07", "label": "Image", "properties": { "name": "长路径切削热累积色谱仿真", "filename": "F17_7.png" }},
+    { "id": "Img_F17_08", "label": "Image", "properties": { "name": "刀杆弹刀(Spring-back)补偿模型", "filename": "F17_8.png" }},
+    { "id": "Img_F17_09", "label": "Image", "properties": { "name": "中途刀具对刀补偿(Offset)画面", "filename": "F17_9.png" }},
+    { "id": "Img_F17_10", "label": "Image", "properties": { "name": "QC03MO-WK082涂层显微观察", "filename": "F17_10.png" }},
+    { "id": "Img_F17_11", "label": "Image", "properties": { "name": "非线性插补G代码代码块", "filename": "F17_11.png" }},
+    { "id": "Img_F17_12", "label": "Image", "properties": { "name": "连续平滑路径消除接刀痕对比", "filename": "F17_12.png" }},
+    { "id": "Img_F17_13", "label": "Image", "properties": { "name": "钛合金长路径切屑形态变化图", "filename": "F17_13.png" }},
+    { "id": "Img_F17_14", "label": "Image", "properties": { "name": "5倍路径长度(Path Length)示意图", "filename": "F17_14.png" }},
+    { "id": "Img_F17_15", "label": "Image", "properties": { "name": "CoT极小步距展成决策流图", "filename": "F17_15.png" }},
+    { "id": "Img_F17_16", "label": "Image", "properties": { "name": "3.0mm刀杆在19.5°壁侧的间隙检查", "filename": "F17_16.png" }},
+    { "id": "Img_F17_17", "label": "Image", "properties": { "name": "特征深度与R7弧长的几何关系", "filename": "F17_17.png" }},
+    { "id": "Img_F17_18", "label": "Image", "properties": { "name": "低抗力断屑槽精密细节图", "filename": "F17_18.png" }},
+    { "id": "Img_F17_19", "label": "Image", "properties": { "name": "精加工效率与质量平衡曲线", "filename": "F17_19.png" }},
+    { "id": "Img_F17_20", "label": "Image", "properties": { "name": "F17特征三维扫描最终合格报告", "filename": "F17_20.png" }}
+  ],
+  "relationships": [
+
+    { "id": "rF17_1", "type": "HAS_PART_TYPE", "startNode": "Global_AeroEngine_Category", "endNode": "Part_Casing_ExtremeRadius" },
+    { "id": "rF17_2", "type": "HAS_FEATURE", "startNode": "Part_Casing_ExtremeRadius", "endNode": "Feat_F17" },
+    { "id": "rF17_3", "type": "USES_MATERIAL", "startNode": "Feat_F17", "endNode": "Mat_Shared_Ti6Al4V" },
+
+    { "id": "rF17_4", "type": "HAS_CONSTRAINT", "startNode": "Feat_F17", "endNode": "Const_MaxR_F17" },
+    { "id": "rF17_5", "type": "HAS_CONSTRAINT", "startNode": "Feat_F17", "endNode": "Const_WidthLimit_F17" },
+    { "id": "rF17_6", "type": "DERIVE_LOGIC", "startNode": "Const_WidthLimit_F17", "endNode": "Const_ToolLogic_F17" },
+
+    { "id": "rF17_7", "type": "HAS_PROCESS", "startNode": "Feat_F17", "endNode": "Proc_RadiusGen_F17" },
+    { "id": "rF17_8", "type": "INCLUDES_STEP", "startNode": "Proc_RadiusGen_F17", "endNode": "Step_GrooveOpen_F17" },
+    { "id": "rF17_9", "type": "PRECEDES", "startNode": "Step_GrooveOpen_F17", "endNode": "Step_ScallopTrace_F17" },
+    { "id": "rF17_10", "type": "INCLUDES_STEP", "startNode": "Proc_RadiusGen_F17", "endNode": "Step_ScallopTrace_F17" },
+    { "id": "rF17_11", "type": "PRECEDES", "startNode": "Step_ScallopTrace_F17", "endNode": "Step_PathSmoothing_F17" },
+    { "id": "rF17_12", "type": "INCLUDES_STEP", "startNode": "Proc_RadiusGen_F17", "endNode": "Step_PathSmoothing_F17" },
+
+    { "id": "rF17_13", "type": "USES_TOOL", "startNode": "Step_ScallopTrace_F17", "endNode": "Insert_QC03MO_F17" },
+    { "id": "rF17_14", "type": "HAS_HOLDER", "startNode": "Insert_QC03MO_F17", "endNode": "Holder_CFGL_P03_WK082" },
+    { "id": "rF17_15", "type": "SET_PARAM", "startNode": "Step_ScallopTrace_F17", "endNode": "Param_f_Mirror_F17" },
+    { "id": "rF17_16", "type": "SET_PARAM", "startNode": "Step_ScallopTrace_F17", "endNode": "Param_Vc_Radius_F17" },
+    { "id": "rF17_17", "type": "MONITOR_RISK", "startNode": "Step_ScallopTrace_F17", "endNode": "Risk_PathLength_Wear" },
+    { "id": "rF17_18", "type": "EXECUTE_CALIBRATION", "startNode": "Step_PathSmoothing_F17", "endNode": "Logic_Tool_Calibration" },
+
+    { "id": "rF17_19", "type": "PRECEDES", "startNode": "CoT_F17_1", "endNode": "CoT_F17_2" },
+    { "id": "rF17_20", "type": "PRECEDES", "startNode": "CoT_F17_2", "endNode": "CoT_F17_3" },
+    { "id": "rF17_21", "type": "PRECEDES", "startNode": "CoT_F17_3", "endNode": "CoT_F17_4" },
+    { "id": "rF17_22", "type": "PRECEDES", "startNode": "CoT_F17_4", "endNode": "CoT_F17_5" },
+    { "id": "rF17_23", "type": "PRECEDES", "startNode": "CoT_F17_5", "endNode": "CoT_F17_6" },
+    { "id": "rF17_24", "type": "HAS_ANALYSIS", "startNode": "Feat_F17", "endNode": "CoT_F17_1" },
+
+    { "id": "mF17_1", "type": "DESCRIBED_BY_IMAGE", "startNode": "Feat_F17", "endNode": "Img_F17_01" },
+    { "id": "mF17_2", "type": "DESCRIBED_BY_IMAGE", "startNode": "Const_WidthLimit_F17", "endNode": "Img_F17_02" },
+    { "id": "mF17_3", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_ScallopTrace_F17", "endNode": "Img_F17_03" },
+    { "id": "mF17_4", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_ScallopTrace_F17", "endNode": "Img_F17_04" },
+    { "id": "mF17_5", "type": "DESCRIBED_BY_IMAGE", "startNode": "Risk_PathLength_Wear", "endNode": "Img_F17_05" },
+    { "id": "mF17_6", "type": "DESCRIBED_BY_IMAGE", "startNode": "Param_f_Mirror_F17", "endNode": "Img_F17_06" },
+    { "id": "mF17_7", "type": "DESCRIBED_BY_IMAGE", "startNode": "Param_Vc_Radius_F17", "endNode": "Img_F17_07" },
+    { "id": "mF17_8", "type": "DESCRIBED_BY_IMAGE", "startNode": "Param_ap_Micro_F17", "endNode": "Img_F17_08" },
+    { "id": "mF17_9", "type": "DESCRIBED_BY_IMAGE", "startNode": "Logic_Tool_Calibration", "endNode": "Img_F17_09" },
+    { "id": "mF17_10", "type": "DESCRIBED_BY_IMAGE", "startNode": "Insert_QC03MO_F17", "endNode": "Img_F17_10" },
+    { "id": "mF17_11", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_ScallopTrace_F17", "endNode": "Img_F17_11" },
+    { "id": "mF17_12", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_PathSmoothing_F17", "endNode": "Img_F17_12" },
+    { "id": "mF17_13", "type": "DESCRIBED_BY_IMAGE", "startNode": "Mat_Shared_Ti6Al4V", "endNode": "Img_F17_13" },
+    { "id": "mF17_14", "type": "DESCRIBED_BY_IMAGE", "startNode": "Risk_PathLength_Wear", "endNode": "Img_F17_14" },
+    { "id": "mF17_15", "type": "DESCRIBED_BY_IMAGE", "startNode": "CoT_F17_1", "endNode": "Img_F17_15" },
+    { "id": "mF17_16", "type": "DESCRIBED_BY_IMAGE", "startNode": "Const_Draft_F17", "endNode": "Img_F17_16" },
+    { "id": "mF17_17", "type": "DESCRIBED_BY_IMAGE", "startNode": "Const_MaxR_F17", "endNode": "Img_F17_17" },
+    { "id": "mF17_18", "type": "DESCRIBED_BY_IMAGE", "startNode": "Insert_QC03MO_F17", "endNode": "Img_F17_18" },
+    { "id": "mF17_19", "type": "DESCRIBED_BY_IMAGE", "startNode": "CoT_F17_6", "endNode": "Img_F17_19" },
+    { "id": "mF17_20", "type": "DESCRIBED_BY_IMAGE", "startNode": "Part_Casing_ExtremeRadius", "endNode": "Img_F17_20" },
+
+    { "id": "bridge_F17_F15", "type": "RADIUS_RATIO_EVOLUTION", "startNode": "Feat_F17", "endNode": "Feat_F15", "properties": { "desc": "均处理3mm入口窄槽，但F17包含更极端的R7曲率，要求更精细的Scallop步距控制和长路径磨损补偿" }}
+  ]
+}

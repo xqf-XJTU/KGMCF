@@ -1,0 +1,107 @@
+{
+  "nodes": [
+
+    { "id": "Part_CasingMicro", "label": "零件", "properties": { "name": "航空发动机精密微型组件", "type": "精密机匣" }},
+    { "id": "Mat_Shared_Ti6Al4V", "label": "材料", "properties": { "name": "钛合金 Ti-6AI-4V", "desc": "高韧性/易粘刀" }},
+    { "id": "Global_AeroEngine_Category", "label": "零件类型", "properties": { "name": "航空发动机关键组件" }},
+
+    { "id": "Feat_F10", "label": "特征", "properties": { "name": "F10 精密微型槽", "class": "微型特征 (Micro-Feature)" }},
+
+    { "id": "Const_SlotWidth_F10", "label": "几何约束", "properties": { "name": "槽宽约束: 1.6mm", "meaning": "刀宽等于槽宽/零间隙" }},
+    { "id": "Const_BottomR_F10", "label": "几何约束", "properties": { "name": "底角约束: R0.4mm", "priority": "强约束" }},
+    { "id": "Const_Depth_F10", "label": "几何约束", "properties": { "name": "槽深约束: <3mm", "limit": "通常不超过2倍刀宽" }},
+    { "id": "Const_Tolerance_F10", "label": "几何约束", "properties": { "name": "公差等级: H7/h6", "precision": "极高" }},
+
+    { "id": "Holder_CFGL_PU2", "label": "Equipment", "properties": { "name": "微型切槽刀杆: CFGL-PU2", "system": "PU2 Micro System" }},
+    { "id": "Insert_U2R_Micro", "label": "Tool", "properties": { "name": "精密定宽刀片: U2R-1.6", "substrate": "微颗粒硬质合金 (Micro-Grain)" }},
+
+    { "id": "Proc_MicroSlotting_F10", "label": "工序", "properties": { "name": "精密微型切槽阶段" }},
+    { "id": "Step_PeckGrooving_F10", "label": "工步", "properties": { "name": "1. 啄式切槽 (Peck Cycle)", "logic": "每次切入0.5mm后退刀" }},
+    { "id": "Step_Dwell_F10", "label": "工步", "properties": { "name": "2. 光整驻留 (Dwell)", "desc": "停顿2-3转消除弹性变形" }},
+
+    { "id": "Param_Vc_F10", "label": "切削参数", "properties": { "name": "切削速度 Vc: 80 m/min", "reason": "微型刀具直径小需高转速" }},
+    { "id": "Param_f_Safety_F10", "label": "切削参数", "properties": { "name": "安全进给 f: 0.02 mm/rev", "limit": "绝对严禁超过0.05" }},
+    { "id": "Param_Q_Value_F10", "label": "切削参数", "properties": { "name": "啄钻深度 Q: 0.3-0.5 mm", "goal": "物理带出碎屑" }},
+    { "id": "Risk_ToolBreakage", "label": "风险分析", "properties": { "name": "崩刀/折断风险 (Tool Breakage)", "trigger": "排屑阻塞" }},
+
+    { "id": "CoT_F10_1", "label": "分析", "properties": { "name": "CoT 1: 识别1.6mm极窄空间特征" }},
+    { "id": "CoT_F10_2", "label": "分析", "properties": { "name": "CoT 2: 评估零间隙排屑阻塞挑战" }},
+    { "id": "CoT_F10_3", "label": "分析", "properties": { "name": "CoT 3: 匹配PU2微型专用刀具系统" }},
+    { "id": "CoT_F10_4", "label": "分析", "properties": { "name": "CoT 4: 决策放弃连续进刀/采用啄式循环" }},
+    { "id": "CoT_F10_5", "label": "分析", "properties": { "name": "CoT 5: 设定0.02mm极低进给量优先保证安全" }},
+    { "id": "CoT_F10_6", "label": "分析", "properties": { "name": "CoT 6: 引入驻留逻辑保证H7级底面公差" }},
+
+    { "id": "Img_F10_01", "label": "Image", "properties": { "name": "F10微型槽特征宏观图", "filename": "F10_1.png" }},
+    { "id": "Img_F10_02", "label": "Image", "properties": { "name": "1.6mm槽宽显微测量图", "filename": "F10_2.png" }},
+    { "id": "Img_F10_03", "label": "Image", "properties": { "name": "PU2刀杆紧凑结构实拍", "filename": "F10_3.png" }},
+    { "id": "Img_F10_04", "label": "Image", "properties": { "name": "G75啄式循环轨迹轨迹仿真", "filename": "F10_4.png" }},
+    { "id": "Img_F10_05", "label": "Image", "properties": { "name": "微颗粒硬质合金金相组织", "filename": "F10_5.png" }},
+    { "id": "Img_F10_06", "label": "Image", "properties": { "name": "排屑阻塞(Clogging)失效案例", "filename": "F10_6.png" }},
+    { "id": "Img_F10_07", "label": "Image", "properties": { "name": "微型碎切屑形态监控", "filename": "F10_7.png" }},
+    { "id": "Img_F10_08", "label": "Image", "properties": { "name": "驻留(Dwell)消除让刀示意图", "filename": "F10_8.png" }},
+    { "id": "Img_F10_09", "label": "Image", "properties": { "name": "进给量对微型刀片负荷影响", "filename": "F10_9.png" }},
+    { "id": "Img_F10_10", "label": "Image", "properties": { "name": "PVD薄涂层刃口检测图", "filename": "F10_10.png" }},
+    { "id": "Img_F10_11", "label": "Image", "properties": { "name": "H7/h6公差带对比图", "filename": "F10_11.png" }},
+    { "id": "Img_F10_12", "label": "Image", "properties": { "name": "微型特征三维点云报告", "filename": "F10_12.png" }},
+    { "id": "Img_F10_13", "label": "Image", "properties": { "name": "切削速度与刀尖转速换算图", "filename": "F10_13.png" }},
+    { "id": "Img_F10_14", "label": "Image", "properties": { "name": "Q值(啄深)对断屑影响分析", "filename": "F10_14.png" }},
+    { "id": "Img_F10_15", "label": "Image", "properties": { "name": "CoT精密微型槽决策流图", "filename": "F10_15.png" }},
+    { "id": "Img_F10_16", "label": "Image", "properties": { "name": "高频退刀动作动态解析", "filename": "F10_16.png" }},
+    { "id": "Img_F10_17", "label": "Image", "properties": { "name": "钛合金微量切削热分布图", "filename": "F10_17.png" }},
+    { "id": "Img_F10_18", "label": "Image", "properties": { "name": "刀片1.6mm定宽精密检具", "filename": "F10_18.png" }},
+    { "id": "Img_F10_19", "label": "Image", "properties": { "name": "安全系数与效率平衡曲线", "filename": "F10_19.png" }},
+    { "id": "Img_F10_20", "label": "Image", "properties": { "name": "F10最终显微质检合格单", "filename": "F10_20.png" }}
+  ],
+  "relationships": [
+
+    { "id": "rF10_1", "type": "HAS_PART_TYPE", "startNode": "Global_AeroEngine_Category", "endNode": "Part_CasingMicro" },
+    { "id": "rF10_2", "type": "HAS_FEATURE", "startNode": "Part_CasingMicro", "endNode": "Feat_F10" },
+    { "id": "rF10_3", "type": "USES_MATERIAL", "startNode": "Feat_F10", "endNode": "Mat_Shared_Ti6Al4V" },
+
+    { "id": "rF10_4", "type": "HAS_CONSTRAINT", "startNode": "Feat_F10", "endNode": "Const_SlotWidth_F10" },
+    { "id": "rF10_5", "type": "HAS_CONSTRAINT", "startNode": "Feat_F10", "endNode": "Const_BottomR_F10" },
+    { "id": "rF10_6", "type": "HAS_CONSTRAINT", "startNode": "Feat_F10", "endNode": "Const_Depth_F10" },
+    { "id": "rF10_7", "type": "HAS_CONSTRAINT", "startNode": "Feat_F10", "endNode": "Const_Tolerance_F10" },
+
+    { "id": "rF10_8", "type": "HAS_PROCESS", "startNode": "Feat_F10", "endNode": "Proc_MicroSlotting_F10" },
+    { "id": "rF10_9", "type": "INCLUDES_STEP", "startNode": "Proc_MicroSlotting_F10", "endNode": "Step_PeckGrooving_F10" },
+    { "id": "rF10_10", "type": "PRECEDES", "startNode": "Step_PeckGrooving_F10", "endNode": "Step_Dwell_F10" },
+    { "id": "rF10_11", "type": "INCLUDES_STEP", "startNode": "Proc_MicroSlotting_F10", "endNode": "Step_Dwell_F10" },
+
+    { "id": "rF10_12", "type": "USES_TOOL", "startNode": "Step_PeckGrooving_F10", "endNode": "Insert_U2R_Micro" },
+    { "id": "rF10_13", "type": "HAS_HOLDER", "startNode": "Insert_U2R_Micro", "endNode": "Holder_CFGL_PU2" },
+    { "id": "rF10_14", "type": "SET_PARAM", "startNode": "Step_PeckGrooving_F10", "endNode": "Param_f_Safety_F10" },
+    { "id": "rF10_15", "type": "SET_PARAM", "startNode": "Step_PeckGrooving_F10", "endNode": "Param_Q_Value_F10" },
+    { "id": "rF10_16", "type": "IDENTIFIES_RISK", "startNode": "Const_SlotWidth_F10", "endNode": "Risk_ToolBreakage" },
+
+    { "id": "rF10_17", "type": "PRECEDES", "startNode": "CoT_F10_1", "endNode": "CoT_F10_2" },
+    { "id": "rF10_18", "type": "PRECEDES", "startNode": "CoT_F10_2", "endNode": "CoT_F10_3" },
+    { "id": "rF10_19", "type": "PRECEDES", "startNode": "CoT_F10_3", "endNode": "CoT_F10_4" },
+    { "id": "rF10_20", "type": "PRECEDES", "startNode": "CoT_F10_4", "endNode": "CoT_F10_5" },
+    { "id": "rF10_21", "type": "PRECEDES", "startNode": "CoT_F10_5", "endNode": "CoT_F10_6" },
+    { "id": "rF10_22", "type": "HAS_ANALYSIS", "startNode": "Feat_F10", "endNode": "CoT_F10_1" },
+
+    { "id": "mF10_1", "type": "DESCRIBED_BY_IMAGE", "startNode": "Feat_F10", "endNode": "Img_F10_01" },
+    { "id": "mF10_2", "type": "DESCRIBED_BY_IMAGE", "startNode": "Const_SlotWidth_F10", "endNode": "Img_F10_02" },
+    { "id": "mF10_3", "type": "DESCRIBED_BY_IMAGE", "startNode": "Holder_CFGL_PU2", "endNode": "Img_F10_03" },
+    { "id": "mF10_4", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_PeckGrooving_F10", "endNode": "Img_F10_04" },
+    { "id": "mF10_5", "type": "DESCRIBED_BY_IMAGE", "startNode": "Insert_U2R_Micro", "endNode": "Img_F10_05" },
+    { "id": "mF10_6", "type": "DESCRIBED_BY_IMAGE", "startNode": "Risk_ToolBreakage", "endNode": "Img_F10_06" },
+    { "id": "mF10_7", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_PeckGrooving_F10", "endNode": "Img_F10_07" },
+    { "id": "mF10_8", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_Dwell_F10", "endNode": "Img_F10_08" },
+    { "id": "mF10_9", "type": "DESCRIBED_BY_IMAGE", "startNode": "Param_f_Safety_F10", "endNode": "Img_F10_09" },
+    { "id": "mF10_10", "type": "DESCRIBED_BY_IMAGE", "startNode": "Insert_U2R_Micro", "endNode": "Img_F10_10" },
+    { "id": "mF10_11", "type": "DESCRIBED_BY_IMAGE", "startNode": "Const_Tolerance_F10", "endNode": "Img_F10_11" },
+    { "id": "mF10_12", "type": "DESCRIBED_BY_IMAGE", "startNode": "Feat_F10", "endNode": "Img_F10_12" },
+    { "id": "mF10_13", "type": "DESCRIBED_BY_IMAGE", "startNode": "Param_Vc_F10", "endNode": "Img_F10_13" },
+    { "id": "mF10_14", "type": "DESCRIBED_BY_IMAGE", "startNode": "Param_Q_Value_F10", "endNode": "Img_F10_14" },
+    { "id": "mF10_15", "type": "DESCRIBED_BY_IMAGE", "startNode": "CoT_F10_1", "endNode": "Img_F10_15" },
+    { "id": "mF10_16", "type": "DESCRIBED_BY_IMAGE", "startNode": "CoT_F10_4", "endNode": "Img_F10_16" },
+    { "id": "mF10_17", "type": "DESCRIBED_BY_IMAGE", "startNode": "Mat_Shared_Ti6Al4V", "endNode": "Img_F10_17" },
+    { "id": "mF10_18", "type": "DESCRIBED_BY_IMAGE", "startNode": "Insert_U2R_Micro", "endNode": "Img_F10_18" },
+    { "id": "mF10_19", "type": "DESCRIBED_BY_IMAGE", "startNode": "CoT_F10_5", "endNode": "Img_F10_19" },
+    { "id": "mF10_20", "type": "DESCRIBED_BY_IMAGE", "startNode": "Part_CasingMicro", "endNode": "Img_F10_20" },
+
+    { "id": "bridge_F10_F04", "type": "MINIATURIZATION_EVOLUTION", "startNode": "Feat_F10", "endNode": "Feat_F04", "properties": { "desc": "从精密小圆角特征演进到精密微型槽特征，加工策略从插补扫掠进化为定宽啄式切削" }}
+  ]
+}

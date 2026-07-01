@@ -1,0 +1,125 @@
+{
+  "nodes": [
+  
+    { "id": "Part_CasingFlange", "label": "零件", "properties": { "name": "机匣安装边 (Mounting Flange)", "type": "重型回转体" }},
+    { "id": "Mat_Shared_Ti6Al4V", "label": "材料", "properties": { "name": "钛合金 Ti-6AI-4V", "desc": "高强度/低导热" }},
+    { "id": "Machine_VerticalLathe", "label": "Equipment", "properties": { "name": "数控立车 (CNC Vertical Lathe)", "feature": "高刚性/立式排屑" }},
+    { "id": "Global_AeroEngine_Category", "label": "零件类型", "properties": { "name": "航空发动机关键组件" }},
+
+
+    { "id": "Feat_F02", "label": "特征", "properties": { "name": "F02 大圆角斜面过渡", "complexity": "高接触面积/易振动" }},
+
+
+    { "id": "Const_Slope_F02", "label": "几何约束", "properties": { "name": "侧壁斜度: 20°" }},
+    { "id": "Const_Fillet_F02", "label": "几何约束", "properties": { "name": "强约束圆角: R4.0mm", "impact": "决定加工效率上限" }},
+    { "id": "Const_Corner_F02", "label": "几何约束", "properties": { "name": "辅助圆角: R1.0mm" }},
+    { "id": "Const_Orientation_F02", "label": "几何约束", "properties": { "name": "加工轴线: 立式 (Vertical Axis)" }},
+
+
+    { "id": "Holder_CER", "label": "Equipment", "properties": { "name": "刀杆: CER2525 (杠杆式压紧)", "clamping": "P-Type Lever Lock" }},
+    { "id": "Insert_U6", "label": "Tool", "properties": { "name": "刀片: U6RR1R4 (定制成型刀片)", "radius": "R4.0mm", "thickness": "4.0mm" }},
+
+
+    { "id": "Proc_Rough_F02", "label": "工序", "properties": { "name": "粗加工阶段: 立式轮廓粗车" }},
+    { "id": "Step_RoughContour_F02", "label": "工步", "properties": { "name": "1. 立式轮廓去除 (RCMT刀具参考)" }},
+    
+    { "id": "Proc_Semi_F02", "label": "工序", "properties": { "name": "半精加工阶段: 台阶平滑" }},
+    { "id": "Step_Smoothing_F02", "label": "工步", "properties": { "name": "2. 去除扇形高度", "allowance": "0.3mm" }},
+    
+    { "id": "Proc_Finish_F02", "label": "工序", "properties": { "name": "精加工阶段: 成型仿形加工" }},
+    { "id": "Step_MatchFit_F02", "label": "工步", "properties": { "name": "3. 吻合切削 (Match-Fit)", "quality": "表面质量极高" }},
+
+
+    { "id": "Param_Vc_Finish_F02", "label": "切削参数", "properties": { "name": "精加工 Vc: 70 m/min", "reason": "降低Vc防烧伤" }},
+    { "id": "Param_f_High_F02", "label": "切削参数", "properties": { "name": "反直觉进给量 f: 0.3 mm/rev", "logic": "大圆角补偿理论粗糙度" }},
+    { "id": "Param_ap_Finish_F02", "label": "切削参数", "properties": { "name": "精切深 ap: 0.15 mm", "goal": "防止薄壁变形" }},
+    { "id": "Param_Vibration_F02", "label": "物理校验", "properties": { "name": "振动抑制 (Chatter Suppression)", "method": "依托立车高刚性" }},
+
+ 
+    { "id": "CoT_F02_1", "label": "分析", "properties": { "name": "Context: 识别大直径安装边特征" }},
+    { "id": "CoT_F02_2", "label": "分析", "properties": { "name": "Constraint: 提取R4.0大圆角强约束" }},
+    { "id": "CoT_F02_3", "label": "分析", "properties": { "name": "Logic: 决策大圆角匹配策略" }},
+    { "id": "CoT_F02_4", "label": "分析", "properties": { "name": "Optim: 基于公式 Ra=f²/8R 优化进给" }},
+    { "id": "CoT_F02_5", "label": "分析", "properties": { "name": "Risk: 大接触面积切削力剧增校验" }},
+    { "id": "CoT_F02_6", "label": "分析", "properties": { "name": "Final: 确定 ap 限制以保护薄壁" }},
+
+   
+    { "id": "Img_F02_01", "label": "Image", "properties": { "name": "F02特征剖面图", "filename": "F02_1.png" }},
+    { "id": "Img_F02_02", "label": "Image", "properties": { "name": "R4圆角测量基准", "filename": "F02_2.png" }},
+    { "id": "Img_F02_03", "label": "Image", "properties": { "name": "数控立车加工现场", "filename": "F02_3.png" }},
+    { "id": "Img_F02_04", "label": "Image", "properties": { "name": "吻合切削轨迹图", "filename": "F02_4.png" }},
+    { "id": "Img_F02_05", "label": "Image", "properties": { "name": "进给量与粗糙度曲线", "filename": "F02_5.png" }},
+    { "id": "Img_F02_06", "label": "Image", "properties": { "name": "立式排屑形态图", "filename": "F02_6.png" }},
+    { "id": "Img_F02_07", "label": "Image", "properties": { "name": "U6刀片几何细节", "filename": "F02_7.png" }},
+    { "id": "Img_F02_08", "label": "Image", "properties": { "name": "接触面积热负荷分析", "filename": "F02_8.png" }},
+    { "id": "Img_F02_09", "label": "Image", "properties": { "name": "P型压紧刀杆力学图", "filename": "F02_9.png" }},
+    { "id": "Img_F02_10", "label": "Image", "properties": { "name": "薄壁机匣受力变形图", "filename": "F02_10.png" }},
+    { "id": "Img_F02_11", "label": "Image", "properties": { "name": "精加工波纹度实测", "filename": "F02_11.png" }},
+    { "id": "Img_F02_12", "label": "Image", "properties": { "name": "大R刀具避振参数", "filename": "F02_12.png" }},
+    { "id": "Img_F02_13", "label": "Image", "properties": { "name": "扇形残余高度示意", "filename": "F02_13.png" }},
+    { "id": "Img_F02_14", "label": "Image", "properties": { "name": "安装边结构刚性分析", "filename": "F02_14.png" }},
+    { "id": "Img_F02_15", "label": "Image", "properties": { "name": "CoT反直觉校验逻辑", "filename": "F02_15.png" }},
+    { "id": "Img_F02_16", "label": "Image", "properties": { "name": "切削速度与烧伤区", "filename": "F02_16.png" }},
+    { "id": "Img_F02_17", "label": "Image", "properties": { "name": "R4成型刀路仿真", "filename": "F02_17.png" }},
+    { "id": "Img_F02_18", "label": "Image", "properties": { "name": "零件回转体吊装图", "filename": "F02_18.png" }},
+    { "id": "Img_F02_19", "label": "Image", "properties": { "name": "工艺效率对比柱状图", "filename": "F02_19.png" }},
+    { "id": "Img_F02_20", "label": "Image", "properties": { "name": "F02最终合格全息图", "filename": "F02_20.png" }}
+  ],
+  "relationships": [
+
+    { "id": "rF02_1", "type": "HAS_PART_TYPE", "startNode": "Global_AeroEngine_Category", "endNode": "Part_CasingFlange" },
+    { "id": "rF02_2", "type": "HAS_FEATURE", "startNode": "Part_CasingFlange", "endNode": "Feat_F02" },
+    { "id": "rF02_3", "type": "USES_MATERIAL", "startNode": "Part_CasingFlange", "endNode": "Mat_Shared_Ti6Al4V" },
+    { "id": "rF02_4", "type": "USES_EQUIPMENT", "startNode": "Proc_Rough_F02", "endNode": "Machine_VerticalLathe" },
+
+
+    { "id": "rF02_5", "type": "HAS_CONSTRAINT", "startNode": "Feat_F02", "endNode": "Const_Slope_F02" },
+    { "id": "rF02_6", "type": "HAS_CONSTRAINT", "startNode": "Feat_F02", "endNode": "Const_Fillet_F02" },
+    { "id": "rF02_7", "type": "HAS_CONSTRAINT", "startNode": "Feat_F02", "endNode": "Const_Orientation_F02" },
+
+ 
+    { "id": "rF02_8", "type": "HAS_PROCESS", "startNode": "Feat_F05", "endNode": "Proc_Rough_F02" },
+    { "id": "rF02_9", "type": "INCLUDES_STEP", "startNode": "Proc_Rough_F02", "endNode": "Step_RoughContour_F02" },
+    { "id": "rF02_10", "type": "PRECEDES", "startNode": "Proc_Rough_F02", "endNode": "Proc_Semi_F02" },
+    { "id": "rF02_11", "type": "HAS_PROCESS", "startNode": "Feat_F02", "endNode": "Proc_Semi_F02" },
+    { "id": "rF02_12", "type": "INCLUDES_STEP", "startNode": "Proc_Semi_F02", "endNode": "Step_Smoothing_F02" },
+    { "id": "rF02_13", "type": "PRECEDES", "startNode": "Proc_Semi_F02", "endNode": "Proc_Finish_F02" },
+    { "id": "rF02_14", "type": "HAS_PROCESS", "startNode": "Feat_F02", "endNode": "Proc_Finish_F02" },
+    { "id": "rF02_15", "type": "INCLUDES_STEP", "startNode": "Proc_Finish_F02", "endNode": "Step_MatchFit_F02" },
+    { "id": "rF02_16", "type": "USES_TOOL", "startNode": "Step_MatchFit_F02", "endNode": "Insert_U6" },
+    { "id": "rF02_17", "type": "HAS_HOLDER", "startNode": "Insert_U6", "endNode": "Holder_CER" },
+
+  
+    { "id": "rF02_18", "type": "SET_PARAM", "startNode": "Step_MatchFit_F02", "endNode": "Param_f_High_F02" },
+    { "id": "rF02_19", "type": "PERFORM_CHECK", "startNode": "Step_RoughContour_F02", "endNode": "Param_Vibration_F02" },
+
+  
+    { "id": "rF02_20", "type": "PRECEDES", "startNode": "CoT_F02_1", "endNode": "CoT_F02_2" },
+    { "id": "rF02_21", "type": "PRECEDES", "startNode": "CoT_F02_2", "endNode": "CoT_F02_3" },
+    { "id": "rF02_22", "type": "PRECEDES", "startNode": "CoT_F02_3", "endNode": "CoT_F02_4" },
+    { "id": "rF02_23", "type": "PRECEDES", "startNode": "CoT_F02_4", "endNode": "CoT_F02_5" },
+    { "id": "rF02_24", "type": "HAS_ANALYSIS", "startNode": "Feat_F02", "endNode": "CoT_F02_1" },
+
+
+    { "id": "mF02_1", "type": "DESCRIBED_BY_IMAGE", "startNode": "Feat_F02", "endNode": "Img_F02_01" },
+    { "id": "mF02_2", "type": "DESCRIBED_BY_IMAGE", "startNode": "Const_Fillet_F02", "endNode": "Img_F02_02" },
+    { "id": "mF02_3", "type": "DESCRIBED_BY_IMAGE", "startNode": "Machine_VerticalLathe", "endNode": "Img_F02_03" },
+    { "id": "mF02_4", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_MatchFit_F02", "endNode": "Img_F02_04" },
+    { "id": "mF02_5", "type": "DESCRIBED_BY_IMAGE", "startNode": "Param_f_High_F02", "endNode": "Img_F02_05" },
+    { "id": "mF02_6", "type": "DESCRIBED_BY_IMAGE", "startNode": "Const_Orientation_F02", "endNode": "Img_F02_06" },
+    { "id": "mF02_7", "type": "DESCRIBED_BY_IMAGE", "startNode": "Insert_U6", "endNode": "Img_F02_07" },
+    { "id": "mF02_8", "type": "DESCRIBED_BY_IMAGE", "startNode": "CoT_F02_5", "endNode": "Img_F02_08" },
+    { "id": "mF02_9", "type": "DESCRIBED_BY_IMAGE", "startNode": "Holder_CER", "endNode": "Img_F02_09" },
+    { "id": "mF02_10", "type": "DESCRIBED_BY_IMAGE", "startNode": "Param_ap_Finish_F02", "endNode": "Img_F02_10" },
+    { "id": "mF02_11", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_MatchFit_F02", "endNode": "Img_F02_11" },
+    { "id": "mF02_12", "type": "DESCRIBED_BY_IMAGE", "startNode": "Param_Vibration_F02", "endNode": "Img_F02_12" },
+    { "id": "mF02_13", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_Smoothing_F02", "endNode": "Img_F02_13" },
+    { "id": "mF02_14", "type": "DESCRIBED_BY_IMAGE", "startNode": "Part_CasingFlange", "endNode": "Img_F02_14" },
+    { "id": "mF02_15", "type": "DESCRIBED_BY_IMAGE", "startNode": "CoT_F02_4", "endNode": "Img_F02_15" },
+    { "id": "mF02_16", "type": "DESCRIBED_BY_IMAGE", "startNode": "Param_Vc_Finish_F02", "endNode": "Img_F02_16" },
+    { "id": "mF02_17", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_MatchFit_F02", "endNode": "Img_F02_17" },
+    { "id": "mF02_18", "type": "DESCRIBED_BY_IMAGE", "startNode": "Part_CasingFlange", "endNode": "Img_F02_18" },
+    { "id": "mF02_19", "type": "DESCRIBED_BY_IMAGE", "startNode": "Proc_Finish_F02", "endNode": "Img_F02_19" },
+    { "id": "mF02_20", "type": "DESCRIBED_BY_IMAGE", "startNode": "Feat_F02", "endNode": "Img_F02_20" }
+  ]
+}

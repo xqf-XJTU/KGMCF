@@ -1,0 +1,112 @@
+{
+  "nodes": [
+
+    { "id": "Part_Casing_F09", "label": "零件", "properties": { "name": "航空发动机机匣 (F09组件)", "type": "机匣类" }},
+    { "id": "Mat_Shared_Ti6Al4V", "label": "材料", "properties": { "name": "钛合金 Ti-6AI-4V", "desc": "航空典型难加工材料" }},
+    { "id": "Global_AeroEngine_Category", "label": "零件类型", "properties": { "name": "航空发动机关键组件" }},
+
+    { "id": "Feat_F09", "label": "特征", "properties": { "name": "F09 多曲率异形槽", "complexity": "复合圆角 (4:1 比例)" }},
+
+ 
+    { "id": "Const_Draft_F09", "label": "几何约束", "properties": { "name": "侧壁斜度: 20°" }},
+    { "id": "Const_MinR_F09", "label": "几何约束", "properties": { "name": "硬约束最小半径: R1.0mm", "meaning": "防止R1处过切" }},
+    { "id": "Const_MaxR_F09", "label": "几何约束", "properties": { "name": "大圆角区域: R4.0mm" }},
+    { "id": "Const_Depth_Limit_F09", "label": "几何约束", "properties": { "name": "刀具切深极限: 11.5mm", "check": "特征深度10mm < 11.5mm (安全)" }},
+    { "id": "Const_Width_F09", "label": "几何约束", "properties": { "name": "槽宽约束: >3.75mm" }},
+
+
+    { "id": "Holder_CFGL_WK028", "label": "Equipment", "properties": { "name": "杠杆压紧刀杆: CFGL2525", "style": "External P-Type" }},
+    { "id": "Insert_QC0404_Asym", "label": "Tool", "properties": { "name": "不对称双圆角刀片: QC0404", "r_primary": "R1.0 (精密)", "r_secondary": "R3.0 (高效)" }},
+
+    { "id": "Proc_F09_Stages", "label": "工序", "properties": { "name": "F09 复合加工阶段" }},
+    { "id": "Step_VarRadius_Grooving", "label": "工步", "properties": { "name": "1. 变圆角切槽 (R3端大余量去除)" }},
+    { "id": "Step_Corner_Clearing", "label": "工步", "properties": { "name": "2. R1端清角 (Corner Clearing)" }},
+    { "id": "Step_Compound_Profiling", "label": "工步", "properties": { "name": "3. 复合仿形 (R1成型 + R4插补)" }},
+
+    { "id": "Param_Vc_F09", "label": "切削参数", "properties": { "name": "精加工速度 Vc: 95 m/min", "desc": "3.75mm窄刃发热稍低" }},
+    { "id": "Param_f_Scallop_F09", "label": "切削参数", "properties": { "name": "高效进给 f: 0.06 mm/rev", "logic": "由于R3≈R4,残留高度极小" }},
+    { "id": "Param_ap_Limit_F09", "label": "物理校验", "properties": { "name": "侧向偏摆控制 ap: 0.15mm" }},
+
+    { "id": "CoT_F09_1", "label": "分析", "properties": { "name": "Logic 1: 识别 R4 与 R1 共存冲突" }},
+    { "id": "CoT_F09_2", "label": "分析", "properties": { "name": "Logic 2: 检索多面手刀具 QC0404" }},
+    { "id": "CoT_F09_3", "label": "分析", "properties": { "name": "Logic 3: R1端完美匹配成型" }},
+    { "id": "CoT_F09_4", "label": "分析", "properties": { "name": "Logic 4: R3端近形仿形 R4 (效率提升3倍)" }},
+    { "id": "CoT_F09_5", "label": "分析", "properties": { "name": "Logic 5: 刀具标称切深 11.5mm 物理红线检查" }},
+    { "id": "CoT_F09_6", "label": "分析", "properties": { "name": "Logic 6: 确定10mm深度处于安全窗口" }},
+
+    { "id": "Img_F09_01", "label": "Image", "properties": { "name": "F09多曲率特征全景", "filename": "F09_1.png" }},
+    { "id": "Img_F09_02", "label": "Image", "properties": { "name": "4:1圆角比例示意图", "filename": "F09_2.png" }},
+    { "id": "Img_F09_03", "label": "Image", "properties": { "name": "QC0404不对称设计图", "filename": "F09_3.png" }},
+    { "id": "Img_F09_04", "label": "Image", "properties": { "name": "R3端近形仿形轨迹仿真", "filename": "F09_4.png" }},
+    { "id": "Img_F09_05", "label": "Image", "properties": { "name": "11.5mm切深物理红线图", "filename": "F09_5.png" }},
+    { "id": "Img_F09_06", "label": "Image", "properties": { "name": "R1端精密清角效果", "filename": "F09_6.png" }},
+    { "id": "Img_F09_07", "label": "Image", "properties": { "name": "Scallop(残留高度)计算模型", "filename": "F09_7.png" }},
+    { "id": "Img_F09_08", "label": "Image", "properties": { "name": "3.75mm窄刃发热对比图", "filename": "F09_8.png" }},
+    { "id": "Img_F09_09", "label": "Image", "properties": { "name": "杠杆式压紧力学模型", "filename": "F09_9.png" }},
+    { "id": "Img_F09_10", "label": "Image", "properties": { "name": "侧向偏摆(Deflection)仿真", "filename": "F09_10.png" }},
+    { "id": "Img_F09_11", "label": "Image", "properties": { "name": "R1 vs R3 刀尖磨损分布", "filename": "F09_11.png" }},
+    { "id": "Img_F09_12", "label": "Image", "properties": { "name": "复合仿形G代码逻辑块", "filename": "F09_12.png" }},
+    { "id": "Img_F09_13", "label": "Image", "properties": { "name": "机匣异形槽实测点云", "filename": "F09_13.png" }},
+    { "id": "Img_F09_14", "label": "Image", "properties": { "name": "效率提升3倍对比柱状图", "filename": "F09_14.png" }},
+    { "id": "Img_F09_15", "label": "Image", "properties": { "name": "CoT多面手刀具决策流", "filename": "F09_15.png" }},
+    { "id": "Img_F09_16", "label": "Image", "properties": { "name": "钛合金深槽切屑缠绕监控", "filename": "F09_16.png" }},
+    { "id": "Img_F09_17", "label": "Image", "properties": { "name": "刀片11.5mm深限标识", "filename": "F09_17.png" }},
+    { "id": "Img_F09_18", "label": "Image", "properties": { "name": "WK028细颗粒硬质合金形貌", "filename": "F09_18.png" }},
+    { "id": "Img_F09_19", "label": "Image", "properties": { "name": "双圆角联动动态误差图", "filename": "F09_19.png" }},
+    { "id": "Img_F09_20", "label": "Image", "properties": { "name": "F09特征最终检测报告", "filename": "F09_20.png" }}
+  ],
+  "relationships": [
+
+    { "id": "rF09_1", "type": "HAS_PART_TYPE", "startNode": "Global_AeroEngine_Category", "endNode": "Part_Casing_F09" },
+    { "id": "rF09_2", "type": "HAS_FEATURE", "startNode": "Part_Casing_F09", "endNode": "Feat_F09" },
+    { "id": "rF09_3", "type": "USES_MATERIAL", "startNode": "Feat_F09", "endNode": "Mat_Shared_Ti6Al4V" },
+
+    { "id": "rF09_4", "type": "HAS_CONSTRAINT", "startNode": "Feat_F09", "endNode": "Const_Draft_F09" },
+    { "id": "rF09_5", "type": "HAS_CONSTRAINT", "startNode": "Feat_F09", "endNode": "Const_MinR_F09" },
+    { "id": "rF09_6", "type": "HAS_CONSTRAINT", "startNode": "Feat_F09", "endNode": "Const_MaxR_F09" },
+    { "id": "rF09_7", "type": "HAS_CONSTRAINT", "startNode": "Feat_F09", "endNode": "Const_Depth_Limit_F09" },
+
+    { "id": "rF09_8", "type": "HAS_PROCESS", "startNode": "Feat_F09", "endNode": "Proc_F09_Stages" },
+    { "id": "rF09_9", "type": "INCLUDES_STEP", "startNode": "Proc_F09_Stages", "endNode": "Step_VarRadius_Grooving" },
+    { "id": "rF09_10", "type": "PRECEDES", "startNode": "Step_VarRadius_Grooving", "endNode": "Step_Corner_Clearing" },
+    { "id": "rF09_11", "type": "INCLUDES_STEP", "startNode": "Proc_F09_Stages", "endNode": "Step_Corner_Clearing" },
+    { "id": "rF09_12", "type": "PRECEDES", "startNode": "Step_Corner_Clearing", "endNode": "Step_Compound_Profiling" },
+    { "id": "rF09_13", "type": "INCLUDES_STEP", "startNode": "Proc_F09_Stages", "endNode": "Step_Compound_Profiling" },
+
+    { "id": "rF09_14", "type": "USES_TOOL", "startNode": "Step_Compound_Profiling", "endNode": "Insert_QC0404_Asym" },
+    { "id": "rF09_15", "type": "HAS_HOLDER", "startNode": "Insert_QC0404_Asym", "endNode": "Holder_CFGL_WK028" },
+    { "id": "rF09_16", "type": "SET_PARAM", "startNode": "Step_Compound_Profiling", "endNode": "Param_Vc_F09" },
+    { "id": "rF09_17", "type": "SET_PARAM", "startNode": "Step_Compound_Profiling", "endNode": "Param_f_Scallop_F09" },
+    { "id": "rF09_18", "type": "VALIDATE_LIMIT", "startNode": "Feat_F09", "endNode": "Const_Depth_Limit_F09" },
+
+    { "id": "rF09_19", "type": "PRECEDES", "startNode": "CoT_F09_1", "endNode": "CoT_F09_2" },
+    { "id": "rF09_20", "type": "PRECEDES", "startNode": "CoT_F09_2", "endNode": "CoT_F09_3" },
+    { "id": "rF09_21", "type": "PRECEDES", "startNode": "CoT_F09_3", "endNode": "CoT_F09_4" },
+    { "id": "rF09_22", "type": "PRECEDES", "startNode": "CoT_F09_4", "endNode": "CoT_F09_5" },
+    { "id": "rF09_23", "type": "PRECEDES", "startNode": "CoT_F09_5", "endNode": "CoT_F09_6" },
+    { "id": "rF09_24", "type": "HAS_ANALYSIS", "startNode": "Feat_F09", "endNode": "CoT_F09_1" },
+
+    { "id": "mF09_1", "type": "DESCRIBED_BY_IMAGE", "startNode": "Feat_F09", "endNode": "Img_F09_01" },
+    { "id": "mF09_2", "type": "DESCRIBED_BY_IMAGE", "startNode": "Feat_F09", "endNode": "Img_F09_02" },
+    { "id": "mF09_3", "type": "DESCRIBED_BY_IMAGE", "startNode": "Insert_QC0404_Asym", "endNode": "Img_F09_03" },
+    { "id": "mF09_4", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_Compound_Profiling", "endNode": "Img_F09_04" },
+    { "id": "mF09_5", "type": "DESCRIBED_BY_IMAGE", "startNode": "Const_Depth_Limit_F09", "endNode": "Img_F09_05" },
+    { "id": "mF09_6", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_Corner_Clearing", "endNode": "Img_F09_06" },
+    { "id": "mF09_7", "type": "DESCRIBED_BY_IMAGE", "startNode": "Param_f_Scallop_F09", "endNode": "Img_F09_07" },
+    { "id": "mF09_8", "type": "DESCRIBED_BY_IMAGE", "startNode": "Param_Vc_F09", "endNode": "Img_F09_08" },
+    { "id": "mF09_9", "type": "DESCRIBED_BY_IMAGE", "startNode": "Holder_CFGL_WK028", "endNode": "Img_F09_09" },
+    { "id": "mF09_10", "type": "DESCRIBED_BY_IMAGE", "startNode": "Param_ap_Limit_F09", "endNode": "Img_F09_10" },
+    { "id": "mF09_11", "type": "DESCRIBED_BY_IMAGE", "startNode": "Insert_QC0404_Asym", "endNode": "Img_F09_11" },
+    { "id": "mF09_12", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_Compound_Profiling", "endNode": "Img_F09_12" },
+    { "id": "mF09_13", "type": "DESCRIBED_BY_IMAGE", "startNode": "Feat_F09", "endNode": "Img_F09_13" },
+    { "id": "mF09_14", "type": "DESCRIBED_BY_IMAGE", "startNode": "CoT_F09_4", "endNode": "Img_F09_14" },
+    { "id": "mF09_15", "type": "DESCRIBED_BY_IMAGE", "startNode": "CoT_F09_1", "endNode": "Img_F09_15" },
+    { "id": "mF09_16", "type": "DESCRIBED_BY_IMAGE", "startNode": "Mat_Shared_Ti6Al4V", "endNode": "Img_F09_16" },
+    { "id": "mF09_17", "type": "DESCRIBED_BY_IMAGE", "startNode": "Const_Depth_Limit_F09", "endNode": "Img_F09_17" },
+    { "id": "mF09_18", "type": "DESCRIBED_BY_IMAGE", "startNode": "Insert_QC0404_Asym", "endNode": "Img_F09_18" },
+    { "id": "mF09_19", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_Compound_Profiling", "endNode": "Img_F09_19" },
+    { "id": "mF09_20", "type": "DESCRIBED_BY_IMAGE", "startNode": "Part_Casing_F09", "endNode": "Img_F09_20" },
+
+    { "id": "bridge_F09_F08", "type": "TECHNICAL_EVOLUTION", "startNode": "Feat_F09", "endNode": "Feat_F08", "properties": { "desc": "F09采用了比F08更先进的不对称双圆角刀片，以解决4:1曲率落差带来的效率问题" }}
+  ]
+}

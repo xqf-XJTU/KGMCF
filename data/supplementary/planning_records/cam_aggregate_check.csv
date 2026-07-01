@@ -1,0 +1,5 @@
+﻿method,n_trials,cam_pass_rate_%,tool_interference_rate_%,holder_collision_rate_%,overcut_rate_%,invalid_cam_generation_rate_%,mean_minimum_clearance_mm
+Vanilla MLLM,100,52.0,24.0,17.0,11.0,14.0,0.13
+RAG-based Planner,100,69.0,13.0,10.0,11.0,9.0,0.28
+Standard ReAct Agent,100,78.0,9.0,7.0,5.0,7.0,0.38
+KGMCF (Ours),100,91.0,3.0,2.0,2.0,2.0,0.56

@@ -1,0 +1,112 @@
+{
+  "nodes": [
+
+    { "id": "Part_Hybrid_Internal", "label": "零件", "properties": { "name": "航空发动机混合半径内孔组件", "context": "半封闭加工空间" }},
+    { "id": "Mat_Shared_Ti6Al4V", "label": "材料", "properties": { "name": "钛合金 Ti-6AI-4V", "challenge": "加工硬化/侧向刚性敏感" }},
+    { "id": "Global_AeroEngine_Category", "label": "零件类型", "properties": { "name": "航空发动机关键组件" }},
+
+    { "id": "Feat_F14", "label": "特征", "properties": { "name": "F14 混合半径内孔型面", "class": "复杂内孔轮廓" }},
+
+    { "id": "Const_Draft_F14", "label": "几何约束", "properties": { "name": "内壁斜度: 20.0°" }},
+    { "id": "Const_PrimR_F14", "label": "几何约束", "properties": { "name": "主约束圆角: R2.5mm" }},
+    { "id": "Const_SecR_F14", "label": "几何约束", "properties": { "name": "次约束圆角: R1.0mm" }},
+    { "id": "Const_SpaceLimit_F14", "label": "几何约束", "properties": { "name": "空间限制: 2.5mm 宽度", "impact": "由刀具宽度倒推的极窄空间" }},
+    { "id": "Const_Accuracy_F14", "label": "几何约束", "properties": { "name": "轮廓度公差: ±0.03mm", "requirement": "要求连续插补精度" }},
+
+    { "id": "Holder_CER_WK079", "label": "Equipment", "properties": { "name": "标准内孔长刀杆: CER2525", "system": "PU5 U-Lock (高稳定性)" }},
+    { "id": "Insert_U5R_WK079", "label": "Tool", "properties": { "name": "三维复合仿形刀片: U5R-2.5", "r_primary": "R2.0 (加工R2.5)", "r_secondary": "R0.8 (加工R1.0)" }},
+
+    { "id": "Proc_Hybrid_Profiling_F14", "label": "工序", "properties": { "name": "F14 混合半径型面精加工阶段" }},
+    { "id": "Step_StepTurning_F14", "label": "工步", "properties": { "name": "1. 轮廓阶梯车削", "logic": "防止接触面积过大引起颤振" }},
+    { "id": "Step_DualTracing_F14", "label": "工步", "properties": { "name": "2. 双点跟踪加工 (Dual-Point Tracing)", "desc": "利用刀片两端R角分别清理余量" }},
+    { "id": "Step_ContInterp_F14", "label": "工步", "properties": { "name": "3. 连续插补精加工", "path": "R1 -> 20° -> R2.5 一刀走完" }},
+
+    { "id": "Param_Vc_Safe_F14", "label": "切削参数", "properties": { "name": "标准保守切速 Vc: 55-80 m/min" }},
+    { "id": "Param_f_Deflect_F14", "label": "切削参数", "properties": { "name": "低进给 f: 0.04 mm/rev", "reason": "抵消侧向偏摆/防止让刀" }},
+    { "id": "Param_Scallop_F14", "label": "几何校验", "properties": { "name": "残留高度控制: 0.002mm", "method": "步距插补计算" }},
+    { "id": "Logic_Inc_Pushing", "label": "工艺策略", "properties": { "name": "分次推刀策略 (Incremental Pushing)", "goal": "解决窄刀杆变形导致的尺寸误差" }},
+
+    { "id": "CoT_F14_1", "label": "分析", "properties": { "name": "Geometry: 识别 R2.5 与 R1 混合异形特征" }},
+    { "id": "CoT_F14_2", "label": "分析", "properties": { "name": "Risk: 警告全圆头刀具在斜面上的扭转振动风险" }},
+    { "id": "CoT_F14_3", "label": "分析", "properties": { "name": "Match: 选择 Rtool < Rfeat 的复合刀片方案" }},
+    { "id": "CoT_F14_4", "label": "分析", "properties": { "name": "Force: 评估 2.5mm 窄刃在 20° 斜面的径向抗力" }},
+    { "id": "CoT_F14_5", "label": "分析", "properties": { "name": "Strategy: 制定阶梯车削+连续插补的组合路径" }},
+    { "id": "CoT_F14_6", "label": "分析", "properties": { "name": "Adjustment: 强制压缩进给至 0.04mm 并引入分次推刀" }},
+
+    { "id": "Img_F14_01", "label": "Image", "properties": { "name": "F14混合型面特征总览", "filename": "F14_1.png" }},
+    { "id": "Img_F14_02", "label": "Image", "properties": { "name": "R2.5与R1复合曲率分析", "filename": "F14_2.png" }},
+    { "id": "Img_F14_03", "label": "Image", "properties": { "name": "U5R三维复合刀片几何实拍", "filename": "F14_3.png" }},
+    { "id": "Img_F14_04", "label": "Image", "properties": { "name": "双点跟踪(Dual-Point)路径动图", "filename": "F14_4.png" }},
+    { "id": "Img_F14_05", "label": "Image", "properties": { "name": "2.5mm窄刃侧向刚性实验", "filename": "F14_5.png" }},
+    { "id": "Img_F14_06", "label": "Image", "properties": { "name": "分次推刀(Incremental)原理图", "filename": "F14_6.png" }},
+    { "id": "Img_F14_07", "label": "Image", "properties": { "name": "扭转振动(Torsional Vibration)色图", "filename": "F14_7.png" }},
+    { "id": "Img_F14_08", "label": "Image", "properties": { "name": "阶梯车削余量分布云图", "filename": "F14_8.png" }},
+    { "id": "Img_F14_09", "label": "Image", "properties": { "name": "残留高度(Scallop)电子显微镜图", "filename": "F14_9.png" }},
+    { "id": "Img_F14_10", "label": "Image", "properties": { "name": "±0.03mm轮廓度误差分步", "filename": "F14_10.png" }},
+    { "id": "Img_F14_11", "label": "Image", "properties": { "name": "20°斜面径向力矢量分析", "filename": "F14_11.png" }},
+    { "id": "Img_F14_12", "label": "Image", "properties": { "name": "WK079航空级硬质合金显微", "filename": "F14_12.png" }},
+    { "id": "Img_F14_13", "label": "Image", "properties": { "name": "PU5 U-Lock锁紧结构剖视图", "filename": "F14_13.png" }},
+    { "id": "Img_F14_14", "label": "Image", "properties": { "name": "精加工表面完整性检测曲线", "filename": "F14_14.png" }},
+    { "id": "Img_F14_15", "label": "Image", "properties": { "name": "CoT复合型面决策逻辑流", "filename": "F14_15.png" }},
+    { "id": "Img_F14_16", "label": "Image", "properties": { "name": "内孔盲区加工热成像模拟", "filename": "F14_16.png" }},
+    { "id": "Img_F14_17", "label": "Image", "properties": { "name": "让刀误差导致的欠切现象示例", "filename": "F14_17.png" }},
+    { "id": "Img_F14_18", "label": "Image", "properties": { "name": "连续插补G代码分段解析", "filename": "F14_18.png" }},
+    { "id": "Img_F14_19", "label": "Image", "properties": { "name": "不同进给量对轮廓度影响对比", "filename": "F14_19.png" }},
+    { "id": "Img_F14_20", "label": "Image", "properties": { "name": "F14特征最终检测三维报告", "filename": "F14_20.png" }}
+  ],
+  "relationships": [
+
+    { "id": "rF14_1", "type": "HAS_PART_TYPE", "startNode": "Global_AeroEngine_Category", "endNode": "Part_Hybrid_Internal" },
+    { "id": "rF14_2", "type": "HAS_FEATURE", "startNode": "Part_Hybrid_Internal", "endNode": "Feat_F14" },
+    { "id": "rF14_3", "type": "USES_MATERIAL", "startNode": "Feat_F14", "endNode": "Mat_Shared_Ti6Al4V" },
+
+    { "id": "rF14_4", "type": "HAS_CONSTRAINT", "startNode": "Feat_F14", "endNode": "Const_PrimR_F14" },
+    { "id": "rF14_5", "type": "HAS_CONSTRAINT", "startNode": "Feat_F14", "endNode": "Const_SecR_F14" },
+    { "id": "rF14_6", "type": "HAS_CONSTRAINT", "startNode": "Feat_F14", "endNode": "Const_SpaceLimit_F14" },
+    { "id": "rF14_7", "type": "HAS_CONSTRAINT", "startNode": "Feat_F14", "endNode": "Const_Accuracy_F14" },
+
+    { "id": "rF14_8", "type": "HAS_PROCESS", "startNode": "Feat_F14", "endNode": "Proc_Hybrid_Profiling_F14" },
+    { "id": "rF14_9", "type": "INCLUDES_STEP", "startNode": "Proc_Hybrid_Profiling_F14", "endNode": "Step_StepTurning_F14" },
+    { "id": "rF14_10", "type": "PRECEDES", "startNode": "Step_StepTurning_F14", "endNode": "Step_DualTracing_F14" },
+    { "id": "rF14_11", "type": "INCLUDES_STEP", "startNode": "Proc_Hybrid_Profiling_F14", "endNode": "Step_DualTracing_F14" },
+    { "id": "rF14_12", "type": "PRECEDES", "startNode": "Step_DualTracing_F14", "endNode": "Step_ContInterp_F14" },
+    { "id": "rF14_13", "type": "INCLUDES_STEP", "startNode": "Proc_Hybrid_Profiling_F14", "endNode": "Step_ContInterp_F14" },
+
+    { "id": "rF14_14", "type": "USES_TOOL", "startNode": "Step_DualTracing_F14", "endNode": "Insert_U5R_WK079" },
+    { "id": "rF14_15", "type": "HAS_HOLDER", "startNode": "Insert_U5R_WK079", "endNode": "Holder_CER_WK079" },
+    { "id": "rF14_16", "type": "APPLY_STRATEGY", "startNode": "Step_ContInterp_F14", "endNode": "Logic_Inc_Pushing" },
+    { "id": "rF14_17", "type": "SET_PARAM", "startNode": "Step_ContInterp_F14", "endNode": "Param_f_Deflect_F14" },
+    { "id": "rF14_18", "type": "SET_PARAM", "startNode": "Step_ContInterp_F14", "endNode": "Param_Vc_Safe_F14" },
+    { "id": "rF14_19", "type": "PERFORM_CHECK", "startNode": "Step_ContInterp_F14", "endNode": "Param_Scallop_F14" },
+
+    { "id": "rF14_20", "type": "PRECEDES", "startNode": "CoT_F14_1", "endNode": "CoT_F14_2" },
+    { "id": "rF14_21", "type": "PRECEDES", "startNode": "CoT_F14_2", "endNode": "CoT_F14_3" },
+    { "id": "rF14_22", "type": "PRECEDES", "startNode": "CoT_F14_3", "endNode": "CoT_F14_4" },
+    { "id": "rF14_23", "type": "PRECEDES", "startNode": "CoT_F14_4", "endNode": "CoT_F14_5" },
+    { "id": "rF14_24", "type": "PRECEDES", "startNode": "CoT_F14_5", "endNode": "CoT_F14_6" },
+    { "id": "rF14_25", "type": "HAS_ANALYSIS", "startNode": "Feat_F14", "endNode": "CoT_F14_1" },
+
+    { "id": "mF14_1", "type": "DESCRIBED_BY_IMAGE", "startNode": "Feat_F14", "endNode": "Img_F14_01" },
+    { "id": "mF14_2", "type": "DESCRIBED_BY_IMAGE", "startNode": "Const_PrimR_F14", "endNode": "Img_F14_02" },
+    { "id": "mF14_3", "type": "DESCRIBED_BY_IMAGE", "startNode": "Insert_U5R_WK079", "endNode": "Img_F14_03" },
+    { "id": "mF14_4", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_DualTracing_F14", "endNode": "Img_F14_04" },
+    { "id": "mF14_5", "type": "DESCRIBED_BY_IMAGE", "startNode": "Holder_CER_WK079", "endNode": "Img_F14_05" },
+    { "id": "mF14_6", "type": "DESCRIBED_BY_IMAGE", "startNode": "Logic_Inc_Pushing", "endNode": "Img_F14_06" },
+    { "id": "mF14_7", "type": "DESCRIBED_BY_IMAGE", "startNode": "CoT_F14_2", "endNode": "Img_F14_07" },
+    { "id": "mF14_8", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_StepTurning_F14", "endNode": "Img_F14_08" },
+    { "id": "mF14_9", "type": "DESCRIBED_BY_IMAGE", "startNode": "Param_Scallop_F14", "endNode": "Img_F14_09" },
+    { "id": "mF14_10", "type": "DESCRIBED_BY_IMAGE", "startNode": "Const_Accuracy_F14", "endNode": "Img_F14_10" },
+    { "id": "mF14_11", "type": "DESCRIBED_BY_IMAGE", "startNode": "CoT_F14_4", "endNode": "Img_F14_11" },
+    { "id": "mF14_12", "type": "DESCRIBED_BY_IMAGE", "startNode": "Insert_U5R_WK079", "endNode": "Img_F14_12" },
+    { "id": "mF14_13", "type": "DESCRIBED_BY_IMAGE", "startNode": "Holder_CER_WK079", "endNode": "Img_F14_13" },
+    { "id": "mF14_14", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_ContInterp_F14", "endNode": "Img_F14_14" },
+    { "id": "mF14_15", "type": "DESCRIBED_BY_IMAGE", "startNode": "CoT_F14_1", "endNode": "Img_F14_15" },
+    { "id": "mF14_16", "type": "DESCRIBED_BY_IMAGE", "startNode": "Part_Hybrid_Internal", "endNode": "Img_F14_16" },
+    { "id": "mF14_17", "type": "DESCRIBED_BY_IMAGE", "startNode": "Logic_Inc_Pushing", "endNode": "Img_F14_17" },
+    { "id": "mF14_18", "type": "DESCRIBED_BY_IMAGE", "startNode": "Step_ContInterp_F14", "endNode": "Img_F14_18" },
+    { "id": "mF14_19", "type": "DESCRIBED_BY_IMAGE", "startNode": "Param_f_Deflect_F14", "endNode": "Img_F14_19" },
+    { "id": "mF14_20", "type": "DESCRIBED_BY_IMAGE", "startNode": "Feat_F14", "endNode": "Img_F14_20" },
+
+    { "id": "bridge_F14_F11", "type": "ASYMMETRY_EVOLUTION", "startNode": "Feat_F14", "endNode": "Feat_F11", "properties": { "desc": "均处理不对称型面，但F14增加了混合圆角半径，且对侧向偏摆的补偿策略要求更高" }}
+  ]
+}

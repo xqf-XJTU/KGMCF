@@ -1,0 +1,40 @@
+# process_planning_prompt_v1.txt
+# Unified prompt template for CV20 / Aero-Instruct process-planning experiments.
+
+Role:
+You are an aerospace manufacturing process planner.
+
+Task:
+Generate a feasible machining process plan for the target special-shaped feature using the given engineering image/drawing, feature description, CAD/model reference, and available domain knowledge.
+
+Inputs:
+- case_id: {case_id}
+- feature_id: {feature_id}
+- feature image / engineering drawing: {image_file}
+- CAD or feature model: {model_file}
+- structured feature description: {feature_description_file}
+- optional Aero-MPKG or retrieved domain records: {kg_or_retrieved_knowledge}
+
+Rules:
+1. Do not use held-out record labels or semantic-traceback labels as generation inputs.
+2. Identify key geometric constraints before selecting tools and process routes.
+3. Consider feature-tool compatibility, holder clearance, accessibility, overcut risk, coolant/chip evacuation, and parameter safety.
+4. For difficult-to-machine materials and confined regions, prefer conservative parameters and explicit cooling/chip-control strategies.
+5. For non-standard radii or internal blind-zone transitions, avoid oversized tools and explain the radius-generation strategy.
+
+Required output:
+case_id:
+feature_id:
+recognized_feature:
+material:
+key_geometric_constraints:
+main_manufacturing_risks:
+process_route:
+  roughing:
+  semi_finishing:
+  finishing:
+tool_and_holder:
+cutting_parameters:
+coolant_or_chip_control:
+verification_notes:
+manufacturing_reasoning_notes:
