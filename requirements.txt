@@ -1,0 +1,7 @@
+numpy
+Pillow
+networkx
+pytest
+Flask
+py2neo
+reportlab>=3.0
