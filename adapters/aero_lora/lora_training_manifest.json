@@ -1,0 +1,13 @@
+{
+  "model_root": "models/Qwen2.5-VL-72B-Instruct",
+  "dataset": "data/processed/aero_instruct_5k.jsonl",
+  "output_dir": "adapters/aero_lora",
+  "rank": 64,
+  "learning_rate": "2e-5",
+  "max_steps": 3900,
+  "image_size": 448,
+  "gradient_checkpointing": false,
+  "model_root_exists": true,
+  "dataset_exists": true,
+  "launch_mode": "dry_run"
+}
